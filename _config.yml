@@ -1,4 +1,3 @@
-#theme: minima
-remote_theme: "cotes2020/jekyll-theme-chirpy"
+remote_theme: cotes2020/jekyll-theme-chirpy
 title: Stefans Logbuch
 description: Allerlei Gedanken und Erkenntnisse
