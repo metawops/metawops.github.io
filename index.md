@@ -1,6 +1,6 @@
 ---
 layout: home # Das Layout 'home' wird oft vom Theme bereitgestellt und listet Blogposts auf
-title: Willkommen
+title: Blog
 ---
 
 ## Willkommen auf meinem Blog!
