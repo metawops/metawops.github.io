@@ -4,7 +4,7 @@ baseurl: ""
 url: "https://metawops.github.io"
 
 remote_theme: mmistakes/minimal-mistakes
-minimal_mistakes_skin: air
+minimal_mistakes_skin: dirt
 
 plugins:
   - jekyll-feed
