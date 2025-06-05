@@ -7,6 +7,7 @@ name: Stefan Wolfrum
 url: "https://metawops.github.io"
 baseurl: ""
 repository: metawops/metawops.github.io
+
 head_scripts:
   - https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs
 
@@ -21,6 +22,8 @@ include: ["_pages"]
 
 locale: en-US
 
+enable_copy_code_button: true
+
 defaults:
   # _posts
   - scope:
@@ -33,6 +36,8 @@ defaults:
       comments: true
       share: true
       related: true
+      show_date: true
+      date_format: "%Y-%m-%d"
   # _pages
   - scope:
       path: ""
@@ -51,3 +56,14 @@ comments:
     repo_id: R_kgDOO0ylYw
     theme: light 
   provider: giscus
+
+
+author:
+  name: "Stefan Wolfrum"
+  avatar: "/assets/images/bio-photo.jpg"
+  bio: "Co-Gründer des MakerSpace Bonn & des OK Labs Bonn. Geek."
+  location: "Bonn, Germany"
+  links:
+    - label: "Mastodon"
+      icon: "fa-brands fa-mastodon"
+      url: "https://mastodon.social/@metawops"
