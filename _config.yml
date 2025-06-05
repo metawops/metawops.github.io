@@ -70,4 +70,12 @@ author:
     - label: "LinkeIn"
       icon: "fa-brands fa-linkedin"
       url: "https://www.linkedin.com/in/stefanwolfrum/"
-      
+
+footer:
+  links:
+    - label: "Mastodon"
+      icon: "fa-brands fa-mastodon"
+      url: "https://mastodon.social/@metawops"
+    - label: "LinkeIn"
+      icon: "fa-brands fa-linkedin"
+      url: "https://www.linkedin.com/in/stefanwolfrum/"
