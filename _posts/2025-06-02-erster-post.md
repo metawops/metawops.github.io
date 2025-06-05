@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "Mein erster Blogpost"
 date: 2025-06-02
 ---
