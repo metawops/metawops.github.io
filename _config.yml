@@ -67,15 +67,21 @@ author:
     - label: "Mastodon"
       icon: "fa-brands fa-mastodon"
       url: "https://mastodon.social/@metawops"
-    - label: "LinkeIn"
+    - label: "LinkedIn"
       icon: "fa-brands fa-linkedin"
       url: "https://www.linkedin.com/in/stefanwolfrum/"
+    - label: "GitHub"
+      icon: "fa-brands fa-github"
+      url: "https://github.com/metawops"
 
 footer:
   links:
     - label: "Mastodon"
       icon: "fa-brands fa-mastodon"
       url: "https://mastodon.social/@metawops"
-    - label: "LinkeIn"
+    - label: "LinkedIn"
       icon: "fa-brands fa-linkedin"
       url: "https://www.linkedin.com/in/stefanwolfrum/"
+    - label: "GitHub"
+      icon: "fa-brands fa-github"
+      url: "https://github.com/metawops"
