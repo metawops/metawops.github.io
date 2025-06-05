@@ -1,7 +1,13 @@
 title: Stefans Logbuch
-description: Allerlei Gedanken und Erkenntnisse
-baseurl: ""
+title_separator: "|"
+subtitle: Gadgets, Elektronik, Hausautomatisierung, Amateurfunk, Mathe, Computer etc.
+description: Ausgespeichertes Wissen und Fragen rund um Technik
+name: Stefan Wolfrum
 url: "https://metawops.github.io"
+baseurl: ""
+repository: metawops/metawops.github.io
+head_scripts:
+  - https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs
 
 remote_theme: mmistakes/minimal-mistakes
 minimal_mistakes_skin: air
@@ -34,7 +40,6 @@ defaults:
       layout: single
       author_profile: true
 
-repository: metawops/metawops.github.io
 
 comments:
   giscus:
