@@ -1,4 +1,9 @@
 title: Stefans Logbuch
 description: Allerlei Gedanken und Erkenntnisse
 
-remote_theme: mmistakes/minimal-mistakes
+remote_theme: "mmistakes/minimal-mistakes"
+
+plugins:
+  - jekyll-feed
+  - jekyll-include-cache
+  
