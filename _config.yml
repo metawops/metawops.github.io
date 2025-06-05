@@ -3,8 +3,8 @@ description: Allerlei Gedanken und Erkenntnisse
 baseurl: ""
 url: "https://metawops.github.io"
 
-remote_theme: "mmistakes/minimal-mistakes"
-minimal_mistakes_skin: "default"
+remote_theme: mmistakes/minimal-mistakes
+minimal_mistakes_skin: air
 
 plugins:
   - jekyll-feed
