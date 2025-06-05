@@ -1,9 +1,11 @@
 title: Stefans Logbuch
 description: Allerlei Gedanken und Erkenntnisse
+baseurl: ""
+url: "https://metawops.github.io"
 
 remote_theme: "mmistakes/minimal-mistakes"
+minimal_mistakes_skin: "default"
 
 plugins:
   - jekyll-feed
   - jekyll-include-cache
-  
