@@ -34,6 +34,8 @@ defaults:
       layout: single
       author_profile: true
 
+repository: metawops/metawops.github.io
+
 comments:
   giscus:
     category_name: Blog posts 
