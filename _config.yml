@@ -4,13 +4,15 @@ baseurl: ""
 url: "https://metawops.github.io"
 
 remote_theme: mmistakes/minimal-mistakes
-minimal_mistakes_skin: sunrise
+minimal_mistakes_skin: air
 
 plugins:
   - jekyll-feed
   - jekyll-include-cache
 
 include: ["_pages"]
+
+locale: en-US
 
 defaults:
   # _posts
@@ -31,3 +33,13 @@ defaults:
     values:
       layout: single
       author_profile: true
+
+comments:
+  giscus:
+    category_name: Blog posts 
+    category_id: DIC_kwDOO0ylY84Cq8bJ
+    discussion_term: "title" 
+    reactions_enabled: "1" 
+    repo_id: R_kgDOO0ylYw
+    theme: light 
+  provider: giscus
