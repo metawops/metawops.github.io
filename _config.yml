@@ -100,3 +100,10 @@ footer:
       icon: "fa-brands fa-github"
       url: "https://github.com/metawops"
 
+category_archive:
+  type: liquid
+  path: /categories/
+
+tag_archive:
+  type: liquid
+  path: /tags/
