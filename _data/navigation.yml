@@ -1,5 +1,9 @@
 main:
   - title: "Blog"
     url: /
+  - title: "Kategorien"
+    url: /categories/
+  - title: "tags"
+    url: /tags/
   - title: "Über mich"
     url: /about/
