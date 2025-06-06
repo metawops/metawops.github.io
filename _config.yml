@@ -6,6 +6,10 @@ description: Ausgespeichertes Wissen und Fragen rund um Technik
 name: Stefan Wolfrum
 url: "https://metawops.github.io"
 baseurl: ""
+copyright: "Stefan Wolfrum"
+search: true
+search_full_content: true
+
 repository: metawops/metawops.github.io
 
 head_scripts:
@@ -18,11 +22,15 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
 
-include: ["_pages"]
+include:
+  - _pages
 
-locale: en-US
+encoding: "utf-8"
+locale: en-US # de-DE wäre besser, aber ... siehe Doku
 
 enable_copy_code_button: true
+
+permalink: /:categories/:title/
 
 defaults:
   # _posts
@@ -91,3 +99,4 @@ footer:
     - label: "GitHub"
       icon: "fa-brands fa-github"
       url: "https://github.com/metawops"
+
