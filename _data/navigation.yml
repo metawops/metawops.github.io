@@ -1,3 +1,5 @@
 main:
-  - title: Über mich
+  - title: "Blog"
+    url: /
+  - title: "Über mich"
     url: /about/
