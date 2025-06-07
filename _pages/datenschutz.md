@@ -1,8 +1,8 @@
 ---
-layout: single
 title: Datenschutzerklärung
 permalink: /datenschutz/
 toc: true
+toc_sticky: true
 toc_label: "Gliederung"
 toc_icon: "section"
 ---
