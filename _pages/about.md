@@ -5,4 +5,5 @@ permalink: /about/
 
 Hier steht etwas über mich, Stefan Wolfrum.
 
-Hoffentlich.
+Hier ist noch eine Baustelle und ich muss noch viel schreiben.
+Oder auch nicht so viel.
