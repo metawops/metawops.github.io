@@ -2,6 +2,9 @@
 layout: single
 title: Datenschutzerklärung
 permalink: /datenschutz/
+toc: true
+toc_label: "Gliederung"
+toc_icon: "section"
 ---
 
 Personenbezogene Daten (nachfolgend zumeist nur „Daten“ genannt) werden von uns nur im Rahmen der Erforderlichkeit sowie zum Zwecke der Bereitstellung eines funktionsfähigen und nutzerfreundlichen Internetauftritts, inklusive seiner Inhalte und der dort angebotenen Leistungen, verarbeitet.
