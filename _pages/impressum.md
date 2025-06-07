@@ -9,5 +9,4 @@ Camminer Str. 22
 
 # Kontakt
 Telefon: +49 228 466072  
-E-Mail: metawops{at}gmail{punkt}com  
-Quelle: [https://www.e-recht24.de](https://www.e-recht24.de)
+E-Mail: metawops{at}gmail{punkt}com
