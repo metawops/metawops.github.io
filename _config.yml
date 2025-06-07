@@ -16,7 +16,7 @@ head_scripts:
   - https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs
 
 remote_theme: mmistakes/minimal-mistakes
-minimal_mistakes_skin: dirt
+minimal_mistakes_skin: dark
 
 plugins:
   - jekyll-feed
