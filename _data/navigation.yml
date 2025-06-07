@@ -7,3 +7,7 @@ main:
     url: /tags/
   - title: "Über mich"
     url: /about/
+  - title: "Datenschutz"
+    url: /datenschutz/
+  - title: "Impressum"
+    url: /impressum/
