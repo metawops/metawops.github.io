@@ -8,4 +8,9 @@
 .author__bio a {
   color: $link-color;
   text-decoration: underline;
+  transition: color 0.2s;
+}
+.author__bio a:hover,
+.author__bio a:focus {
+  color: $link-color-hover;
 }
