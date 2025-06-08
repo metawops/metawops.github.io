@@ -32,6 +32,9 @@ breadcrumbs: true  # disabled by default
 
 date_format: "%Y-%m-%d"
 
+sass:
+  custom_css: /assets/css/custom.css
+
 kramdown:
   syntax_highlighter: rouge
   syntax_highlighter_opts:
