@@ -1,9 +1,8 @@
 ---
-layout: single
 title: "Mermaid für Github Pages konfigurieren"
-date: 2025-06-08 11:15:15
+date: 2025-06-08
 categories:
-  - Github Pages
+  - "Github Pages"
 tags:
   - Mermaid
 ---
