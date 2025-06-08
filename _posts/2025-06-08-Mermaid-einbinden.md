@@ -1,7 +1,7 @@
 ---
 title: "Mermaid für Github Pages konfigurieren"
 date: 2025-06-08
-categories: Github_Pages
+categories: GithubPages
 tags: mermaid
 excerpt: "Der Artikel zeigt Schritt für Schritt und ganz konkret, wie man sein Github Pages Blog fit für die Verwendung von Mermaid Diagrammen macht."
 ---

@@ -1,7 +1,8 @@
 ---
 title: "Neues Blog"
 date: 2025-06-02
-category: Blog
+categories: Blog
+tags: hugo ghost blog
 excerpt: "Der Artikel beschreibt meinen Weg hin zum Blogging System Github Pages."
 ---
 
