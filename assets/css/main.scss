@@ -6,7 +6,6 @@
 
 // Eigene Styles hier anhängen
 .author__bio a {
-  color: #007acc !important;
-  text-decoration: underline !important;
-  font-weight: bold !important;
+  color: $link-color;
+  text-decoration: underline;
 }
