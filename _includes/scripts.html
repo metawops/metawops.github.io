@@ -21,13 +21,6 @@
 {% include analytics.html %}
 {% include /comments-providers/scripts.html %}
 
-{% if site.after_footer_scripts %}
-  {% for script in site.after_footer_scripts %}
-    <script src="{{ script | relative_url }}"></script>
-  {% endfor %}
-{% endif %}
-
-
 <!-- MathJax einbinden: -->
 {% if page.mathjax %}
 <script>
@@ -42,3 +35,10 @@ MathJax = {
 <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 {% endif %}
 <!-- Ende MathJax Einbindung -->
+
+{% if site.after_footer_scripts %}
+  {% for script in site.after_footer_scripts %}
+    <script src="{{ script | relative_url }}"></script>
+  {% endfor %}
+{% endif %}
+
