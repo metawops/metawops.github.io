@@ -26,4 +26,4 @@ Hier ist ein Video:
 -->
 
 
-[kategorie-github-pages]: /categories/#github-pages
+[kategorie-github-pages]: /categories/#githubpages
