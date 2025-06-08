@@ -1,10 +1,9 @@
 ---
 title: "Mermaid für Github Pages konfigurieren"
 date: 2025-06-08
-categories:
-  - "Github Pages"
-tags:
-  - mermaid
+categories: "Github Pages"
+tags: mermaid
+excerpt: "Der Artikel zeigt Schritt für Schritt und ganz konkret, wie man sein Github Pages Blog fit für die Verwendung von Mermaid Diagrammen macht."
 ---
 
 So, nachdem ich es nun endlich geschafft habe, hier in meinem [Github Pages Blog](https://pages.github.com) auch [Mermaid][mermaid-blogpost-1] Codeblöcke tatsächlich durch Mermaid rendern und als Grafik darstellen zu lassen, will ich schnell aufschreiben, was man dafür tun muss. Sonst habe ich das übermorgen auch schon wieder vergessen. 🙈
