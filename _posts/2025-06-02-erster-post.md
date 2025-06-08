@@ -10,7 +10,7 @@ Mein viele Jahre gepflegtes WordPress Blog war mir irgendwie zu "dick" geworden,
 
 [Hugo](https://gohugo.io) hatte ich mir auch vor Jahren und immer mal wieder angeschaut. Das gefiel mir eigentlich ganz gut. Aber es erfordert auch erstmal so einiges an eigener Software-Installation.
 
-Einen eigenen Rechner für sowas zuhause zu nutzen, hat immer Vor- und Nachteile. Klarer Vorteil ist, dass man alles selbst in der Hand hat. Klarer Nachteil: Man hat alles selbst in der Hand. :wink: Sprich: Man muss sich permanent um alle Software Aktualisierungen kümmern, wachsam für Bugfixes, Exploits etc. sein. :thumbsdown:
+Einen eigenen Rechner für sowas zuhause zu nutzen, hat immer Vor- und Nachteile. Klarer Vorteil ist, dass man alles selbst in der Hand hat. Klarer Nachteil: Man hat alles selbst in der Hand. 😉 Sprich: Man muss sich permanent um alle Software Aktualisierungen kümmern, wachsam für Bugfixes, Exploits etc. sein. 👎
 
 Aber dann war da ja noch dieses "[Github Pagesw](https://pages.github.com)": Hosting mit kostenlosem Github Account auf Github (in einem public Repository – aber das Blog ist ja eh "public"), viele Themes zur Auswahl, schreiben in Markdown, eigene Domain/URL möglich etc.
 
