@@ -1,0 +1,12 @@
+---
+---
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // Skin
+@import "minimal-mistakes"; // Theme
+
+// Eigene Styles hier anhängen
+.author__bio a {
+  color: #007acc !important;
+  text-decoration: underline !important;
+  font-weight: bold !important;
+}
