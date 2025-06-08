@@ -16,7 +16,7 @@ Einen eigenen Rechner für sowas zuhause zu nutzen, hat immer Vor- und Nachteile
 
 Aber dann war da ja noch dieses "[Github Pages](https://pages.github.com)": Hosting mit kostenlosem Github Account auf Github (in einem public Repository – aber das Blog ist ja eh "public"), viele Themes zur Auswahl, schreiben in Markdown, eigene Domain/URL möglich etc.
 
-Na, und wie ihr seht, probiere ich das hier jetzt mal aus und habe in den letzten Tagen schon so einiges gelernt (was ich auch hier teilweise in der Kategorie [Github Pages][kategorie-github-pages] dokumentiere).
+Na, und wie ihr seht, probiere ich das hier jetzt mal aus und habe in den letzten Tagen schon so einiges gelernt (was ich auch hier teilweise in der [Kategorie Github Pages][kategorie-github-pages] dokumentiere).
 
 Als Theme habe ich mir jetzt zunächst mal das [Remote Theme "minimal mistakes"](https://mmistakes.github.io/minimal-mistakes/) ausgesucht und [dieser Artikel](https://gwenneg.com/2024/08/17/blogging-with-minimal-effort.html) (selbst auf einem minimal mistakes basierenden Github Pages Blog) hat mir beim Reinkommen sehr geholfen!
 
