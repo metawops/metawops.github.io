@@ -21,6 +21,7 @@ plugins:
 
 include:
   - _pages
+  - _includes
 
 encoding: "utf-8"
 locale: en-US # de-DE wäre besser, aber ... siehe Doku
