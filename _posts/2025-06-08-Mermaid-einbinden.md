@@ -4,7 +4,7 @@ date: 2025-06-08
 categories:
   - "Github Pages"
 tags:
-  - Mermaid
+  - mermaid
 ---
 
 So, nachdem ich es nun endlich geschafft habe, hier in meinem [Github Pages Blog](https://pages.github.com) auch [Mermaid][mermaid-blogpost-1] Codeblöcke tatsächlich durch Mermaid rendern und als Grafik darstellen zu lassen, will ich schnell aufschreiben, was man dafür tun muss. Sonst habe ich das übermorgen auch schon wieder vergessen. 🙈
