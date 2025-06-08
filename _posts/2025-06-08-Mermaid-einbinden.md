@@ -11,10 +11,10 @@ So, nachdem ich es nun endlich geschafft habe, hier in meinem [Github Pages Blog
 
 ## Zweimal JavaScript
 Es braucht zwei JavaScript "Dinge", die passieren müssen:
-1. Es muss Mermaid selbst so inkludiert werden, dass die entsprechenden `<script>` Kommandos im durch Jekyll erzeugten HTML landen. Dieses reine Laden könnte man zwar auch über die `_config.yml` erledigen, aber da wir noch etwas Zeites brauchen, nämlich ein _Ausführen_ von JavaScript Code ...
+1. Es muss Mermaid selbst so inkludiert werden, dass die entsprechenden `<script>` Kommandos im durch Jekyll erzeugten HTML landen. Dieses reine Laden könnte man zwar auch über die `_config.yml` erledigen, aber wir brauchen noch etwas Zweites, nämlich ein _Ausführen_ von JavaScript Code:
 2. Damit Mermaid tatsächlich auch angestoßen wird und Codeblöcke mit Mermaid Code verarbeiten kann, müssen wir ein bisschen JavaScript Code ablegen/injizieren, in dem auf das Fertigladen des DOM gewartet und dann reagiert wird. 
 
-Da Schritt 2 _nicht_ über die `_config.yml` erledigt werden kann und da wir beides im Head haben wollen, machen wir das wie folgt:
+Da Schritt 2 _nicht_ über die `_config.yml` erledigt werden kann und da wir beides im `<head>` haben wollen, machen wir das wie folgt:
 * Wenn es noch kein Verzeichnis `_includes` im Github Pages Repository gibt, legen wir dies an.
 * Darin legen wir noch ein Verzeichnis namens `head` an (ohne Unterstrich).
 * In diesem Verzeichnis `_includes/head` legen wir jetzt eine Datei namens `custom.html` mit folgendem Inhalt an:
