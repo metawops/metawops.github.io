@@ -1,13 +1,9 @@
 main:
   - title: "Blog"
     url: /
-  - title: "About"
-    url: /about/
   - title: "Kategorien"
     url: /categories/
   - title: "Tags"
     url: /tags/
-  - title: "Impressum"
-    url: /impressum/
-  - title: "Datenschutz"
-    url: /datenschutz/
+  - title: "About"
+    url: /about/
