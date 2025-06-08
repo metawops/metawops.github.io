@@ -4,7 +4,6 @@ date: 2025-06-08
 categories: GithubPages
 tags: mathjax mathematik
 excerpt: "Dieser Artikel beschreibt, wie man mathematische Formeln in sein Github Pages Blog einbauen kann."
-use_math: true
 ---
 
 Formeltest, inline: `$f(x) = x^2$`
