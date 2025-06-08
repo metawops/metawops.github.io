@@ -1,6 +1,7 @@
 ---
 title: "Neues Blog"
 date: 2025-06-02
+category: Blog
 excerpt: "Der Artikel beschreibt meinen Weg hin zum Blogging System Github Pages."
 ---
 
