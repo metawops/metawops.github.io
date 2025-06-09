@@ -5,6 +5,7 @@ categories: GithubPages
 tags: mathjax mathematik
 excerpt: "Dieser Artikel beschreibt, wie man mathematische Formeln in sein Github Pages Blog einbauen kann."
 mathjax: true
+last_modified_at: 2026-06-09
 ---
 
 Damit man in seinem Github Pages basierten Blog (und unter Benutzung des beliebten Themes _minimal mistakes_) auch hübsche, LaTeX-like Formeln einbauen kann, bietet sich z.B. MathJax an, da der Standard Markdown Interpreter _kramdown_ damit schon von Haus aus umgehen kann. Dazu sind folgende Schritte notwendig.
