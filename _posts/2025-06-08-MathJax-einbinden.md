@@ -14,7 +14,7 @@ Damit man in seinem Github Pages basierten Blog (und unter Benutzung des beliebt
 1. Sollte man in seinem Github Pages Repository noch keine Datei `_includes/scripts.html` haben, muss man diese aus dem [_minmal mistakes_ Repository](https://github.com/mmistakes/minimal-mistakes/blob/master/_includes/scripts.html) in sein eigenes Repository kopieren.
 2. In der Kopie von `scripts.html` im eigenen Repository fügt man den folgenden Code _nach_ Analytics (und Comments, falls konfiguriert) und vor dem "after.footer" Abschnitt ein. Meine komplette `scripts.html` sieht dann so aus – ich habe mal den neuen Block für MathJax mit HTML Kommentaren kenntlich gemacht:
 
-   ```
+   ```liquid
    {% raw %}
    {% if site.footer_scripts %}
    {% for script in site.footer_scripts %}
