@@ -17,7 +17,6 @@ Damit man in seinem Github Pages basierten Blog (und unter Benutzung des beliebt
  
    {% raw %} 
    ```html
-   <!-- MathJax einbinden: -->
    {% if page.mathjax %}
    <script>
    MathJax = {
@@ -30,7 +29,6 @@ Damit man in seinem Github Pages basierten Blog (und unter Benutzung des beliebt
    </script>
    <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
    {% endif %}
-   <!-- Ende MathJax Einbindung -->   
    ```
    {% endraw %}
    
