@@ -6,10 +6,9 @@ tags: mathjax mathematik
 excerpt: "Dieser Artikel beschreibt, wie man mathematische Formeln in sein Github Pages Blog einbauen kann."
 ---
 
-Formeltest, inline: `$f(x) = x^2$`
+Formeltest, inline: $f(x) = x^2$
 
 Formeltest im Block:
-```
 $$
     f(n) =
       \begin{cases}
@@ -17,4 +16,3 @@ $$
       3n+1, & \text{if $n$ is odd}
       \end{cases}
 $$
-```
