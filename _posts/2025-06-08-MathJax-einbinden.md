@@ -116,6 +116,5 @@ $$
       3n+1, & \text{if $n$ is odd}
       \end{cases}
 $$
-
-◼️🔳🔲◻️⬛️⬜️💟💜❇️
+🔲
 {: style="text-align: right" }
