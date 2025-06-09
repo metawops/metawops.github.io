@@ -63,14 +63,32 @@ Damit man in seinem Github Pages basierten Blog (und unter Benutzung des beliebt
    ```
 
 3. Will man nun in einem Post auch mathematische Formeln benutzen, hat man zwei Optionen:
-   1. MathJax global für alle Posts aktivieren, egal, ob man sie nutzt oder nicht.
-   2. MathJax nur pro Post, in dem auch Formeln vorkommen aktivieren.
+   1. MathJax global für alle Posts aktivieren, egal, ob man sie nutzt oder nicht.  
+   Dafür in der `_config.yml` bei den Defaults für Posts einfach `mathjax: true` erägnzen.
+   2. MathJax nur pro Post, in dem auch Formeln vorkommen aktivieren.  
+   Dafür einfach im Front Matter des Posts eine Zeile mit `mathjax: true` hinzufügen.
+
+Fertig ist die Laube. Zumindest hat es bei mir so geklappt.
 
 ## Ein paar Testformeln
 
-Formeltest, inline: $f(x) = x^2$
+Wichtig ist noch zu erwähnen, dass man nun Formeln _nicht_ über einen Markdown Codeblock, also mit Backticks, einbaut!
 
-Formeltest im Block:
+Vielmehr schreibt man entweder direkt im Text ("inline") die Formel innerhalb von zwei $ Zeichen, also `$f(x) = x^2$`. Das ergibt dann z.B. diese inline Formel: $f(x) = x^2$.
+
+Oder, wenn man abgesetzte Formeln will ("Blockformel"), dann schreibt man das ganze in doppelte $$ Zeichen, also so:
+```
+$$
+    f(n) =
+      \begin{cases}
+      n/2,  & \text{if $n$ is even} \\
+      3n+1, & \text{if $n$ is odd}
+      \end{cases}
+$$
+```
+
+Das ergibt dann dieses:
+
 $$
     f(n) =
       \begin{cases}
