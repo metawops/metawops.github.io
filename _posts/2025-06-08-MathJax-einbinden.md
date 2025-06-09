@@ -16,7 +16,7 @@ Damit man in seinem Github Pages basierten Blog (und unter Benutzung des beliebt
 2. In der Kopie von `scripts.html` im eigenen Repository fügt man den folgenden Code _nach_ dem Include von Analytics (und Comments, falls konfiguriert) und vor dem `site.after_footer_scripts` Abschnitt ein:
  
    {% raw %} 
-   ```liquid
+   ```html
    <!-- MathJax einbinden: -->
    {% if page.mathjax %}
    <script>
