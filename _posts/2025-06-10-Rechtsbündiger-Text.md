@@ -31,5 +31,7 @@ Aber wir haben Glück. Der Standard Markdown Interpreter, der bei Github Pages w
 
 Natürlich widerspricht so etwas ein wenig dem Markdown Gedanken, möglichst wenig Auszeichnung in seinem Dokument zu haben und sich stattdessen auf einen möglichst gut lesbaren Inhalt zu konzentrieren. Aber manchmal kann man auch eine kleine Ausnahme machen, finde ich. 😉
 
+Mehr zum Thema Ausrichtung/Alignment (auch Blocksatz und auch für Bilder) gibt es [auf dieser Doku-Seite](https://mmistakes.github.io/minimal-mistakes/docs/utility-classes/) des minimal mistakes Themes.
+
 🔲
 {: style="text-align: right" }
