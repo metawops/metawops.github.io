@@ -9,6 +9,7 @@ baseurl: ""
 copyright: "Stefan Wolfrum. Made with ❤️ on iPads & Macs in Bonn, Germany"
 license: "CC BY-SA"
 license_url: https://creativecommons.org/licenses/by-sa/4.0/deed.de
+
 search: true
 search_full_content: true
 
