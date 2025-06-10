@@ -1,4 +1,5 @@
 ---
+# Nur für Jekyll: Frontmatter erforderlich
 ---
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // Skin
@@ -12,4 +13,12 @@
 .author__bio a:hover,
 .author__bio a:focus {
   color: $link-color-hover;
+}
+
+/* Word Wrap für Codeblöcke aktivieren */
+.highlight pre,
+pre,
+code {
+  white-space: pre-wrap !important;
+  word-break: break-word !important;
 }
