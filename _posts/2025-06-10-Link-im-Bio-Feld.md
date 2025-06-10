@@ -64,7 +64,7 @@ Die Datei könnte also z.B. so aussehen:
 }
 ```
 
-Hier habe ich gleich anstelle fixer Farben für den Link und das Hovern über dem Link die Variablen `$link-color` respektive `$link-color-hover` eingesetzt, die aus dem Theme kommen und für die aktuelle Skin Linkfarben stehen. Sowas geht dann eben nur mit SCSS.
+Hier habe ich gleich anstelle fixer Farben für den Link und das Hovern über dem Link die Variablen `$link-color` respektive `$link-color-hover` eingesetzt, die aus dem Theme kommen und für die aktuellen Skin-Linkfarben stehen. Sowas geht dann eben nur mit SCSS.
 
 Und schon ist der verlinkte Text in der Link-Farbe des aktuell eingestellten Skins des _minimal mistakes_ Themes sichtbar:
 
