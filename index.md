@@ -1,9 +1,10 @@
 ---
-layout: splash # Das Layout 'home' wird oft vom Theme bereitgestellt und listet Blogposts auf
+layout: home
 title: Logbuch
 header:
   image: /assets/images/IMG_0577.jpeg
   caption: "Keychron Mainboard"
+classes: wide
 ---
 
 ## Willkommen auf meinem Blog!
