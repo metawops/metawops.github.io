@@ -14,11 +14,3 @@
 .author__bio a:focus {
   color: $link-color-hover;
 }
-
-/* Word Wrap für Codeblöcke aktivieren */
-.highlight pre,
-pre,
-code {
-  white-space: pre-wrap !important;
-  word-break: break-word !important;
-}
