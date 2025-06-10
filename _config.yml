@@ -7,6 +7,7 @@ name: Stefan Wolfrum
 url: "https://metawops.github.io"
 baseurl: ""
 copyright: "Stefan Wolfrum. Gebastelt mit ❤️ auf iPads & Macs in Bonn"
+logo: "/assets/images/logo-01.png"
 
 license: "CC BY-SA"
 license_url: https://creativecommons.org/licenses/by-sa/4.0/deed.de
@@ -90,7 +91,7 @@ comments:
 author:
   name: "Stefan Wolfrum"
   avatar: "/assets/images/bio-photo.jpg"
-  bio: "Co-Gründer [MakerSpace Bonn](https://makerspacebonn.de) und OK Lab Bonn. Geek."
+  bio: "Co-Gründer [MakerSpace Bonn](https://makerspacebonn.de) und OK Lab Bonn. Geek at large."
   location: "Bonn, Germany"
   links:
     - label: "Mastodon"
