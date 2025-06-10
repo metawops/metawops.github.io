@@ -35,6 +35,9 @@ include:
   - _pages
   - _includes
 
+sass:
+  style: compressed
+
 encoding: "utf-8"
 locale: en-US # de-DE wäre besser, aber ... siehe Doku
 
