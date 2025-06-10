@@ -36,7 +36,7 @@ include:
   - _includes
 
 encoding: "utf-8"
-locale: en-US # de-DE wäre besser, aber ... siehe Doku
+locale: de-DE # de-DE wäre besser, aber ... siehe Doku
 
 enable_copy_code_button: true
 
