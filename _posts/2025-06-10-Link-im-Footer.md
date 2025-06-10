@@ -24,7 +24,7 @@ license: "CC BY-SA"
 license_url: https://creativecommons.org/licenses/by-sa/4.0/deed.de
 ```
 
-Diese beiden neuen Variablen, die wir uns gerade ausgedacht und mit Werten belegt haben, werden wir jetzt in der letzten Zeile unserer eigenen `footer.html` Datei benutzen. Das sieht dann so aus:
+Diese beiden neuen Variablen, die wir uns gerade ausgedacht und mit Werten belegt haben, werden wir jetzt in der letzten Zeile unserer eigenen `footer.html` Datei benutzen. Das sieht dann wie folgt aus (horizontal scrollen im Code-Block; ist ja nur eine Zeile ohne Zeilenumbrüche; geht übrigens mit gedrückt gehaltener Shift-Taste und Maus-Scrollrad! 😉):
 
 {% raw %}
 ```liquid
