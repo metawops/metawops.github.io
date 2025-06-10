@@ -54,4 +54,7 @@ Damit das funktioniert also immer Mermaid Code als solchen im Markdown kennzeich
 ```
 ````
 
+🔲
+{: style="text-align: right" }
+
 [mermaid-blogpost-1]: https://metawops.github.io/markdown/Mermaid/
