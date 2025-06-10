@@ -1,6 +1,9 @@
 ---
 layout: home # Das Layout 'home' wird oft vom Theme bereitgestellt und listet Blogposts auf
 title: Logbuch
+header:
+  image: /assets/images/IMG_0577.jpeg
+  caption: "Keychron Mainboard"
 ---
 
 ## Willkommen auf meinem Blog!
