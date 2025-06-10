@@ -7,6 +7,7 @@ name: Stefan Wolfrum
 url: "https://metawops.github.io"
 baseurl: ""
 copyright: "Stefan Wolfrum. Made with ❤️ on iPads & Macs in Bonn, Germany"
+
 license: "CC BY-SA"
 license_url: https://creativecommons.org/licenses/by-sa/4.0/deed.de
 
@@ -22,7 +23,7 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
   - jekyll-sitemap
-  
+
 jekyll-sitemap:
   sitemap_style: "/sitemap.xsl"
   exclude:
