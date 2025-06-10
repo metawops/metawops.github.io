@@ -5,9 +5,9 @@ title: Logbuch
 
 ## Willkommen auf meinem Blog!
 
-Hier notiere ich Wissen, Erkenntnisse, Fragen rund um meine Lieblingsthemen aus den Bereichen Technik, Naturwissenschaften, Elektronik, Gadgets, Hausautomatisierung etc.  
-Hin und wieder kann auch mal was anderes einstreuen ...  
-Schau dich gerne um! Kommentieren geht auch – wenn Du einen GitHub Account hast.
+Hier notiere ich Wissen, Erkenntnisse, Fragen rund um meine Lieblingsthemen aus den Bereichen Technik, Naturwissenschaften, Elektronik, Gadgets, Hausautomatisierung, Synthesizer, Taschenrechner, Analog Computing, Microcomputer, Computergrafik, Data Science, Visualisierung, Apple, Kaffee, Hunde, Katzen etc.  
+
+Schau dich gerne um! 🤗 Kommentieren geht auch – wenn Du einen (kostenlosen 😉) GitHub Account hast. – Viel Spaß!
 
 <!--
 Wenn dein Theme kein spezielles 'home'-Layout hat, das Posts auflistet,
