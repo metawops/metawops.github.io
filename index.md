@@ -2,7 +2,7 @@
 layout: home
 title: Logbuch
 header:
-  image: /assets/images/IMG_0577.jpeg
+  image: /assets/images/header.jpeg
   caption: "Keychron Mainboard"
 classes: wide
 ---
