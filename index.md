@@ -4,11 +4,6 @@ title: Logbuch
 header:
   image: /assets/images/header.jpeg
   caption: "Keychron Mainboard Ausschnitt"
-  overlay_color: "#000"
-  overlay_filter: "0.5"
-  actions:
-    - label: "Mehr erfahren"
-      url: "/about/"
 classes: wide
 ---
 
