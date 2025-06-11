@@ -4,6 +4,7 @@ date: 2025-06-08
 categories: GithubPages
 tags: mathjax mathematik
 excerpt: "Dieser Artikel beschreibt, wie man mathematische Formeln in sein Github Pages Blog einbauen kann."
+description: "Dieser Artikel beschreibt, wie man mathematische Formeln in sein Github Pages Blog einbauen kann."
 mathjax: true
 last_modified_at: 2026-06-09
 header:
