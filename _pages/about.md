@@ -32,6 +32,7 @@ Es wuchs eine Begeisterung und Ehrfurcht vor der (frühen) Firma HP und deren Gr
 ## Bonn
 ### OK Lab / Code for Bonn
 Beim ersten Bonner BarCamp 2015 trat ich mit Sven Hense von der Stadt Bonn auf die "Bühne" und schlug die Gründung des "OK Lab Bonn" vor. OK steht hier für _Open Knowledge_ und diese OK Labs, die es in mehreren Städten gibt, sind eine Initiative der [Open Knowledge Foundation](https://okfn.org/en/), die weltweit agiert. Kurz darauf wurde das OK Lab Bonn gegründet, in dem vor allem die "[Code for Germany](https://codefor.de)" Aktion im Fokus stand.
+
 ![OK Lab Bonn](../assets/images/oklabbonn.jpg)
 _Foto: Micky Roth_
 
@@ -41,6 +42,7 @@ Später wurde daraus das [OK Lab Bonn Rhein Sieg](https://codeforbonnrheinsieg.d
 In Bonn gab es das schöne "Elektronikbasteln" Treffen, das Salim Deeb ins Leben gerufen hatte. Dort war ich einige Male und es gab immer einen tollen Austausch mit Gleichgesinnten, die etwas gebastelt hatten und es vorstellten. Hier konnte man auch alle Fragen stellen, bekam Antworten und lernte viel.
 Doch Salim und ich träumten von einem richten, dedizierten Raum, einem Ort, der immer offen hat, wo man hingehen und basteln kann, wo es Geräte gibt, die man selbst nicht hat, wo Erfahrungen und Wissen getauscht werden, wo jeder seine Bastel-Projekte voranbringen und Gleichgesinnte finden kann. Ein MakerSpace! 
 Wir beide haben die Idee über Jahre vorangetrieben, als Rechtsform einen Verein gegründet und nach längerer Suche sogar Räumlichkeiten gefunden. Am 3. März 2018 war feierliche Eröffnung des ersten [MakerSpace Bonn](https://makerspacebonn.de)!
+
 ![MakerSpace Eröffnung](../assets/images/makerspace1.jpeg)
 _Foto: Philipp Schindera_
 
