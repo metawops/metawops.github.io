@@ -5,6 +5,8 @@ last_modified_at: 2025-06-10
 categories: GithubPages
 tags: blog scss
 excerpt: Der Artikel zeigt, wie man in der Bio Angabe seines Github Pages Blogs einen Link unterbringen und stylen kann.
+header:
+  teaser: SCR-20250610-jqtc.png
 ---
 ## Worum geht's?
 Ich wollte in meinem auf dem Theme _minimal mistakes_ basierenden Github Pages Blog in der `author/bio` Angabe in der `_config.yml` einen Text verlinken. Positiv überrascht war ich, dass das ganz einfach geht: Die `bio` Angabe erlaubt Markdown! 🎉
