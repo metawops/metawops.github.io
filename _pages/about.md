@@ -29,9 +29,12 @@ Später gehörte ich zu den stolzen Besitzern des weltweit ersten Grafik-Taschen
 Nachdem ich früher immer HPs "komisches" UPN Eingabesystem abgelehnt hatte, lachte mich der 1990 eingeführte HP48SX dann doch irgendwie an und ich entschloss mich, diese unbekannte Welt mal zu erforschen. Schnell war ich begeistert, es folgte der HP48GX, den ich _noch_ ein wenig mehr liebte und der mich lange im Studium begleitete. Ich lernte neben der vorgesehenen Sprache UserRPL dann auch SysRPL und Assembler und werde nie vergessen, wie ich in den Niederlanden bei einer HP Taschenrechner Konferenz sowohl den legendären Wlodek Mier-Jedrzejowicz, als auch die HP48G/GX Projektleiterin Diana Byrne persönlich kennenlernen durfte.
 Es wuchs eine Begeisterung und Ehrfurcht vor der (frühen) Firma HP und deren Gründer Bill Hewlett und Dave Packard. Ich begann nicht nur, einige Ausgaben des HP Journals zu sammeln, sondern auch allerlei HP Taschenrechner. Mein Traum war immer, einen HP-85 Computer zu besitzen, seit ich den zu Schulzeiten bei einem Mitschüler zuhause einige Male gesehen und programmiert habe. Der Traum wurde vor wenigen Jahren wahr, als ich einen sehr gut erhaltenen HP-85A zu einem sehr fairen Preis erstehen konnte. 🤩
 
-### Bonn
+## Bonn
+### OK Lab / Code for Bonn
 Beim ersten Bonner BarCamp 2015 trat ich mit Sven Hense von der Stadt Bonn auf die "Bühne" und schlug die Gründung des "OK Lab Bonn" vor. OK steht hier für _Open Knowledge_ und diese OK Labs, die es in mehreren Städten gibt, sind eine Initiative der [Open Knowledge Foundation](https://okfn.org/en/), die weltweit agiert. Kurz darauf wurde das OK Lab Bonn gegründet, in dem vor allem die "[Code for Germany](https://codefor.de)" Aktion im Fokus stand.
 ![OK Lab Bonn](../assets/images/oklabbonn.jpg)
+_Foto: Micky Roth_
+
 Später wurde daraus das [OK Lab Bonn Rhein Sieg](https://codeforbonnrheinsieg.de/).
 
 ### MakerSpace
