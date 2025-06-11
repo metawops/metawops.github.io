@@ -13,7 +13,7 @@ Am Ende eines Blog Posts hätte ich gerne ähnlich wie am Ende eines mathematisc
 Problem: Wir schreiben ja unsere Blog Posts hier in der Auszeichnungssprache/-syntax "Markdown" und das kann eigentlich so etwas nicht.
 
 ## Lösung
-Aber wir haben Glück. Der Standard Markdown Interpreter, der bei Github Pages werkelt, ist _kramdown_ und diesen kann man dazu bringen, Text rechtsbündig zu setzen. Das geht so:
+Aber wir haben Glück. Der Standard Markdown Interpreter, [der bei Github Pages werkelt, ist _kramdown_][kramdown] und diesen kann man dazu bringen, Text rechtsbündig zu setzen. Das geht so:
 
 1. Zunächst einmal sicherstellen, dass auch wirklich _kramdown_ benutzt wird. Ich habe dazu in meiner `_config.yml` sicherheitshalber diesen Eintrag auf top level hinzugefügt:
    ```yaml
@@ -31,7 +31,10 @@ Aber wir haben Glück. Der Standard Markdown Interpreter, der bei Github Pages w
 
 Natürlich widerspricht so etwas ein wenig dem Markdown Gedanken, möglichst wenig Auszeichnung in seinem Dokument zu haben und sich stattdessen auf einen möglichst gut lesbaren Inhalt zu konzentrieren. Aber manchmal kann man auch eine kleine Ausnahme machen, finde ich. 😉
 
-Mehr zum Thema Ausrichtung/Alignment (auch Blocksatz und auch für Bilder) gibt es [auf dieser Doku-Seite](https://mmistakes.github.io/minimal-mistakes/docs/utility-classes/) des minimal mistakes Themes.
+Mehr zum Thema Ausrichtung/Alignment (auch Blocksatz und auch für Bilder) gibt es [auf dieser Doku-Seite][alignment] des minimal mistakes Themes.
 
 🔲
 {: style="text-align: right" }
+
+[kramdown]: https://github.blog/news-insights/a-look-behind-our-decision-to-standardize-on-a-single-markdown-engine-for-github-pages/
+[alignment]: https://mmistakes.github.io/minimal-mistakes/docs/utility-classes/
