@@ -1,6 +1,7 @@
 ---
 title: "About me"
 permalink: /about/
+classes: wide
 ---
 ![Stefan und Joy](/assets/images/StefanJoy.jpeg){: .align-right style="margin-top: -2em; max-width: 300px;"}
 
