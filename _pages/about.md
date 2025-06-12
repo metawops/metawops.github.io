@@ -3,6 +3,7 @@ title: "About me"
 permalink: /about/
 ---
 
+<img align="right" src="/assets/images/StefanJoy.jpeg" width="200">
 ### Dr. Böhm
 Alles fing vermutlich damit an, dass mein Papa in den 70er/80er Jahren zwei [Dr. Böhm Orgeln][drboehm] selbst gebaut hat. Mit allem drum und dran, vor allem eben auch mit der Elektronik und dem Löten. Der "Duft" des [Kolophoniums][kolophonium] ist mir seitdem nie mehr aus der Nase gegangen. (Witzig, dass ich den selben Stoff später auf den Cellobogen schmierte ...)
 
@@ -63,13 +64,11 @@ Auf den Seiten eines unserer Sponsoren, dem O'Reilly/dpunkt Verlag, gibt es auch
 [busch]: https://de.wikipedia.org/wiki/Busch_(Modellbahnzubehör)
 [carly]: https://de.wikipedia.org/wiki/Carly_Fiorina
 [cfg]: https://codefor.de
-[drboehm]: https://de.wikipedia.org/wiki/Dr.-Böhm-Orgel
 [happy]: https://de.wikipedia.org/wiki/Happy_Computer
 [hex]: https://de.wikipedia.org/wiki/Hexadezimalsystem
 [ibook]: https://de.wikipedia.org/wiki/IBook#iBook_Dual_USB
 [interview]: https://dpunkt.de/einfach-mal-machen-makerspace-bonn/
 [kai]: https://de.wikipedia.org/wiki/Kai_Krause
-[kolophonium]: https://de.wikipedia.org/wiki/Kolophonium
 [micro2090]: https://www.busch-modell.de/information/Microtronic-Computer.aspx
 [msb]: https://makerspacebonn.de
 [nipogi-minipc]: https://amzn.to/4mXEfQb
