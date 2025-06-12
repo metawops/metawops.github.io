@@ -3,7 +3,7 @@ title: "About me"
 permalink: /about/
 classes: wide
 ---
-![Stefan und Joy](/assets/images/StefanJoy.jpeg){: .align-right style="margin-top: -2em; max-width: 240px; padding-left: 4em;"}
+![Stefan und Joy](/assets/images/StefanJoy.jpeg){: .align-right style="margin-top: -2em; max-width: 300px; padding-left: 4em; padding-bottom: 4em;"}
 
 ### Dr. Böhm
 Alles fing vermutlich damit an, dass mein Papa in den 70er/80er Jahren zwei [Dr. Böhm Orgeln][drboehm] selbst gebaut hat. Mit allem drum und dran, vor allem eben auch mit der Elektronik und dem Löten. Der "Duft" des [Kolophoniums][kolophonium] ist mir seitdem nie mehr aus der Nase gegangen. (Witzig, dass ich den selben Stoff später auf den Cellobogen schmierte ...)
