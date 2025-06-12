@@ -3,8 +3,8 @@ title: "About me"
 permalink: /about/
 ---
 
-<img align="right" src="/assets/images/StefanJoy.jpeg" width="200">
 ### Dr. Böhm
+<img align="right" src="/assets/images/StefanJoy.jpeg" width="200">
 Alles fing vermutlich damit an, dass mein Papa in den 70er/80er Jahren zwei [Dr. Böhm Orgeln][drboehm] selbst gebaut hat. Mit allem drum und dran, vor allem eben auch mit der Elektronik und dem Löten. Der "Duft" des [Kolophoniums][kolophonium] ist mir seitdem nie mehr aus der Nase gegangen. (Witzig, dass ich den selben Stoff später auf den Cellobogen schmierte ...)
 
 ### Busch Elektronik
