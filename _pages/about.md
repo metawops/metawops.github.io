@@ -70,6 +70,7 @@ Auf den Seiten eines unserer Sponsoren, dem O'Reilly/dpunkt Verlag, gibt es auch
 [ibook]: https://de.wikipedia.org/wiki/IBook#iBook_Dual_USB
 [interview]: https://dpunkt.de/einfach-mal-machen-makerspace-bonn/
 [kai]: https://de.wikipedia.org/wiki/Kai_Krause
+[kolophonium]: https://de.wikipedia.org/wiki/Kolophonium
 [micro2090]: https://www.busch-modell.de/information/Microtronic-Computer.aspx
 [msb]: https://makerspacebonn.de
 [nipogi-minipc]: https://amzn.to/4mXEfQb
@@ -84,5 +85,3 @@ Auf den Seiten eines unserer Sponsoren, dem O'Reilly/dpunkt Verlag, gibt es auch
 [ti30]: http://www.datamath.org/SCI/MAJESTIC/TI-30.htm
 [ti59]: http://www.datamath.org/SCI/WEDGE/TI-59.htm
 [zenith]: https://de.wikipedia.org/wiki/Zenith_Electronics_Corporation
-
-.-
