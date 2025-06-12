@@ -4,7 +4,7 @@ permalink: /about/
 ---
 
 ### Dr. Böhm
-<img align="right" src="/assets/images/StefanJoy.jpeg" width="200">
+<img align="right" src="/assets/images/StefanJoy.jpeg" width="320">
 Alles fing vermutlich damit an, dass mein Papa in den 70er/80er Jahren zwei [Dr. Böhm Orgeln][drboehm] selbst gebaut hat. Mit allem drum und dran, vor allem eben auch mit der Elektronik und dem Löten. Der "Duft" des [Kolophoniums][kolophonium] ist mir seitdem nie mehr aus der Nase gegangen. (Witzig, dass ich den selben Stoff später auf den Cellobogen schmierte ...)
 
 ### Busch Elektronik
@@ -64,6 +64,7 @@ Auf den Seiten eines unserer Sponsoren, dem O'Reilly/dpunkt Verlag, gibt es auch
 [busch]: https://de.wikipedia.org/wiki/Busch_(Modellbahnzubehör)
 [carly]: https://de.wikipedia.org/wiki/Carly_Fiorina
 [cfg]: https://codefor.de
+[drboehm]: https://de.wikipedia.org/wiki/Dr.-Böhm-Orgel
 [happy]: https://de.wikipedia.org/wiki/Happy_Computer
 [hex]: https://de.wikipedia.org/wiki/Hexadezimalsystem
 [ibook]: https://de.wikipedia.org/wiki/IBook#iBook_Dual_USB
@@ -83,3 +84,5 @@ Auf den Seiten eines unserer Sponsoren, dem O'Reilly/dpunkt Verlag, gibt es auch
 [ti30]: http://www.datamath.org/SCI/MAJESTIC/TI-30.htm
 [ti59]: http://www.datamath.org/SCI/WEDGE/TI-59.htm
 [zenith]: https://de.wikipedia.org/wiki/Zenith_Electronics_Corporation
+
+.-
