@@ -4,7 +4,9 @@ title: Logbuch
 header:
   image: /assets/images/header.jpeg
   caption: "Keychron Mainboard Ausschnitt"
-classes: wide
+classes:
+  - wide
+  - blocksatz
 ---
 
 ## Willkommen auf meinem Blog!
