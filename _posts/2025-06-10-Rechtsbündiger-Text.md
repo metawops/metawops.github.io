@@ -5,6 +5,7 @@ last_modified_at: 2025-06-10
 categories: Markdown
 tags: rechtsbündig blog kramdown
 excerpt: Im Artikel wird beschrieben, wie man in seinen Github Pages Seiten Text rechtsbündig setzen kann.
+classes: blocksatz
 ---
 
 ## Herausfoderung
