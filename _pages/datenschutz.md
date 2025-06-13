@@ -129,6 +129,23 @@ https://policies.google.com/privacy
 
 abrufbaren Datenschutzhinweisen bereit.
 
+### Plausible Analytics
+
+Dieser Internetauftritt nutzt das OpenSource Web Analytics Produkt Plausible Analytics.
+
+Plausible Analytics nutzt _keine_ Cookies, ist DSGVO-konform, privacy-focused, in der EU gehostet und OpenSource.
+
+Details können der [Data Policy von Plausible Analytics](https://plausible.io/data-policy) entnommen werden.
+
+Die Adresse von Plausible lautet:
+
+Plausible Insights OÜ
+Västriku tn 2, 50403, Tartu, Estonia
+Registration number 14709274
+
+Represented by Uku Täht
+Email: hello@plausible.io
+
 ### Amazon-Partnerprogramm
 
 In unserem Internetauftritt setzen wir das AMAZON-Partnerprogramm ein. Es handelt sich hierbei um einen Dienst der Amazon Europe Core S.à r.l., 5 Rue Plaetis, L -2338 Luxemburg.  Über das AMAZON-Partnerprogramm werden in unserem Internetauftritt Werbeanzeigen von Amazon.de platziert. Klicken Sie auf eine dieser Werbeanzeigen, werden Sie zu dem damit korrespondierenden Angebot auf dem AMZON-Internetportal weitergeleitet. Sofern Sie sich dort anschließend für den Kauf des beworbenen Produkts entscheiden, erhalten wir hierfür eine „Vermittlungsprovision“ von Amazon.
