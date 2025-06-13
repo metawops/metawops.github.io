@@ -67,6 +67,7 @@ defaults:
       share: true
       related: true
       show_date: true
+      classes: blocksatz
       #mathjax: true
   # _pages
   - scope:
@@ -75,6 +76,7 @@ defaults:
     values:
       layout: single
       author_profile: true
+      classes: blocksatz
 
 
 comments:
