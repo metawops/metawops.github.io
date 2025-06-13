@@ -15,7 +15,8 @@
   color: $link-color-hover;
 }
 
-.blocksatz .page__content p {
+.blocksatz .page__content p,
+.blocksatz .page__content li {
   text-align: justify;
   hyphens: auto;
   -webkit-hyphens: auto;
