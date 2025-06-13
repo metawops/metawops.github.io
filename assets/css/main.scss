@@ -15,18 +15,9 @@
   color: $link-color-hover;
 }
 
-.mastodon-share-button {
-  display: inline-block;
-  background-color: #6364ff; /* Mastodon-Blau */
-  color: #fff;
-  padding: 8px 14px;
-  border-radius: 4px;
-  font-weight: 600;
-  text-decoration: none;
-  margin-right: 8px;
-  transition: background 0.2s;
-}
-.mastodon-share-button:hover {
-  background-color: #2b90d9;
-  color: #fff;
+.blocksatz .page__content {
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
 }
