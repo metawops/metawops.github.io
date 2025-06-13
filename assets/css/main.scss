@@ -15,10 +15,26 @@
   color: $link-color-hover;
 }
 
+/* Für alle Layouts außer home */
 .blocksatz .page__content p,
 .blocksatz .page__content ul,
 .blocksatz .page__content ol,
 .blocksatz .page__content li {
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+}
+
+/* Speziell für home-Layout */
+.blocksatz .feature__wrapper p,
+.blocksatz .feature__wrapper ul,
+.blocksatz .feature__wrapper ol,
+.blocksatz .feature__wrapper li,
+.blocksatz .archive p,
+.blocksatz .archive ul,
+.blocksatz .archive ol,
+.blocksatz .archive li {
   text-align: justify;
   hyphens: auto;
   -webkit-hyphens: auto;
