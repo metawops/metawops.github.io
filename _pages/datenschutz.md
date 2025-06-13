@@ -131,20 +131,20 @@ abrufbaren Datenschutzhinweisen bereit.
 
 ### Plausible Analytics
 
-Dieser Internetauftritt nutzt das OpenSource Web Analytics Produkt Plausible Analytics.
+Dieser Internetauftritt nutzt das Web Analytics Produkt [Plausible Analytics](https://plausible.io).
 
-Plausible Analytics nutzt _keine_ Cookies, ist DSGVO-konform, privacy-focused, in der EU gehostet und OpenSource.
+Plausible Analytics nutzt _keine_ Cookies, ist DSGVO-konform, privacy-focused, in der EU gehostet und [OpenSource](https://github.com/plausible/docs).
 
 Details können der [Data Policy von Plausible Analytics](https://plausible.io/data-policy) entnommen werden.
 
 Die Adresse von Plausible lautet:
 
-Plausible Insights OÜ
-Västriku tn 2, 50403, Tartu, Estonia
-Registration number 14709274
+Plausible Insights OÜ  
+Västriku tn 2, 50403, Tartu, Estonia  
+Registration number 14709274  
 
-Represented by Uku Täht
-Email: hello@plausible.io
+Represented by Uku Täht  
+Email: hello@plausible.io  
 
 ### Amazon-Partnerprogramm
 
