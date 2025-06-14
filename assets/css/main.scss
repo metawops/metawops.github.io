@@ -41,79 +41,73 @@
   -ms-hyphens: auto;
 }
 
-// In deine _sass/custom.scss oder direkt in assets/css/main.scss einfügen
-// (nach dem Frontmatter ---)
+// Zuerst: Font Awesome korrekt einbinden
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
 
-// Basis-Styling für alle Hinweisboxen
+// Alle Notice-Typen: Kursivschrift komplett entfernen
+.notice,
+.notice *,
+.notice p,
+.notice strong,
+blockquote.notice {
+  font-style: normal !important;
+}
+
+// Basis-Layout für alle Notices
 .notice {
   position: relative;
-  padding: 1em 1.5em 1em 4.5em !important;
-  margin: 1.5em 0;
+  padding: 1rem 1rem 1rem 4rem !important;
+  margin: 1.5rem 0 !important;
+  border-left: 4px solid #ccc;
   border-radius: 4px;
-  border-left: 4px solid;
-  font-style: normal !important;
-  background-color: rgba(255, 255, 255, 0.15);
-
-  // Icon-Standardstyling
+  background-color: #f8f9fa;
+  
+  // Icon positioning
   &::before {
-    font-family: "Font Awesome 6 Free";
-    font-weight: 900;
-    position: absolute;
-    left: 1.5em;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 1.5em;
-  }
-
-  // Titel in erster Zeile
-  > :first-child {
-    display: inline !important;
-    margin-right: 0.5em;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-
-  // Absätze innerhalb der Box
-  p {
-    display: inline;
-    margin: 0 !important;
+    font-family: "Font Awesome 6 Free", "FontAwesome" !important;
+    font-weight: 900 !important;
     font-style: normal !important;
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    font-size: 1.3rem;
+    line-height: 1;
   }
 }
 
-// Individuelle Typen
+// Spezifische Typen mit korrekten Unicode-Werten
 .notice--info {
   border-color: #2196f3;
-  background: #e3f2fd;
+  background-color: #e3f2fd;
   &::before {
-    content: "\f05a"; // fa-circle-info
+    content: "\f05a" !important; // fa-info-circle
     color: #2196f3;
   }
 }
 
 .notice--warning {
   border-color: #ff9800;
-  background: #fff3e0;
+  background-color: #fff3e0;
   &::before {
-    content: "\f071"; // fa-triangle-exclamation
+    content: "\f071" !important; // fa-exclamation-triangle
     color: #ff9800;
   }
 }
 
 .notice--success {
   border-color: #4caf50;
-  background: #e8f5e9;
+  background-color: #e8f5e9;
   &::before {
-    content: "\f058"; // fa-check-circle
+    content: "\f058" !important; // fa-check-circle
     color: #4caf50;
   }
 }
 
 .notice--danger {
   border-color: #f44336;
-  background: #ffebee;
+  background-color: #ffebee;
   &::before {
-    content: "\f06a"; // fa-exclamation-circle
+    content: "\f06a" !important; // fa-exclamation-circle
     color: #f44336;
   }
 }

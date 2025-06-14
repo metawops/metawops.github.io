@@ -19,6 +19,7 @@ repository: metawops/metawops.github.io
 
 remote_theme: mmistakes/minimal-mistakes
 minimal_mistakes_skin: sunrise
+font_awesome: true
 
 plugins:
   - jekyll-feed
