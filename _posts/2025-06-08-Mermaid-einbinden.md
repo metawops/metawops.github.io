@@ -6,6 +6,8 @@ categories:
 tags:
   - mermaid
 excerpt: "Der Artikel zeigt Schritt für Schritt und ganz konkret, wie man sein Github Pages Blog fit für die Verwendung von Mermaid Diagrammen macht."
+header:
+  teaser:
 ---
 
 So, nachdem ich es nun endlich geschafft habe, hier in meinem [Github Pages Blog](https://pages.github.com) auch [Mermaid][mermaid-blogpost-1] Codeblöcke tatsächlich durch Mermaid rendern und als Grafik darstellen zu lassen, will ich schnell aufschreiben, was man dafür tun muss. Sonst habe ich das übermorgen auch schon wieder vergessen. 🙈
@@ -59,4 +61,4 @@ Damit das funktioniert also immer Mermaid Code als solchen im Markdown kennzeich
 🔲
 {: style="text-align: right" }
 
-[mermaid-blogpost-1]: https://metawops.github.io/markdown/Mermaid/
+[mermaid-blogpost-1]: https://blog.metawops.de/markdown/Mermaid/
