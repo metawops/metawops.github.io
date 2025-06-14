@@ -2,8 +2,11 @@
 title: "Github Pages: Link im Bio Feld"
 date: 2025-06-10
 last_modified_at: 2025-06-10
-categories: GithubPages
-tags: blog scss
+categories:
+  - GithubPages
+tags:
+  - blog
+  - scss
 excerpt: Der Artikel zeigt, wie man in der Bio Angabe seines Github Pages Blogs einen Link unterbringen und stylen kann.
 header:
   teaser: /assets/images/SCR-20250610-jqtc.png

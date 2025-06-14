@@ -2,8 +2,10 @@
 title: "Github Pages: Verlinkter Lizenz-Hinweis im Footer"
 date: 2025-06-10
 last_modified_at: 2025-06-10
-categories: GithubPages
-tags: blog
+categories:
+  - GithubPages
+tags:
+  - blog
 excerpt: Im Artikel wird erklärt, wie man in seinem Github Pages Blog im Footer einen verlinkten Lizenz Hinweis unterbringen kann.
 ---
 
