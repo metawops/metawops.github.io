@@ -58,6 +58,28 @@ Damit das funktioniert also immer Mermaid Code als solchen im Markdown kennzeich
 ```
 ````
 
+## Beispiel
+
+````
+```mermaid
+flowchart LR
+  A(["Start])
+  A --> B{"Decision"}
+  B --> C["Option A"]
+  B --> D["Option B"]
+```
+````
+
+... ergibt ...
+
+```mermaid
+flowchart LR
+  A(["Start])
+  A --> B{"Decision"}
+  B --> C["Option A"]
+  B --> D["Option B"]
+```
+
 🔲
 {: style="text-align: right" }
 
