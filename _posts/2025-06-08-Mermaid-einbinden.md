@@ -63,7 +63,7 @@ Damit das funktioniert also immer Mermaid Code als solchen im Markdown kennzeich
 ````
 ```mermaid
 flowchart LR
-  A(["Start])
+  A(["Start"])
   A --> B{"Decision"}
   B --> C["Option A"]
   B --> D["Option B"]
@@ -74,7 +74,7 @@ flowchart LR
 
 ```mermaid
 flowchart LR
-  A(["Start])
+  A(["Start"])
   A --> B{"Decision"}
   B --> C["Option A"]
   B --> D["Option B"]
