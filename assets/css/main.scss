@@ -74,13 +74,23 @@
 }
 
 .notice {
-  padding: 1em 1em 1em 3em !important; /* Mehr Platz links für das Icon */
+  padding: 1em 1em 1em 3.5em !important; /* Mehr Platz links für das Icon */
   position: relative;
+  font-style: normal !important;
 }
 
 .notice::before {
   position: absolute;
+  margin-right: 1em;
   left: 1em;
   top: 50%;
   transform: translateY(-50%);
 }
+
+.notice strong:first-child {
+  display: block;
+  margin-bottom: 0.5em;
+  font-size: 1.1em;
+  text-transform: uppercase;
+}
+
