@@ -41,56 +41,79 @@
   -ms-hyphens: auto;
 }
 
-/* Icon für Info-Boxen */
-.notice--info::before {
-  font-family: "Font Awesome 6 Free";
-  content: "\f05a"; /* Unicode für fa-circle-info */
-  display: inline-block;
-  margin-right: 10px;
-  font-size: 1.2em;
-  color: #2b7bb9; /* Farbe anpassen */
-  vertical-align: middle;
-}
+// In deine _sass/custom.scss oder direkt in assets/css/main.scss einfügen
+// (nach dem Frontmatter ---)
 
-/* Icon für Warnungen */
-.notice--warning::before {
-  font-family: "Font Awesome 6 Free";
-  content: "\f071"; /* Unicode für fa-triangle-exclamation */
-  color: #d67f05;
-}
-
-/* Icon für Erfolge */
-.notice--success::before {
-  font-family: "Font Awesome 6 Free";
-  content: "\f058"; /* Unicode für fa-check-circle */
-  color: #28a745;
-}
-
-/* Icon für Gefahren */
-.notice--danger::before {
-  font-family: "Font Awesome 6 Free";
-  content: "\f06a"; /* Unicode für fa-exclamation-circle */
-  color: #dc3545;
-}
-
+// Basis-Styling für alle Hinweisboxen
 .notice {
-  padding: 1em 1em 1em 3.5em !important; /* Mehr Platz links für das Icon */
   position: relative;
+  padding: 1em 1.5em 1em 4.5em !important;
+  margin: 1.5em 0;
+  border-radius: 4px;
+  border-left: 4px solid;
   font-style: normal !important;
+  background-color: rgba(255, 255, 255, 0.15);
+
+  // Icon-Standardstyling
+  &::before {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 1.5em;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+  }
+
+  // Titel in erster Zeile
+  > :first-child {
+    display: inline !important;
+    margin-right: 0.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  // Absätze innerhalb der Box
+  p {
+    display: inline;
+    margin: 0 !important;
+    font-style: normal !important;
+  }
 }
 
-.notice::before {
-  position: absolute;
-  margin-right: 1em;
-  left: 1em;
-  top: 50%;
-  transform: translateY(-50%);
+// Individuelle Typen
+.notice--info {
+  border-color: #2196f3;
+  background: #e3f2fd;
+  &::before {
+    content: "\f05a"; // fa-circle-info
+    color: #2196f3;
+  }
 }
 
-.notice strong:first-child {
-  display: block;
-  margin-bottom: 0.5em;
-  font-size: 1.1em;
-  text-transform: uppercase;
+.notice--warning {
+  border-color: #ff9800;
+  background: #fff3e0;
+  &::before {
+    content: "\f071"; // fa-triangle-exclamation
+    color: #ff9800;
+  }
 }
 
+.notice--success {
+  border-color: #4caf50;
+  background: #e8f5e9;
+  &::before {
+    content: "\f058"; // fa-check-circle
+    color: #4caf50;
+  }
+}
+
+.notice--danger {
+  border-color: #f44336;
+  background: #ffebee;
+  &::before {
+    content: "\f06a"; // fa-exclamation-circle
+    color: #f44336;
+  }
+}
