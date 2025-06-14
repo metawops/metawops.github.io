@@ -57,7 +57,7 @@ defaults:
         - blocksatz
 ```
 
-> **ABER ACHTUNG!**
+> **ABER ACHTUNG!** – Wichtiger Hinweis
 > Dazu muss man wissen, dass CSS Klassenangaben, die im Front Matter eines Blog Posts oder einer Seite stehen, diesen Default Wert immer überschreiben. Solltet ihr also z.B. eine Seite im Front Matter ihrer Markdown Datei über die Angabe
 > 
 > ```yaml

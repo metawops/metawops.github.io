@@ -42,81 +42,77 @@
 }
 
 
-// In assets/css/main.scss einfügen (nach dem Frontmatter)
-// --------------------------------------------------------
-
-// Font Awesome erzwingen (falls nicht über _config.yml aktiviert)
+// Font Awesome erzwingen
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
 
-// Basis-Styling für alle Notices
-[class^="notice"] {
+// Notice-Container
+.notice {
   position: relative;
   padding: 1.5rem 2rem 1.5rem 6rem !important;
   margin: 2rem 0;
-  border-left: 6px solid;
+  border-left: 4px solid;
   border-radius: 4px;
-  font-style: normal !important;
-  line-height: 1.6;
-
+  background: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  
+  // Icon-Styling
   &::before {
-    font-family: "Font Awesome 6 Free" !important;
+    font-family: "Font Awesome 6 Free";
     font-weight: 900;
     position: absolute;
-    left: 2rem;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 2.4rem;
+    left: 1.5rem;
+    top: 1.5rem;
+    font-size: 2rem;
+    z-index: 1;
   }
 
   // Titel-Styling
   > strong:first-child {
-    display: inline-block !important;
-    margin-right: 0.8rem;
+    display: block;
+    margin-bottom: 0.8rem;
     font-size: 1.1em;
     font-weight: 700;
     text-transform: uppercase;
   }
 
-  // Kursivschrift in allen Elementen deaktivieren
-  * {
+  // Absätze und Code-Blöcke
+  p, pre, code {
     font-style: normal !important;
+    position: relative;
+    z-index: 2;
+  }
+
+  // Code-Blöcke innerhalb der Notice
+  pre.highlight {
+    margin: 1rem 0;
+    padding: 1rem;
+    background: rgba(0,0,0,0.05) !important;
+    border-radius: 4px;
   }
 }
 
-// Individuelle Typen
-// ------------------
+// Farben und Icons für Typen
+// --------------------------
 .notice--info {
   border-color: #2196F3;
   background: #E3F2FD;
-  &::before {
-    content: "\f05a"; // fa-info-circle
-    color: #2196F3;
-  }
+  &::before { content: "\f05a"; color: #2196F3; } // fa-info-circle
 }
 
 .notice--warning {
   border-color: #FF9800;
   background: #FFF3E0;
-  &::before {
-    content: "\f071"; // fa-triangle-exclamation
-    color: #FF9800;
-  }
+  &::before { content: "\f071"; color: #FF9800; } // fa-triangle-exclamation
 }
 
 .notice--success {
   border-color: #4CAF50;
   background: #E8F5E9;
-  &::before {
-    content: "\f058"; // fa-check-circle
-    color: #4CAF50;
-  }
+  &::before { content: "\f058"; color: #4CAF50; } // fa-check-circle
 }
 
 .notice--danger {
   border-color: #F44336;
   background: #FFEBEE;
-  &::before {
-    content: "\f06a"; // fa-exclamation-circle
-    color: #F44336;
-  }
+  &::before { content: "\f06a"; color: #F44336; } // fa-exclamation-circle
 }
