@@ -41,73 +41,82 @@
   -ms-hyphens: auto;
 }
 
-// Zuerst: Font Awesome korrekt einbinden
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
 
-// Alle Notice-Typen: Kursivschrift komplett entfernen
-.notice,
-.notice *,
-.notice p,
-.notice strong,
-blockquote.notice {
-  font-style: normal !important;
-}
+// In assets/css/main.scss einfügen (nach dem Frontmatter)
+// --------------------------------------------------------
 
-// Basis-Layout für alle Notices
-.notice {
+// Font Awesome erzwingen (falls nicht über _config.yml aktiviert)
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
+
+// Basis-Styling für alle Notices
+[class^="notice"] {
   position: relative;
-  padding: 1rem 1rem 1rem 4rem !important;
-  margin: 1.5rem 0 !important;
-  border-left: 4px solid #ccc;
+  padding: 1.5rem 2rem 1.5rem 6rem !important;
+  margin: 2rem 0;
+  border-left: 6px solid;
   border-radius: 4px;
-  background-color: #f8f9fa;
-  
-  // Icon positioning
+  font-style: normal !important;
+  line-height: 1.6;
+
   &::before {
-    font-family: "Font Awesome 6 Free", "FontAwesome" !important;
-    font-weight: 900 !important;
-    font-style: normal !important;
+    font-family: "Font Awesome 6 Free" !important;
+    font-weight: 900;
     position: absolute;
-    left: 1rem;
-    top: 1rem;
-    font-size: 1.3rem;
-    line-height: 1;
+    left: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2.4rem;
+  }
+
+  // Titel-Styling
+  > strong:first-child {
+    display: inline-block !important;
+    margin-right: 0.8rem;
+    font-size: 1.1em;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  // Kursivschrift in allen Elementen deaktivieren
+  * {
+    font-style: normal !important;
   }
 }
 
-// Spezifische Typen mit korrekten Unicode-Werten
+// Individuelle Typen
+// ------------------
 .notice--info {
-  border-color: #2196f3;
-  background-color: #e3f2fd;
+  border-color: #2196F3;
+  background: #E3F2FD;
   &::before {
-    content: "\f05a" !important; // fa-info-circle
-    color: #2196f3;
+    content: "\f05a"; // fa-info-circle
+    color: #2196F3;
   }
 }
 
 .notice--warning {
-  border-color: #ff9800;
-  background-color: #fff3e0;
+  border-color: #FF9800;
+  background: #FFF3E0;
   &::before {
-    content: "\f071" !important; // fa-exclamation-triangle
-    color: #ff9800;
+    content: "\f071"; // fa-triangle-exclamation
+    color: #FF9800;
   }
 }
 
 .notice--success {
-  border-color: #4caf50;
-  background-color: #e8f5e9;
+  border-color: #4CAF50;
+  background: #E8F5E9;
   &::before {
-    content: "\f058" !important; // fa-check-circle
-    color: #4caf50;
+    content: "\f058"; // fa-check-circle
+    color: #4CAF50;
   }
 }
 
 .notice--danger {
-  border-color: #f44336;
-  background-color: #ffebee;
+  border-color: #F44336;
+  background: #FFEBEE;
   &::before {
-    content: "\f06a" !important; // fa-exclamation-circle
-    color: #f44336;
+    content: "\f06a"; // fa-exclamation-circle
+    color: #F44336;
   }
 }
