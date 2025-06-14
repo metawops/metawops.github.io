@@ -89,6 +89,37 @@ blockquote[class*="notice"] {
     margin-left: 0 !important;
     padding-left: 0 !important;
   }
+
+    code {
+    background-color: rgba(0,0,0,0.1) !important;
+    color: #333 !important;
+    padding: 0.2em 0.4em !important;
+    border-radius: 3px !important;
+    border: 1px solid rgba(0,0,0,0.1) !important;
+    font-family: Menlo, Consolas, "Courier New", monospace !important;
+    font-size: 0.9em !important;
+  }
+
+  // Individuelle Anpassungen pro Notice-Typ
+  &.notice--info code {
+    background-color: rgba(33,150,243,0.15) !important;
+    color: #1565c0 !important;
+  }
+
+  &.notice--warning code {
+    background-color: rgba(255,152,0,0.15) !important;
+    color: #b36a00 !important;
+  }
+
+  &.notice--success code {
+    background-color: rgba(76,175,80,0.15) !important;
+    color: #2e7d32 !important;
+  }
+
+  &.notice--danger code {
+    background-color: rgba(244,67,54,0.15) !important;
+    color: #c62828 !important;
+  }
 }
 
 // Individuelle Typen

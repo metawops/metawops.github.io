@@ -17,7 +17,7 @@ header:
 ## Grundsätzliches
 
 ### Markdown & Front Matter
-Wir werden Blocksatz und Silbentrennung via CSS umsetzen. Damit die neuen CSS Klassen auch von einem Post oder eine Seite benutzt werden, die wir ja in Markdown verfassen, kann man sie im Front Matter unter `classes:` unterbringen, also z.B.:
+Wir werden Blocksatz und Silbentrennung via CSS umsetzen. Damit die neuen CSS Klassen auch von einem Post oder einer Seite benutzt werden, die wir ja in Markdown verfassen, kann man sie im Front Matter unter `classes:` unterbringen, also z.B.:
 
 ```yaml
 ---
@@ -66,14 +66,14 @@ defaults:
 >   - wide
 > ```
 > 
->mit dem `wide` Layout von _minimal mistakes_ versehen haben, gilt _nur diese_ Angabe. Die Default-Angabe aus der `_config.yml` gilt dann nicht mehr. Wollt ihr dann sowohl `wide`, als auch `blocksatz`, dann müsst ihr im Front Matter der Seite beide Klassenangaben auflisten, also `blocksatz` nochmal wiederholen:
+>mit dem `wide` Layout von _minimal mistakes_ versehen haben, gilt _nur diese_ Angabe. Die Default-Angabe aus der `_config.yml` gilt dann nicht mehr. Wollt ihr  sowohl `wide`, als auch `blocksatz`, dann müsst ihr im Front Matter der Seite beide Klassenangaben auflisten, also `blocksatz` nochmal wiederholen:
 > 
 > ```yaml
 > classes:
 >   - wide
 >   - blocksatz
 > ```
-{: .notice--info }
+{: .notice--warning }
 
 
 ### Je nach Layout
