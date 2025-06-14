@@ -66,14 +66,14 @@ defaults:
 >   - wide
 > ```
 > 
->mit dem `wide` Layout von _minimal mistakes_ versehen haben, gilt nur diese Angabe. Die Default-Angabe aus der `_config.yml` gilt dann nicht mehr. Wollt ihr dann sowohl `wide`, als auch `blocksatz`, dann müsst ihr im Front Matter der Seite beide Klassenangaben auflisten, also `blocksatz` nochmal wiederholen:
+>mit dem `wide` Layout von _minimal mistakes_ versehen haben, gilt _nur diese_ Angabe. Die Default-Angabe aus der `_config.yml` gilt dann nicht mehr. Wollt ihr dann sowohl `wide`, als auch `blocksatz`, dann müsst ihr im Front Matter der Seite beide Klassenangaben auflisten, also `blocksatz` nochmal wiederholen:
 > 
 > ```yaml
 > classes:
 >   - wide
 >   - blocksatz
 > ```
-{: .notice--warning }
+{: .notice--info }
 
 
 ### Je nach Layout
