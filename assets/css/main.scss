@@ -42,12 +42,10 @@
 }
 
 
-// Font Awesome erzwingen
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
-
-// Notice-Container
-.notice {
-  position: relative;
+/* Vollständige Korrektur für Notice-Boxen */
+blockquote.notice {
+  font-style: normal !important;
+  position: relative !important;
   padding: 1.5rem 2rem 1.5rem 6rem !important;
   margin: 2rem 0;
   border-left: 4px solid;
@@ -55,64 +53,65 @@
   background: white;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   
-  // Icon-Styling
   &::before {
-    font-family: "Font Awesome 6 Free";
-    font-weight: 900;
+    font-family: "Font Awesome 6 Free" !important;
+    font-weight: 900 !important;
+    content: "\f071" !important; /* Default-Icon */
     position: absolute;
     left: 1.5rem;
     top: 1.5rem;
     font-size: 2rem;
-    z-index: 1;
+    color: #FF9800; /* Default-Farbe */
   }
 
-  // Titel-Styling
-  > strong:first-child {
-    display: block;
+  strong:first-child {
+    display: block !important;
     margin-bottom: 0.8rem;
     font-size: 1.1em;
     font-weight: 700;
     text-transform: uppercase;
   }
 
-  // Absätze und Code-Blöcke
   p, pre, code {
     font-style: normal !important;
-    position: relative;
-    z-index: 2;
-  }
-
-  // Code-Blöcke innerhalb der Notice
-  pre.highlight {
-    margin: 1rem 0;
-    padding: 1rem;
-    background: rgba(0,0,0,0.05) !important;
-    border-radius: 4px;
+    margin-left: 0 !important;
+    padding-left: 0 !important;
   }
 }
 
-// Farben und Icons für Typen
-// --------------------------
-.notice--info {
+/* Spezifische Typen */
+blockquote.notice--info {
   border-color: #2196F3;
   background: #E3F2FD;
-  &::before { content: "\f05a"; color: #2196F3; } // fa-info-circle
+  &::before {
+    content: "\f05a" !important; /* fa-info-circle */
+    color: #2196F3 !important;
+  }
 }
 
-.notice--warning {
+blockquote.notice--warning {
   border-color: #FF9800;
   background: #FFF3E0;
-  &::before { content: "\f071"; color: #FF9800; } // fa-triangle-exclamation
+  &::before {
+    content: "\f071" !important; /* fa-triangle-exclamation */
+    color: #FF9800 !important;
+  }
 }
 
-.notice--success {
+blockquote.notice--success {
   border-color: #4CAF50;
   background: #E8F5E9;
-  &::before { content: "\f058"; color: #4CAF50; } // fa-check-circle
+  &::before {
+    content: "\f058" !important; /* fa-check-circle */
+    color: #4CAF50 !important;
+  }
 }
 
-.notice--danger {
+blockquote.notice--danger {
   border-color: #F44336;
   background: #FFEBEE;
-  &::before { content: "\f06a"; color: #F44336; } // fa-exclamation-circle
+  &::before {
+    content: "\f06a" !important; /* fa-exclamation-circle */
+    color: #F44336 !important;
+  }
 }
