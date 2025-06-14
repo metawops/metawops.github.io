@@ -1,6 +1,7 @@
 ---
 title: "Mermaid für Github Pages konfigurieren"
 date: 2025-06-08
+last_modified_at: 2025-06-14
 categories:
   - GithubPages
 tags:
