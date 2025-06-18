@@ -10,7 +10,7 @@ tags:
 excerpt: Der Blog Post zeigt in einem Diagramm, ob und mit welcher Leistung und unter welcher Voraussetzung ich als Funkamateur senden darf.
 ---
 
-Hier mal ein Anwendungsfall für Mermaid.
+Hier mal ein Anwendungsfall für [Mermaid][tag-mermaid].
 
 Es geht um die Frage, ob ich senden oder nicht senden darf, in Abhängigkeit meiner Amateurfunklizenz und meiner Sendeleistung.
 
@@ -38,3 +38,4 @@ Die Diagramm-Idee stammt aus dem [N-Lizenz-Lehrgang-Video, Lektion 8, "Antennen 
 {: style="text-align: right" }
 
 [video]: https://youtu.be/Oe2XpzhSVEQ?si=K3jzmHP7x92_RXBa&t=2683
+[tag-mermaid]: https://blog.metawops.de/tags/#mermaid
