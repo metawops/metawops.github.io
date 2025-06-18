@@ -14,7 +14,7 @@ Meinem neuen Blog wollte ich einen Lizenz Hinweis hinzufügen und das am besten 
 
 Nachdem ich mir eine passende Lizenz – CC BY-SA – ausgesucht hatte, ging es darum, wie man die nun verlinkt im Footer meines auf dem Theme _minimal mistakes_ basierenden Github Pages Blogs unterbringen kann.
 
-Der naive erste Versuch, ob das genauso wie beim [Link im Bio Bereich](https://metawops.github.io/githubpages/Link-im-Bio-Feld/) geht, schlug leider fehl. Eine neue Strategie musste her. Kurz die K.I. befragt und die Lösung war auf dem Tisch.
+Der naive erste Versuch, ob das genauso wie beim [Link im Bio Bereich][bio-link] geht, schlug leider fehl. Eine neue Strategie musste her. Kurz die K.I. befragt und die Lösung war auf dem Tisch.
 
 ## Lösung
 In unserem eigenen Github Pages Repository müssen wir im Ordner `_includes` (wenn noch nicht vorhanden: anlegen) eine Kopie der Datei `footer.html` aus dem [minimal mistakes Repository](https://github.com/mmistakes/minimal-mistakes/blob/master/_includes/footer.html) anlegen.
@@ -46,3 +46,5 @@ Variablen aus der `_config.yml` Datei können wir also in diesen "Liquid" genann
 
 🔲
 {: style="text-align: right" }
+
+[bio-link]: https://blog.metawops.de/githubpages/Link-im-Bio-Feld/
