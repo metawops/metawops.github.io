@@ -18,7 +18,7 @@ Damit man in seinem Github Pages basierten Blog (und unter Benutzung des beliebt
 
 ## Konfiguration
 
-1. Sollte man in seinem Github Pages Repository noch keine Datei `_includes/scripts.html` haben, muss man diese aus dem [_minmal mistakes_ Repository](https://github.com/mmistakes/minimal-mistakes/blob/master/_includes/scripts.html) in sein eigenes Repository kopieren.
+1. Sollte man in seinem Github Pages Repository noch keine Datei `_includes/scripts.html` haben, muss man diese aus dem [_minimal mistakes_ Repository](https://github.com/mmistakes/minimal-mistakes/blob/master/_includes/scripts.html) in sein eigenes Repository kopieren.
 2. In der Kopie von `scripts.html` im eigenen Repository fügt man den folgenden Code _nach_ dem Include von Analytics (und Comments, falls konfiguriert) und vor dem `site.after_footer_scripts` Abschnitt ein:
  
    {% raw %} 
