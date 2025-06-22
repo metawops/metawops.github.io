@@ -163,11 +163,11 @@ blockquote.notice--danger {
 
 
 /* Schriftgrößenanpassungen für verschiedene Textarten */
-.small-text {
+.page__content p.small-text {
   font-size: 0.8em; /* Oder einen anderen Wert, z.B. 0.7em, 14px */
 }
 
 /* Optional: Für Text, der noch kleiner sein soll */
-.tiny-text {
+.page__content p.tiny-text {
   font-size: 0.7em;
 }
