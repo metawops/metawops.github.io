@@ -159,3 +159,15 @@ blockquote.notice--danger {
     color: #F44336 !important;
   }
 }
+
+
+
+/* Schriftgrößenanpassungen für verschiedene Textarten */
+.small-text {
+  font-size: 0.8em; /* Oder einen anderen Wert, z.B. 0.7em, 14px */
+}
+
+/* Optional: Für Text, der noch kleiner sein soll */
+.tiny-text {
+  font-size: 0.7em;
+}
