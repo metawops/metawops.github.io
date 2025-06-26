@@ -2,7 +2,8 @@
 title: "Neuer Taschenrechner in 2025"
 date: 2025-06-18
 last_modified_at: 2025-06-18
-categories: Taschenrechner
+categories:
+  - Taschenrechner
 tags:
   - texas-instruments
   - casio
