@@ -62,10 +62,7 @@ Darüber hinaus gibt es folgende Besonderheiten:
 * Am "unteren/kleinen" Ende der Skala bietet leider keiner der Rechner unterhalb von femto noch atto ($10^{-18}$) an. 
 
 
-
-
 ## Überblick
-
 Hier habe ich mal tabellarisch zusammengefasst, bei welchem Casio Taschenrechner Modell man die drei Features nutzen kann und wie man sie nutzt.
 
 {:.my-table}
@@ -83,7 +80,6 @@ Hier habe ich mal tabellarisch zusammengefasst, bei welchem Casio Taschenrechner
 
 
 ## Und bei euch?
-
 Welche Casio Taschenrechnermodelle habt ihr darüber hinaus noch und wie sieht es da mit diesen Features aus? Holt eure alten Schätzchen aus den Schubladen, probiert sie aus und schreibt mir gerne einen Kommentar zu eurem/euren Modell(en), dann kann ich sie in der Tabelle ergänzen. 💙
 
 
