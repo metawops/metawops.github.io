@@ -22,7 +22,19 @@ Bei meiner kleinen [Texas Instruments TI-30 "Retrospektive"][ti-30] hatte ich ja
 Ganz anders Casio, da gehört diese Funktionalität schon seit vielen Jahr(zehnt)en bei zahlreichen, wissenschaftlichen Taschenrechnern erfreulicherweise zur Grundausstattung.
 
 ## Worum geht's?
-Gefühlt etwas später kam das Feature dazu, dass man sich anstelle von z.B. $5*10^{-12}$ auch $ 5p $ (für pico) anzeigen lassen konnte. Und wenn der Rechner das *ausgeben* kann, warum sollte man es dann nicht auch *eingeben* können? Geht, je nach Modell.
+Gefühlt etwas später kam das Feature dazu, dass man sich anstelle von z.B.
+
+$$
+5*10^{-12}
+$$
+
+auch überischtlicher lediglich 
+
+$$
+5p
+$$
+
+anzeigen lassen konnte. Und wenn der Rechner das *ausgeben* kann, warum sollte man es dann nicht auch *eingeben* können? Geht, je nach Modell.
 
 Wir sprechen also über diese drei Features:
 
@@ -52,7 +64,7 @@ Für die Casio Taschenrechner Modelle
 Bei *allen* hier vorgestellten Rechnern sind die folgenden SI-Präfixe vorhanden:
 
 $$
-m, \mu, n, p, f \text{und} k, M, G, T
+m, \mu, n, p, f, k, M, G, T
 $$
 
 Darüber hinaus gibt es folgende Besonderheiten:
