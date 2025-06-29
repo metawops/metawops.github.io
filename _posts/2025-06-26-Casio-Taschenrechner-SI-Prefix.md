@@ -21,9 +21,19 @@ Bei meiner kleinen [Texas Instruments TI-30 "Retrospektive"][ti-30] hatte ich ja
 
 Ganz anders Casio, da gehört diese Funktionalität schon seit vielen Jahr(zehnt)en bei zahlreichen, wissenschaftlichen Taschenrechnern erfreulicherweise zur Grundausstattung.
 
-## Das Testfeld
+## Worum geht's?
+Gefühlt etwas später kam das Feature dazu, dass man sich anstelle von z.B. $5*10^{-12}$ auch $5p$ (für *pico*) anzeigen lassen konnte. Und wenn der Rechner das *ausgeben* kann, warum sollte man es dann auch nicht *eingeben* können? Auch das geht, je nach Modell.
 
+Wir sprechen also über diese drei Features:
+
+1. "Verschiebung" des Exponenten in Dreierschritten über die beiden Funktionen $\text{ENG}, \overleftarrow{\text{ENG}}$
+2. Anzeige (Ausgabe) von Rechenergebnissen mit SI-Präfixen – anstelle einer $*10^x$ Schreibweise
+3. Eingabe von Zahlen mit SI-Präfixen – anstelle einer $*10^x$ Schreibweise
+
+## Das Testfeld
 ![Nine Casio scientific calculators arranged in two rows on a wooden surface. Each calculator displays its screen with various menus, numbers, or settings visible. The models include fx-991ES Plus 2nd edition, fx-991MS 2nd edition, fx-991DE X, fx-991DE CW, fx-5800P, fx-9750GIII, fx-9860GII SD, fx-CG50, and GRAPH MATH+. The screens show different calculator modes, such as engineering notation, SI prefix menus, and calculation results. The overall tone is neutral and informative, highlighting the diversity and features of Casio calculators in a well-lit, organized setting.](/assets/images/casio-calcs.jpeg)
+*Das Testfeld. Foto: Stefan Wolfrum*
+
 Für die Casio Taschenrechner Modelle
 
 * fx-991ES Plus 2nd ed.
@@ -38,18 +48,7 @@ Für die Casio Taschenrechner Modelle
 
 ... habe ich mir mal angeschaut, was sie beim Thema [SI-Präfixe][si-wiki] und bei der sogenannten Engineering Anzeige können und wie man diese Features jeweils handhabt.
 
-## Worum geht's?
-Gefühlt etwas später kam das Feature dazu, dass man sich anstelle von z.B. $5*10^{-12}$ auch $5p$ (für *pico*) anzeigen lassen konnte. Und wenn der Rechner das *ausgeben* kann, warum sollte man es dann auch nicht *eingeben* können? Auch das geht, je nach Modell.
-
-Wir sprechen also über diese drei Features:
-
-1. "Verschiebung" des Exponenten in Dreierschritten über die beiden Funktionen $\text{ENG}, \overleftarrow{\text{ENG}}$
-2. Anzeige (Ausgabe) von Rechenergebnissen mit SI-Präfixen – anstelle einer $*10^x$ Schreibweise
-3. Eingabe von Zahlen mit SI-Präfixen – anstelle einer $*10^x$ Schreibweise
-
-
 ## Vorhandene Präfixe
-
 Bei *allen* hier vorgestellten Rechnern sind die folgenden SI-Präfixe vorhanden:
 $$
 m, \mu, n, p, f\\
