@@ -17,7 +17,7 @@ header:
 Ein für mich wichtiges Feature bei einem Taschenrechner ist die Möglichkeit, bei der Anzeige sehr großer und sehr kleiner Zahlen den Exponenten in der wissenschaftlichen $*10^x$ Schreibweise als Vielfaches von 3 in Dreierschritten hin- und herschieben zu können. So lassen sich Fragen wie "Wieviel nano-Farad sind nochmal 100 pico-Farad?" schnell beantworten. (In "Farad" gibt man die Kapazität eines Kondensators an.)
 
 ## Wer kann's?
-Bei meiner kleinen [Texas Instruments TI-30 "Retrospektive"][ti-30] hatte ich ja festgestellt, dass das aktuelle TI-30 "Spitzenmodell", der TI-30X Pro MathPrint so ein Feature leider nicht hat.
+Bei meiner kleinen [Texas Instruments TI-30 "Retrospektive"][ti-30] hatte ich ja festgestellt, dass das aktuelle TI-30 "Spitzenmodell", der [TI-30X Pro MathPrint][] so ein Feature leider nicht hat.
 
 Ganz anders Casio, da gehört diese Funktionalität schon seit vielen Jahr(zehnt)en bei zahlreichen, wissenschaftlichen Taschenrechnern erfreulicherweise zur Grundausstattung.
 
@@ -89,4 +89,5 @@ Welche Casio Taschenrechnermodelle habt ihr darüber hinaus noch und wie sieht e
 [^3]: Alternativ kann man natürlich auch 13x [⏷] oder 3x [⏶] drücken. Mit [D] ist die Potenzieren-Taste gemeint (links von Quadrieren).
 
 [ti-30]: https://blog.metawops.de/taschenrechner/Der-TI-30/
+[ti-30x-pro]: https://amzn.to/4ehyfxR
 [si-wiki]: https://de.wikipedia.org/wiki/Vorsätze_für_Maßeinheiten
