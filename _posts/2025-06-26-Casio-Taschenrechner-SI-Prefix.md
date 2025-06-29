@@ -28,7 +28,7 @@ $$
 5*10^{-12}
 $$
 
-auch überischtlicher lediglich 
+auch übersichtlicher lediglich 
 
 $$
 5p
