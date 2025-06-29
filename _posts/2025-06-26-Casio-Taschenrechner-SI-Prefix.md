@@ -76,7 +76,6 @@ Darüber hinaus gibt es folgende Besonderheiten:
 ## Überblick
 Hier habe ich mal tabellarisch zusammengefasst, bei welchem Casio Taschenrechner Modell man die drei Features nutzen kann und wie man sie nutzt.
 
-{:.my-table}
 | Rechner               | $\text{ENG}, \overleftarrow{\text{ENG}}$ | SI Anzeige[^1] | SI Eingabe |
 |-----------------------|:----------:|:----------:|:----------:|
 | fx-991ES Plus 2nd ed. | ✅<br/>([SHIFT]) [ENG] | ❌ | ❌ |
@@ -88,6 +87,7 @@ Hier habe ich mal tabellarisch zusammengefasst, bei welchem Casio Taschenrechner
 | fx-9860GII SD         | ✅<br/>[OPTN] [F6] [F6] [F1] [F6] [F6]<br/>$\overleftarrow{\text{ENG}}$: [F3]<br/>$\text{ENG}$: [F2] | ✅<br/>[SET UP] [⏶] [⏶] [F4] | ✅<br/>[OPTN] [F6] [F6] [F1], [F1]~[F5] und mit [F6] weiter blättern |
 | fx-CG50               | ✅<br/>[OPTN] [F6] [F6] [F1] [F6] [F6]<br/>$\overleftarrow{\text{ENG}}$: [F3]<br/>$\text{ENG}$: [F2] | ✅<br/>[SET UP] [⏶] [⏶] [F4] | ✅<br/>[OPTN] [F6] [F6] [F1], [F1]~[F5] und mit [F6] weiter blättern |
 | GRAPH MATH+[^2]       | ✅<br/>[FORMAT] [4] bzw. [5] | ✅<br/>[SETTINGS] [3] [4] | ✅<br/>[CATALOG] [D][^3] |
+{:.my-table}
 
 
 ## Und bei euch?
