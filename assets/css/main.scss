@@ -174,19 +174,26 @@ blockquote.notice--danger {
 
 
 
-/* Tabelle Styling */
-
-.my-table {
+/* Nur Tabellen mit .my-table */
+table.my-table {
   border-collapse: collapse;
-  width: 100%;
 }
 
-.my-table td {
+table.my-table thead {
+  background-color: #fce8d5; /* Heller Sandton für Kopfzeile */
+}
+
+table.my-table tbody tr:nth-child(even) {
+  background-color: #fff7ef; /* Zarter Cremeton für jede 2. Zeile */
+}
+
+table.my-table tbody tr:nth-child(odd) {
+  background-color: #ffffff; /* Weiß für die anderen Zeilen */
+}
+
+table.my-table th,
+table.my-table td {
+  padding: 0.5em 1em;
   border: 1px solid #ddd;
-  padding: 8px;
-  vertical-align: top;
-}
-
-.my-table th {
-  background-color: #f2f2f2;
+  vertical-align: top; /* Vertikale Ausrichtung oben */
 }
