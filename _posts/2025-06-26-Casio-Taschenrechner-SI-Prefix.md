@@ -44,7 +44,7 @@ Wir sprechen also über diese drei Features:
 
 ## Das Testfeld
 ![Nine Casio scientific calculators arranged in two rows on a wooden surface. Each calculator displays its screen with various menus, numbers, or settings visible. The models include fx-991ES Plus 2nd edition, fx-991MS 2nd edition, fx-991DE X, fx-991DE CW, fx-5800P, fx-9750GIII, fx-9860GII SD, fx-CG50, and GRAPH MATH+. The screens show different calculator modes, such as engineering notation, SI prefix menus, and calculation results. The overall tone is neutral and informative, highlighting the diversity and features of Casio calculators in a well-lit, organized setting.](/assets/images/casio-calcs.jpeg)
-*Das Testfeld. Foto: Stefan Wolfrum*
+*Das Testfeld: Neun ältere und neuere Casio Rechner. Foto: Stefan Wolfrum*
 
 Für die Casio Taschenrechner Modelle
 
@@ -64,7 +64,7 @@ Für die Casio Taschenrechner Modelle
 Bei *allen* hier vorgestellten Rechnern sind die folgenden SI-Präfixe vorhanden:
 
 $$
-m, \mu, n, p, f, k, M, G, T
+f, p, n, \mu, m, k, M, G, T
 $$
 
 Darüber hinaus gibt es folgende Besonderheiten:
