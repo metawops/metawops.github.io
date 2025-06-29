@@ -17,12 +17,12 @@ header:
 Ein für mich wichtiges Feature bei einem Taschenrechner ist die Möglichkeit, bei der Anzeige sehr großer und sehr kleiner Zahlen den Exponenten in der wissenschaftlichen $*10^x$ Schreibweise als Vielfaches von 3 in Dreierschritten hin- und herschieben zu können. So lassen sich Fragen wie "Wieviel nano-Farad sind nochmal 100 pico-Farad?" schnell beantworten. (In "Farad" gibt man die Kapazität eines Kondensators an.)
 
 ## Wer kann's?
-Bei meiner kleinen [Texas Instruments TI-30 "Retrospektive"][ti-30] hatte ich ja festgestellt, dass das aktuelle TI-30 "Spitzenmodell", der [TI-30X Pro MathPrint][] so ein Feature leider nicht hat.
+Bei meiner kleinen [Texas Instruments TI-30 "Retrospektive"][ti-30] hatte ich ja festgestellt, dass das aktuelle TI-30 "Spitzenmodell", der [TI-30X Pro MathPrint][ti-30x-pro] so ein Feature leider nicht hat.
 
 Ganz anders Casio, da gehört diese Funktionalität schon seit vielen Jahr(zehnt)en bei zahlreichen, wissenschaftlichen Taschenrechnern erfreulicherweise zur Grundausstattung.
 
 ## Worum geht's?
-Gefühlt etwas später kam das Feature dazu, dass man sich anstelle von z.B. $5*10^{-12}$ auch $5p$ (für *pico*) anzeigen lassen konnte. Und wenn der Rechner das *ausgeben* kann, warum sollte man es dann auch nicht *eingeben* können? Auch das geht, je nach Modell.
+Gefühlt etwas später kam das Feature dazu, dass man sich anstelle von z.B. $ 5*10^{-12} $ auch $ 5p $ (für *pico*) anzeigen lassen konnte. Und wenn der Rechner das *ausgeben* kann, warum sollte man es dann auch nicht *eingeben* können? Auch das geht, je nach Modell.
 
 Wir sprechen also über diese drei Features:
 
