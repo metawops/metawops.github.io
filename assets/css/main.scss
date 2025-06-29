@@ -171,3 +171,22 @@ blockquote.notice--danger {
 .page__content p.tiny-text {
   font-size: 0.7em;
 }
+
+
+
+/* Tabelle Styling */
+
+.my-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.my-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  vertical-align: top;
+}
+
+.my-table th {
+  background-color: #f2f2f2;
+}
