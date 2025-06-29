@@ -9,6 +9,7 @@ tags:
   - si-präfixe
   - eng-mode
 excerpt: "Wir schauen uns für ausgewählte Casio Taschenrechner Modelle die Features SI-Präfixe und Engineering Anzeige an."
+mathjax: true
 header:
   teaser: /assets/images/casio-calcs.jpeg
 ---
