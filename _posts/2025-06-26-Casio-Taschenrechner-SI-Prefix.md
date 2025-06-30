@@ -15,7 +15,7 @@ header:
 ---
 
 Ein für mich wichtiges Feature bei einem Taschenrechner ist die Möglichkeit, bei der Anzeige sehr großer und sehr kleiner Zahlen den Exponenten in der wissenschaftlichen $*10^x$ Schreibweise als Vielfaches von 3 in Dreierschritten hin- und herschieben zu können. So lassen sich Fragen wie "Wieviel nano-Farad sind nochmal 100 pico-Farad?" schnell beantworten. (In "Farad" gibt man die Kapazität eines Kondensators an.)
-
+ 
 ## Wer kann's?
 Bei meiner kleinen [Texas Instruments TI-30 "Retrospektive"][ti-30] hatte ich ja festgestellt, dass das aktuelle TI-30 "Spitzenmodell", der [TI-30X Pro MathPrint][ti-30x-pro] so ein Feature leider nicht hat.
 
