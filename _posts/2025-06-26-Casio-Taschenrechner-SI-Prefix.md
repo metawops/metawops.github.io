@@ -93,6 +93,9 @@ Hier habe ich mal tabellarisch zusammengefasst, bei welchem Casio Taschenrechner
 ## Und bei euch?
 Welche Casio Taschenrechnermodelle habt ihr darüber hinaus noch und wie sieht es da mit diesen Features aus? Holt eure alten Schätzchen aus den Schubladen, probiert sie aus und schreibt mir gerne einen Kommentar zu eurem/euren Modell(en), dann kann ich sie in der Tabelle ergänzen. 💙
 
+🔲
+{: style="text-align: right" }
+
 
 [^1]: falls vorhanden: Tasten- bzw. Menüabfolge zum *Einschalten* des Features. Ausschalten analog.
 [^2]: Das ist die französische Version des fx-CG100, der gerade erst – Stand Juni 2025 – in England erschienen und in Deutschland noch nicht erhältlich ist.
