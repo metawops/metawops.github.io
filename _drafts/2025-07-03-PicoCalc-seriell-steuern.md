@@ -10,12 +10,51 @@ tags:
   - seriell
   - remote
 excerpt: "Wir schauen uns an, wie man den PicoCalc mit MMBasic Firmware bequem vom Mac aus bedienen kann."
+header:
+  teaser: /assets/images/picocalc1.jpeg
 ---
 
+Vor einigen Wochen erreichte mich endlich der lang ersehnte [**PicoCalc** von ClockworkPi][pico]. Die Lieferzeiten sind lang, da es eine kleine Firma ist und immer erst Aufträge gesammelt werden, ehe ein neuer Batch hergestellt wird.
 
-Serielle Remote-Sessions (mit PicoMite / WebMite Firmware)
-* Über den USB-C Port des PicoCalc mit dem MacBook verbinden
-* Auf dem MacBook habe ich in iTerm2 ein Profil eigens für PicoCalc Sessions eingerichtet (wichtig darin: VT100 Emulation!)
+![ClockworkPi PicoCalc](/assets/images/picocalc1.jpeg)
+
+## Fragen & Wissen
+
+Nach dem problemlosen Zusammenbau und erster Inbetriebnahme stellte ich fest, dass die Erst-Tutorial-Situation doch recht mager ist. Man weiß nicht so recht, was man mal als erstes ausprobieren kann, man wird ein wenig allein gelassen. Wie bootet der, was bootet der, warum bootet er das, was ist auf der SD-Karte, wie benutzt man das, was kann er alles, wo ist Python, was kann das BASIC, wie gehen Spiele etc. sind da nur die ersten Fragen.  
+Danach dann: Was kann ich wo genau extern anschließen und wie spreche ich es an? Hat das Ding nun eine RealTimeClock drin oder muss ich eine extern nachrüsten? Wenn ja, wie? Und so weiter. Zu all diesen Dingen vielleicht später noch mehr Posts hier.
+
+Nach etwas Herumstochern im Nebel habe ich dann recht schnell festgestellt, dass man am ehesten Fahrt mit dem Gerät aufnimmt, wenn man sich durchs entsprechende [Diskussionsforum für den PicoCalc][forum] kämpft und einfach mal eine ganze Weile lang Posts dort studiert. Da finden sich allerlei Perlen und viel mehr Wissen, als es über die Webseiten des Herstellers gibt. Insbesondere [diesen Thread][thread] kann ich da zum Einstieg empfehlen! ;) 
+
+## Richtige Tastatur
+
+Nach allerlei Experimenten fragte ich mich, ob ich auch eine "richtige" Tastatur benutzen kann, um auf dem PicoCalc zu programmieren. Und das geht. *Eine* Methode ist da die Ausnutzung der seriellen Schnittstelle, die über den USB-C Port des PicoCalc zur Verfügung gestellt wird – also *nicht* der Micro-USB Port des eingesetzten Raspberry Pi Pico.  
+Eine andere Variante, die ich im Forum gesehen habe, ist, eine USB-Tastatur direkt an den PicoCalc anzuschließen. Dafür muss man aber erstmal einen USB-Port für diesen Zweck haben, den der PicoCalc nicht hat. Offenbar kann man den aber "organisieren". Ob das mit einem herkömmlichen Raspberry Pi Pico 1/2 möglich ist, oder nur mit dem "Luckfox Lyra", ist mir noch nicht ganz klar geworden. Dazu muss ich noch mehr das o.a. Forum studieren.
+
+## Serielle Verbindung
+
+Ich kann hier nur für macOS sprechen, aber prinzipiell funktioniert das alles natürlich auch auf einem Windows- oder Linux-Rechner. Wichtig ist für eine saubere Fernsteuerung des PicoCalc, dass die verwendete Software das VT100 Protokoll spricht.  
+
+An der Stelle war meine unter macOS so geliebte Serial Terminal App "CoolTerm" leider raus und ich musste nach Alternativen suchen. Glücklicherweise liegt die Lösung macOS schon in Form des Commandline Tools `screen` bei.
+
+All das im Folgenden Beschriebene bezieht sich auf einen PicoCalc, der MMBasic gebootet hat, also als Firmware PicoMite oder WebMite (letzteres benutze ich aktuell, da ich einen Raspberry Pi Pico 2W im PicoCalc gesteckt habe) nutzt.
+
+## Vorgehen Schritt für Schritt
+
+Das Fernsteuern des PicoCalc vom Mac aus bringt u.a. die folgenden Vorteile:
+* Tippen auf einer "richtigen" Tastatur
+* Mehr Zeichen pro Zeile und mehr Zeilen als der Textbildschirm des PicoCalc
+* Damit einhergehend auch ein größerer Editorbereich inkl. farbigem Quellcode
+* Reiner Grafikbildschirm auf dem PicoCalc, kein Überschreiben mehr mit dem Textprompt
+* getrennte Texteingabe nur auf dem Mac, dadurch z.B. saubere Speicherung des Grafikbildschirms in eine Datei
+
+Als Tool am Mac benutzen wir [iTerm2][iterm2], was ja sowieso das beste Terminalprogramm ist – und noch dazu kostenlos.
+
+Die folgenden Schritte habe ich durchgeführt, um den PicoMite vom Mac aus bequem zu bedienen. 
+
+* Zunächst den PicoCalc einschalten, MMBasic booten lassen und den USB-C Port des PicoCalc mit dem Mac verbinden (natürlich mit einem ordentlichen, voll beschalteten Datenkabel)
+* Auf dem Mac erstellen wir in iTerm2 ein neues Profil, eigens für PicoCalc Sessions. Dabei die folgenden Punkte beachten:
+   * 
+   * (wichtig darin: VT100 Emulation!)
 * Man kann einen neuen Tab in iTerm2 über die Tastenkombination ⌘ ⌃ P aufmachen
 * Dies führt sofort ein screen Kommando aus (siehe Profil Config in iTerm2)
 * Achtung: den device name muss man je nach Rechner, auf dem man das in iTerm2 macht, im Profil anpassen! Der selbe PicoCalc verbindet sich an anderen Macs mit anderen /dev/tty* Namen!
@@ -41,3 +80,8 @@ Serielle Remote-Sessions (mit PicoMite / WebMite Firmware)
 
 🔲
 {: style="text-align: right" }
+
+[pico]: https://www.clockworkpi.com/picocalc
+[forum]: https://forum.clockworkpi.com/c/picocalc/31
+[thread]: https://forum.clockworkpi.com/t/first-thoughts-on-arrival-and-beginners-tutorial/17126
+[iterm2]: https://iterm2.com
