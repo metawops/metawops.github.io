@@ -53,30 +53,36 @@ Die folgenden Schritte habe ich durchgeführt, um den PicoMite vom Mac aus beque
 
 * Zunächst den PicoCalc einschalten, MMBasic booten lassen und den USB-C Port des PicoCalc mit dem Mac verbinden (natürlich mit einem ordentlichen, voll beschalteten Datenkabel)
 * Auf dem Mac erstellen wir in iTerm2 ein neues Profil, eigens für PicoCalc Sessions. Dabei die folgenden Punkte beachten:
-   * 
-   * (wichtig darin: VT100 Emulation!)
-* Man kann einen neuen Tab in iTerm2 über die Tastenkombination ⌘ ⌃ P aufmachen
-* Dies führt sofort ein screen Kommando aus (siehe Profil Config in iTerm2)
-* Achtung: den device name muss man je nach Rechner, auf dem man das in iTerm2 macht, im Profil anpassen! Der selbe PicoCalc verbindet sich an anderen Macs mit anderen /dev/tty* Namen!
-* Einmal Return drücken und man sollte das PicoCalc Prompt > sehen
+   * Auf dem "General" Reiter wählen wir bei "Command" den Eintrag "Command" und geben dahinter das folgende Kommando ein: `screen /dev/tty.usbserial-145130 115200,cs8,-ixon`
+   * Dabei muss natürlich der `/dev/tty*`-Pfad korrekt sein, also zum angestöpselten PicoCalc gehören. Am besten findet man den über ein `ls /dev/tty*` heraus und vergleicht die Ausgabe *vor* und *nach* dem Anstöpseln des PicoCalc. 
+   * Obacht: Selbst an ein und demselben Mac kann sich dieser Pfad bzw. der Name des seriellen Devices des PicoCalc ändern! Also immer mal wieder checken, nach Anstöpseln.
+   ![iTerm2 Profile 1](/assets/images/iterm2-profile-1.png)
+   * Auf dem Reiter "Terminal" ist es wichtig, beim Setting "Report terminal type" den Eintrag "vt100" auszuwählen:
+   ![iTerm2 Profile 2](/assets/images/iterm2-profile-2.png)
+   * Ansonsten kann man sich das Profil nach Gutdünken gestalten, was z.B. Schriftart, -größe, Farben, Badge, Keyboard Shortcut (ich habe ⌘ ⌃ P festgelegt) etc. betrifft.
+   
+* In iTerm2 kann ich nun über die Tastenkombination ⌘ ⌃ P einen neuen Tab aufmachen, der sich sofort über das konfigurierte `screen` Kommando mit dem angeschlossenen PicoCalc verbindet.
+* Es erscheinen erstmal ein paar wirre Zeichen, aber nach einmal Return drücken sollte das PicoCalc Prompt > erscheinen.
+
 * Jetzt müssen wir den Textbildschirm exklusiv für die serielle Verbindung nutzen, so dass Text nicht mehr auf dem PicoCalc angezeigt wird, weil wir sonst die Spalten- und Zeilenzahl nicht ändern können. Das geht über das Kommando
-    * OPTION LCDPANEL NOCONSOLE
+    * `OPTION LCDPANEL NOCONSOLE`
 * Danach können wir z.B. die Textbildschirm („Terminal“-) Auflösung auf 40 Zeilen à 80 Spalten setzen:
-    * OPTION DISPLAY 40,80
-* Wenn man jetzt z.B. auf das DRIVE „B: wechselt und FILES sagt, müsste man sofort sehen, dass kein Zeilenumbruch nach 40 Zeichen mehr passiert.
-* Auch der EDITor nutzt jetzt die 80x40 Zeichen
-* Mit der fn Taste auf dem Mac Keyboard kann man tatsächlich die Funktionstasten drücken, also fn+F1 ist dann F1. Wenn man in den macOS Settings umschaltet, dass die Standardbelegung nicht das Symbol darüber sein soll, sondern die F-Taste, kann man sich fn auch sparen.
-* Das geht aber nur so einfach auf der MacBook eigenen Tastatur. Bei externen USB-Tastaturen mag das nicht funktionieren, je nach dem, welche Firmware sie nutzen, wie sie programmiert sind, was sie bei Tastendrücken senden. Auf meiner Keychron Q5 Max z.B. muss ich weiterhin Fn halten, egal, wie das macOS Setting eingestellt ist!
-* Bei jedem RUN Kommando spuckt WebMite zunächst die aktuellen Options aus (führt also OPTION LIST aus). Wenn das Programm also etwas zeichnet, wird dies über die OPTIONS Ausgabe gezeichnet, was natürlich doof ist. Das o.a. Kommando OPTION LCDPANEL NOCONSOLE schafft da Abhilfe. Nur damit kann man also dann saubere Grafikausgaben machen und auch das > Prompt erscheint dann nicht mehr auf dem LCD Screen des PicoCalc und zerstört so nicht mehr die Grafik, die man nun also mit einem SAVE IMAGE Kommando sauber in eine BMP Datei speichern kann.
-￼
-￼
+    * `OPTION DISPLAY 40,80`
+* Wenn man jetzt z.B. auf das `DRIVE "B:` wechselt und `FILES` sagt, müsste man sofort sehen, dass kein Zeilenumbruch nach 40 Zeichen mehr passiert.
 
-* Um Programmlistings über das LIST Kommando nicht nach wenigen Zeilen zu pausieren (mit PRESS ANY KEY …), muss man
-    * OPTION LIST 0
-* eingeben.
+   ![PicoCalc serial](../assets/images/picocalc-serial-1.png)
 
+* Auch der Quellcode Editor (Kommando `EDIT`) nutzt jetzt die 80x40 Zeichen:
 
+   ![PicoCalc Editor](../assets/images/picocalc-serial-editor.png)
 
+* Mit der fn Taste auf einer original Apple Tastatur kann man tatsächlich die Funktionstasten drücken, also `fn+F1` ist dann `F1`. Wenn man in den macOS Settings umschaltet, dass die Standardbelegung nicht das Symbol darüber sein soll, sondern die F-Taste, kann man sich das Gedrückthalten von `fn` sogar sparen.
+   * Das geht aber nur so einfach auf der MacBook eigenen Tastatur bzw. bei Apple Tastaturen. Bei externen USB-Tastaturen mag das nicht funktionieren, je nach dem, welche Firmware sie nutzen, wie sie programmiert sind, was sie bei Tastendrücken senden. Auf meiner Keychron Q5 Max z.B. muss ich weiterhin Fn halten, egal, wie das macOS Setting eingestellt ist!
+* Das `OPTION LCDPANEL NOCONSOLE` Kommando scheint sich schonmal zurückzusetzen. Das merkt man immer daran, dass plötzlich doch wieder Text auf dem LCDisplay des PicoCalc angezeigt wird. Dann muss man es einfach nochmal eingeben.
+* Zum Beispiel spuckt MMBasic offenbar bei jedem `RUN` Kommando zunächst die aktuellen Options aus (führt also `OPTION LIST` aus). Wenn das Programm also etwas zeichnet, wird dies über die OPTIONS Ausgabe gezeichnet, was natürlich doof ist. Das o.a. Kommando `OPTION LCDPANEL NOCONSOLE` schafft da Abhilfe. Nur damit kann man also dann saubere Grafikausgaben machen und auch das `>` Prompt erscheint dann nicht mehr auf dem LCD Screen des PicoCalc und zerstört so nicht mehr die Grafik, die man nun also mit einem `SAVE IMAGE` Kommando sauber in eine BMP Datei speichern kann.
+
+* Damit auch Programmlistings über das `LIST` Kommando nicht nach wenigen Zeilen mit `PRESS ANY KEY …` pausieren, muss man das folgende Kommando eingeben:
+    * `OPTION LIST 0`
 
 🔲
 {: style="text-align: right" }
