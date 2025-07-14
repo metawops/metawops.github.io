@@ -17,6 +17,7 @@ header:
 Vor einigen Wochen erreichte mich endlich der lang ersehnte [**PicoCalc** von ClockworkPi][pico]. Die Lieferzeiten sind lang, da es eine kleine Firma ist und immer erst Aufträge gesammelt werden, ehe ein neuer Batch hergestellt wird.
 
 ![ClockworkPi PicoCalc](/assets/images/picocalc1.jpeg)
+Der ClockworkPi *PicoCalc*. Foto: Stefan Wolfrum
 
 ## Fragen & Wissen
 
