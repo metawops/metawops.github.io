@@ -6,15 +6,15 @@
 @import "minimal-mistakes"; // Theme
 
 @font-face {
-  font-family: 'ti30x';
-  src: url('/assets/fonts/TI30XII.woff2') format('woff2'),
-       url('/assets/fonts/TI30XII.TTF') format('truetype');
+  font-family: 'ti30xpro';
+  src: url('/assets/fonts/TI30XProEmuKeys.woff2') format('woff2'),
+       url('/assets/fonts/TI30XProEmuKeys.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 .ti30font {
-  font-family: 'ti30x', sans-serif;
+  font-family: 'ti30xpro', sans-serif;
 }
 
 // Eigene Styles hier anhängen
