@@ -55,7 +55,7 @@ Mit den in der obigen Aufgabe aus dem Video gegebenen Werten $n=100$ und $p=0.12
 
 <span class="ti30font">&#x007a;</span>
 
-Absatz mit normalem Text *und* UniCode Zeichen aus dem TI-30 Font, wie dieses: &#x007a;{: .ti30font } – oder diese zwei: &#x0071;&#x2020;{: .ti30font }
+Absatz mit normalem Text *und* UniCode Zeichen aus dem TI-30 Font, wie dieses: <span class="ti30font">&#x007a;</span> – oder diese zwei: <span class="ti30font">&#x0071; &#x2020;</span>
 
 
 🔲
