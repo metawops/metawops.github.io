@@ -5,6 +5,18 @@
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // Skin
 @import "minimal-mistakes"; // Theme
 
+@font-face {
+  font-family: 'ti30x';
+  src: url('/assets/fonts/TI30XII.woff2') format('woff2'),
+       url('/assets/fonts/TI30XII.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.special-unicode {
+  font-family: 'ti30x', sans-serif;
+}
+
 // Eigene Styles hier anhängen
 .author__bio a {
   color: $link-color;
