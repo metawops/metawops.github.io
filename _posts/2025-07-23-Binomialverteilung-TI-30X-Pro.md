@@ -55,6 +55,8 @@ Mit den in der obigen Aufgabe aus dem Video gegebenen Werten $n=100$ und $p=0.12
 
 <span class="special-unicode">&#xF094;</span>
 
+&#xF094;{: .ti30font }
+
 🔲
 {: style="text-align: right" }
 
