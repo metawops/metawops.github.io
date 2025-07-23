@@ -53,7 +53,7 @@ Mit den in der obigen Aufgabe aus dem Video gegebenen Werten $n=100$ und $p=0.12
 
 ... und das ist genau das selbe Ergebnis, wie im Video mit dem TI-30X **Prio** MathPrint und der BOUNDS Option. 😎
 
-&#xF094;
+<span class="special-unicode">&#xF094;</span>
 
 🔲
 {: style="text-align: right" }
