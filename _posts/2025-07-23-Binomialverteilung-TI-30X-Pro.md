@@ -61,11 +61,12 @@ Das Berechnen der beiden Einzelwerte machen wir dann auf dem TI-30X **Pro** Math
 13. Zweimal <span class="ti30font">n</span> drücken.
 14. Es erscheint das Ergebnis `VALUE=0.9886358080475`.
 15. In der Zeile `STORE:` mit <span class="ti30font">></span> auf das `a` gehen und <span class="ti30font">n</span> drücken. Damit haben wir die Zahl in der Variablen `a` gespeichert.
-16. <span class="ti30font">q &#x2013;</span>
-17. <span class="ti30font">1 - z z z z z n</span>
+16. Mit <span class="ti30font">q &#x2013;</span> wieder zurück in den normalen Rechenmodus.
+17. Jetzt die im Schritt 9 gemerkte 1 eingeben und davon den Wert in `a` abziehen: <span class="ti30font">1 - z z z z z n</span>
 18. Das Ergebnis 0.011364192 ist die Lösung der gestellten Aufgabe $P(21 \le X \le 50)$.
 
-Kurzzusammenfassung: Mit den in der obigen Aufgabe aus dem Video gegebenen Werten $n=100$ und $p=0.125$ und der Frage nach $P(21 \le X \le 50)$ ermitteln wir auf dem **Pro**:
+## Kurzzusammenfassung
+Mit den in der obigen Aufgabe aus dem Video gegebenen Werten $n=100$ und $p=0.125$ und der Frage nach $P(21 \le X \le 50)$ ermitteln wir auf dem **Pro**:
 
 * $P(X \le 50)=1$,
 * $P(X \le 20)=0.98863580804$
