@@ -66,6 +66,7 @@ Auf den Seiten eines unserer Sponsoren, dem O'Reilly/dpunkt Verlag, gibt es auch
 [64intern]: https://www.c64-wiki.de/wiki/64_intern
 [7000g]: https://en.wikipedia.org/wiki/Casio_fx-7000G
 [8087]: https://de.wikipedia.org/wiki/Intel_8087
+[amazon]: https://blog.metawops.de/datenschutz/#amazon-partnerprogramm
 [apfel]: https://de.wikipedia.org/wiki/Mandelbrot-Menge
 [busch]: https://de.wikipedia.org/wiki/Busch_(Modellbahnzubehör)
 [carly]: https://de.wikipedia.org/wiki/Carly_Fiorina
