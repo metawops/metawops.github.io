@@ -45,7 +45,7 @@ Wir müssen das also in zwei Schritten lösen:
 
 ## Schritt für Schritt
 
-Das Berechnen der beiden Einzelwerte machen wir dann auf dem TI-30X **Pro** MathPrint über die Option "SINGLE" im BinomialCDF Menü folgendermaßen:
+Das Berechnen der beiden Einzelwerte machen wir dann auf dem TI-30X **Pro** MathPrint über die Option `SINGLE` im BinomialCDF Menü folgendermaßen:
 1. <span class="ti30font">q &#x2020;</span>
 2. Mit <span class="ti30font">></span> nach rechts auf `DISTR` gehen.
 3. Auf den Eintrag mit der `5:Binomialcdf` gehen und <span class="ti30font">n</span> drücken.
