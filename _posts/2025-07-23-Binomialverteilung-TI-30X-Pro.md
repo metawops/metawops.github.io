@@ -65,6 +65,8 @@ Das Berechnen der beiden Einzelwerte machen wir dann auf dem TI-30X **Pro** Math
 17. Jetzt die im Schritt 9 gemerkte 1 eingeben und davon den Wert in `a` abziehen: <span class="ti30font">1 - z z z z z n</span>
 18. Das Ergebnis 0.011364192 ist die Lösung der gestellten Aufgabe $P(21 \le X \le 50)$.
 
+*Ich hätte gerne auch Screenshots des TI-30X Pro MathPrint Bildschirms hier eingebaut, aber dafür braucht es eine leider nur im kostenpflichtigen Abomodell verfügbare Software von Texas Instruments, die ich nicht habe und auch nicht beabsichtige, zu kaufen.*
+
 ## Kurzzusammenfassung
 Mit den in der obigen Aufgabe aus dem Video gegebenen Werten $n=100$ und $p=0.125$ und der Frage nach $P(21 \le X \le 50)$ ermitteln wir auf dem **Pro**:
 
