@@ -54,6 +54,9 @@ _Foto: Philipp Schindera_
 
 Auf den Seiten eines unserer Sponsoren, dem O'Reilly/dpunkt Verlag, gibt es auch noch [ein Interview dazu][interview].
 
+*Verlinkte Produkte sind i.d.R. Amazon-Affiliate-Links, wie schon [in der Datenschutzerklärung angegeben][amazon].*
+{: .small-text}
+
 🔲
 {: style="text-align: right" }
 
