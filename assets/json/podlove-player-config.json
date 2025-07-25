@@ -8,8 +8,8 @@
   "theme": {
     "tokens": {
       "brand": "#c66b47",
-      "brandDark": "#c66b47",
-      "brandDarkest": "#394348",
+      "brandDark": "#d67b57",
+      "brandDarkest": "#999398",
       "brandLightest": "#3B454A",
       "shadeDark": "#807E7C",
       "shadeBase": "#807E7C",
@@ -61,7 +61,7 @@
   },
 
   "subscribe-button": {
-    "feed": "https://feeds.podlovers.org/mp3",
+    "feed": "https://blog.metawops.de/podcast.xml",
 
     "clients": [
       {
