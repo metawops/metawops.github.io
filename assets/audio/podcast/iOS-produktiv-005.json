@@ -17,6 +17,73 @@
   "poster": "/assets/images/iosproduktiv-cover.jpg",
   "link": "https://www.iosproduktiv.de/episode-005-automatisierung-teil-1/",
 
+  "chapters": [
+    {
+      "start": "00:00:00.000",
+      "title": "Los geht's"
+    },
+    {
+      "start": "00:00:55.256",
+      "title": "Logitech Keyboard macht iPad Display kaputt"
+    },
+    {
+      "start": "00:03:36.521",
+      "title": "Apple AirPods mini Review"
+    },
+    {
+      "start": "00:07:16.745",
+      "title": "Bose QC35 mini Review"
+    },
+    {
+      "start": "00:10:04.285",
+      "title": "Amazon Echo / Alexa erster Eindruck"
+    },
+    {
+      "start": "00:12:12.211",
+      "title": "iOS 10.3 beta findet AirPods"
+    },
+    {
+      "start": "00:13:41.306",
+      "title": "Thema heute: Automatisierung"
+    },
+    {
+      "start": "00:15:07.646",
+      "title": "Grundlagen"
+    },
+    {
+      "start": "00:16:56.870",
+      "title": "Agile Tortoise & Drafts"
+    },
+    {
+      "start": "00:17:57.611",
+      "title": "x-callback-url"
+    },
+    {
+      "start": "00:19:46.486",
+      "title": "Federico Viticci"
+    },
+    {
+      "start": "00:22:42.018",
+      "title": "IFTTT"
+    },
+    {
+      "start": "00:23:50.669",
+      "title": "Beispiel: Markdown -> HTML Mail"
+    },
+    {
+      "start": "00:26:52.172",
+      "title": "Beispiel: Terminology App"
+    },
+    {
+      "start": "00:28:42.696",
+      "title": "Workflow App"
+    },
+    {
+      "start": "00:33:46.731",
+      "title": "Ausblick"
+    }
+  ],
+
   "audio": [
     {
       "url": "https://blog.metawops.de/assets/audio/podcast/iOS-produktiv-005.mp3",
