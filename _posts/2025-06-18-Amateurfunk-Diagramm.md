@@ -31,8 +31,32 @@ flowchart TD
     G -- Nein --> E
 ```
 
-Die Diagramm-Idee stammt aus dem [N-Lizenz-Lehrgang-Video, Lektion 8, "Antennen und Leitungen"][video]. – Dort sieht es auch hübscher und übersichtlicher aus ... Na, vielleicht lerne ich noch mehr über die Mermaid-Sprache in nächster Zeit und kann das Diagramm oben noch optimieren.
+Die Diagramm-Idee stammt aus dem [N-Lizenz-Lehrgang-Video, Lektion 8, "Antennen und Leitungen"][video]. – Dort sieht es auch hübscher und übersichtlicher aus ...
 
+Na, vielleicht lerne ich noch mehr über die Mermaid-Sprache in nächster Zeit und kann das Diagramm oben noch optimieren.
+
+Oder ihr habt einen Tipp, wie man das Diagramm weniger "wild" gestalten kann? Aktuell sieht der Mermaid Code zu obigem Diagramm so aus:
+
+````
+```mermaid
+flowchart TD
+    A(["Start"]) --> B{"Klasse?"}
+    
+    B -- "N" --> C{"`Max. Leistung < 10W EIRP?`"}
+    B -- E oder A --> D{"`Max. Leistung < 10W EIRP?`"}
+
+    C -- Nein --> E["Nicht Senden"]
+    C -- Ja --> F["Senden"]
+
+    D -- Ja --> F
+    D -- Nein --> G{"Standortbescheinigung oder BEMFV"}
+
+    G -- Ja --> F
+    G -- Nein --> E
+```
+````
+
+Bin für sachdienliche Hinweise offen! 
 
 🔲
 {: style="text-align: right" }
