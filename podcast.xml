@@ -1,0 +1,4 @@
+---
+layout: nil
+---
+{% assign podcast_posts = site.categories.podcast %}
