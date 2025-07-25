@@ -16,7 +16,7 @@ Hier wird der Podlove Player (hoffentlich) eingebettet sein:
 <div id="podlove-player"></div>
 
 <script>
-  podlovePlayer('#podlove-player', '/assets/audio/podcast/iOS-produktiv-005.json');
+  podlovePlayer('#podlove-player', '/assets/audio/podcast/iOS-produktiv-005.json', '/assets/json/podlove-player-config.json');
 </script>
 
 Das ist alles nur ein Test!!!
