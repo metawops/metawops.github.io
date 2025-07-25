@@ -209,3 +209,27 @@ table.my-table td {
   border: 1px solid #ddd;
   vertical-align: top; /* Vertikale Ausrichtung oben */
 }
+
+
+// Rouge Highlighting Fix
+
+.highlight {
+  background: #f8f8f8;
+  padding: 1em;
+  overflow-x: auto;
+  border-radius: 4px;
+}
+
+.highlight .lineno {
+  color: #999;
+  padding-right: 1em;
+  user-select: none;
+  display: inline-block;
+  text-align: right;
+  min-width: 2em;
+}
+
+.highlight .nt { color: #008000; }    // HTML-Tags
+.highlight .na { color: #7f007f; }    // HTML-Attribute
+.highlight .s  { color: #d14; }       // Strings
+.highlight .c  { color: #998; font-style: italic; } // Comments
