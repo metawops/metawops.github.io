@@ -3,7 +3,7 @@ title: "Podlove Player Test"
 date: 2025-07-25
 last_modified_at: 2025-07-25
 categories:
-  - Podcast
+  - podcast
 tags:
   - podlove
 excerpt: Test-Artikel zur Einbettung des Podlove Web Players
