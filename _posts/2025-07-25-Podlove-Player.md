@@ -8,7 +8,7 @@ tags:
   - podlove
 excerpt: Test-Artikel zur Einbettung des Podlove Web Players
 header:
-  teaser: /assets/images/podlove-sample.png
+  teaser: /assets/images/podlove-webplayer.png
 ---
 
 Hier wird der Podlove Player (hoffentlich) eingebettet sein:
