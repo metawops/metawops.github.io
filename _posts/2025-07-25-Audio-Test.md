@@ -25,7 +25,7 @@ Man schreibt Blog Posts hier ja in Markdown, aber das bietet von Haus aus keine 
 
 Die HTML Syntax zum Einbetten des Audio-Schnipsels oben in der Markdown Datei für diesen Blog Post sieht dann so aus:
 
-```HTML
+```html
 <audio controls>
    <source src="/assets/audio/gehen-auf-laub.mp3" type="audio/mpeg">
    Scheinbar kann Dein Browser den an dieser Stelle eigentlich eingebetteten Audio Player nicht rendern. :-( 
