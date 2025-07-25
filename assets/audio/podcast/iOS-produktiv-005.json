@@ -1,0 +1,71 @@
+{
+  "version": 5,
+
+  "show": {
+    "title": "iOS produktiv",
+    "subtitle": "Der Podcast rund ums produktive Nutzen von iOS und iPadOS",
+    "summary": "Wir sprechen über alles, was mit iOS und iPadOS zu tun hat. Von Apps über Hardware bis hin zu Workflows und Tipps.",
+    "poster": "/assets/images/iosproduktiv-cover.jpg",
+    "link": "https://iosproduktiv.de"
+  },
+
+  "title": "Episode #005 – Automatisierung Teil 1",
+  "subtitle": "Gerhard und Stefan gehen endlich das Thema Automatisierung an und sprechen im Teil 1 über ein paar Grundlagen und die wichtigsten Apps dazu.",
+  "summary": "Gerhard und Stefan gehen endlich das Thema Automatisierung an und sprechen im Teil 1 über ein paar Grundlagen und die wichtigsten Apps dazu.",
+  "publicationDate": "2017-02-05T16:19:00+00:00",
+  "duration": "00:36:06.000",
+  "poster": "/assets/images/iosproduktiv-cover.jpg",
+  "link": "https://www.iosproduktiv.de/episode-005-automatisierung-teil-1/",
+
+  "audio": [
+    {
+      "url": "file:///assets/audio/podcast/iOS-produktiv-005.mp3",
+      "size": "35255521",
+      "title": "MP3 Audio (mp3)",
+      "mimeType": "audio\/mpeg"
+    }
+  ],
+
+  "files": [
+    {
+      "url": "file:///assets/audio/podcast/iOS-produktiv-005.mp3",
+      "size": "35255521",
+      "title": "MP3 Audio",
+      "mimeType": "audio\/mpeg"
+    }
+  ],
+
+  "contributors": [
+    {
+      "id": "1",
+      "name": "Stefan Wolfrum",
+      "avatar": "/assets/images/stefan_80x80.jpeg",
+      "role": {
+        "id": "1",
+        "slug": "team",
+        "title": "Team"
+      },
+      "group": {
+        "id": "2",
+        "slug": "on-air",
+        "title": "On Air"
+      }
+    },
+    {
+      "id": "2",
+      "name": "Gerhard Wiedenmann",
+      "avatar": "/assets/images/gerhard_150x150.jpg",
+      "role": {
+        "id": "1",
+        "slug": "team",
+        "title": "Team"
+      },
+      "group": {
+        "id": "2",
+        "slug": "on-air",
+        "title": "On Air"
+      }
+    }
+  ]
+
+}
