@@ -28,12 +28,13 @@ Nach etwas Herumstochern im Nebel habe ich dann recht schnell festgestellt, dass
 
 ## Richtige Tastatur
 
-Nach allerlei Experimenten fragte ich mich, ob ich auch eine "richtige" Tastatur benutzen kann, um auf dem PicoCalc zu programmieren. Und das geht. *Eine* Methode ist da die Ausnutzung der seriellen Schnittstelle, die über den USB-C Port des PicoCalc zur Verfügung gestellt wird – also *nicht* der Micro-USB Port des eingesetzten Raspberry Pi Pico.  
-Eine andere Variante, die ich im Forum gesehen habe, ist, eine USB-Tastatur direkt an den PicoCalc anzuschließen. Dafür muss man aber erstmal einen USB-Port für diesen Zweck haben, den der PicoCalc nicht hat. Offenbar kann man den aber "organisieren". Ob das mit einem herkömmlichen Raspberry Pi Pico 1/2 möglich ist, oder nur mit dem "Luckfox Lyra", ist mir noch nicht ganz klar geworden. Dazu muss ich noch mehr das o.a. Forum studieren.
+Nach allerlei Experimenten fragte ich mich, ob ich auch eine "richtige" Tastatur benutzen kann, um auf dem PicoCalc zu programmieren. Und das geht. *Eine* Methode ist da die Ausnutzung der seriellen Schnittstelle, die über den USB-C Port des PicoCalc zur Verfügung gestellt wird – also *nicht* der Micro-USB Port des eingesetzten Raspberry Pi Pico. Das schauen wir uns gleich an.
+
+Eine *andere* Variante, die ich im Forum gesehen habe, ist, eine USB-Tastatur direkt an den PicoCalc anzuschließen. Dafür muss man aber erstmal einen USB-Port für diesen Zweck haben, den der PicoCalc nicht hat. Offenbar kann man den aber "organisieren". Ob das mit einem herkömmlichen Raspberry Pi Pico 1/2 möglich ist, oder nur mit dem "Luckfox Lyra", ist mir noch nicht ganz klar geworden. Dazu muss ich noch mehr das o.a. Forum studieren.
 
 ## Serielle Verbindung
 
-Ich kann hier nur für macOS sprechen, aber prinzipiell funktioniert das alles natürlich auch auf einem Windows- oder Linux-Rechner. Wichtig ist für eine saubere Fernsteuerung des PicoCalc, dass die verwendete Software das VT100 Protokoll spricht.  
+Ich kann hier nur für macOS sprechen, aber prinzipiell funktioniert das alles natürlich auch auf einem Windows- oder Linux-Rechner. Wichtig ist für eine saubere Fernsteuerung des PicoCalc, dass die verwendete Software das VT100 Protokoll spricht.
 
 An der Stelle war meine unter macOS so geliebte Serial Terminal App "CoolTerm" leider raus und ich musste nach Alternativen suchen. Glücklicherweise liegt die Lösung macOS schon in Form des Commandline Tools `screen` bei.
 
