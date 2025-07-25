@@ -14,7 +14,7 @@ header:
 Hier ein kleiner Audioschnipsel f√ºr [ASMR][asmr-wikipedia] Fans ...
 
 <audio controls>
-   <source src="/assets/audio/gehen-auf-laub.m4a" type="audio/mpeg">
+   <source src="/assets/audio/gehen-auf-laub.mp3" type="audio/mpeg">
    Scheinbar kann Dein Browser den an dieser Stelle eigentlich eingebetteten Audio Player nicht rendern. :-( 
 </audio>
 
@@ -26,7 +26,7 @@ Die HTML Syntax zum Einbetten des Audio-Schnipsels oben in der Markdown Datei f√
 
 ```HTML
 <audio controls>
-   <source src="/assets/audio/gehen-auf-laub.m4a" type="audio/mpeg">
+   <source src="/assets/audio/gehen-auf-laub.mp3" type="audio/mpeg">
    Scheinbar kann Dein Browser den an dieser Stelle eigentlich eingebetteten Audio Player nicht rendern. :-( 
 </audio>
 ```
