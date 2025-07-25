@@ -1,13 +1,16 @@
 ---
 title: "Mit welcher Leistung darf ich als Funkamateur senden?"
 date: 2025-06-18
-last_modified_at: 2025-06-18
+last_modified_at: 2025-07-25
 categories: Amateurfunk
 tags:
   - erp
   - eirp
   - mermaid
+  - sendeleistung
 excerpt: Der Blog Post zeigt in einem Diagramm, ob und mit welcher Leistung und unter welcher Voraussetzung ich als Funkamateur senden darf.
+header:
+  teaser: /assets/images/diagramm-sendeleistung.png
 ---
 
 Hier mal ein Anwendungsfall für [Mermaid][tag-mermaid].
