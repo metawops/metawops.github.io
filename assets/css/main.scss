@@ -210,18 +210,8 @@ table.my-table td {
   vertical-align: top; /* Vertikale Ausrichtung oben */
 }
 
-// Word wrap für Rouge Codeblöcke
-.rouge-table {
-  width: 100%;
-  table-layout: fixed;
-  border-collapse: separate;
-}
-
-.rouge-code pre {
-  white-space: pre-wrap !important;
-  word-break: break-word !important;
-}
-
-.rouge-gutter {
-  user-select: none;
+// Word wrap für Rouge Codeblöcke – wenn Zeilennummern deaktiviert sind
+pre.highlight code {
+  white-space: pre-wrap;
+  word-break: break-word;
 }
