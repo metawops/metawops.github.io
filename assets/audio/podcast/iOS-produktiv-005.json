@@ -86,7 +86,7 @@
 
   "audio": [
     {
-      "url": "https://blog.metawops.de/assets/audio/podcast/iOS-produktiv-005.mp3",
+      "url": "file:///assets/audio/podcast/iOS-produktiv-005.mp3",
       "size": "35255521",
       "title": "MP3 Audio (mp3)",
       "mimeType": "audio\/mpeg"
@@ -95,7 +95,7 @@
 
   "files": [
     {
-      "url": "https://blog.metawops.de/assets/audio/podcast/iOS-produktiv-005.mp3",
+      "url": "file:///assets/audio/podcast/iOS-produktiv-005.mp3",
       "size": "35255521",
       "title": "MP3 Audio",
       "mimeType": "audio\/mpeg"
