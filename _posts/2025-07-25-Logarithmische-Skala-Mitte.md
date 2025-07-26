@@ -12,7 +12,7 @@ header:
   teaser: /assets/images/daempfungsdiagramm.png
 ---
 
-Wenn man sich auf eine Amateurfunkprüfung vorbereitet, stolpert man auch über das ein oder andere Diagramm mit logarithmischen Achsen. Ein Beispiel ist die Grafik zum Thema Kabeldämpfungen, bei der sowohl die x-, als auch die y-Achsen logarithmisch sind:
+Wenn man sich – so wie ich derzeit – auf eine Amateurfunkprüfung vorbereitet, stolpert man auch über das ein oder andere Diagramm mit logarithmischen Achsen. Ein Beispiel ist die Grafik zum Thema Kabeldämpfungen, bei der sowohl die x-, als auch die y-Achsen logarithmisch sind:
 
 ![Kabeldämpfungsdiagramm](/assets/images/daempfungsdiagramm.png)
 
@@ -57,6 +57,11 @@ $$
 \end{align*}
 $$
 
+Jetzt können wir also leicht immer die Mitte zwischen zwei Markierungen auf logarithmischen Achsen finden.
+
+Noch ein Beispiel zur Grafik oben: Genau auf der halben Strecke zwischen 100 und 200 auf der y-Achse liegt also der Wert $\sqrt{100*200}\approx 141.4$.
+
+Auf der x-Achse ist zwischen 100 und 200 die 145 markiert – wenn man *genau* hinschaut, sieht man auch, dass der 145er Strich nicht exakt in der Mitte zwischen 100 und 200 liegt, sondern korrekterweise einen Hauch weiter rechts.
 
 🔲
 {: style="text-align: right" }
