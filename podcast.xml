@@ -1,0 +1,22 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+  <title>{{ site.title }}</title>
+  <link>{{ site.url }}{{ site.baseurl }}/podcast.xml</link>
+  <description>Podcast Feed</description>
+  {% assign podcast_posts = site.categories.podcast %}
+  {% for post in podcast_posts %}
+    <item>
+      <title>{{ post.title | xml_escape }}</title>
+      <link>{{ site.url }}{{ post.url }}</link>
+      <description>{{ post.excerpt | xml_escape }}</description>
+      <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
+      <guid>{{ site.url }}{{ post.url }}</guid>
+      <enclosure url="{{ site.url }}{{ post.file }}" type="audio/mpeg" length="{{ post.length }}" />
+    </item>
+  {% endfor %}
+</channel>
+</rss>
