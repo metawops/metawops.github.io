@@ -10,7 +10,7 @@ tags:
 excerpt: Interessant, was auf halber Strecke bei logarithmischen Skalen liegt!
 mathjax: true
 header:
-  teaser: /assets/images/daempfungsdiagramm.png
+  teaser: /assets/images/daempfungsdiagramm_3zu2.png
 ---
 
 Wenn man sich – so wie ich derzeit – auf eine Amateurfunkprüfung vorbereitet, stolpert man auch über das ein oder andere Diagramm mit logarithmischen Achsen. Ein Beispiel ist die Grafik zum Thema Kabeldämpfungen, bei der sowohl die x-, als auch die y-Achsen logarithmisch sind:
