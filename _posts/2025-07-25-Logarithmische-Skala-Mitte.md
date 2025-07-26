@@ -8,6 +8,7 @@ tags:
   - logarithmus
   - mittelwert
 excerpt: Interessant, was auf halber Strecke bei logarithmischen Skalen liegt!
+mathjax: true
 header:
   teaser: /assets/images/daempfungsdiagramm.png
 ---
