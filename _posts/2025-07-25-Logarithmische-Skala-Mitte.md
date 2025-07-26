@@ -48,19 +48,19 @@ Jetzt können wir diese Gleichung nach $M$ auflösen:
 
 $$
 \begin{align*}
-& \qquad  & log(M) - log(A)        &=\; log(B) - log(M)       && \quad |\, +log(M) \\
-&\Leftrightarrow \qquad  & 2 \cdot log(M) - log(A) &=\; log(B)               && \quad |\, +log(A) \\
-&\Leftrightarrow \qquad  & 2 \cdot log(M)         &=\; log(A) + log(B)       && \quad |\, \text{1. Logarithmengesetz} \\
-&\Leftrightarrow \qquad  & 2 \cdot log(M)         &=\; log(A \cdot B)        && \quad |\, \text{3. Logarithmengesetz} \\
-&\Leftrightarrow \qquad  & log(M^2)               &=\; log(A \cdot B)        && \quad |\, 10^{x} \\
-&\Leftrightarrow \qquad  & M^2                    &=\; A \cdot B             && \quad |\, \sqrt{} \\
-&\Leftrightarrow \qquad  & M                      &=\; \sqrt{A \cdot B}      &&
+&                \qquad  & log(M) - log(A)         &=\; log(B) - log(M)       && \quad |\, +log(M) \\
+&\Leftrightarrow \qquad  & 2 \cdot log(M) - log(A) &=\; log(B)                && \quad |\, +log(A) \\
+&\Leftrightarrow \qquad  & 2 \cdot log(M)          &=\; log(A) + log(B)       && \quad |\, \text{1. Logarithmengesetz} \\
+&\Leftrightarrow \qquad  & 2 \cdot log(M)          &=\; log(A \cdot B)        && \quad |\, \text{3. Logarithmengesetz} \\
+&\Leftrightarrow \qquad  & log(M^2)                &=\; log(A \cdot B)        && \quad |\, 10^{x} \\
+&\Leftrightarrow \qquad  & M^2                     &=\; A \cdot B             && \quad |\, \sqrt{} \\
+&\Leftrightarrow \qquad  & M                       &=\; \sqrt{A \cdot B}      &&
 \end{align*}
 $$
 
 Jetzt können wir also leicht immer die Mitte zwischen zwei Markierungen auf logarithmischen Achsen finden.
 
-Noch ein Beispiel zur Grafik oben: Genau auf der halben Strecke zwischen 100 und 200 auf der y-Achse liegt also der Wert $\sqrt{100*200}\approx 141.4$.
+Noch ein Beispiel zur Grafik oben: Genau auf der halben Strecke zwischen 100 und 200 auf der y-Achse liegt also der Wert $\sqrt{100\cdot200}\approx 141.4$.
 
 Auf der x-Achse ist zwischen 100 und 200 die 145 markiert – wenn man *genau* hinschaut, sieht man auch, dass der 145er Strich nicht exakt in der Mitte zwischen 100 und 200 liegt, sondern korrekterweise einen Hauch weiter rechts.
 
