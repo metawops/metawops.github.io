@@ -88,7 +88,7 @@ Die folgenden Schritte habe ich durchgeführt, um den PicoMite vom Mac aus beque
 * Damit auch Programmlistings über das `LIST` Kommando nicht nach wenigen Zeilen mit `PRESS ANY KEY …` pausieren, muss man das folgende Kommando eingeben:
     * `OPTION LIST 0`
 
-Letzter Tipp: Um die laufende `screen` "Umgebung" ordnungsgemäß zu verlassen, gibt es mehrere Möglichkeiten. Für mich die praktikabelste: <span class="keycap">⌃</span> `A`{:.keycap} und danach <span class="keycap">K</span> drücken. Das `k` steht für "kill" und man wird auch nochmal sicherheitshalber gefragt, ob man das wirklich will. Also nochmal mit <span class="keycap">Y</span> bestätigen. Damit hängt das `screen` Kommando nicht im Hintergrund, sondern ist beendet. Würde es nämlich noch im Hintergrund hängen, könnte man nicht wieder ein neues iTerm2 Tab aufmachen.
+Letzter Tipp: Um die laufende `screen` "Umgebung" ordnungsgemäß zu verlassen, gibt es mehrere Möglichkeiten. Für mich die praktikabelste: `⌃`{:.keycap}`A`{:.keycap} und danach `K`{:.keycap} drücken. Das `K` steht für "kill" und man wird auch nochmal sicherheitshalber gefragt, ob man das wirklich will. Also nochmal mit `Y`{:.keycap} bestätigen. Damit hängt das `screen` Kommando nicht im Hintergrund, sondern ist beendet. Würde es nämlich noch im Hintergrund hängen, könnte man nicht wieder ein neues iTerm2 Tab aufmachen.
 
 Was macht ihr so mit eurem PicoCalc?
 
