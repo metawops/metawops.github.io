@@ -63,7 +63,7 @@ Die folgenden Schritte habe ich durchgeführt, um den PicoMite vom Mac aus beque
    ![iTerm2 Profile 1](/assets/images/iterm2-profile-1.png)
    * Auf dem Reiter "Terminal" ist es wichtig, beim Setting "Report terminal type" den Eintrag "vt100" auszuwählen:
    ![iTerm2 Profile 2](/assets/images/iterm2-profile-2.png)
-   * Ansonsten kann man sich das Profil nach Gutdünken gestalten, was z.B. Schriftart, -größe, Farben, Badge, Keyboard Shortcut (ich habe ⌃⌘P festgelegt) etc. betrifft.
+   * Ansonsten kann man sich das Profil nach Gutdünken gestalten, was z.B. Schriftart, -größe, Farben, Badge, Keyboard Shortcut (ich habe `⌃`{:.keycap}`⌘`{:.keycap}`P`{:.keycap} festgelegt) etc. betrifft.
    
 * In iTerm2 kann ich nun über die Tastenkombination ⌃⌘P einen neuen Tab aufmachen, der sich sofort über das konfigurierte `screen` Kommando mit dem angeschlossenen PicoCalc verbindet.
 * Es erscheinen erstmal ein paar wirre Zeichen, aber nach einmal Return drücken sollte das PicoCalc Prompt `>` erscheinen.
@@ -80,15 +80,15 @@ Die folgenden Schritte habe ich durchgeführt, um den PicoMite vom Mac aus beque
 
    ![PicoCalc Editor](/assets/images/picocalc-serial-editor.png)
 
-* Mit der fn Taste auf einer original Apple Tastatur kann man tatsächlich die Funktionstasten drücken, also `fn+F1` ist dann `F1`. Wenn man in den macOS Settings umschaltet, dass die Standardbelegung nicht das Symbol darüber sein soll, sondern die F-Taste, kann man sich das Gedrückthalten von `fn` sogar sparen und die F-Tasten können 1:1 wie am PicoCalc genutzt werden.
-   * Das geht aber nur so einfach auf der MacBook eigenen Tastatur bzw. bei Apple Tastaturen. Bei externen USB-Tastaturen mag das nicht funktionieren, je nach dem, welche Firmware sie nutzen, wie sie programmiert sind, was sie bei Tastendrücken senden. Auf meiner Keychron Q5 Max z.B. muss ich weiterhin Fn halten, egal, wie das macOS Setting eingestellt ist!
+* Mit der `fn`{:.keycap} Taste auf einer original Apple Tastatur kann man tatsächlich die Funktionstasten drücken, also `fn`{:.keycap}`F1`{:.keycap} ist dann `F1`{:.keycap}. Wenn man in den macOS Settings umschaltet, dass die Standardbelegung nicht das Symbol darüber sein soll, sondern die F-Taste, kann man sich das Gedrückthalten von `fn`{:.keycap} sogar sparen und die F-Tasten können 1:1 wie am PicoCalc genutzt werden.
+   * Das geht aber nur so einfach auf der MacBook eigenen Tastatur bzw. bei Apple Tastaturen. Bei externen USB-Tastaturen mag das nicht funktionieren, je nach dem, welche Firmware sie nutzen, wie sie programmiert sind, was sie bei Tastendrücken senden. Auf meiner Keychron Q5 Max z.B. muss ich weiterhin `Fn`{:.keycap} halten, egal, wie das macOS Setting eingestellt ist!
 * Das `OPTION LCDPANEL NOCONSOLE` Kommando scheint sich schonmal zurückzusetzen. Das merkt man immer daran, dass plötzlich doch wieder Text auf dem LCDisplay des PicoCalc angezeigt wird. Dann muss man es einfach nochmal eingeben.
    * Zum Beispiel spuckt MMBasic offenbar bei jedem `RUN` Kommando zunächst die aktuellen Options aus (führt also `OPTION LIST` aus). Wenn das Programm also etwas zeichnet, wird dies über die OPTIONS Ausgabe gezeichnet, was natürlich doof ist. Das o.a. Kommando `OPTION LCDPANEL NOCONSOLE` schafft da Abhilfe. Nur damit kann man also dann saubere Grafikausgaben machen und auch das `>` Prompt erscheint dann nicht mehr auf dem LCD Screen des PicoCalc und zerstört so nicht mehr die Grafik, die man nun also mit einem `SAVE IMAGE` Kommando sauber in eine BMP Datei speichern kann.
 
 * Damit auch Programmlistings über das `LIST` Kommando nicht nach wenigen Zeilen mit `PRESS ANY KEY …` pausieren, muss man das folgende Kommando eingeben:
     * `OPTION LIST 0`
 
-Letzter Tipp: Um die laufende `screen` "Umgebung" ordnungsgemäß zu verlassen, gibt es mehrere Möglichkeiten. Für mich die praktikabelste: `⌃`{:.keycap}`A`{:.keycap} und danach `K`{:.keycap} drücken. Das `K` steht für "kill" und man wird auch nochmal sicherheitshalber gefragt, ob man das wirklich will. Also nochmal mit `Y`{:.keycap} bestätigen. Damit hängt das `screen` Kommando nicht im Hintergrund, sondern ist beendet. Würde es nämlich noch im Hintergrund hängen, könnte man nicht wieder ein neues iTerm2 Tab aufmachen.
+Letzter Tipp: Um die laufende `screen` "Umgebung" ordnungsgemäß zu verlassen, gibt es mehrere Möglichkeiten. Für mich die praktikabelste: `⌃`{:.keycap}`A`{:.keycap} und danach `K`{:.keycap} drücken. Das `K` steht für *kill* und man wird auch nochmal sicherheitshalber gefragt, ob man das wirklich will. Also nochmal mit `Y`{:.keycap} bestätigen. Damit hängt das `screen` Kommando nicht im Hintergrund, sondern ist beendet. Würde es nämlich noch im Hintergrund hängen, könnte man nicht erneut ein iTerm2 Tab mit `⌃`{:.keycap}`⌘`{:.keycap}`P`{:.keycap} aufmachen, weil das Device dann schon belegt/geöffnet ist.
 
 Was macht ihr so mit eurem PicoCalc?
 
