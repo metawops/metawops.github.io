@@ -1,7 +1,7 @@
 ---
 title: "Den PicoCalc seriell steuern"
 date: 2025-07-14
-last_modified_at: 2025-07-25
+last_modified_at: 2025-07-27
 categories:
   - Gadgets
 tags:
@@ -87,6 +87,8 @@ Die folgenden Schritte habe ich durchgeführt, um den PicoMite vom Mac aus beque
 
 * Damit auch Programmlistings über das `LIST` Kommando nicht nach wenigen Zeilen mit `PRESS ANY KEY …` pausieren, muss man das folgende Kommando eingeben:
     * `OPTION LIST 0`
+
+Letzter Tipp: Um die laufende `screen` "Umgebung" ordnungsgemäß zu verlassen, gibt es mehrere Möglichkeiten. Für mich die praktikabelste: `⌃A` und danach `k` drücken. Das `k` steht für "kill" und man wird auch nochmal sicherheitshalber gefragt, ob man das wirklich will. Also nochmal mit `y` bestätigen. Damit hängt das `screen` Kommando nicht im Hintergrund, sondern ist beendet. Würde es nämlich noch im Hintergrund hängen, könnte man nicht wieder ein neues iTerm2 Tab aufmachen.
 
 Was macht ihr so mit eurem PicoCalc?
 
