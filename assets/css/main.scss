@@ -221,14 +221,14 @@ pre.highlight code {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 1.2em;         /* Breite kann je nach Geschmack/für Doppelzeichen angepasst werden */
-  height: 1.2em;        /* Höhe bestimmt die Einheitlichkeit */
-  border-radius: 0.2em; /* Wert für abgerundete Ecken (z. B. 0.5em bis 0.8em) */
-  background: #c5cfed;  /* Hintergrundfarbe */
-  border: 1px solid #333333;    /* Rahmenfarbe */
-  font-size: 0.9em;     /* Schriftgröße */
+  width: 1.2em !important;          /* Breite kann je nach Geschmack/für Doppelzeichen angepasst werden */
+  height: 1.2em !important;         /* Höhe bestimmt die Einheitlichkeit */
+  border-radius: 0.2em;             /* Wert für abgerundete Ecken (z. B. 0.5em bis 0.8em) */
+  background: #c5cfed !important; /* Hintergrundfarbe */
+  border: 1px solid #333333;      /* Rahmenfarbe */
+  font-size: 0.9em !important;     /* Schriftgröße */
   font-family: inherit; /* Schriftart */
   margin: 0.2em;        /* Abstand zu anderen Symbolen */
   box-sizing: border-box;
-  font-weight: normal;
+  font-weight: normal !important;
 }
