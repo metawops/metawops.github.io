@@ -1,7 +1,7 @@
 ---
 title: "Logarithmische Skalen und geometrisches Mittel"
 date: 2025-07-26
-last_modified_at: 2025-07-26
+last_modified_at: 2025-07-27
 categories:
   - Mathematik
 tags:
@@ -54,7 +54,7 @@ $$
 &\Leftrightarrow \qquad  & 2 \cdot log(M)          &=\; log(A \cdot B)        && \quad |\, \text{3. Logarithmengesetz} \\
 &\Leftrightarrow \qquad  & log(M^2)                &=\; log(A \cdot B)        && \quad |\, 10^{x} \\
 &\Leftrightarrow \qquad  & M^2                     &=\; A \cdot B             && \quad |\, \sqrt{} \\
-&\Leftrightarrow \qquad  & M                       &=\; \sqrt{A \cdot B}      &&
+&\Rightarrow \qquad  & M                       &=\; \sqrt{A \cdot B}      &&
 \end{align*}
 $$
 
