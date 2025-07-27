@@ -65,8 +65,8 @@ Die folgenden Schritte habe ich durchgeführt, um den PicoMite vom Mac aus beque
    ![iTerm2 Profile 2](/assets/images/iterm2-profile-2.png)
    * Ansonsten kann man sich das Profil nach Gutdünken gestalten, was z.B. Schriftart, -größe, Farben, Badge, Keyboard Shortcut (ich habe `⌃`{:.keycap}`⌘`{:.keycap}`P`{:.keycap} festgelegt) etc. betrifft.
    
-* In iTerm2 kann ich nun über die Tastenkombination ⌃⌘P einen neuen Tab aufmachen, der sich sofort über das konfigurierte `screen` Kommando mit dem angeschlossenen PicoCalc verbindet.
-* Es erscheinen erstmal ein paar wirre Zeichen, aber nach einmal Return drücken sollte das PicoCalc Prompt `>` erscheinen.
+* In iTerm2 kann ich nun über die Tastenkombination `⌃`{:.keycap}`⌘`{:.keycap}`P`{:.keycap} einen neuen Tab aufmachen, der sich sofort über das konfigurierte `screen` Kommando mit dem angeschlossenen PicoCalc verbindet.
+* Es erscheinen erstmal ein paar wirre Zeichen, aber nach einmal `⏎`{:.keycap} drücken sollte das PicoCalc Prompt `>` erscheinen.
 
 * Jetzt müssen wir den Textbildschirm exklusiv für die serielle Verbindung nutzen, so dass Text nicht mehr auf dem PicoCalc angezeigt wird, weil wir sonst die Spalten- und Zeilenzahl nicht ändern können. Das geht über das Kommando
     * `OPTION LCDPANEL NOCONSOLE`
