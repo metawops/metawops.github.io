@@ -14,15 +14,15 @@ header:
   teaser: /assets/images/keycaps-teaser.png
 ---
 
-Wenn ich in manchen Blog Posts hier Workflows am Mac beschreibe, die das Drücken von Tasten oder Tastenkombinationen beinhalten, würde ich diese Tastendrücke gerne visuell als solche im Text hervorheben. Also z.B. so, wie ich es jetzt in meinem [Artikel über die serielle Bedienung des PicoCalcs][picocalc] gemacht habe:
+Wenn ich in manchen Blog Posts hier Workflows am Mac beschreibe, die das Drücken von Tasten oder Tastenkombinationen beinhalten, würde ich diese Tastendrücke gerne visuell als solche im Text hervorheben. Also z.B. so, wie ich es jetzt in meinem [Artikel über die serielle Bedienung des PicoCalcs][picocalc] gemacht habe. Daraus ein kleiner Screenshot:
 
 ![Mehrere stilisierte Tastenkappen sind ordentlich in einer Reihe auf hellem Hintergrund angeordnet, jede Tastenkappe zeigt einen anderen Buchstaben oder ein Symbol in fetter Schrift, vermittelt einen klaren und modernen Eindruck und eignet sich zur Veranschaulichung von Tastenkombinationen in Blogbeiträgen](/assets/images/keycaps-teaser.png)
 
 ## Webfonts?
 
-Meine erste Idee war: Ich suche einen Font, der alle Buchstaben und Ziffern und Sonderzeichen als Glyph mit umschlossenem Rähmchen hat. Denn beim Schreiben [meines letzten Artikels über Binomialverteilungen am TI-30X][ti30x] hatte ich ja schon den speziellen TI-30X Pro MathPrint Font gelernt zu benutzen.
+Meine erste Idee war: Ich suche einen Font, der alle Buchstaben, Ziffern und Sonderzeichen als Glyphs mit umschließenden Rähmchen enthält. Denn beim Schreiben [meines letzten Artikels über Binomialverteilungen am TI-30X][ti30x] hatte ich ja schon den speziellen TI-30X Pro MathPrint Font gelernt zu benutzen.
 
-Leider habe ich aber keinen Font gefunden, den ich (a) benutzen dürfte und (b) der derlei Symbole enthält. – Aber da gibt es ja noch andere Möglichkeiten …
+Leider habe ich aber keinen Font gefunden, der derlei Symbole enthält und gleichzeitig frei benutzbar ist. – Aber zum Glück gibt es ja noch andere Möglichkeiten …
 
 ## CSS!
 
