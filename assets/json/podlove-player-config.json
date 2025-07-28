@@ -1,0 +1,152 @@
+{
+  "version": 5,
+
+  "base": "player/",
+
+  "activeTab": "chapters",
+
+  "theme": {
+    "tokens": {
+      "brand": "#c66b47",
+      "brandDark": "#d67b57",
+      "brandDarkest": "#999398",
+      "brandLightest": "#3B454A",
+      "shadeDark": "#807E7C",
+      "shadeBase": "#807E7C",
+      "contrast": "#BCB9B9",
+      "alt": "#fff"
+    },
+
+    "fonts": {
+      "ci": {
+        "name": "RobotoBlack",
+        "family": [
+          "RobotoBlack",
+          "Calibri",
+          "Candara",
+          "Arial",
+          "Helvetica",
+          "sans-serif"
+        ],
+        "weight": 900,
+        "src": ["./assets/Roboto-Black.ttf"]
+      },
+      "regular": {
+        "name": "FiraSansLight",
+        "family": [
+          "FiraSansLight",
+          "Calibri",
+          "Candara",
+          "Arial",
+          "Helvetica",
+          "sans-serif"
+        ],
+        "weight": 300,
+        "src": ["./assets/FiraSans-Light.ttf"]
+      },
+      "bold": {
+        "name": "FiraSansBold",
+        "family": [
+          "FiraSansBold",
+          "Calibri",
+          "Candara",
+          "Arial",
+          "Helvetica",
+          "sans-serif"
+        ],
+        "weight": 700,
+        "src": ["./assets/FiraSans-Bold.ttf"]
+      }
+    }
+  },
+
+  "subscribe-button": {
+    "feed": "https://blog.metawops.de/podcast.xml",
+
+    "clients": [
+      {
+        "id": "apple-podcasts",
+        "service": ""
+      },
+      {
+        "id": "antenna-pod"
+      },
+      {
+        "id": "beyond-pod"
+      },
+      {
+        "id": "castbox",
+        "service": "castbox-id"
+      },
+      {
+        "id": "castro"
+      },
+      {
+        "id": "clementine"
+      },
+      {
+        "id": "downcast"
+      },
+      {
+        "id": "google-podcasts",
+        "service": ""
+      },
+      {
+        "id": "gpodder"
+      },
+      {
+        "id": "itunes"
+      },
+      {
+        "id": "i-catcher"
+      },
+      {
+        "id": "instacast"
+      },
+      {
+        "id": "overcast"
+      },
+      {
+        "id": "player-fm"
+      },
+      {
+        "id": "pocket-casts"
+      },
+      {
+        "id": "pocket-casts",
+        "service": ""
+      },
+      {
+        "id": "pod-grasp"
+      },
+      {
+        "id": "podcast-addict"
+      },
+      {
+        "id": "podcast-republic"
+      },
+      {
+        "id": "podcat"
+      },
+      {
+        "id": "podscout"
+      },
+      {
+        "id": "rss-radio"
+      },
+      {
+        "id": "rss"
+      }
+    ]
+  },
+
+  "share": {
+    "channels": [
+      "twitter",
+      "mail",
+      "link"
+    ],
+    "sharePlaytime": true,
+    "outlet": "/share.html"
+  }
+}
