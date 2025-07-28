@@ -48,6 +48,7 @@ Wenn die Datei `main.scss` also startklar ist, das folgende CSS am besten unten 
   margin: 0.1em;                    /* Abstand          */
   box-sizing: border-box;
   font-weight: normal !important;
+  font-style: normal !important;
   padding: 0.1rem !important;
 }
 ```
