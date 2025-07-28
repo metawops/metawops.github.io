@@ -65,12 +65,12 @@ Wir zeigen hier erstmal, wie man es *straight forward* mit HTML machen würde. I
 Um mitten in einem Satz die oben neu definierte CSS Klasse auf ein einzelnes Zeichen anzuwenden, würde man in Markdown mit HTML so vorgehen:
 
 ```
-Bitte drücke jetzt die Tastenkombination <span class=".keycap">⌃</span><span class=".keycap">A</span> und dann noch die <span class=".keycap">K</span>-Taste.
+Bitte drücke jetzt die Tastenkombination <span class="keycap">⌃</span><span class="keycap">A</span> und dann noch die <span class="keycap">K</span>-Taste.
 ```
 
 Das Ergebnis sieht dann so aus:
 
-> Bitte drücke jetzt die Tastenkombination <span class=".keycap">⌃</span><span class=".keycap">A</span> und dann noch die <span class=".keycap">K</span>-Taste.
+> Bitte drücke jetzt die Tastenkombination <span class="keycap">⌃</span><span class="keycap">A</span> und dann noch die <span class="keycap">K</span>-Taste.
 
 Geht. Aber das Markdown wird ein bisschen unübersichtlich.
 
