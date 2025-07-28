@@ -223,13 +223,18 @@ pre.highlight code {
   justify-content: center;
   width: 1.4em !important;          /* Breite kann je nach Geschmack/für Doppelzeichen angepasst werden */
   height: 1.3em !important;         /* Höhe bestimmt die Einheitlichkeit */
-  border-radius: 0.2em !important;             /* Wert für abgerundete Ecken (z. B. 0.5em bis 0.8em) */
+  border-radius: 0.2em !important;  /* Wert für abgerundete Ecken (z. B. 0.5em bis 0.8em) */
   background: #c5cfed !important; /* Hintergrundfarbe */
   border: 2px solid #242424;      /* Rahmenfarbe */
-  font-size: 1.0em !important;     /* Schriftgröße */
-  font-family: inherit; /* Schriftart */
-  margin: 0.1em;        /* Abstand zu anderen Symbolen */
+  font-size: 1.0em !important;      /* Schriftgröße */
+  font-family: inherit;             /* Schriftart */
+  margin: 0.1em;                    /* Abstand zu anderen Symbolen */
   box-sizing: border-box;
   font-weight: normal !important;
   padding: 0.1rem !important;
+}
+
+// text-align: right für mein QED am Ende eines Artikels
+.qed {
+   text-align: right;
 }
