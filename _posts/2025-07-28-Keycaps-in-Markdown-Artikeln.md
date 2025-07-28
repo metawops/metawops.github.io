@@ -38,14 +38,14 @@ Wenn die Datei `main.scss` also startklar ist, das folgende CSS am besten unten 
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 1.4em !important;          /* Breite kann je nach Geschmack/für Doppelzeichen angepasst werden */
-  height: 1.3em !important;         /* Höhe bestimmt die Einheitlichkeit */
-  border-radius: 0.2em !important;  /* Wert für abgerundete Ecken (z. B. 0.5em bis 0.8em) */
+  width: 1.4em !important;          /* Breite           */
+  height: 1.3em !important;         /* Höhe             */
+  border-radius: 0.2em !important;  /* Abrundung        */
   background: #c5cfed !important;   /* Hintergrundfarbe */
-  border: 2px solid #242424;        /* Rahmenfarbe */
-  font-size: 1.0em !important;      /* Schriftgröße */
-  font-family: inherit;             /* Schriftart */
-  margin: 0.1em;                    /* Abstand zu anderen Symbolen */
+  border: 2px solid #242424;        /* Rahmenfarbe      */
+  font-size: 1.0em !important;      /* Schriftgröße     */
+  font-family: inherit;             /* Schriftart       */
+  margin: 0.1em;                    /* Abstand          */
   box-sizing: border-box;
   font-weight: normal !important;
   padding: 0.1rem !important;
