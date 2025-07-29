@@ -53,7 +53,7 @@ Wenn die Datei `main.scss` also startklar ist, das folgende CSS am besten unten 
 }
 ```
 
-Die ganzen `!important` Anweisungen rühren daher, dass wir sicherstellen wollen, dass unsere Keycaps in jeden Fall funktionieren, egal in welche anderen HTML-Umgebungen sie eingebettet sind. Würden wir z.B. hinter `font-style: normal` kein `!important` haben und dann ein Keycap innerhalb eines Zitats (was man in Markdown bekanntlich mit einem `>` Zeichen startet) einbauen wollen, würde das Keycap Zeichen *kursiv* gesetzt werden. Weil der Default Style für Zitate hier beim "minimal mistakes" Theme eben einen kursiven Font benutzt.
+Die ganzen `!important` Anweisungen rühren daher, dass wir sicherstellen wollen, dass unsere Keycaps in jedem Fall funktionieren, egal in welche anderen HTML-Umgebungen sie eingebettet sind. Würden wir z.B. hinter `font-style: normal` kein `!important` haben und dann ein Keycap innerhalb eines Zitats (was man in Markdown bekanntlich mit einem `>` Zeichen startet) einbauen wollen, würde das Keycap Zeichen *kursiv* gesetzt werden. Weil der Default Style für Zitate hier beim "minimal mistakes" Theme eben einen kursiven Font benutzt.
 
 Die Änderungen müssen wir natürlich commiten und ins Repository pushen, damit der GitHub Build Prozess startet und die neuen Styles auch live benutzt werden können.
 
