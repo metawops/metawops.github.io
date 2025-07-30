@@ -59,6 +59,25 @@ Schnell mal ausprobieren mit dem Code `2665`. Wir halten `⌥`{:.keycap}, tippen
 Wenn man nun die hexadezimalen Codes zu seinen Lieblingszeichen wissen will, gibt es verschiedene Möglichkeiten. Zwei seien genannt.
 
 #### macOS Character Viewer
+Mit `⌃`{:.keycap}`⌘`{:.keycap}`space`{:.keycap} (möglicherweise zweimal drücken!) aktiviert man unter macOS ein kleines Fenster, den Character Viewer. Der erscheint möglicherweise erstmal nur in seiner kompakten Form. Dann klicken wir rechts unten auf den kleinen Doppelpfeil:
+
+![alt text](/assets/images/character-viewer-2.png)
+
+Denn dann erscheint daraufhin rechts unten ein kleines Icon, was ein Fenster symbolisiert.
+
+![alt text](/assets/images/character-viewer-3.png)
+
+Wenn wir das klicken, haben wir die volle Version des Character Viewers vor uns:
+
+![alt text](/assets/images/character-viewer-4.png)
+
+Nun aktivieren wir hier erstmal die *volle* Unicode Ansicht, indem wir einmal links oben auf die eingekreisten drei Punkte klicken und dann "Customize List" wählen:
+
+![alt text](/assets/images/character-viewer-5.png)
+
+Einmal links ganz runterscrollen und im Abschnitt "Code Tables" den Eintrag "Unicode" aktivieren und mit dem Done Button bestätigen:
+
+![alt text](/assets/images/character-viewer-6.png)
 
 #### Internet
 Es gibt 
