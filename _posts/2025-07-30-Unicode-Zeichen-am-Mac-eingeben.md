@@ -1,5 +1,5 @@
 ---
-title: "Jedes Unicode Zeichen am Mac eingeben"
+title: "(Fast) jedes Unicode Zeichen am Mac eingeben"
 date: 2025-07-30
 last_modified_at: 2025-07-30
 categories:
@@ -7,7 +7,7 @@ categories:
 tags:
   - unicode
   - sonderzeichen
-excerpt: Auch unter macOS gibt es die Möglichkeit, beliebige Zeichen über ihre Nummer einzugeben.
+excerpt: Auch unter macOS gibt es die Möglichkeit, beliebige Zeichen über ihre Nummer einzugeben. Hier lernen wir, wie.
 header:
   teaser: /assets/images/character-viewer.png
 ---
@@ -71,16 +71,46 @@ Wenn wir das klicken, haben wir die volle Version des Character Viewers vor uns:
 
 ![alt text](/assets/images/character-viewer-4.png)
 
-Nun aktivieren wir hier erstmal die *volle* Unicode Ansicht, indem wir einmal links oben auf die eingekreisten drei Punkte klicken und dann "Customize List" wählen:
+Möglicherweise seht ihr bei euch aber noch nicht die Unicode Nummer ("U+1F600") und auch nicht die UTF-8 Codierung. Das kommt jetzt.
+
+Nun aktivieren wir hier die *volle* Unicode Ansicht, indem wir einmal links oben auf die eingekreisten drei Punkte klicken und dann "Customize List" wählen:
 
 ![alt text](/assets/images/character-viewer-5.png)
 
-Einmal links ganz runterscrollen und im Abschnitt "Code Tables" den Eintrag "Unicode" aktivieren und mit dem Done Button bestätigen:
+Im erscheinenden Dialog ganz runterscrollen, im Abschnitt "Code Tables" den Eintrag "Unicode" aktivieren und mit dem Done Button bestätigen:
 
 ![alt text](/assets/images/character-viewer-6.png)
 
+Jetzt scrollen wir links einmal runter und klicken auf den neuen Eintrag "Unicode":
+
+![alt text](/assets/images/character-viewer-7.png)
+
+Im mittleren Bereich können wir jetzt durch die zahlreichen Codepages blättern, dann ein Zeichen anklicken und sehen rechts unter der großen Variante des Zeichens auch den Zahlencode des Zeichens. Im Beispiel Screenshot ist es das Apple Symbol, was auf der Command-Taste meist zu sehen ist. Es heißt übrigens "Place of interest sign" und das wurde nicht von Apple erfunden, sondern nur verwendet. [Es ist schon viel älter][schleifenquadrat].
+
+Will man also dieses Zeichen erzeugen, geht man so vor:
+1. Mit `⌃`{:.keycap}`space`{:.keycap} auf das Unicode Tastaturlayout umschalten.
+2. Die `⌥`{:.keycap}-Taste gedrückt halten und `2`{:.keycap}`3`{:.keycap}`1`{:.keycap}`8`{:.keycap} tippen.
+
 #### Internet
-Es gibt 
+Es gibt im Web zahlreiche Seiten, auf denen man im Unicode Verzeichnis blättern und suchen kann. Hier ein paar Beispiele:
+* https://symbl.cc
+* https://unicode-explorer.com
+* https://jrgraphix.net/r/Unicode/
+* https://keyboard.cool/db/
+
+Auch auf diese Weise kommt man dann an den Code des gewünschten Zeichens.
+
+## Pferdefuß
+Die ganze Sache hat leider aktuell noch einen Haken, den ich nicht verschweigen will: Das Ganze funktioniert derzeit in macOS nur für *vierstellige* Codes! Unicode Zeichen mit einem *fünfstelligen* Code kann man auf die oben geschilderte Weise im Moment (macOS 15.5) *nicht* eingeben! 😡
+
+Das betrifft dann also alles ab der Codepage, die mit `00010000` anfängt (sie heißt "Linear B Syllabary"). Zu den Unicode Zeichen mit einem fünfstelligen Code gehören z.B. auch die Emojis – aber die und viele weitere Sonderzeichen kann man ja zum Glück auch direkt und auf andere Weise über den Character Viewer finden und durch Doppelklick in seinen Text einfügen.
+
+## Betthupferl
+
+Oben hatten wir das Zeichen mit der Nummer `U+2665`, das ergab ein Herz.
+Das Zeichen `U+2764` ergibt übrigens *auch* ein Herz – probiert's mal aus! Welches gefällt euch besser?
 
 🔲
 {:.qed}
+
+[schleifenquadrat]: https://de.wikipedia.org/wiki/Schleifenquadrat
