@@ -27,7 +27,7 @@ Im erscheinenden Dialog links unten aufs Plus-Zeichen klicken:
 
 ![Screenshot zeigt die macOS Systemeinstellungen im Bereich Tastatur. Im linken Bereich sind die Eingabequellen sichtbar, unten links ist das Plus-Symbol zum Hinzufügen einer neuen Eingabequelle hervorgehoben. Rechts sind verschiedene Tastatureinstellungen zu sehen.](/assets/images/keyboard-settings-2.png)
 
-Im erscheinenden Dialog unten links im Such-Eingabefeld `uni` eingeben (1), es gibt nur einen Treffer, das "Unicode Hex Input" Keyboard, was rechts oben angezeigt wird (2). Mit Klick auf den "Add" Button rechts unten bestätigen:
+Im erscheinenden Dialog unten links im Such-Eingabefeld `uni` eingeben (1), es gibt nur einen Treffer, das "Unicode Hex Input" Keyboard, was rechts oben angezeigt wird (2). Mit Klick auf den "Add" Button rechts unten (3) bestätigen:
 
 ![alt text](/assets/images/keyboard-settings-3.png)
 
@@ -48,10 +48,10 @@ Letzteres erreichen wir entweder über das eben aktivierte Icon in der Menüleis
 
 ![macOS Tastaturlayout Menü Icon und aufgeklapptes Menü von der Menüleiste](/assets/images/keyboard-settings-7.png)
 
-... oder wir benutzen einfach da, wo der Cursor blinkt und wir etwas eingeben wollen die Tastenkombination `⌃`{:.keycap}`space`{:.keycap} zum "Durchsteppen" durch unsere konfigurierten Tastaturlayouts. Genau unter dem blinkenden Cursor erscheint ein kleines GUI Element und das darin farblich hervorgehobene Layout ist dann jeweils das aktive.
+... oder wir benutzen einfach da, wo der Cursor blinkt und wir etwas eingeben wollen die Tastenkombination `⌃`{:.keycap}`␣`{:.keycap} (`␣` sit ein Space Zeichen, steht also für die Leertaste) zum "Durchsteppen" durch unsere konfigurierten Tastaturlayouts. Genau unter dem blinkenden Cursor erscheint ein kleines GUI Element und das darin farblich hervorgehobene Layout ist dann jeweils das aktive.
 
 ## Wie gibt man ein?
-Fehlt noch der Code selbst und wie man ihn denn nun eingibt. Letzteres ist einfach: Man hält die `⌥`{:.keycap}-Taste (auch `option`{:.keycap} genannt) gedrückt und gibt nun exakt vier hexadezimale Zeichen ein. Nach Eingabe des vierten Zeichens erscheint das Unicode Symbol direkt und man kann die `⌥`{:.keycap}-Taste wieder loslassen.
+Fehlt noch der Code selbst und wie man ihn denn nun eingibt. Letzteres ist einfach: Man hält die `⌥`{:.keycap}-Taste gedrückt und gibt nun exakt vier hexadezimale Zeichen ein. Nach Eingabe des vierten Zeichens erscheint das Unicode Symbol direkt und man kann die `⌥`{:.keycap}-Taste wieder loslassen.
 
 Schnell mal ausprobieren mit dem Code `2665`. Wir halten `⌥`{:.keycap}, tippen `2`{:.keycap} `6`{:.keycap} `6`{:.keycap} `5`{:.keycap} und beim Tippen der letzten Ziffer erscheint sofort ein ♥.
 
@@ -59,7 +59,7 @@ Schnell mal ausprobieren mit dem Code `2665`. Wir halten `⌥`{:.keycap}, tippen
 Wenn man nun die hexadezimalen Codes zu seinen Lieblingszeichen wissen will, gibt es verschiedene Möglichkeiten. Zwei seien genannt.
 
 #### macOS Character Viewer
-Mit `⌃`{:.keycap}`⌘`{:.keycap}`space`{:.keycap} (möglicherweise zweimal drücken!) aktiviert man unter macOS ein kleines Fenster, den Character Viewer. Der erscheint möglicherweise erstmal nur in seiner kompakten Form. Dann klicken wir rechts unten auf den kleinen Doppelpfeil:
+Mit `⌃`{:.keycap}`⌘`{:.keycap}`␣`{:.keycap} (möglicherweise zweimal drücken!) aktiviert man unter macOS ein kleines Fenster, den Character Viewer. Der erscheint möglicherweise erstmal nur in seiner kompakten Form. Dann klicken wir rechts unten auf den kleinen Doppelpfeil:
 
 ![alt text](/assets/images/character-viewer-2.png)
 
@@ -93,10 +93,10 @@ Will man also dieses Zeichen erzeugen, geht man so vor:
 
 #### Internet
 Es gibt im Web zahlreiche Seiten, auf denen man im Unicode Verzeichnis blättern und suchen kann. Hier ein paar Beispiele:
-* https://symbl.cc
-* https://unicode-explorer.com
-* https://jrgraphix.net/r/Unicode/
-* https://keyboard.cool/db/
+* [https://symbl.cc]
+* [https://unicode-explorer.com]
+* [https://jrgraphix.net/r/Unicode/]
+* [https://keyboard.cool/db/]
 
 Auch auf diese Weise kommt man dann an den Code des gewünschten Zeichens.
 
