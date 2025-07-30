@@ -48,7 +48,7 @@ Letzteres erreichen wir entweder über das eben aktivierte Icon in der Menüleis
 
 ![macOS Tastaturlayout Menü Icon und aufgeklapptes Menü von der Menüleiste](/assets/images/keyboard-settings-7.png)
 
-... oder wir benutzen einfach da, wo der Cursor blinkt und wir etwas eingeben wollen die Tastenkombination `⌃`{:.keycap}`␣`{:.keycap} (`␣` sit ein Space Zeichen, steht also für die Leertaste) zum "Durchsteppen" durch unsere konfigurierten Tastaturlayouts. Genau unter dem blinkenden Cursor erscheint ein kleines GUI Element und das darin farblich hervorgehobene Layout ist dann jeweils das aktive.
+... oder wir benutzen einfach da, wo der Cursor blinkt und wir etwas eingeben wollen die Tastenkombination `⌃`{:.keycap}`␣`{:.keycap} (`␣` ist ein Space Zeichen, steht also für die Leertaste) zum "Durchsteppen" durch unsere konfigurierten Tastaturlayouts. Genau unter dem blinkenden Cursor erscheint ein kleines GUI Element und das darin farblich hervorgehobene Layout ist dann jeweils das aktive.
 
 ## Wie gibt man ein?
 Fehlt noch der Code selbst und wie man ihn denn nun eingibt. Letzteres ist einfach: Man hält die `⌥`{:.keycap}-Taste gedrückt und gibt nun exakt vier hexadezimale Zeichen ein. Nach Eingabe des vierten Zeichens erscheint das Unicode Symbol direkt und man kann die `⌥`{:.keycap}-Taste wieder loslassen.
@@ -88,15 +88,15 @@ Jetzt scrollen wir links einmal runter und klicken auf den neuen Eintrag "Unicod
 Im mittleren Bereich können wir jetzt durch die zahlreichen Codepages blättern, dann ein Zeichen anklicken und sehen rechts unter der großen Variante des Zeichens auch den Zahlencode des Zeichens. Im Beispiel Screenshot ist es das Apple Symbol, was auf der Command-Taste meist zu sehen ist. Es heißt übrigens "Place of interest sign" und das wurde nicht von Apple erfunden, sondern nur verwendet. [Es ist schon viel älter][schleifenquadrat].
 
 Will man also dieses Zeichen erzeugen, geht man so vor:
-1. Mit `⌃`{:.keycap}`space`{:.keycap} auf das Unicode Tastaturlayout umschalten.
+1. Mit `⌃`{:.keycap}`␣`{:.keycap} auf das Unicode Tastaturlayout umschalten.
 2. Die `⌥`{:.keycap}-Taste gedrückt halten und `2`{:.keycap}`3`{:.keycap}`1`{:.keycap}`8`{:.keycap} tippen.
 
 #### Internet
 Es gibt im Web zahlreiche Seiten, auf denen man im Unicode Verzeichnis blättern und suchen kann. Hier ein paar Beispiele:
-* [https://symbl.cc]
-* [https://unicode-explorer.com]
-* [https://jrgraphix.net/r/Unicode/]
-* [https://keyboard.cool/db/]
+* <https://symbl.cc>
+* <https://unicode-explorer.com>
+* <https://jrgraphix.net/r/Unicode/>
+* <https://keyboard.cool/db/>
 
 Auch auf diese Weise kommt man dann an den Code des gewünschten Zeichens.
 
