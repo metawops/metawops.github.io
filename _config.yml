@@ -80,7 +80,14 @@ defaults:
       author_profile: true
       classes:
         - blocksatz
-
+  - scope:
+      path: "_includes/**"
+    values:
+      sitemap: false
+  - scope:
+      path: "googled725990a31fa7895.html"
+    values:
+      sitemap: false
 
 comments:
   giscus:
