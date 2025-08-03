@@ -1,5 +1,6 @@
 ---
 layout: home
+entries_layout: grid
 title: Logbuch
 header:
   image: /assets/images/header.jpeg
