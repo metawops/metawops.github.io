@@ -110,7 +110,11 @@ Das betrifft dann also alles ab der Codepage, die mit `00010000` anfängt (sie h
 Oben hatten wir das Zeichen mit der Nummer `U+2665`, das ergab ein Herz.
 Das Zeichen `U+2764` ergibt übrigens *auch* ein Herz – probiert's mal aus! Welches gefällt euch besser?
 
+*[Quelle][unicode-artikel]*
+{:.small-text}
+
 🔲
 {:.qed}
 
 [schleifenquadrat]: https://de.wikipedia.org/wiki/Schleifenquadrat
+[unicode-artikel]: https://www.adoc-studio.app/blog/unicode-characters-on-macos

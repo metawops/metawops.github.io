@@ -102,7 +102,7 @@ Bitte drücke jetzt die Tastenkombination ⌃{:.keycap}A{:.keycap} und dann noch
 ... klappt also im Umfeld GitHub Pages / Jekyll / Kramdown *nicht*.
 
 ## Bonus: Apple Sonderzeichen
-Oft müssen für Tastenkombinationen ja zusätzliche Umschalttasten bzw. Modifier gedrückt gehalten werden. Da gibt es in der Apple Welt ein paar besondere Zeichen. Wie man diese am besten eingibt, dazu habe ich [diesen tollen Artikel][unicode-artikel] gefunden, der eigentlich keine Fragen offen lässt.
+Oft müssen für Tastenkombinationen ja zusätzliche Umschalttasten bzw. Modifier gedrückt gehalten werden. Da gibt es in der Apple Welt ein paar besondere Zeichen. Wie man diese und generell alle Unicode Zeichen am Mac eingibt, [dazu habe ich auch einen Blog Post geschrieben][unicode].
 
 🔲
 {:.qed}
@@ -110,5 +110,4 @@ Oft müssen für Tastenkombinationen ja zusätzliche Umschalttasten bzw. Modifie
 [ti30x]: https://blog.metawops.de/taschenrechner/Binomialverteilung-TI-30X-Pro/
 [bio]: https://blog.metawops.de/githubpages/Link-im-Bio-Feld/
 [ial]: http://kramdown.gettalong.org/quickref.html#inline-attributes
-[unicode-artikel]: https://www.adoc-studio.app/blog/unicode-characters-on-macos
 [unicode]: https://blog.metawops.de/mac-tipps/Unicode-Zeichen-am-Mac-eingeben/
