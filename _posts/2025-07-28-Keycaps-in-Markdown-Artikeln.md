@@ -34,18 +34,18 @@ Wenn die Datei `main.scss` also startklar ist, das folgende CSS am besten unten 
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 1.4em !important;          /* Breite           */
+  min-width: 1.4em !important;      /* Breite           */
   height: 1.3em !important;         /* Höhe             */
   border-radius: 0.2em !important;  /* Abrundung        */
   background: #c5cfed !important;   /* Hintergrundfarbe */
   border: 2px solid #242424;        /* Rahmenfarbe      */
   font-size: 1.0em !important;      /* Schriftgröße     */
   font-family: inherit;             /* Schriftart       */
-  margin: 0.1em;                    /* Abstand          */
+  font-weight: normal !important;   /* nicht bold       */
+  font-style: normal !important;    /* nicht kursiv     */
+  margin: 0.1em;                    /* Abstand außen    */
   box-sizing: border-box;
-  font-weight: normal !important;
-  font-style: normal !important;
-  padding: 0.1rem !important;
+  padding: 0 0.15em !important;     /* Abstand innen    */
 }
 ```
 
