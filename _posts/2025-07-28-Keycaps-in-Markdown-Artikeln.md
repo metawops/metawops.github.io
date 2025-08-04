@@ -1,7 +1,7 @@
 ---
 title: "Keycaps in Blog Posts mit Markdown"
 date: 2025-07-28
-last_modified_at: 2025-07-29
+last_modified_at: 2025-08-04
 categories:
   - Markdown
 tags:
@@ -14,18 +14,14 @@ header:
   teaser: /assets/images/keycaps-teaser.png
 ---
 
-Wenn ich in manchen Blog Posts hier Workflows am Mac beschreibe, die das Drücken von Tasten oder Tastenkombinationen beinhalten, würde ich diese Tastendrücke gerne visuell als solche im Text hervorheben. Also z.B. so, wie ich es jetzt in meinem [Artikel über das Eingeben von Unicode Zeichen am Mac][unicode] gemacht habe. Daraus ein kleiner Screenshot:
-
-![alt](/assets/images/keycaps-teaser.png)
+Wenn ich in manchen Blog Posts hier Workflows am Mac beschreibe, die das Drücken von Tasten oder Tastenkombinationen beinhalten, würde ich diese Tastendrücke gerne visuell als solche im Text hervorheben.
 
 ## Webfonts?
-
 Meine erste Idee war: Ich suche einen Font, der alle Buchstaben, Ziffern und Sonderzeichen als Glyphs mit umschließenden Rähmchen enthält. Denn beim Schreiben [meines letzten Artikels über Binomialverteilungen am TI-30X][ti30x] hatte ich ja schon den speziellen TI-30X Pro MathPrint Font gelernt zu benutzen.
 
 Leider habe ich aber keinen Font gefunden, der derlei Symbole enthält und gleichzeitig frei benutzbar ist. – Aber zum Glück gibt es ja noch andere Möglichkeiten …
 
 ## CSS!
-
 CSS to the rescue! Wir definieren uns eine CSS Klasse, die einen Buchstaben oder ein Sonderzeichen mit so einem kleinen Rähmchen versieht. Dabei können wir noch Schriftgröße, Abstände, Hintergrundfarbe und allerlei mehr selbst bestimmen, eh besser!
 
 In einem auf dem *remote theme* "minimal mistakes" basierenden GitHub Pages Blog kann man eigenes, individuelles CSS in der Datei `/assets/css/main.scss` unterbringen. Das hatten wir schonmal im Artikel [Link im Bio Feld][bio] besprochen.
