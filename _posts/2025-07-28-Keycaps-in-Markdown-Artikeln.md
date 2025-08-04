@@ -14,9 +14,9 @@ header:
   teaser: /assets/images/keycaps-teaser.png
 ---
 
-Wenn ich in manchen Blog Posts hier Workflows am Mac beschreibe, die das Drücken von Tasten oder Tastenkombinationen beinhalten, würde ich diese Tastendrücke gerne visuell als solche im Text hervorheben. Also z.B. so, wie ich es jetzt in meinem [Artikel über die serielle Bedienung des PicoCalcs][picocalc] gemacht habe. Daraus ein kleiner Screenshot:
+Wenn ich in manchen Blog Posts hier Workflows am Mac beschreibe, die das Drücken von Tasten oder Tastenkombinationen beinhalten, würde ich diese Tastendrücke gerne visuell als solche im Text hervorheben. Also z.B. so, wie ich es jetzt in meinem [Artikel über das Eingeben von Unicode Zeichen am Mac][unicode] gemacht habe. Daraus ein kleiner Screenshot:
 
-![Mehrere stilisierte Tastenkappen sind ordentlich in einer Reihe auf hellem Hintergrund angeordnet, jede Tastenkappe zeigt einen anderen Buchstaben oder ein Symbol in fetter Schrift, vermittelt einen klaren und modernen Eindruck und eignet sich zur Veranschaulichung von Tastenkombinationen in Blogbeiträgen](/assets/images/keycaps-teaser.png)
+![alt](/assets/images/keycaps-teaser.png)
 
 ## Webfonts?
 
@@ -106,13 +106,13 @@ Bitte drücke jetzt die Tastenkombination ⌃{:.keycap}A{:.keycap} und dann noch
 ... klappt also im Umfeld GitHub Pages / Jekyll / Kramdown *nicht*.
 
 ## Bonus: Apple Sonderzeichen
-Oft müssen für Tastenkombinationen ja zusätzliche Umschalttasten bzw. Modifier gedrückt gehalten werden. Da gibt es in der Apple Welt ein paar besondere Zeichen. Wie man diese am besten eingibt, dazu habe ich [diesen tollen Artikel][unicode] gefunden, der eigentlich keine Fragen offen lässt.
+Oft müssen für Tastenkombinationen ja zusätzliche Umschalttasten bzw. Modifier gedrückt gehalten werden. Da gibt es in der Apple Welt ein paar besondere Zeichen. Wie man diese am besten eingibt, dazu habe ich [diesen tollen Artikel][unicode-artikel] gefunden, der eigentlich keine Fragen offen lässt.
 
 🔲
 {:.qed}
 
-[picocalc]: https://blog.metawops.de/gadgets/PicoCalc-seriell-steuern/
 [ti30x]: https://blog.metawops.de/taschenrechner/Binomialverteilung-TI-30X-Pro/
 [bio]: https://blog.metawops.de/githubpages/Link-im-Bio-Feld/
 [ial]: http://kramdown.gettalong.org/quickref.html#inline-attributes
-[unicode]: https://www.adoc-studio.app/blog/unicode-characters-on-macos
+[unicode-artikel]: https://www.adoc-studio.app/blog/unicode-characters-on-macos
+[unicode]: https://blog.metawops.de/mac-tipps/Unicode-Zeichen-am-Mac-eingeben/
