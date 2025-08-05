@@ -1,7 +1,7 @@
 ---
 title: "(Fast) jedes Unicode Zeichen am Mac eingeben"
 date: 2025-07-30
-last_modified_at: 2025-07-30
+last_modified_at: 2025-08-05
 categories:
   - mac-tipps
 tags:
