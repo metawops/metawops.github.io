@@ -48,7 +48,8 @@ Letzteres erreichen wir entweder über das eben aktivierte Icon in der Menüleis
 
 ![macOS Tastaturlayout Menü Icon und aufgeklapptes Menü von der Menüleiste](/assets/images/keyboard-settings-7.png)
 
-... oder wir benutzen einfach da, wo der Cursor blinkt und wir etwas eingeben wollen die Tastenkombination `⌃`{:.keycap}`␣`{:.keycap} (`␣` ist ein Space Zeichen, steht also für die Leertaste `space`{:.keycap}) zum "Durchsteppen" durch unsere konfigurierten Tastaturlayouts. Genau unter dem blinkenden Cursor erscheint ein kleines GUI Element und das darin farblich hervorgehobene Layout ist dann jeweils das aktive.  
+... oder wir benutzen einfach da, wo der Cursor blinkt und wir etwas eingeben wollen die Tastenkombination `⌃`{:.keycap}`␣`{:.keycap} (`␣` ist ein Space Zeichen, steht also für die Leertaste `space`{:.keycap}) zum "Durchsteppen" durch unsere konfigurierten Tastaturlayouts. Genau unter dem blinkenden Cursor erscheint ein kleines GUI Element und das darin farblich hervorgehobene Layout ist dann jeweils das aktive.
+
 Eine weitere Alternative ist es, bei Tastaturen mit dem Globus-Symbol &#127760; diese Taste einmal kurz zu drücken. Das schaltet ein Tastaturlayout weiter.
 
 ## Wie gibt man ein?
