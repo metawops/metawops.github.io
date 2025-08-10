@@ -118,6 +118,9 @@ author:
     - label: "GitHub"
       icon: "fa-brands fa-github"
       url: "https://github.com/metawops"
+    - label: "YouTube"
+      icon: "fa-brands fa-youtube"
+      url: "https://www.youtube.com/@stefanwolfrum"
 
 footer:
   links:
