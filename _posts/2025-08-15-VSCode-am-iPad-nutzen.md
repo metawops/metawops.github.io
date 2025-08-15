@@ -6,14 +6,16 @@ categories:
   - tools
 tags:
   - vscode
-  - tools
+  - dev-tools
   - code-server
   - ipad
+  - zertifikate
 excerpt: Wir installieren code-server inklusive Zertifikate auf einem Mac mini und nutzen dann Visual Studio Code in Safari am iPad full-screen.
-mathjax: true
 header:
   teaser: /assets/images/code-server-cert.jpeg
 ---
+
+![VSCode läuft in Safari auf einem iPad im Vollbildmodus. Links ist die Dateiliste zu sehen, rechts ein Editorfenster mit Quelltext. Die Oberfläche ist modern und übersichtlich, geeignet für produktives Arbeiten unterwegs.](/assets/images/code-server-ipad.jpeg)
 
 Visual Studio Code (VSCode) ist seit Jahren mein go-to-tool für alles, was mit Text tippen zu tun hat. Vor allem natürlich, wenn es ums Programmieren geht, aber auch, um mit CSV Dateien zu arbeiten oder – wie im Falle dieses Blogs – Markdown Textdokumente zu schreiben.
 
@@ -148,35 +150,64 @@ Auch wenn ihr euch für die einfachere AirDrop Variante entschieden habt, geht e
 
 Als nächstes müssen wir auf dem iPad in die Settings (deutsch: Einstellugen) App und sehen direkt links oben, dass ein neues "Profil" heruntergeladen wurde. Profile sind eine Art Container, in denen man verschiedene Dinge verpacken und dann auf einen iPad/iPhone installieren kann, u.a. auch Zertifikate.
 
-![alt text](/assets/images/cert-inst-2.jpeg)
+![Dialog im iPadOS-Einstellungsmenü zur Installation eines Zertifikat-Profils. Überschrift Installieren und iPad, einfache Auswahl des Geräts, schlichte und übersichtliche Oberfläche.](/assets/images/cert-inst-2.jpeg)
 
 Wir tippen auf diesen Eintrag und tippen dann im Verlauf insgesamt dreimal auf die jeweils erscheinende "Install" Option:
 
-![alt text](/assets/images/cert-inst-3.jpeg)
+![iPad zeigt den Installationsdialog für ein Zertifikatprofil in den Einstellungen. Auswahl Installieren auf iPad, übersichtliche und schlichte Oberfläche, neutraler Ton.](/assets/images/cert-inst-3.jpeg)
 
-![alt text](/assets/images/cert-inst-4.jpeg)
+![Dialog zur Installation eines Zertifikat-Profils in den iPad-Einstellungen. Hauptinhalt ist die Auswahl Installieren auf iPad, übersichtliche Oberfläche, Fokus auf einfache und sichere Installation.](/assets/images/cert-inst-4.jpeg)
 
-![alt text](/assets/images/cert-inst-5.jpeg)
+![Installationsdialog für ein Zertifikatprofil in den iPadOS-Einstellungen. Zu sehen sind die Optionen Profil installieren und iPad als Gerät. Schlichte, übersichtliche Oberfläche.](/assets/images/cert-inst-5.jpeg)
+
+## Dem Zertifikat vertrauen
 
 Wir sind noch nicht fertig! Jetzt gehen wir in der Settings App in den Abschnitt "General" (deutsch: Allgemein), dann auf "About" (erster Punkt; auf deutsch "Info") und scrollen ganz runter bis zum Eintrag "Certificate Trust Settings" (deutsch: "Zertifikatsvertraueneinstellungen"), den wir antippen: 
 
-![alt text](/assets/images/cert-inst-6.jpeg)
+![Einstellungen-App auf dem iPad zeigt die Zertifikatsvertrauenseinstellungen mit einer Liste installierter Root-Zertifikate und Schaltern zum Aktivieren. Das neue Root-CA-Zertifikat ist sichtbar, die Oberfläche ist schlicht und übersichtlich.](/assets/images/cert-inst-6.jpeg)
 
 Am Ende ist unser neues Root CA Zertifikat dazu gekommen, wir müssen jetzt nur noch den Schalter dafür einschalten ...
 
-![alt text](/assets/images/cert-inst-7.jpeg)
+![iPad zeigt das Menü Zertifikatsvertrauenseinstellungen in den Einstellungen. Zu sehen sind installierte Root-Zertifikate mit Schaltern zum Aktivieren, darunter das neue Root-CA-Zertifikat. Schlichte, übersichtliche Oberfläche. Sichtbarer Text: Zertifikatsvertrauenseinstellungen und Zertifikatsnamen.](/assets/images/cert-inst-7.jpeg)
 
 ... und den Dialog bestätigen:
 
-![alt text](/assets/images/cert-inst-8.jpeg)
+![iPad zeigt einen Bestätigungsdialog zum Aktivieren des Root-CA-Zertifikats. Schalter zum Einschalten und Button zum Bestätigen, einfache Oberfläche. Sichtbarer Text: Zertifikatsvertrauenseinstellungen und Zertifikatsname.](/assets/images/cert-inst-8.jpeg)
 
 ## Endlich
 
-Und jetzt endlich können wir am iPad in Safari ein neues Tab aufmachen und als URL `https://192.168.0.61:8080` eingeben – wobei ihr natürlich eure eigene IP Adresse nehmen müsst. Oder den lokalen Namen: `https://stefmacminim2.local:8080` in meinem Fall.
+Und jetzt endlich können wir am iPad in Safari ein neues Tab aufmachen und als URL `https://192.168.0.61:8080` eingeben – wobei ihr natürlich die IP Adresse eures Servers nehmen müsst. Oder den lokalen Namen: `https://stefmacminim2.local:8080` in meinem Fall.
 
 Jetzt sollte Safari keine Warnung bringen und direkt zur ersten Seite von `code-server` leiten, in der man erstmal das Passwort eingeben muss, was in der `config.yaml` Datei steht.
 
+## Als "Web App" noch besser
+
+Noch etwas besser wird das Erlebnis am iPad, wenn man sich diese Adresse als Icon auf den iPad Desktop (Home Screen) legt. Dazu in Safari auf dem iPad im Share Menü den Punkt "Add to Home Screen" wählen, einen geeigneten Namen eingeben (der erscheint dann unterm Icon) und bestätigen.
+
+![VSCode-Oberfläche in Safari auf einem iPad im Vollbild, links Dateiliste, rechts Editor mit Quelltext. Moderner, übersichtlicher Workspace für produktives Arbeiten unterwegs. Keine sichtbaren Texte, sachliche Atmosphäre.](/assets/images/code-server-webapp-1.jpeg)
+
+![VSCode-Oberfläche in Safari auf einem iPad im Vollbildmodus, links Dateiliste, rechts Editor mit Quelltext. Moderner, übersichtlicher Workspace, neutrale Atmosphäre.](/assets/images/code-server-webapp-2.jpeg)
+
+Auf dem iPad Home Screen sieht das Icon dann so aus:
+
+![iPad Home-Bildschirm mit VSCode Web-App-Icon](/assets/images/code-server-webapp-3.jpeg)
+
+Wenn ihr nun das antippt, startet VSCode full screen.
+
+Es sei allerdings darauf hingewiesen, dass das alles natürlich nur dann wirklich Sinn macht, wenn ihr euer iPad auch mit einer externen (Hardware-) Tastatur bedient. Und leider gibt es hier und da auch mal ein paar Hiccups, kleine Fehlerchen. Da hilft es manchmal, mit `⌘`{:.keycap}`R`{:.keycap} die Seite neu zu laden oder die App ganz abzuschießen und neu zu starten. Im worst case müsst ihr den `code-server` neu starten, was natürlich remote z.B. über eine ssh Verbindung auf euren Server mit dem Kommando
+```shell
+brew services restart code-server
+```
+
+geht. Da müsst ihr nicht zu Fuß zum Standort des Servers gehen.
+
+Mein Lieblings-Tool für ssh auf dem iPad ist die App [Blink][blink], aber es gibt da ja mittlerweile zahlreiche ähnliche Apps dieser Art.
+
 ### Von unterwegs: VPN
+
+Das ganze funktioniert natürlich auch von unterwegs, obwohl wir uns bisher nur zuhause im LAN aufgehalten haben. Dafür solltet ihr einfach eine VPN Verbindung zu euch nach Hause aufbauen. Das kann man ja z.B. in der Fritz!Box oder auch in anderen Routern relativ leicht konfigurieren. Soll ich dazu auch mal einen Artikel schreiben? Schreibt's mir in die Kommentare.
+
+Meldet euch auch gern bei Fragen oder Hinweisen oder Begeisterungsausbrüchen ob des Artikels. 😂
 
 🔲
 {:.qed}
@@ -184,3 +215,4 @@ Jetzt sollte Safari keine Warnung bringen und direkt zur ersten Seite von `code-
 [homebrew]: https://brew.sh
 [prox]: https://www.proxmox.com/en/products/proxmox-virtual-environment/overview
 [jelly]: https://jellyfin.org
+[blink]: https://blink.sh
