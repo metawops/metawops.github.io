@@ -27,7 +27,7 @@ Zum Glück gibt es eine Server-Variante von VSCode, genannt `code-server`. Man b
 
 ### Prinzip
 
-Das Funktionsprinzip ist ganz einfach: Auf einem Server im LAN läuft `code-server`. Von einem anderen Rechner im LAN, z.B. einem iPad, ruft man im Browser die Adresse des Servers auf und fügt den Port, auf dem `code-server` läuft – standardmäßig 8080 – hinzu. Und schon hat man quasi VSCode auf dem iPad. "Quasi", weil es (natürlich) nicht 100%ig das selbe wie eine native VSCode App ist. Eine Einschränkung ist z.B., dass das Syncen der ganzen Settings nicht mit normalen Methoden geht. Aber es gibt Workarounds.  
+Das Funktionsprinzip ist ganz einfach: Auf einem Server im LAN läuft `code-server`. Von einem anderen Rechner im LAN, z.B. einem iPad, ruft man im Browser die Adresse des Servers auf und fügt den Port, auf dem `code-server` läuft – standardmäßig 8080 – hinzu. Und schon hat man quasi VSCode auf dem iPad. "Quasi", weil es (natürlich) nicht 100%ig das selbe wie eine native VSCode App ist. Eine Einschränkung ist z.B., dass [das Syncen der ganzen Settings nicht mit normalen Methoden geht][syncissue].  
 Außerdem wollen wir das Ganze über https haben, auch wenn es "nur" eine lokale Verbindung innerhalb des LANs ist. Denn wenn der Browser nur eine http Verbindung hat, weigert er sich, manche Dinge zu tun, z.B. die Zwischenablage zu bedienen. Kurzum: https macht Sinn.
 
 ### code-server installieren
@@ -216,3 +216,4 @@ Meldet euch auch gern bei Fragen oder Hinweisen oder Begeisterungsausbrüchen ob
 [prox]: https://www.proxmox.com/en/products/proxmox-virtual-environment/overview
 [jelly]: https://jellyfin.org
 [blink]: https://blink.sh
+[syncissue]: https://github.com/coder/code-server/issues/2195
