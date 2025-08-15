@@ -74,7 +74,7 @@ Und schon rentiert es sich, dass wir oben Homebrew installiert haben. Denn jetzt
 brew install mkcert
 ```
 
-Unser Plan ist, erstmal ein Root CA Zertifikat zu erzeugen mit dem wir dann unser SSL Zertifikat signieren. Das Root CA Zertifikat übertragen wir dann auf die Rechner (auch iPads), auf denen wir `code-server` per https nutzen wollen und vertrauen ihm dort. Beim Aufruf der `code-server` URL im browser wird dann das SSL Zertifikat übertragen und da es von unserem eigenen Root CA Zertifikat ausgestellt wurde und wir diesem vertrauen, wird der Browser auch nicht meckern.
+Unser Plan ist, erstmal ein Root CA Zertifikat zu erzeugen mit dem wir dann unser SSL Zertifikat signieren. Das Root CA Zertifikat übertragen wir dann auf die Rechner (auch iPads), auf denen wir `code-server` per https nutzen wollen und vertrauen ihm dort. Beim Aufruf der `code-server` URL im Browser wird dann das SSL Zertifikat übertragen und da es von unserem eigenen Root CA Zertifikat ausgestellt wurde und wir diesem vertrauen, wird der Browser auch nicht meckern.
 
 Mit
 ```shell
@@ -93,7 +93,7 @@ Diese `rootCA.pem` Datei werden wir später noch brauchen!
 
 #### SSL Zertifikat
 
-In unserem home folder erzeugen wir jetzt das SSL Zertifikat für `code-server`. Damit wir später von anderen Rechnern den Server sowohl mit seiner IP Adresse, als auch seinem lokalen Namen erreichen können, geben wir bei der Erzeugung auf der commandline gleich alle Adressen an, unter denen der Server über https erreichbar sein soll. Mein Mac mini hat die IP `192.168.0.61` und den lokalen Namen `stefmacminim2.local`. Zusätzlich sollte man immer auch `localhost` angeben, um auch lokal auf dem Mac mini im Browser den `code-server`per https erreichen zu können. Also schreiben wir:
+In unserem home folder erzeugen wir jetzt das SSL Zertifikat für `code-server`. Damit wir später von anderen Rechnern den Server sowohl mit seiner IP Adresse, als auch seinem lokalen Namen erreichen können, geben wir bei der Erzeugung auf der commandline gleich alle Adressen an, unter denen der Server über https erreichbar sein soll. Mein Mac mini hat die IP `192.168.0.61` und den lokalen Namen `stefmacminim2.local`. Zusätzlich sollte man immer auch `localhost` angeben, um auch lokal auf dem Mac mini im Browser den `code-server` per https erreichen zu können. Also schreiben wir:
 
 ```shell
 mkcert 192.168.0.61 stefmacmini.local localhost
