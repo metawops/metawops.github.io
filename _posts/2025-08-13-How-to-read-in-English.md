@@ -12,8 +12,8 @@ header:
   teaser: /assets/images/english-language.png
 toc: true
 toc_sticky: true
-toc_label: "Chose your system"
-toc_icon: "apple"
+toc_label: "System"
+toc_icon: "cog"
 ---
 
 If you want to read my blog posts in English please use your browser's built-in translation feature.
