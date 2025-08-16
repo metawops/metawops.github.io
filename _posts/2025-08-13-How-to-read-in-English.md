@@ -13,7 +13,7 @@ header:
 toc: true
 toc_sticky: true
 toc_label: "Chose your system"
-toc_icon: "section"
+toc_icon: "apple"
 ---
 
 If you want to read my blog posts in English please use your browser's built-in translation feature.
