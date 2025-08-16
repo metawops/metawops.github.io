@@ -28,19 +28,19 @@ In Safari on macOS find the little translation icon at the far right end of your
 
 ![Screenshot showing Safari running on iPadOS 26 with instructions for translation to English](/assets/images/english-safari-ipados.png)
 
-On iPad tap on the little burger-like (but not quite) icon at the far left of the location bar and select the 
+On iPad tap on the little burger-like (but not quite) icon at the far left of the location bar and select the menu item "Translate to English". ✅
 
 ## Chrome on Windows 11
 
 ![Screenshot showing the Chrome browser running on Windows 11](/assets/images/english-chrome-win11.png)
 
-In Chrome on Windows 11 the translation dialog popped up automatically after I visited my blog, right beneath the little translation icon at the far right end of the location bar.
+In Chrome on Windows 11 the translation dialog popped up automatically after I visited my blog, right beneath the little translation icon at the far right end of the location bar. ✅
 
 ## Chrome on macOS
 
 ![Screenshot showing Chrome on macOS with the main menu opened and the translation menu item highlighted](/assets/images/english-chrome-macos.png)
 
-In Chrome on macOS the translation feture can be found the browser's three-dots-menu as seen in the screenshot above.
+In Chrome on macOS the translation feture can be found the browser's three-dots-menu as seen in the screenshot above. ✅
 
 If a page was translated you get a new icon at the far right end of the location bar. From there you can chose your translation options:
 
@@ -50,7 +50,7 @@ If a page was translated you get a new icon at the far right end of the location
 
 ![Screenshot showing the Edge browser on Windows 11 with the context menu showing the translation option](/assets/images/english-edge-win11.jpeg)
 
-When you never translated a web page before just right-click anywhere (but not on an image) on the web page and select the "Translate to English" menu option. Shown above.
+When you never translated a web page before just right-click anywhere (but not on an image) on the web page and select the "Translate to English" menu option. Shown above. ✅
 
 When you already did this you get a new icon at the far right of your location bar that you can click and chose your translation options. See screenshot:
 
