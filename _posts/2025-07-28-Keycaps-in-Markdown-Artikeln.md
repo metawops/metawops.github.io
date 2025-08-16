@@ -3,7 +3,7 @@ title: "Keycaps in Blog Posts mit Markdown"
 date: 2025-07-28
 last_modified_at: 2025-08-04
 categories:
-  - Markdown
+  - markdown
 tags:
   - css
   - keycaps

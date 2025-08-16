@@ -10,6 +10,7 @@ tags:
   - code-server
   - ipad
   - zertifikate
+  - root-ca
 excerpt: Wir installieren code-server inklusive Zertifikate auf einem Mac mini und nutzen dann Visual Studio Code in Safari am iPad full-screen.
 header:
   teaser: /assets/images/code-server-cert.jpeg

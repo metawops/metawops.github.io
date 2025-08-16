@@ -4,9 +4,10 @@ date: 2025-07-25
 last_modified_at: 2025-07-25
 markdown: kramdown
 categories:
-  - Blog
+  - blog
 tags:
   - audio
+  - podcast
 excerpt: Nur ein kleiner Test, ob/wie das Einbetten von Audio funktioniert.
 header:
   teaser: /assets/images/audioembed.jpeg

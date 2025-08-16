@@ -2,7 +2,8 @@
 title: "Casio Taschenrechner: Firmware, Seriennummer, Diagnose"
 date: 2025-07-02
 last_modified_at: 2025-07-02
-categories: Taschenrechner
+categories: 
+  - taschenrechner
 tags:
   - casio
   - firmware

@@ -3,9 +3,10 @@ title: "Mermaid für Github Pages konfigurieren"
 date: 2025-06-08
 last_modified_at: 2025-06-14
 categories:
-  - GithubPages
+  - github-pages
 tags:
   - mermaid
+  - minimal-mistakes
 excerpt: "Der Artikel zeigt Schritt für Schritt und ganz konkret, wie man sein Github Pages Blog fit für die Verwendung von Mermaid Diagrammen macht."
 header:
   teaser: /assets/images/mermaid-sample-2.png

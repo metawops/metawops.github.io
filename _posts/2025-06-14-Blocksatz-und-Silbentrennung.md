@@ -3,12 +3,13 @@ title: Blocksatz und Silbentrennung
 date: 2025-06-14
 last_modified_at: 2025-06-14
 categories:
-  - GithubPages
+  - github-pages
 tags:
   - blocksatz
   - silbentrennung
   - markdown
   - frontmatter
+  - minimal-mistakes
 excerpt: "Im Artikel wird gezeigt, wie man für sein auf dem Theme minimal mistakes basierenden Github Pages Blog Blocksatz und Silbentrennung aktivieren kann"
 header:
   teaser: /assets/images/blocksatz-silbentrennung.png

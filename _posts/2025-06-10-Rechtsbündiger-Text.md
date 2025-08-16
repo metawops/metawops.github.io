@@ -3,11 +3,12 @@ title: "Text in Markdown rechtsbündig setzen"
 date: 2025-06-10
 last_modified_at: 2025-06-10
 categories:
-  - Markdown
+  - markdown
 tags:
   - rechtsbündig
   - blog
   - kramdown
+  - minimal-mistakes
 excerpt: Im Artikel wird beschrieben, wie man in seinen Github Pages Seiten Text rechtsbündig setzen kann.
 ---
 

@@ -3,7 +3,7 @@ title: "Den PicoCalc seriell steuern"
 date: 2025-07-14
 last_modified_at: 2025-07-27
 categories:
-  - Gadgets
+  - gadgets
 tags:
   - clockworkpi
   - picocalc

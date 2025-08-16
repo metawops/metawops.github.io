@@ -3,10 +3,12 @@ title: "Binomialwahrscheinlichkeiten für Intervalle beim TI-30X Pro"
 date: 2025-07-23
 last_modified_at: 2025-07-24
 categories:
-  - Taschenrechner
+  - Ttschenrechner
 tags:
   - texas-instruments
   - ti-30
+  - mathematik
+  - statistik
 excerpt: Wir schauen uns an, wie man auf dem TI-30X Pro MathPrint trotz fehlender Funktion Binomialwahrscheinlichkeiten für Intervalle bestimmen kann.
 header:
   teaser: /assets/images/ti30x-stat-teaser.jpeg

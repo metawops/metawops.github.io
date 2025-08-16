@@ -2,11 +2,13 @@
 title: "Neues Blog"
 date: 2025-06-02
 categories:
-  - Blog
+  - blog
+  - github-pages
 tags:
   - hugo
   - ghost
-  - blog
+  - github-pages
+  - minimal-mistakes
 excerpt: "Der Artikel beschreibt meinen Weg hin zum Blogging System Github Pages."
 ---
 

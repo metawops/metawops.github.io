@@ -3,7 +3,7 @@ title: "SI-Präfixe und Engineering Display bei Casio Taschenrechnern"
 date: 2025-06-29
 last_modified_at: 2025-06-29
 categories:
-  - Taschenrechner
+  - taschenrechner
 tags:
   - casio
   - si-präfixe

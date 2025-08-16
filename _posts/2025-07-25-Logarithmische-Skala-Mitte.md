@@ -3,7 +3,7 @@ title: "Logarithmische Skalen und geometrisches Mittel"
 date: 2025-07-26
 last_modified_at: 2025-07-27
 categories:
-  - Mathematik
+  - mathematik
 tags:
   - logarithmus
   - mittelwert

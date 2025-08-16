@@ -2,7 +2,8 @@
 title: "Mit welcher Leistung darf ich als Funkamateur senden?"
 date: 2025-06-18
 last_modified_at: 2025-07-25
-categories: Amateurfunk
+categories:
+  - amateurfunk
 tags:
   - erp
   - eirp
