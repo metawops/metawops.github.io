@@ -12,7 +12,7 @@ header:
   teaser: /assets/images/english-language.png
 toc: true
 toc_sticky: true
-toc_label: "Gliederung"
+toc_label: "Chose your system"
 toc_icon: "section"
 ---
 
@@ -58,7 +58,7 @@ When you already did this you get a new icon at the far right of your location b
 
 ## Firefox on Ubuntu
 
-![Screenshot of Firefox running on Ubuntu 24.04 LTS](../assets/images/english-firefox-ubuntu.png)
+![Screenshot of Firefox running on Ubuntu 24.04 LTS](/assets/images/english-firefox-ubuntu.png)
 
 Click on the translation icon at the far right of your location bar, make sure that "Translate from German" and "Translate to English" is selected and click on the "Translate" button. ✅
 
