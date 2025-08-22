@@ -16,6 +16,10 @@ header:
   teaser: /assets/images/ghostty.png
 ---
 
+Alles beginnt mit der Installation von Ghostty unter macOS. Zwei Möglichkeiten:
+1. Von der Website runterladen, `DMG` doppelklicken, Icon nach `/Applications` (oder wo auch immer hin) ziehen.
+2. Via Homebrew: `brew install --cask ghostty`
+
 
 
 
