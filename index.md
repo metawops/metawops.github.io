@@ -1,7 +1,7 @@
 ---
 layout: home
 entries_layout: grid
-title: Stefans Logbuch
+title: 👨‍💻 Stefans Logbuch
 header:
   image: /assets/images/header.jpeg
   caption: "Keychron Mainboard Ausschnitt"
