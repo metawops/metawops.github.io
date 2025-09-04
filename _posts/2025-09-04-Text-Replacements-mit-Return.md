@@ -23,7 +23,7 @@ Mit freundlichen Grüßen
 Stefan Wolfrum
 ```
 
-tippen wollt und euch stattdessen in macOS über die `Systemeinstellung > Keyboard > Text Replacements` dafür ein Kürzel (z.B. `mfg`) anlegen wollt, müsst ihr den Zeilenumbruch nach dem Wort `Grüßen` einfach mit `⌥⏎`{:.keycap} (also Option + Return) eingeben!
+tippen wollt und euch stattdessen in macOS über die `Systemeinstellung > Keyboard > Text Replacements` dafür ein Kürzel (z.B. `mfg`) anlegen wollt, müsst ihr den Zeilenumbruch nach dem Wort `Grüßen` einfach mit `⌥`{:.keycap}`⏎`{:.keycap} (also Option + Return) eingeben!
 
 Das Problem ist dann zwar, dass ihr nach Eingabe dieses speziellen Returns keinen blinkenden Cursor mehr seht, aber es ist dennoch ein Zeilenumbruch entstanden und ihr könnt die zweite Zeile tippen. Wenn ihr mit den Cursortasten im Eingabefeld umherlauft, könnt ihr auch den gesamten Text sehen – aber immer nur mit einem "Sichtfenster" von einer Zeile darauf.
 
@@ -33,7 +33,7 @@ Im Screenshot kann man es erahnen, dass oberhalb vom Text "Stefan" noch etwas st
 
 ### Und unter iOS/iPadOS?
 
-Das geht leider nicht in der Settings App unter iOS bzw. iPadOS, so wie es unter macOS geht! 🙁 Dort springt der Cursor einfach ins nächste Eingabefeld weiter, wenn man `⌥⏎`{:.keycap} drückt. 🤷‍♂️
+Das geht leider nicht in der Settings App unter iOS bzw. iPadOS, so wie es unter macOS geht! 🙁 Dort springt der Cursor einfach ins nächste Eingabefeld weiter, wenn man `⌥`{:.keycap}`⏎`{:.keycap} drückt. 🤷‍♂️
 
 **Die gute Nachricht ist:** Da diese Text Replacements via iCloud gesynct werden, kann man die auf einem Mac angelegten auch am iPhone / iPad nutzen – inklusive der Zeilenumbrüche.
 
