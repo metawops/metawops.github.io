@@ -1,7 +1,7 @@
 ---
 title: "Binomialwahrscheinlichkeiten für Intervalle beim TI-30X Pro"
 date: 2025-07-23
-last_modified_at: 2025-07-24
+last_modified_at: 2025-09-04
 categories:
   - taschenrechner
 tags:
