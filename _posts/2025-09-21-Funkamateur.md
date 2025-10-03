@@ -30,8 +30,6 @@ Man braucht dazu wirklich nicht viel: Ein ca. 40 Euro kostender USB Dongle, etwa
 
 Der liebe Arthur – Grüße gehen raus! 👋 – vom [YouTube Kanal Funkwelle][funkwelle] hat dazu mal ein prima Video gemacht, nach dem ich auch vorgegangen bin:
 
-https://www.youtube.com/watch?v=fZyAyjtr4Qg
-
 {% include video id="fZyAyjtr4Qg" provider="youtube" %}
 
 Das ist schon etwas anderes, diese [ADS-B][adsb] Daten "faul" und "fertig" aus dem Internet bzw. schlicht von einer App zu bekommen oder sie selbst, quasi eigenhändig zuhause aus der Luft zu empfangen! versteht man erst, wenn man's mal selbst gemacht hat.
