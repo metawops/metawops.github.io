@@ -117,7 +117,7 @@ Das habe ich am 25. September getan und bis heute, dem 3. Oktober habe ich noch 
 Auf den Amateurfunk Seiten der BNetzA liest man auch derzeit:
 
 Aktuell kommt es zu Verzögerungen in der Antragsbearbeitung. Wir bitten darum, von Nachfragen bezüglich ihres Antragstatus abzusehen. Wir werden ihren Antrag schnellstmöglich bearbeiten.
-{: .notice-info }
+{: .notice--info}
 
 Na dann. Sobald ich ein Rufzeichen habe, werde ich es hier sicher in geeigneter Form kundtun.
 
