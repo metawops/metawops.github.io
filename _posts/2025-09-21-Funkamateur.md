@@ -21,7 +21,7 @@ Am 19. September (2025) habe ich bei der Bundesnetzagentur in Dortmund meine Ama
 Ich hatte mich für eine Klasse E Lizenz angemeldet und habe diese auch bekommen.
 
 Beim Amateurfunk gibt es [drei Klassen: N, E und A][afu-klassen]. Dabei ist N die (relativ neue) Einstiegsklasse, E die "gute Mittelklasse" (auch wenn sie dann international "Novice" heißt) und A die Klasse, bei der man "alles" darf.
-Die Unterschiede liegen vor allem in der Anzahl der Amateurfunkbänder, auf denen man auf Sendung gehen darf und in der Leistung, mit der man senden darf. Daneben gibt es noch ein paar kleinere Unterschiede, z.B. Remote-Stationen, Ausbildungsbetrieb, Funken im Ausland etc.
+Die Unterschiede liegen vor allem in der Anzahl der Amateurfunkbänder, auf denen man auf Sendung gehen darf und in der Leistung, mit der man senden darf. Daneben gibt es noch ein paar kleinere Unterschiede, z.B. bei den Themen Remote-Station, Ausbildungsbetrieb, Funken im Ausland.
 
 Reines Zuhören auf den Bändern darf jeder, auch ohne Lizenz. Super interessant ist da zum Beispiel das Abhören von in der Luft befindlichen Flugzeugen! Natürlich darf man *nicht* die Cockpit Gespräche mithören. Aber jedes Flugzeug sendet daneben auch allerlei Telemetrie- und sonstige Daten und *die* darf, ja soll man sogar mithören. Je mehr davon protokolliert wird, desto besser kann man ggfs. einen Unfall aufklären. Es ist also nicht verboten und man kann diese selbst empfangenen Daten auch freiwillig im Internet zur Verfügung stellen, z.B. für FlightRadar24, eine der wohl bekanntesten Apps dafür.
 
