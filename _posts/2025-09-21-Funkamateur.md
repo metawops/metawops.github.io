@@ -14,6 +14,7 @@ mathjax: true
 header:
   teaser: /assets/images/funkamateur.png
 ---
+![Person bedient Funkgeräte in einem mit Technik und Karten ausgestatteten Hobbyraum, konzentrierte Atmosphäre.](/assets/images/funkamateur.png)
 
 Am 19. September (2025) habe ich bei der Bundesnetzagentur in Dortmund meine Amateurfunkprüfung abgelegt – mit Erfolg! 🎉
 
