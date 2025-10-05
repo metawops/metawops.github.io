@@ -45,7 +45,7 @@ Ich hatte mir also für den Mac die freie Software "[wsjt-x][wsjtx]" heruntergel
 
 DAS ist ja interessant, welche Länder man da empfangen kann! Und hinter jedem Anruf ("CQ") steckt ein Mensch. 
 
-![Screenshot der WSJT-X Software mit Wasserfalldiagramm, empfangenen FT8-Rufzeichen, Ländern und Signalstärken](/assets/images/wsjtx1.png)
+{% include figure popup=true image_path="/assets/images/wsjtx1.png" alt="Screenshot der WSJT-X Software mit Wasserfalldiagramm, empfangenen FT8-Rufzeichen, Ländern und Signalstärken" caption="Screenshot der WSJT-X Software mit Wasserfalldiagramm, empfangenen FT8-Rufzeichen, Ländern und Signalstärken" %}
 
 Ich habe mir dann gleich noch die fantastische Logbuch App [RUMlogNG][rumlog] installiert und die beiden Tools wsjt-x und RUMlogNG miteinander verbunden. Auch wenn ich noch kein Rufzeichen hatte, was ich eintragen konnte: Die ganzen FT8 CQ Rufe kamen jetzt auch im "DX Spots" Fenster von RUMlogNG an. 
 
