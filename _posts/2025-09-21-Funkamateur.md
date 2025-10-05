@@ -21,7 +21,7 @@ Am 19. September (2025) habe ich bei der Bundesnetzagentur in Dortmund meine Ama
 Ich hatte mich für eine Klasse E Lizenz angemeldet und habe diese auch bekommen.
 
 Beim Amateurfunk gibt es [drei Klassen: N, E und A][afu-klassen]. Dabei ist N die (relativ neue) Einstiegsklasse, E die "gute Mittelklasse" (auch wenn sie dann international "Novice" heißt) und A die Klasse, bei der man "alles" darf.
-Die Unterschiede liegen vor allem in der Anzahl der Amateurfunkbänder, auf denen man auf Sendung gehen darf und in der Leistung, mit der man senden darf. Daneben gibt es noch ein paar kleinere Unterschiede, z.B. bei den Themen Remote-Station, Ausbildungsbetrieb, Funken im Ausland.
+Die Unterschiede liegen vor allem in der Anzahl der Amateurfunkbänder, auf denen man auf Sendung gehen darf und in der Leistung, mit der man senden darf. Daneben gibt es noch ein paar kleinere Unterschiede, z.B. Remote-Stationen, Ausbildungsbetrieb, Funken im Ausland etc.
 
 Reines Zuhören auf den Bändern darf jeder, auch ohne Lizenz. Super interessant ist da zum Beispiel das Abhören von in der Luft befindlichen Flugzeugen! Natürlich darf man *nicht* die Cockpit Gespräche mithören. Aber jedes Flugzeug sendet daneben auch allerlei Telemetrie- und sonstige Daten und *die* darf, ja soll man sogar mithören. Je mehr davon protokolliert wird, desto besser kann man ggfs. einen Unfall aufklären. Es ist also nicht verboten und man kann diese selbst empfangenen Daten auch freiwillig im Internet zur Verfügung stellen, z.B. für FlightRadar24, eine der wohl bekanntesten Apps dafür.
 
@@ -33,7 +33,7 @@ Der liebe Arthur – Grüße gehen raus! 👋 – vom [YouTube Kanal Funkwelle][
 
 {% include video id="fZyAyjtr4Qg" provider="youtube" %}
 
-Das ist schon etwas anderes, diese [ADS-B][adsb] Daten "faul" und "fertig" aus dem Internet bzw. schlicht von einer App zu bekommen oder sie selbst, quasi eigenhändig zuhause aus der Luft zu empfangen! versteht man erst, wenn man's mal selbst gemacht hat.
+Das ist schon etwas anderes, diese [ADS-B][adsb] Daten "faul" und "fertig" aus dem Internet bzw. schlicht von einer App zu bekommen oder sie selbst, quasi eigenhändig zuhause aus der Luft zu empfangen! Versteht man erst, wenn man's mal selbst gemacht hat.
 
 ### Digitale Betriebsart FT8
 
@@ -49,7 +49,8 @@ DAS ist ja interessant, welche Länder man da empfangen kann! Und hinter jedem A
 
 Ich habe mir dann gleich noch die fantastische Logbuch App [RUMlogNG][rumlog] installiert und die beiden Tools wsjt-x und RUMlogNG miteinander verbunden. Auch wenn ich noch kein Rufzeichen hatte, was ich eintragen konnte: Die ganzen FT8 CQ Rufe kamen jetzt auch im "DX Spots" Fenster von RUMlogNG an. 
 
-![RUMlogNG Fenster mit Logbuchliste, Rufzeichen, Ländern und Signalstärken](/assets/images/rumlogng1.png)
+{% include figure popup=true image_path="/assets/images/rumlogng1.png" alt="RUMlogNG Fenster mit Logbuchliste, Rufzeichen, Ländern und Signalstärken" caption="RUMlogNG Fenster mit Logbuchliste, Rufzeichen, Ländern und Signalstärken" %}
+
 
 ### Beschluss: Zur Prüfung anmelden
 
