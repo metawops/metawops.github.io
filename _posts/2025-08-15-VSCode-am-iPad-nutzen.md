@@ -97,7 +97,7 @@ Diese `rootCA.pem` Datei werden wir später noch brauchen!
 In unserem home folder erzeugen wir jetzt das SSL Zertifikat für `code-server`. Damit wir später von anderen Rechnern den Server sowohl mit seiner IP Adresse, als auch seinem lokalen Namen erreichen können, geben wir bei der Erzeugung auf der commandline gleich alle Adressen an, unter denen der Server über https erreichbar sein soll. Mein Mac mini hat die IP `192.168.0.61` und den lokalen Namen `stefmacminim2.local`. Zusätzlich sollte man immer auch `localhost` angeben, um auch lokal auf dem Mac mini im Browser den `code-server` per https erreichen zu können. Also schreiben wir:
 
 ```shell
-mkcert 192.168.0.61 stefmacmini.local localhost
+mkcert 192.168.0.61 stefmacminim2.local localhost
 ```
 
 Das erzeugt wieder zwei Dateien, nämlich `192.168.0.61+2.pem` (das Zertifikat) und `192.168.0.61+2-key.pem` (der priavte key – schützen!).
@@ -107,12 +107,12 @@ Diese zwei Dateinamen konfigurieren wir nun in die o.a. `code-server` config Dat
 ```
 bind-addr: 0.0.0.0:8080
 auth: password
-password: c3afadbc21a75a3631951321
+password: c3a115bc21a75a36adb51321
 cert: /Users/stefan/192.168.0.61+2.pem
 cert-key: /Users/stefan/192.168.0.61+2-key.pem
 ```
 
-Das 24-stellige Password brauchen wir auch gleich beim ersten Aufruf. Und ihr müsst natürlich den Pfad zu euren beiden SSL Zertifikatsdateien entsprechend anpassen.
+Das 24-stellige Password (von der Redaktion geändert) brauchen wir auch gleich beim ersten Aufruf. Und ihr müsst natürlich den Pfad zu euren beiden SSL Zertifikatsdateien entsprechend anpassen.
 
 ### Server starten
 
