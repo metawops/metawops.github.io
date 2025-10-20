@@ -15,7 +15,7 @@ header:
 
 Bei der Beschäftigung mit meinem kleinen [Analogcomputer "The Analog Thing" (THAT)][that] hatte ich auch einen Arduino (Mega) eingesetzt, um die Lösung der gepatchten Differentialgleichung als Zahlen auslesen zu können. Um sie "in der Hand zu haben". Denn so eine (z.B.) gedämpfte Schwingung ist ja ganz hübsch am Oszilloskop Bildschirm anzusehen – insbesondere, wenn man sie in Echtzeit manipulieren kann –, aber besonders hochauflösend ist sie da nicht.
 
-{% include figure popup=true image_path="/assets/images/that-oszi.jpeg" alt="The Analog Thing, Oszilloskop" caption="The Analog Thing, Oszilloskop" %}
+{% include figure popup=true image_path="/assets/images/that-oszi.jpeg" alt="The Analog Thing, Oszilloskop. Foto: S. Wolfrum" caption="The Analog Thing, Oszilloskop. Foto: S. Wolfrum" %}
 
 Das Auslesen der Lösung klappt mit [Bernd Ulmanns kleinem Arduino Sketch][hybrid-sketch] einwandfrei und nun hatte ich auf dem Mac eine CSV Datei, die pro Zeile einen Wert enthielt. Das wollte ich mit gnuplot visualisieren, damit ich auch mal eine PNG Grafik z.B. in einen Blog Post einbetten kann:
 
@@ -36,7 +36,7 @@ Da gibt es eine VSCode Extension namens "gnuplot preview" – die habe ich aber 
 
 ### Lösung
 
-Also muss ich eine Alternative finden. Es gelang über die [VSCode Extension "Run on Save"][extension]. Denn jedesmal, wenn ich nun meine `.gp` Datei **speichere**, läuft gnuplot damit los, erzeugt die PNG Datei und diese sehe ich rechts neben meinem Code:
+Also musste ich eine Alternative finden. Es gelang über die [VSCode Extension "Run on Save"][extension]. Denn jedesmal, wenn ich nun meine `.gp` Datei **speichere**, läuft gnuplot damit los, erzeugt die PNG Datei und diese sehe ich rechts neben meinem Code, weil ich sie mir dort in einem weiteren Tab geöffnet habe:
 
 {% include figure popup=true image_path="/assets/images/gnuplot-vscode.png" alt="Screenshot von VSCode mit gnuplot Datei und Preview der Grafik" caption="Screenshot von VSCode mit gnuplot Datei und Preview der Grafik" %}
 
@@ -61,8 +61,8 @@ Nach der Installation der o.g. "Run on Save" Extension muss man die VSCode User 
 
 Dazu ein paar Anmerkungen:
 * Wenn ihr eure gnuplot Dateien anders als auf `.gp` enden lassen wollt, müsst ihr das natürlich entsprechend anpassen.
-* Das `gnuplot` Kommando muss über den `PATH` findbar sein. Solltet ihr gnuplot über Homwbrew installiert haben, liegt das binary wahrscheinlich in `/opt/homebrew/bin`. Diesen Pfad also in die `PATH` Variable aufnehmen.
-* Den Output des Run on Save Addons kann man sich im Terminalfenster von VSCode anschauen, wenn man im Reiter „OUTPUT“ im Dropdown rechts „Run On Save“ wählt. So sieht man z.B. wie lange der gnuplot Lauf gedauert hat.
+* Das `gnuplot` Kommando muss über den `PATH` findbar sein. Solltet ihr gnuplot über Homebrew installiert haben, liegt das binary wahrscheinlich in `/opt/homebrew/bin`. Diesen Pfad also in die `PATH` Variable aufnehmen (und am besten ausloggen, einloggen; zumindest aber VSCode beenden und neu starten).
+* Den Output der *Run on Save* Extension kann man sich im Terminalfenster von VSCode anschauen, wenn man im Reiter „OUTPUT“ im Dropdown rechts „Run On Save“ wählt. So sieht man z.B. wie lange der gnuplot Lauf gedauert hat.
 
 ### Nachklapp
 
