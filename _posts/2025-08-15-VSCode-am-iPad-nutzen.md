@@ -1,7 +1,7 @@
 ---
 title: "VSCode am iPad nutzen"
 date: 2025-08-15
-last_modified_at: 2025-08-15
+last_modified_at: 2025-10-20
 categories:
   - tools
 tags:
