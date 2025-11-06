@@ -1,4 +1,7 @@
---- # Nur für Jekyll: Frontmatter erforderlich --- @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // Skin
+---
+# Nur für Jekyll: Frontmatter erforderlich
+---
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // Skin
 @import "minimal-mistakes"; // Theme
 
 @font-face {
