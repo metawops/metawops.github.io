@@ -21,23 +21,23 @@ Und obwohl ich schon seit vielen, vielen Jahren Mac User bin, habe ich erst jetz
 
 Wir müssen lediglich einmal in den System Settings – sorry, meine Apple Geräte laufen alle auf Englisch, aber ihr bekommt das sicher hin, wenn euer macOS auf Deutsch läuft – in den Abschnitt "Keyboards" und dort im Abschnitt "Text Input" einmal den "Edit..." Button hinter "Input Sources" klicken:
 
-![macOS System Settings window open to the Keyboard section with the Text Input area visible. The Edit button next to Input Sources is highlighted in blue. The sidebar on the left lists other settings categories such as Appearance, Control Center, and Siri and Spotlight. The overall tone is neutral and instructional. Visible text includes System Settings, Keyboard, Text Input, and Edit.](/assets/images/keyboard-settings-1.png)
+{% include figure popup=true image_path="/assets/images/keyboard-settings-1.png" alt="macOS System Settings window open to the Keyboard section with the Text Input area visible. The Edit button next to Input Sources is highlighted in blue. The sidebar on the left lists other settings categories such as Appearance, Control Center, and Siri and Spotlight. The overall tone is neutral and instructional. Visible text includes System Settings, Keyboard, Text Input, and Edit." caption="" %}
 
 Im erscheinenden Dialog links unten aufs Plus-Zeichen klicken:
 
-![Screenshot zeigt die macOS Systemeinstellungen im Bereich Tastatur. Im linken Bereich sind die Eingabequellen sichtbar, unten links ist das Plus-Symbol zum Hinzufügen einer neuen Eingabequelle hervorgehoben. Rechts sind verschiedene Tastatureinstellungen zu sehen.](/assets/images/keyboard-settings-2.png)
+{% include figure popup=true image_path="/assets/images/keyboard-settings-2.png" alt="Screenshot zeigt die macOS Systemeinstellungen im Bereich Tastatur. Im linken Bereich sind die Eingabequellen sichtbar, unten links ist das Plus-Symbol zum Hinzufügen einer neuen Eingabequelle hervorgehoben. Rechts sind verschiedene Tastatureinstellungen zu sehen." caption="" %}
 
 Im erscheinenden Dialog unten links im Such-Eingabefeld `uni` eingeben (1), es gibt nur einen Treffer, das "Unicode Hex Input" Keyboard, was rechts oben angezeigt wird (2). Mit Klick auf den "Add" Button rechts unten (3) bestätigen:
 
-![alt text](/assets/images/keyboard-settings-3.png)
+{% include figure popup=true image_path="/assets/images/keyboard-settings-3.png" alt="" caption="" %}
 
 Das neue Tastaturlayout ist jetzt in die Liste der konfigurierten Layouts aufgenommen worden und wir bestätigen noch einmal mit dem "Done" Button unten rechts:
 
-![alt text](/assets/images/keyboard-settings-4.png)
+{% include figure popup=true image_path="/assets/images/keyboard-settings-4.png" alt="" caption="" %}
 
 Die folgende Einstellung ist optional, aber praktisch, wie ich finde. Wenn wir diesen Schalter einschalten, bekommen wir in der Menüleiste rechts oben ein Icon, über das wir sowohl das aktuell aktive Tastaturlayout sehen können, als auch ein Menü, über das wir das Layout ändern können:
 
-![alt text](/assets/images/keyboard-settings-5.png)
+{% include figure popup=true image_path="/assets/images/keyboard-settings-5.png" alt="" caption="" %}
 
 ## Tastaturlayouts umschalten
 Wenn wir jetzt irgendwo, wo ein Textcursor blinkt, ein Unicode Zeichen eingeben wollen, brauchen wir zwei Dinge:
@@ -46,7 +46,7 @@ Wenn wir jetzt irgendwo, wo ein Textcursor blinkt, ein Unicode Zeichen eingeben 
 
 Letzteres erreichen wir entweder über das eben aktivierte Icon in der Menüleiste ...
 
-![macOS Tastaturlayout Menü Icon und aufgeklapptes Menü von der Menüleiste](/assets/images/keyboard-settings-7.png)
+{% include figure popup=true image_path="/assets/images/keyboard-settings-7.png" alt="macOS Tastaturlayout Menü Icon und aufgeklapptes Menü von der Menüleiste" caption="" %}
 
 ... oder wir benutzen einfach da, wo der Cursor blinkt und wir etwas eingeben wollen die Tastenkombination `⌃`{:.keycap}`␣`{:.keycap} (`␣` ist ein Space Zeichen, steht also für die Leertaste `space`{:.keycap}) zum "Durchsteppen" durch unsere konfigurierten Tastaturlayouts. Genau unter dem blinkenden Cursor erscheint ein kleines GUI Element und das darin farblich hervorgehobene Layout ist dann jeweils das aktive.
 
@@ -63,29 +63,29 @@ Wenn man nun die hexadezimalen Codes zu seinen Lieblingszeichen wissen will, gib
 #### macOS Character Viewer
 Mit `⌃`{:.keycap}`⌘`{:.keycap}`␣`{:.keycap} (möglicherweise zweimal drücken!) aktiviert man unter macOS ein kleines Fenster, den Character Viewer. Der erscheint möglicherweise erstmal nur in seiner kompakten Form. Dann klicken wir rechts unten auf den kleinen Doppelpfeil:
 
-![alt text](/assets/images/character-viewer-2.png)
+{% include figure popup=true image_path="/assets/images/character-viewer-2.png" alt="" caption="" %}
 
 Denn dann erscheint daraufhin rechts unten ein kleines Icon, was ein Fenster symbolisiert.
 
-![alt text](/assets/images/character-viewer-3.png)
+{% include figure popup=true image_path="/assets/images/character-viewer-3.png" alt="" caption="" %}
 
 Wenn wir das klicken, haben wir die volle Version des Character Viewers vor uns:
 
-![alt text](/assets/images/character-viewer-4.png)
+{% include figure popup=true image_path="/assets/images/character-viewer-4.png" alt="" caption="" %}
 
 Möglicherweise seht ihr bei euch aber noch nicht die Unicode Nummer ("U+1F600") und auch nicht die UTF-8 Codierung. Das kommt jetzt.
 
 Nun aktivieren wir hier die *volle* Unicode Ansicht, indem wir einmal links oben auf die eingekreisten drei Punkte klicken und dann "Customize List" wählen:
 
-![alt text](/assets/images/character-viewer-5.png)
+{% include figure popup=true image_path="/assets/images/character-viewer-5.png" alt="" caption="" %}
 
 Im erscheinenden Dialog ganz runterscrollen, im Abschnitt "Code Tables" den Eintrag "Unicode" aktivieren und mit dem Done Button bestätigen:
 
-![alt text](/assets/images/character-viewer-6.png)
+{% include figure popup=true image_path="/assets/images/character-viewer-6.png" alt="" caption="" %}
 
 Jetzt scrollen wir links einmal runter und klicken auf den neuen Eintrag "Unicode":
 
-![alt text](/assets/images/character-viewer-7.png)
+{% include figure popup=true image_path="/assets/images/character-viewer-7.png" alt="" caption="" %}
 
 Im mittleren Bereich können wir jetzt durch die zahlreichen Codepages blättern, dann ein Zeichen anklicken und sehen rechts unter der großen Variante des Zeichens auch den Zahlencode des Zeichens. Im Beispiel Screenshot ist es das Apple Symbol, was auf der Command-Taste meist zu sehen ist. Es heißt übrigens "Place of interest sign" und das wurde nicht von Apple erfunden, sondern nur verwendet. [Es ist schon viel älter][schleifenquadrat].
 
