@@ -59,6 +59,2926 @@ html[data-theme="dark"] {
   }
 }
 
+
+/****************************************/
+@font-face {
+   font-family: "ti30xpro";
+   src: url("/assets/fonts/TI30XProEmuKeys.woff2") format("woff2"),
+      url("/assets/fonts/TI30XProEmuKeys.ttf") format("truetype");
+   font-weight: normal;
+   font-style: normal;
+}
+
+.ti30font {
+   font-family: "ti30xpro", sans-serif;
+}
+
+// Eigene Styles hier anhängen
+.author__bio a {
+   color: $link-color;
+   transition: color 0.2s;
+}
+
+.author__bio a:hover,
+.author__bio a:focus {
+   color: $link-color-hover;
+}
+
+/* Blocksatz und Silbentrennung für alle Layouts außer home */
+.blocksatz .page__content p,
+.blocksatz .page__content ul,
+.blocksatz .page__content ol,
+.blocksatz .page__content li {
+   text-align: justify;
+   hyphens: auto;
+   -webkit-hyphens: auto;
+   -ms-hyphens: auto;
+}
+
+/* Blocksatz und Silbentrennung speziell für home-Layout */
+.blocksatz .feature__wrapper p,
+.blocksatz .feature__wrapper ul,
+.blocksatz .feature__wrapper ol,
+.blocksatz .feature__wrapper li,
+.blocksatz .archive p,
+.blocksatz .archive ul,
+.blocksatz .archive ol,
+.blocksatz .archive li {
+   text-align: justify;
+   hyphens: auto;
+   -webkit-hyphens: auto;
+   -ms-hyphens: auto;
+}
+
+/* assets/css/main.scss */
+/* -------------------- */
+
+// Font Awesome erzwingen
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
+
+// Basis-Styling für alle Notices
+blockquote[class*="notice"] {
+   all: initial !important;
+   position: relative !important;
+   display: block !important;
+   padding: 1.5rem 2rem 1.5rem 6rem !important;
+   margin: 2rem 0 !important;
+   border-left: 4px solid !important;
+   border-radius: 4px !important;
+   font-style: normal !important;
+   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+   background: white !important;
+   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
+
+   // Icon
+   &::before {
+      font-family: "Font Awesome 6 Free" !important;
+      font-weight: 900 !important;
+      position: absolute !important;
+      left: 1.5rem !important;
+      top: 1.5rem !important;
+      font-size: 2rem !important;
+      z-index: 1 !important;
+   }
+
+   // Titel
+   >strong:first-child {
+      display: block !important;
+      margin-bottom: 0.8rem !important;
+      font-size: 1.1em !important;
+      font-weight: 700 !important;
+      text-transform: uppercase !important;
+      color: inherit !important;
+   }
+
+   // Inhalt
+   p,
+   pre,
+   code,
+   ul,
+   ol {
+      all: revert !important;
+      font-style: normal !important;
+      margin-left: 0 !important;
+      padding-left: 0 !important;
+   }
+
+   code {
+      background-color: rgba(0, 0, 0, 0.1) !important;
+      color: #333 !important;
+      padding: 0.2em 0.4em !important;
+      border-radius: 3px !important;
+      border: 1px solid rgba(0, 0, 0, 0.1) !important;
+      font-family: Menlo, Consolas, "Courier New", monospace !important;
+      font-size: 0.9em !important;
+   }
+
+   // Individuelle Anpassungen pro Notice-Typ
+   &.notice--info code {
+      background-color: rgba(33, 150, 243, 0.15) !important;
+      color: #1565c0 !important;
+   }
+
+   &.notice--warning code {
+      background-color: rgba(255, 152, 0, 0.15) !important;
+      color: #b36a00 !important;
+   }
+
+   &.notice--success code {
+      background-color: rgba(76, 175, 80, 0.15) !important;
+      color: #2e7d32 !important;
+   }
+
+   &.notice--danger code {
+      background-color: rgba(244, 67, 54, 0.15) !important;
+      color: #c62828 !important;
+   }
+}
+
+// Individuelle Typen
+// ------------------
+blockquote.notice--info {
+   border-color: #2196f3 !important;
+   background: #e3f2fd !important;
+
+   &::before {
+      content: "\f05a" !important; // fa-info-circle
+      color: #2196f3 !important;
+   }
+}
+
+blockquote.notice--warning {
+   border-color: #ff9800 !important;
+   background: #fff3e0 !important;
+
+   &::before {
+      content: "\f071" !important; // fa-triangle-exclamation
+      color: #ff9800 !important;
+   }
+}
+
+blockquote.notice--success {
+   border-color: #4caf50 !important;
+   background: #e8f5e9 !important;
+
+   &::before {
+      content: "\f058" !important; // fa-check-circle
+      color: #4caf50 !important;
+   }
+}
+
+blockquote.notice--danger {
+   border-color: #f44336 !important;
+   background: #ffebee !important;
+
+   &::before {
+      content: "\f06a" !important; // fa-exclamation-circle
+      color: #f44336 !important;
+   }
+}
+
+/* Schriftgrößenanpassungen für verschiedene Textarten */
+.page__content p.small-text {
+   font-size: 0.8em;
+   /* Oder einen anderen Wert, z.B. 0.7em, 14px */
+}
+
+/* Optional: Für Text, der noch kleiner sein soll */
+.page__content p.tiny-text {
+   font-size: 0.7em;
+}
+
+/* Nur Tabellen mit .my-table */
+table.my-table {
+   border-collapse: collapse;
+}
+
+table.my-table thead {
+   background-color: #fce8d5;
+   /* Heller Sandton für Kopfzeile */
+}
+
+table.my-table tbody tr:nth-child(even) {
+   background-color: #fff7ef;
+   /* Zarter Cremeton für jede 2. Zeile */
+}
+
+table.my-table tbody tr:nth-child(odd) {
+   background-color: #ffffff;
+   /* Weiß für die anderen Zeilen */
+}
+
+table.my-table th,
+table.my-table td {
+   padding: 0.5em 1em;
+   border: 1px solid #ddd;
+   vertical-align: top;
+   /* Vertikale Ausrichtung oben */
+}
+
+// Word wrap für Rouge Codeblöcke – wenn Zeilennummern deaktiviert sind
+pre.highlight code {
+   white-space: pre-wrap;
+   word-break: break-word;
+}
+
+// class für Keycaps
+.keycap {
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   min-width: 1.4em !important;
+   /* Breite kann je nach Geschmack/für Doppelzeichen angepasst werden */
+   height: 1.3em !important;
+   /* Höhe bestimmt die Einheitlichkeit */
+   border-radius: 0.2em !important;
+   /* Wert für abgerundete Ecken (z. B. 0.5em bis 0.8em) */
+   background: #f2b07b !important;
+   /* Hintergrundfarbe */
+   border: 2px solid #242424;
+   /* Rahmenfarbe */
+   font-size: 1.0em !important;
+   /* Schriftgröße */
+   font-family: inherit;
+   /* Schriftart */
+   font-style: normal !important;
+   font-weight: normal !important;
+   margin: 0.1em;
+   /* Abstand zu anderen Symbolen */
+   box-sizing: border-box;
+   padding: 0 0.15em !important;
+}
+
+// text-align: right für mein QED am Ende eines Artikels
+.qed {
+   text-align: right !important;
+}
+
+// CSS Klassen für HP-15C Tasten
+// Kopiert von https://hp-15c-simulator.de
+// Benutzung z.B. wie auf https://hp-15c-simulator.de/programs/Sudoku%20Solver.htm
+// 
+.HP15CKey,
+.HP15CBWKey,
+.HP15CfKeyLabel,
+.HP15CgKeyLabel {
+   font-family: Helvetica, Arial, sans-serif;
+   font-weight: bold;
+   font-size: 0.9em;
+   font-style: normal;
+   text-align: center;
+   padding-top: 0.1em;
+   margin-bottom: 1px;
+   padding-left: 3px;
+   padding-right: 3px;
+   border-radius: 4px;
+   display: inline-block;
+   min-width: 2.1em;
+}
+
+.HP15CKey {
+   color: white;
+   background-color: #454545;
+}
+
+.HP15CBWKey {
+   border-color: black;
+   border-width: 1px;
+   border-style: solid;
+}
+
+.HP15CfKeyLabel {
+   color: #E1A83E;
+   background-color: #454545;
+}
+
+.HP15CgKeyLabel {
+   color: #6CB7BD;
+   background-color: #454545;
+}
+
+.HP15CfKey,
+.HP15CgKey,
+.HP15CBWfgKey {
+   font-family: Helvetica, Arial, sans-serif;
+   font-weight: bold;
+   font-size: 0.9em;
+   color: black;
+   text-align: center;
+   padding-top: 0.1em;
+   margin-bottom: 1px;
+   padding-left: 6px;
+   padding-right: 6px;
+   border-radius: 4px;
+   display: inline-block;
+   min-width: 0.6em;
+}
+
+.HP15CfKey {
+   background-color: #E1A83E;
+}
+
+.HP15CgKey {
+   background-color: #6CB7BD;
+}
+
+.HP15CBWfgKey {
+   border-color: black;
+   border-width: 1px;
+   border-style: solid;
+}
+/* --- Theme Switch Styling --- */
+/********************************/
+
+/* Wrapper für die Positionierung im Header */
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+  float: right;
+  margin-top: 12px;
+  margin-left: 15px;
+}
+
+/* Der Schalter-Container */
+.theme-switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;  /* Breite der Spur */
+  height: 26px; /* Höhe der Spur */
+}
+
+/* Verstecke die originale Checkbox */
+.theme-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Die Spur (der Hintergrund des Schalters) */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #87CEEB; /* Himmelblau für Tag */
+  transition: 0.4s;
+  border-radius: 34px; /* Runde Form */
+  overflow: hidden; /* Wichtig: Damit Icons nicht rausschauen */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px; /* Abstand für den Knopf */
+}
+
+/* Der bewegliche Knopf */
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 22px; /* Größe des Knopfes */
+  width: 22px;
+  left: 2px; /* Startposition links */
+  bottom: 2px;
+  background-color: #FFD700; /* Goldgelb für die Sonne */
+  transition: 0.4s;
+  border-radius: 50%;
+  z-index: 2; /* Liegt ÜBER den Icons */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* Styling der Icons */
+.icon-sun, .icon-moon {
+  width: 16px;
+  height: 16px;
+  z-index: 1; /* Liegen UNTER dem Knopf */
+  transition: 0.4s;
+}
+
+/* Sonne-Icon (links) */
+.icon-sun {
+  color: #fff;
+  margin-left: 4px;
+  opacity: 1; /* Sichtbar im Tag-Modus */
+}
+
+/* Mond-Icon (rechts) */
+.icon-moon {
+  color: #fff;
+  margin-right: 4px;
+  opacity: 0; /* Unsichtbar im Tag-Modus */
+}
+
+/* --- Zustand: Dark Mode (Checkbox ist aktiv) --- */
+
+/* Spur wird dunkel */
+input:checked + .slider {
+  background-color: #1a202c; /* Nachtblau/Grau */
+}
+
+/* Knopf bewegt sich nach rechts und wird zum Mond */
+input:checked + .slider:before {
+  transform: translateX(24px); /* Verschiebung nach rechts */
+  background-color: #f0f0f0; /* Helles Mondgrau */
+}
+
+/* Sonne ausblenden */
+input:checked + .slider .icon-sun {
+  opacity: 0;
+}
+
+/* Mond einblenden */
+input:checked + .slider .icon-moon {
+  opacity: 1;
+}
+
+/****************************************/
+@font-face {
+   font-family: "ti30xpro";
+   src: url("/assets/fonts/TI30XProEmuKeys.woff2") format("woff2"),
+      url("/assets/fonts/TI30XProEmuKeys.ttf") format("truetype");
+   font-weight: normal;
+   font-style: normal;
+}
+
+.ti30font {
+   font-family: "ti30xpro", sans-serif;
+}
+
+// Eigene Styles hier anhängen
+.author__bio a {
+   color: $link-color;
+   transition: color 0.2s;
+}
+
+.author__bio a:hover,
+.author__bio a:focus {
+   color: $link-color-hover;
+}
+
+/* Blocksatz und Silbentrennung für alle Layouts außer home */
+.blocksatz .page__content p,
+.blocksatz .page__content ul,
+.blocksatz .page__content ol,
+.blocksatz .page__content li {
+   text-align: justify;
+   hyphens: auto;
+   -webkit-hyphens: auto;
+   -ms-hyphens: auto;
+}
+
+/* Blocksatz und Silbentrennung speziell für home-Layout */
+.blocksatz .feature__wrapper p,
+.blocksatz .feature__wrapper ul,
+.blocksatz .feature__wrapper ol,
+.blocksatz .feature__wrapper li,
+.blocksatz .archive p,
+.blocksatz .archive ul,
+.blocksatz .archive ol,
+.blocksatz .archive li {
+   text-align: justify;
+   hyphens: auto;
+   -webkit-hyphens: auto;
+   -ms-hyphens: auto;
+}
+
+/* assets/css/main.scss */
+/* -------------------- */
+
+// Font Awesome erzwingen
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
+
+// Basis-Styling für alle Notices
+blockquote[class*="notice"] {
+   all: initial !important;
+   position: relative !important;
+   display: block !important;
+   padding: 1.5rem 2rem 1.5rem 6rem !important;
+   margin: 2rem 0 !important;
+   border-left: 4px solid !important;
+   border-radius: 4px !important;
+   font-style: normal !important;
+   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+   background: white !important;
+   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
+
+   // Icon
+   &::before {
+      font-family: "Font Awesome 6 Free" !important;
+      font-weight: 900 !important;
+      position: absolute !important;
+      left: 1.5rem !important;
+      top: 1.5rem !important;
+      font-size: 2rem !important;
+      z-index: 1 !important;
+   }
+
+   // Titel
+   >strong:first-child {
+      display: block !important;
+      margin-bottom: 0.8rem !important;
+      font-size: 1.1em !important;
+      font-weight: 700 !important;
+      text-transform: uppercase !important;
+      color: inherit !important;
+   }
+
+   // Inhalt
+   p,
+   pre,
+   code,
+   ul,
+   ol {
+      all: revert !important;
+      font-style: normal !important;
+      margin-left: 0 !important;
+      padding-left: 0 !important;
+   }
+
+   code {
+      background-color: rgba(0, 0, 0, 0.1) !important;
+      color: #333 !important;
+      padding: 0.2em 0.4em !important;
+      border-radius: 3px !important;
+      border: 1px solid rgba(0, 0, 0, 0.1) !important;
+      font-family: Menlo, Consolas, "Courier New", monospace !important;
+      font-size: 0.9em !important;
+   }
+
+   // Individuelle Anpassungen pro Notice-Typ
+   &.notice--info code {
+      background-color: rgba(33, 150, 243, 0.15) !important;
+      color: #1565c0 !important;
+   }
+
+   &.notice--warning code {
+      background-color: rgba(255, 152, 0, 0.15) !important;
+      color: #b36a00 !important;
+   }
+
+   &.notice--success code {
+      background-color: rgba(76, 175, 80, 0.15) !important;
+      color: #2e7d32 !important;
+   }
+
+   &.notice--danger code {
+      background-color: rgba(244, 67, 54, 0.15) !important;
+      color: #c62828 !important;
+   }
+}
+
+// Individuelle Typen
+// ------------------
+blockquote.notice--info {
+   border-color: #2196f3 !important;
+   background: #e3f2fd !important;
+
+   &::before {
+      content: "\f05a" !important; // fa-info-circle
+      color: #2196f3 !important;
+   }
+}
+
+blockquote.notice--warning {
+   border-color: #ff9800 !important;
+   background: #fff3e0 !important;
+
+   &::before {
+      content: "\f071" !important; // fa-triangle-exclamation
+      color: #ff9800 !important;
+   }
+}
+
+blockquote.notice--success {
+   border-color: #4caf50 !important;
+   background: #e8f5e9 !important;
+
+   &::before {
+      content: "\f058" !important; // fa-check-circle
+      color: #4caf50 !important;
+   }
+}
+
+blockquote.notice--danger {
+   border-color: #f44336 !important;
+   background: #ffebee !important;
+
+   &::before {
+      content: "\f06a" !important; // fa-exclamation-circle
+      color: #f44336 !important;
+   }
+}
+
+/* Schriftgrößenanpassungen für verschiedene Textarten */
+.page__content p.small-text {
+   font-size: 0.8em;
+   /* Oder einen anderen Wert, z.B. 0.7em, 14px */
+}
+
+/* Optional: Für Text, der noch kleiner sein soll */
+.page__content p.tiny-text {
+   font-size: 0.7em;
+}
+
+/* Nur Tabellen mit .my-table */
+table.my-table {
+   border-collapse: collapse;
+}
+
+table.my-table thead {
+   background-color: #fce8d5;
+   /* Heller Sandton für Kopfzeile */
+}
+
+table.my-table tbody tr:nth-child(even) {
+   background-color: #fff7ef;
+   /* Zarter Cremeton für jede 2. Zeile */
+}
+
+table.my-table tbody tr:nth-child(odd) {
+   background-color: #ffffff;
+   /* Weiß für die anderen Zeilen */
+}
+
+table.my-table th,
+table.my-table td {
+   padding: 0.5em 1em;
+   border: 1px solid #ddd;
+   vertical-align: top;
+   /* Vertikale Ausrichtung oben */
+}
+
+// Word wrap für Rouge Codeblöcke – wenn Zeilennummern deaktiviert sind
+pre.highlight code {
+   white-space: pre-wrap;
+   word-break: break-word;
+}
+
+// class für Keycaps
+.keycap {
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   min-width: 1.4em !important;
+   /* Breite kann je nach Geschmack/für Doppelzeichen angepasst werden */
+   height: 1.3em !important;
+   /* Höhe bestimmt die Einheitlichkeit */
+   border-radius: 0.2em !important;
+   /* Wert für abgerundete Ecken (z. B. 0.5em bis 0.8em) */
+   background: #f2b07b !important;
+   /* Hintergrundfarbe */
+   border: 2px solid #242424;
+   /* Rahmenfarbe */
+   font-size: 1.0em !important;
+   /* Schriftgröße */
+   font-family: inherit;
+   /* Schriftart */
+   font-style: normal !important;
+   font-weight: normal !important;
+   margin: 0.1em;
+   /* Abstand zu anderen Symbolen */
+   box-sizing: border-box;
+   padding: 0 0.15em !important;
+}
+
+// text-align: right für mein QED am Ende eines Artikels
+.qed {
+   text-align: right !important;
+}
+
+// CSS Klassen für HP-15C Tasten
+// Kopiert von https://hp-15c-simulator.de
+// Benutzung z.B. wie auf https://hp-15c-simulator.de/programs/Sudoku%20Solver.htm
+// 
+.HP15CKey,
+.HP15CBWKey,
+.HP15CfKeyLabel,
+.HP15CgKeyLabel {
+   font-family: Helvetica, Arial, sans-serif;
+   font-weight: bold;
+   font-size: 0.9em;
+   font-style: normal;
+   text-align: center;
+   padding-top: 0.1em;
+   margin-bottom: 1px;
+   padding-left: 3px;
+   padding-right: 3px;
+   border-radius: 4px;
+   display: inline-block;
+   min-width: 2.1em;
+}
+
+.HP15CKey {
+   color: white;
+   background-color: #454545;
+}
+
+.HP15CBWKey {
+   border-color: black;
+   border-width: 1px;
+   border-style: solid;
+}
+
+.HP15CfKeyLabel {
+   color: #E1A83E;
+   background-color: #454545;
+}
+
+.HP15CgKeyLabel {
+   color: #6CB7BD;
+   background-color: #454545;
+}
+
+.HP15CfKey,
+.HP15CgKey,
+.HP15CBWfgKey {
+   font-family: Helvetica, Arial, sans-serif;
+   font-weight: bold;
+   font-size: 0.9em;
+   color: black;
+   text-align: center;
+   padding-top: 0.1em;
+   margin-bottom: 1px;
+   padding-left: 6px;
+   padding-right: 6px;
+   border-radius: 4px;
+   display: inline-block;
+   min-width: 0.6em;
+}
+
+.HP15CfKey {
+   background-color: #E1A83E;
+}
+
+.HP15CgKey {
+   background-color: #6CB7BD;
+}
+
+.HP15CBWfgKey {
+   border-color: black;
+   border-width: 1px;
+   border-style: solid;
+}
+/* --- Theme Switch Styling --- */
+/********************************/
+
+/* Wrapper für die Positionierung im Header */
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+  float: right;
+  margin-top: 12px;
+  margin-left: 15px;
+}
+
+/* Der Schalter-Container */
+.theme-switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;  /* Breite der Spur */
+  height: 26px; /* Höhe der Spur */
+}
+
+/* Verstecke die originale Checkbox */
+.theme-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Die Spur (der Hintergrund des Schalters) */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #87CEEB; /* Himmelblau für Tag */
+  transition: 0.4s;
+  border-radius: 34px; /* Runde Form */
+  overflow: hidden; /* Wichtig: Damit Icons nicht rausschauen */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px; /* Abstand für den Knopf */
+}
+
+/* Der bewegliche Knopf */
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 22px; /* Größe des Knopfes */
+  width: 22px;
+  left: 2px; /* Startposition links */
+  bottom: 2px;
+  background-color: #FFD700; /* Goldgelb für die Sonne */
+  transition: 0.4s;
+  border-radius: 50%;
+  z-index: 2; /* Liegt ÜBER den Icons */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* Styling der Icons */
+.icon-sun, .icon-moon {
+  width: 16px;
+  height: 16px;
+  z-index: 1; /* Liegen UNTER dem Knopf */
+  transition: 0.4s;
+}
+
+/* Sonne-Icon (links) */
+.icon-sun {
+  color: #fff;
+  margin-left: 4px;
+  opacity: 1; /* Sichtbar im Tag-Modus */
+}
+
+/* Mond-Icon (rechts) */
+.icon-moon {
+  color: #fff;
+  margin-right: 4px;
+  opacity: 0; /* Unsichtbar im Tag-Modus */
+}
+
+/* --- Zustand: Dark Mode (Checkbox ist aktiv) --- */
+
+/* Spur wird dunkel */
+input:checked + .slider {
+  background-color: #1a202c; /* Nachtblau/Grau */
+}
+
+/* Knopf bewegt sich nach rechts und wird zum Mond */
+input:checked + .slider:before {
+  transform: translateX(24px); /* Verschiebung nach rechts */
+  background-color: #f0f0f0; /* Helles Mondgrau */
+}
+
+/* Sonne ausblenden */
+input:checked + .slider .icon-sun {
+  opacity: 0;
+}
+
+/* Mond einblenden */
+input:checked + .slider .icon-moon {
+  opacity: 1;
+}
+
+/****************************************/
+@font-face {
+   font-family: "ti30xpro";
+   src: url("/assets/fonts/TI30XProEmuKeys.woff2") format("woff2"),
+      url("/assets/fonts/TI30XProEmuKeys.ttf") format("truetype");
+   font-weight: normal;
+   font-style: normal;
+}
+
+.ti30font {
+   font-family: "ti30xpro", sans-serif;
+}
+
+// Eigene Styles hier anhängen
+.author__bio a {
+   color: $link-color;
+   transition: color 0.2s;
+}
+
+.author__bio a:hover,
+.author__bio a:focus {
+   color: $link-color-hover;
+}
+
+/* Blocksatz und Silbentrennung für alle Layouts außer home */
+.blocksatz .page__content p,
+.blocksatz .page__content ul,
+.blocksatz .page__content ol,
+.blocksatz .page__content li {
+   text-align: justify;
+   hyphens: auto;
+   -webkit-hyphens: auto;
+   -ms-hyphens: auto;
+}
+
+/* Blocksatz und Silbentrennung speziell für home-Layout */
+.blocksatz .feature__wrapper p,
+.blocksatz .feature__wrapper ul,
+.blocksatz .feature__wrapper ol,
+.blocksatz .feature__wrapper li,
+.blocksatz .archive p,
+.blocksatz .archive ul,
+.blocksatz .archive ol,
+.blocksatz .archive li {
+   text-align: justify;
+   hyphens: auto;
+   -webkit-hyphens: auto;
+   -ms-hyphens: auto;
+}
+
+/* assets/css/main.scss */
+/* -------------------- */
+
+// Font Awesome erzwingen
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
+
+// Basis-Styling für alle Notices
+blockquote[class*="notice"] {
+   all: initial !important;
+   position: relative !important;
+   display: block !important;
+   padding: 1.5rem 2rem 1.5rem 6rem !important;
+   margin: 2rem 0 !important;
+   border-left: 4px solid !important;
+   border-radius: 4px !important;
+   font-style: normal !important;
+   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+   background: white !important;
+   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
+
+   // Icon
+   &::before {
+      font-family: "Font Awesome 6 Free" !important;
+      font-weight: 900 !important;
+      position: absolute !important;
+      left: 1.5rem !important;
+      top: 1.5rem !important;
+      font-size: 2rem !important;
+      z-index: 1 !important;
+   }
+
+   // Titel
+   >strong:first-child {
+      display: block !important;
+      margin-bottom: 0.8rem !important;
+      font-size: 1.1em !important;
+      font-weight: 700 !important;
+      text-transform: uppercase !important;
+      color: inherit !important;
+   }
+
+   // Inhalt
+   p,
+   pre,
+   code,
+   ul,
+   ol {
+      all: revert !important;
+      font-style: normal !important;
+      margin-left: 0 !important;
+      padding-left: 0 !important;
+   }
+
+   code {
+      background-color: rgba(0, 0, 0, 0.1) !important;
+      color: #333 !important;
+      padding: 0.2em 0.4em !important;
+      border-radius: 3px !important;
+      border: 1px solid rgba(0, 0, 0, 0.1) !important;
+      font-family: Menlo, Consolas, "Courier New", monospace !important;
+      font-size: 0.9em !important;
+   }
+
+   // Individuelle Anpassungen pro Notice-Typ
+   &.notice--info code {
+      background-color: rgba(33, 150, 243, 0.15) !important;
+      color: #1565c0 !important;
+   }
+
+   &.notice--warning code {
+      background-color: rgba(255, 152, 0, 0.15) !important;
+      color: #b36a00 !important;
+   }
+
+   &.notice--success code {
+      background-color: rgba(76, 175, 80, 0.15) !important;
+      color: #2e7d32 !important;
+   }
+
+   &.notice--danger code {
+      background-color: rgba(244, 67, 54, 0.15) !important;
+      color: #c62828 !important;
+   }
+}
+
+// Individuelle Typen
+// ------------------
+blockquote.notice--info {
+   border-color: #2196f3 !important;
+   background: #e3f2fd !important;
+
+   &::before {
+      content: "\f05a" !important; // fa-info-circle
+      color: #2196f3 !important;
+   }
+}
+
+blockquote.notice--warning {
+   border-color: #ff9800 !important;
+   background: #fff3e0 !important;
+
+   &::before {
+      content: "\f071" !important; // fa-triangle-exclamation
+      color: #ff9800 !important;
+   }
+}
+
+blockquote.notice--success {
+   border-color: #4caf50 !important;
+   background: #e8f5e9 !important;
+
+   &::before {
+      content: "\f058" !important; // fa-check-circle
+      color: #4caf50 !important;
+   }
+}
+
+blockquote.notice--danger {
+   border-color: #f44336 !important;
+   background: #ffebee !important;
+
+   &::before {
+      content: "\f06a" !important; // fa-exclamation-circle
+      color: #f44336 !important;
+   }
+}
+
+/* Schriftgrößenanpassungen für verschiedene Textarten */
+.page__content p.small-text {
+   font-size: 0.8em;
+   /* Oder einen anderen Wert, z.B. 0.7em, 14px */
+}
+
+/* Optional: Für Text, der noch kleiner sein soll */
+.page__content p.tiny-text {
+   font-size: 0.7em;
+}
+
+/* Nur Tabellen mit .my-table */
+table.my-table {
+   border-collapse: collapse;
+}
+
+table.my-table thead {
+   background-color: #fce8d5;
+   /* Heller Sandton für Kopfzeile */
+}
+
+table.my-table tbody tr:nth-child(even) {
+   background-color: #fff7ef;
+   /* Zarter Cremeton für jede 2. Zeile */
+}
+
+table.my-table tbody tr:nth-child(odd) {
+   background-color: #ffffff;
+   /* Weiß für die anderen Zeilen */
+}
+
+table.my-table th,
+table.my-table td {
+   padding: 0.5em 1em;
+   border: 1px solid #ddd;
+   vertical-align: top;
+   /* Vertikale Ausrichtung oben */
+}
+
+// Word wrap für Rouge Codeblöcke – wenn Zeilennummern deaktiviert sind
+pre.highlight code {
+   white-space: pre-wrap;
+   word-break: break-word;
+}
+
+// class für Keycaps
+.keycap {
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   min-width: 1.4em !important;
+   /* Breite kann je nach Geschmack/für Doppelzeichen angepasst werden */
+   height: 1.3em !important;
+   /* Höhe bestimmt die Einheitlichkeit */
+   border-radius: 0.2em !important;
+   /* Wert für abgerundete Ecken (z. B. 0.5em bis 0.8em) */
+   background: #f2b07b !important;
+   /* Hintergrundfarbe */
+   border: 2px solid #242424;
+   /* Rahmenfarbe */
+   font-size: 1.0em !important;
+   /* Schriftgröße */
+   font-family: inherit;
+   /* Schriftart */
+   font-style: normal !important;
+   font-weight: normal !important;
+   margin: 0.1em;
+   /* Abstand zu anderen Symbolen */
+   box-sizing: border-box;
+   padding: 0 0.15em !important;
+}
+
+// text-align: right für mein QED am Ende eines Artikels
+.qed {
+   text-align: right !important;
+}
+
+// CSS Klassen für HP-15C Tasten
+// Kopiert von https://hp-15c-simulator.de
+// Benutzung z.B. wie auf https://hp-15c-simulator.de/programs/Sudoku%20Solver.htm
+// 
+.HP15CKey,
+.HP15CBWKey,
+.HP15CfKeyLabel,
+.HP15CgKeyLabel {
+   font-family: Helvetica, Arial, sans-serif;
+   font-weight: bold;
+   font-size: 0.9em;
+   font-style: normal;
+   text-align: center;
+   padding-top: 0.1em;
+   margin-bottom: 1px;
+   padding-left: 3px;
+   padding-right: 3px;
+   border-radius: 4px;
+   display: inline-block;
+   min-width: 2.1em;
+}
+
+.HP15CKey {
+   color: white;
+   background-color: #454545;
+}
+
+.HP15CBWKey {
+   border-color: black;
+   border-width: 1px;
+   border-style: solid;
+}
+
+.HP15CfKeyLabel {
+   color: #E1A83E;
+   background-color: #454545;
+}
+
+.HP15CgKeyLabel {
+   color: #6CB7BD;
+   background-color: #454545;
+}
+
+.HP15CfKey,
+.HP15CgKey,
+.HP15CBWfgKey {
+   font-family: Helvetica, Arial, sans-serif;
+   font-weight: bold;
+   font-size: 0.9em;
+   color: black;
+   text-align: center;
+   padding-top: 0.1em;
+   margin-bottom: 1px;
+   padding-left: 6px;
+   padding-right: 6px;
+   border-radius: 4px;
+   display: inline-block;
+   min-width: 0.6em;
+}
+
+.HP15CfKey {
+   background-color: #E1A83E;
+}
+
+.HP15CgKey {
+   background-color: #6CB7BD;
+}
+
+.HP15CBWfgKey {
+   border-color: black;
+   border-width: 1px;
+   border-style: solid;
+}
+/* --- Theme Switch Styling --- */
+/********************************/
+
+/* Wrapper für die Positionierung im Header */
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+  float: right;
+  margin-top: 12px;
+  margin-left: 15px;
+}
+
+/* Der Schalter-Container */
+.theme-switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;  /* Breite der Spur */
+  height: 26px; /* Höhe der Spur */
+}
+
+/* Verstecke die originale Checkbox */
+.theme-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Die Spur (der Hintergrund des Schalters) */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #87CEEB; /* Himmelblau für Tag */
+  transition: 0.4s;
+  border-radius: 34px; /* Runde Form */
+  overflow: hidden; /* Wichtig: Damit Icons nicht rausschauen */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px; /* Abstand für den Knopf */
+}
+
+/* Der bewegliche Knopf */
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 22px; /* Größe des Knopfes */
+  width: 22px;
+  left: 2px; /* Startposition links */
+  bottom: 2px;
+  background-color: #FFD700; /* Goldgelb für die Sonne */
+  transition: 0.4s;
+  border-radius: 50%;
+  z-index: 2; /* Liegt ÜBER den Icons */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* Styling der Icons */
+.icon-sun, .icon-moon {
+  width: 16px;
+  height: 16px;
+  z-index: 1; /* Liegen UNTER dem Knopf */
+  transition: 0.4s;
+}
+
+/* Sonne-Icon (links) */
+.icon-sun {
+  color: #fff;
+  margin-left: 4px;
+  opacity: 1; /* Sichtbar im Tag-Modus */
+}
+
+/* Mond-Icon (rechts) */
+.icon-moon {
+  color: #fff;
+  margin-right: 4px;
+  opacity: 0; /* Unsichtbar im Tag-Modus */
+}
+
+/* --- Zustand: Dark Mode (Checkbox ist aktiv) --- */
+
+/* Spur wird dunkel */
+input:checked + .slider {
+  background-color: #1a202c; /* Nachtblau/Grau */
+}
+
+/* Knopf bewegt sich nach rechts und wird zum Mond */
+input:checked + .slider:before {
+  transform: translateX(24px); /* Verschiebung nach rechts */
+  background-color: #f0f0f0; /* Helles Mondgrau */
+}
+
+/* Sonne ausblenden */
+input:checked + .slider .icon-sun {
+  opacity: 0;
+}
+
+/* Mond einblenden */
+input:checked + .slider .icon-moon {
+  opacity: 1;
+}
+
+/****************************************/
+@font-face {
+   font-family: "ti30xpro";
+   src: url("/assets/fonts/TI30XProEmuKeys.woff2") format("woff2"),
+      url("/assets/fonts/TI30XProEmuKeys.ttf") format("truetype");
+   font-weight: normal;
+   font-style: normal;
+}
+
+.ti30font {
+   font-family: "ti30xpro", sans-serif;
+}
+
+// Eigene Styles hier anhängen
+.author__bio a {
+   color: $link-color;
+   transition: color 0.2s;
+}
+
+.author__bio a:hover,
+.author__bio a:focus {
+   color: $link-color-hover;
+}
+
+/* Blocksatz und Silbentrennung für alle Layouts außer home */
+.blocksatz .page__content p,
+.blocksatz .page__content ul,
+.blocksatz .page__content ol,
+.blocksatz .page__content li {
+   text-align: justify;
+   hyphens: auto;
+   -webkit-hyphens: auto;
+   -ms-hyphens: auto;
+}
+
+/* Blocksatz und Silbentrennung speziell für home-Layout */
+.blocksatz .feature__wrapper p,
+.blocksatz .feature__wrapper ul,
+.blocksatz .feature__wrapper ol,
+.blocksatz .feature__wrapper li,
+.blocksatz .archive p,
+.blocksatz .archive ul,
+.blocksatz .archive ol,
+.blocksatz .archive li {
+   text-align: justify;
+   hyphens: auto;
+   -webkit-hyphens: auto;
+   -ms-hyphens: auto;
+}
+
+/* assets/css/main.scss */
+/* -------------------- */
+
+// Font Awesome erzwingen
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
+
+// Basis-Styling für alle Notices
+blockquote[class*="notice"] {
+   all: initial !important;
+   position: relative !important;
+   display: block !important;
+   padding: 1.5rem 2rem 1.5rem 6rem !important;
+   margin: 2rem 0 !important;
+   border-left: 4px solid !important;
+   border-radius: 4px !important;
+   font-style: normal !important;
+   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+   background: white !important;
+   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
+
+   // Icon
+   &::before {
+      font-family: "Font Awesome 6 Free" !important;
+      font-weight: 900 !important;
+      position: absolute !important;
+      left: 1.5rem !important;
+      top: 1.5rem !important;
+      font-size: 2rem !important;
+      z-index: 1 !important;
+   }
+
+   // Titel
+   >strong:first-child {
+      display: block !important;
+      margin-bottom: 0.8rem !important;
+      font-size: 1.1em !important;
+      font-weight: 700 !important;
+      text-transform: uppercase !important;
+      color: inherit !important;
+   }
+
+   // Inhalt
+   p,
+   pre,
+   code,
+   ul,
+   ol {
+      all: revert !important;
+      font-style: normal !important;
+      margin-left: 0 !important;
+      padding-left: 0 !important;
+   }
+
+   code {
+      background-color: rgba(0, 0, 0, 0.1) !important;
+      color: #333 !important;
+      padding: 0.2em 0.4em !important;
+      border-radius: 3px !important;
+      border: 1px solid rgba(0, 0, 0, 0.1) !important;
+      font-family: Menlo, Consolas, "Courier New", monospace !important;
+      font-size: 0.9em !important;
+   }
+
+   // Individuelle Anpassungen pro Notice-Typ
+   &.notice--info code {
+      background-color: rgba(33, 150, 243, 0.15) !important;
+      color: #1565c0 !important;
+   }
+
+   &.notice--warning code {
+      background-color: rgba(255, 152, 0, 0.15) !important;
+      color: #b36a00 !important;
+   }
+
+   &.notice--success code {
+      background-color: rgba(76, 175, 80, 0.15) !important;
+      color: #2e7d32 !important;
+   }
+
+   &.notice--danger code {
+      background-color: rgba(244, 67, 54, 0.15) !important;
+      color: #c62828 !important;
+   }
+}
+
+// Individuelle Typen
+// ------------------
+blockquote.notice--info {
+   border-color: #2196f3 !important;
+   background: #e3f2fd !important;
+
+   &::before {
+      content: "\f05a" !important; // fa-info-circle
+      color: #2196f3 !important;
+   }
+}
+
+blockquote.notice--warning {
+   border-color: #ff9800 !important;
+   background: #fff3e0 !important;
+
+   &::before {
+      content: "\f071" !important; // fa-triangle-exclamation
+      color: #ff9800 !important;
+   }
+}
+
+blockquote.notice--success {
+   border-color: #4caf50 !important;
+   background: #e8f5e9 !important;
+
+   &::before {
+      content: "\f058" !important; // fa-check-circle
+      color: #4caf50 !important;
+   }
+}
+
+blockquote.notice--danger {
+   border-color: #f44336 !important;
+   background: #ffebee !important;
+
+   &::before {
+      content: "\f06a" !important; // fa-exclamation-circle
+      color: #f44336 !important;
+   }
+}
+
+/* Schriftgrößenanpassungen für verschiedene Textarten */
+.page__content p.small-text {
+   font-size: 0.8em;
+   /* Oder einen anderen Wert, z.B. 0.7em, 14px */
+}
+
+/* Optional: Für Text, der noch kleiner sein soll */
+.page__content p.tiny-text {
+   font-size: 0.7em;
+}
+
+/* Nur Tabellen mit .my-table */
+table.my-table {
+   border-collapse: collapse;
+}
+
+table.my-table thead {
+   background-color: #fce8d5;
+   /* Heller Sandton für Kopfzeile */
+}
+
+table.my-table tbody tr:nth-child(even) {
+   background-color: #fff7ef;
+   /* Zarter Cremeton für jede 2. Zeile */
+}
+
+table.my-table tbody tr:nth-child(odd) {
+   background-color: #ffffff;
+   /* Weiß für die anderen Zeilen */
+}
+
+table.my-table th,
+table.my-table td {
+   padding: 0.5em 1em;
+   border: 1px solid #ddd;
+   vertical-align: top;
+   /* Vertikale Ausrichtung oben */
+}
+
+// Word wrap für Rouge Codeblöcke – wenn Zeilennummern deaktiviert sind
+pre.highlight code {
+   white-space: pre-wrap;
+   word-break: break-word;
+}
+
+// class für Keycaps
+.keycap {
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   min-width: 1.4em !important;
+   /* Breite kann je nach Geschmack/für Doppelzeichen angepasst werden */
+   height: 1.3em !important;
+   /* Höhe bestimmt die Einheitlichkeit */
+   border-radius: 0.2em !important;
+   /* Wert für abgerundete Ecken (z. B. 0.5em bis 0.8em) */
+   background: #f2b07b !important;
+   /* Hintergrundfarbe */
+   border: 2px solid #242424;
+   /* Rahmenfarbe */
+   font-size: 1.0em !important;
+   /* Schriftgröße */
+   font-family: inherit;
+   /* Schriftart */
+   font-style: normal !important;
+   font-weight: normal !important;
+   margin: 0.1em;
+   /* Abstand zu anderen Symbolen */
+   box-sizing: border-box;
+   padding: 0 0.15em !important;
+}
+
+// text-align: right für mein QED am Ende eines Artikels
+.qed {
+   text-align: right !important;
+}
+
+// CSS Klassen für HP-15C Tasten
+// Kopiert von https://hp-15c-simulator.de
+// Benutzung z.B. wie auf https://hp-15c-simulator.de/programs/Sudoku%20Solver.htm
+// 
+.HP15CKey,
+.HP15CBWKey,
+.HP15CfKeyLabel,
+.HP15CgKeyLabel {
+   font-family: Helvetica, Arial, sans-serif;
+   font-weight: bold;
+   font-size: 0.9em;
+   font-style: normal;
+   text-align: center;
+   padding-top: 0.1em;
+   margin-bottom: 1px;
+   padding-left: 3px;
+   padding-right: 3px;
+   border-radius: 4px;
+   display: inline-block;
+   min-width: 2.1em;
+}
+
+.HP15CKey {
+   color: white;
+   background-color: #454545;
+}
+
+.HP15CBWKey {
+   border-color: black;
+   border-width: 1px;
+   border-style: solid;
+}
+
+.HP15CfKeyLabel {
+   color: #E1A83E;
+   background-color: #454545;
+}
+
+.HP15CgKeyLabel {
+   color: #6CB7BD;
+   background-color: #454545;
+}
+
+.HP15CfKey,
+.HP15CgKey,
+.HP15CBWfgKey {
+   font-family: Helvetica, Arial, sans-serif;
+   font-weight: bold;
+   font-size: 0.9em;
+   color: black;
+   text-align: center;
+   padding-top: 0.1em;
+   margin-bottom: 1px;
+   padding-left: 6px;
+   padding-right: 6px;
+   border-radius: 4px;
+   display: inline-block;
+   min-width: 0.6em;
+}
+
+.HP15CfKey {
+   background-color: #E1A83E;
+}
+
+.HP15CgKey {
+   background-color: #6CB7BD;
+}
+
+.HP15CBWfgKey {
+   border-color: black;
+   border-width: 1px;
+   border-style: solid;
+}
+/* --- Theme Switch Styling --- */
+/********************************/
+
+/* Wrapper für die Positionierung im Header */
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+  float: right;
+  margin-top: 12px;
+  margin-left: 15px;
+}
+
+/* Der Schalter-Container */
+.theme-switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;  /* Breite der Spur */
+  height: 26px; /* Höhe der Spur */
+}
+
+/* Verstecke die originale Checkbox */
+.theme-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Die Spur (der Hintergrund des Schalters) */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #87CEEB; /* Himmelblau für Tag */
+  transition: 0.4s;
+  border-radius: 34px; /* Runde Form */
+  overflow: hidden; /* Wichtig: Damit Icons nicht rausschauen */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px; /* Abstand für den Knopf */
+}
+
+/* Der bewegliche Knopf */
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 22px; /* Größe des Knopfes */
+  width: 22px;
+  left: 2px; /* Startposition links */
+  bottom: 2px;
+  background-color: #FFD700; /* Goldgelb für die Sonne */
+  transition: 0.4s;
+  border-radius: 50%;
+  z-index: 2; /* Liegt ÜBER den Icons */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* Styling der Icons */
+.icon-sun, .icon-moon {
+  width: 16px;
+  height: 16px;
+  z-index: 1; /* Liegen UNTER dem Knopf */
+  transition: 0.4s;
+}
+
+/* Sonne-Icon (links) */
+.icon-sun {
+  color: #fff;
+  margin-left: 4px;
+  opacity: 1; /* Sichtbar im Tag-Modus */
+}
+
+/* Mond-Icon (rechts) */
+.icon-moon {
+  color: #fff;
+  margin-right: 4px;
+  opacity: 0; /* Unsichtbar im Tag-Modus */
+}
+
+/* --- Zustand: Dark Mode (Checkbox ist aktiv) --- */
+
+/* Spur wird dunkel */
+input:checked + .slider {
+  background-color: #1a202c; /* Nachtblau/Grau */
+}
+
+/* Knopf bewegt sich nach rechts und wird zum Mond */
+input:checked + .slider:before {
+  transform: translateX(24px); /* Verschiebung nach rechts */
+  background-color: #f0f0f0; /* Helles Mondgrau */
+}
+
+/* Sonne ausblenden */
+input:checked + .slider .icon-sun {
+  opacity: 0;
+}
+
+/* Mond einblenden */
+input:checked + .slider .icon-moon {
+  opacity: 1;
+}
+
+/****************************************/
+@font-face {
+   font-family: "ti30xpro";
+   src: url("/assets/fonts/TI30XProEmuKeys.woff2") format("woff2"),
+      url("/assets/fonts/TI30XProEmuKeys.ttf") format("truetype");
+   font-weight: normal;
+   font-style: normal;
+}
+
+.ti30font {
+   font-family: "ti30xpro", sans-serif;
+}
+
+// Eigene Styles hier anhängen
+.author__bio a {
+   color: $link-color;
+   transition: color 0.2s;
+}
+
+.author__bio a:hover,
+.author__bio a:focus {
+   color: $link-color-hover;
+}
+
+/* Blocksatz und Silbentrennung für alle Layouts außer home */
+.blocksatz .page__content p,
+.blocksatz .page__content ul,
+.blocksatz .page__content ol,
+.blocksatz .page__content li {
+   text-align: justify;
+   hyphens: auto;
+   -webkit-hyphens: auto;
+   -ms-hyphens: auto;
+}
+
+/* Blocksatz und Silbentrennung speziell für home-Layout */
+.blocksatz .feature__wrapper p,
+.blocksatz .feature__wrapper ul,
+.blocksatz .feature__wrapper ol,
+.blocksatz .feature__wrapper li,
+.blocksatz .archive p,
+.blocksatz .archive ul,
+.blocksatz .archive ol,
+.blocksatz .archive li {
+   text-align: justify;
+   hyphens: auto;
+   -webkit-hyphens: auto;
+   -ms-hyphens: auto;
+}
+
+/* assets/css/main.scss */
+/* -------------------- */
+
+// Font Awesome erzwingen
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
+
+// Basis-Styling für alle Notices
+blockquote[class*="notice"] {
+   all: initial !important;
+   position: relative !important;
+   display: block !important;
+   padding: 1.5rem 2rem 1.5rem 6rem !important;
+   margin: 2rem 0 !important;
+   border-left: 4px solid !important;
+   border-radius: 4px !important;
+   font-style: normal !important;
+   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+   background: white !important;
+   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
+
+   // Icon
+   &::before {
+      font-family: "Font Awesome 6 Free" !important;
+      font-weight: 900 !important;
+      position: absolute !important;
+      left: 1.5rem !important;
+      top: 1.5rem !important;
+      font-size: 2rem !important;
+      z-index: 1 !important;
+   }
+
+   // Titel
+   >strong:first-child {
+      display: block !important;
+      margin-bottom: 0.8rem !important;
+      font-size: 1.1em !important;
+      font-weight: 700 !important;
+      text-transform: uppercase !important;
+      color: inherit !important;
+   }
+
+   // Inhalt
+   p,
+   pre,
+   code,
+   ul,
+   ol {
+      all: revert !important;
+      font-style: normal !important;
+      margin-left: 0 !important;
+      padding-left: 0 !important;
+   }
+
+   code {
+      background-color: rgba(0, 0, 0, 0.1) !important;
+      color: #333 !important;
+      padding: 0.2em 0.4em !important;
+      border-radius: 3px !important;
+      border: 1px solid rgba(0, 0, 0, 0.1) !important;
+      font-family: Menlo, Consolas, "Courier New", monospace !important;
+      font-size: 0.9em !important;
+   }
+
+   // Individuelle Anpassungen pro Notice-Typ
+   &.notice--info code {
+      background-color: rgba(33, 150, 243, 0.15) !important;
+      color: #1565c0 !important;
+   }
+
+   &.notice--warning code {
+      background-color: rgba(255, 152, 0, 0.15) !important;
+      color: #b36a00 !important;
+   }
+
+   &.notice--success code {
+      background-color: rgba(76, 175, 80, 0.15) !important;
+      color: #2e7d32 !important;
+   }
+
+   &.notice--danger code {
+      background-color: rgba(244, 67, 54, 0.15) !important;
+      color: #c62828 !important;
+   }
+}
+
+// Individuelle Typen
+// ------------------
+blockquote.notice--info {
+   border-color: #2196f3 !important;
+   background: #e3f2fd !important;
+
+   &::before {
+      content: "\f05a" !important; // fa-info-circle
+      color: #2196f3 !important;
+   }
+}
+
+blockquote.notice--warning {
+   border-color: #ff9800 !important;
+   background: #fff3e0 !important;
+
+   &::before {
+      content: "\f071" !important; // fa-triangle-exclamation
+      color: #ff9800 !important;
+   }
+}
+
+blockquote.notice--success {
+   border-color: #4caf50 !important;
+   background: #e8f5e9 !important;
+
+   &::before {
+      content: "\f058" !important; // fa-check-circle
+      color: #4caf50 !important;
+   }
+}
+
+blockquote.notice--danger {
+   border-color: #f44336 !important;
+   background: #ffebee !important;
+
+   &::before {
+      content: "\f06a" !important; // fa-exclamation-circle
+      color: #f44336 !important;
+   }
+}
+
+/* Schriftgrößenanpassungen für verschiedene Textarten */
+.page__content p.small-text {
+   font-size: 0.8em;
+   /* Oder einen anderen Wert, z.B. 0.7em, 14px */
+}
+
+/* Optional: Für Text, der noch kleiner sein soll */
+.page__content p.tiny-text {
+   font-size: 0.7em;
+}
+
+/* Nur Tabellen mit .my-table */
+table.my-table {
+   border-collapse: collapse;
+}
+
+table.my-table thead {
+   background-color: #fce8d5;
+   /* Heller Sandton für Kopfzeile */
+}
+
+table.my-table tbody tr:nth-child(even) {
+   background-color: #fff7ef;
+   /* Zarter Cremeton für jede 2. Zeile */
+}
+
+table.my-table tbody tr:nth-child(odd) {
+   background-color: #ffffff;
+   /* Weiß für die anderen Zeilen */
+}
+
+table.my-table th,
+table.my-table td {
+   padding: 0.5em 1em;
+   border: 1px solid #ddd;
+   vertical-align: top;
+   /* Vertikale Ausrichtung oben */
+}
+
+// Word wrap für Rouge Codeblöcke – wenn Zeilennummern deaktiviert sind
+pre.highlight code {
+   white-space: pre-wrap;
+   word-break: break-word;
+}
+
+// class für Keycaps
+.keycap {
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   min-width: 1.4em !important;
+   /* Breite kann je nach Geschmack/für Doppelzeichen angepasst werden */
+   height: 1.3em !important;
+   /* Höhe bestimmt die Einheitlichkeit */
+   border-radius: 0.2em !important;
+   /* Wert für abgerundete Ecken (z. B. 0.5em bis 0.8em) */
+   background: #f2b07b !important;
+   /* Hintergrundfarbe */
+   border: 2px solid #242424;
+   /* Rahmenfarbe */
+   font-size: 1.0em !important;
+   /* Schriftgröße */
+   font-family: inherit;
+   /* Schriftart */
+   font-style: normal !important;
+   font-weight: normal !important;
+   margin: 0.1em;
+   /* Abstand zu anderen Symbolen */
+   box-sizing: border-box;
+   padding: 0 0.15em !important;
+}
+
+// text-align: right für mein QED am Ende eines Artikels
+.qed {
+   text-align: right !important;
+}
+
+// CSS Klassen für HP-15C Tasten
+// Kopiert von https://hp-15c-simulator.de
+// Benutzung z.B. wie auf https://hp-15c-simulator.de/programs/Sudoku%20Solver.htm
+// 
+.HP15CKey,
+.HP15CBWKey,
+.HP15CfKeyLabel,
+.HP15CgKeyLabel {
+   font-family: Helvetica, Arial, sans-serif;
+   font-weight: bold;
+   font-size: 0.9em;
+   font-style: normal;
+   text-align: center;
+   padding-top: 0.1em;
+   margin-bottom: 1px;
+   padding-left: 3px;
+   padding-right: 3px;
+   border-radius: 4px;
+   display: inline-block;
+   min-width: 2.1em;
+}
+
+.HP15CKey {
+   color: white;
+   background-color: #454545;
+}
+
+.HP15CBWKey {
+   border-color: black;
+   border-width: 1px;
+   border-style: solid;
+}
+
+.HP15CfKeyLabel {
+   color: #E1A83E;
+   background-color: #454545;
+}
+
+.HP15CgKeyLabel {
+   color: #6CB7BD;
+   background-color: #454545;
+}
+
+.HP15CfKey,
+.HP15CgKey,
+.HP15CBWfgKey {
+   font-family: Helvetica, Arial, sans-serif;
+   font-weight: bold;
+   font-size: 0.9em;
+   color: black;
+   text-align: center;
+   padding-top: 0.1em;
+   margin-bottom: 1px;
+   padding-left: 6px;
+   padding-right: 6px;
+   border-radius: 4px;
+   display: inline-block;
+   min-width: 0.6em;
+}
+
+.HP15CfKey {
+   background-color: #E1A83E;
+}
+
+.HP15CgKey {
+   background-color: #6CB7BD;
+}
+
+.HP15CBWfgKey {
+   border-color: black;
+   border-width: 1px;
+   border-style: solid;
+}
+/* --- Theme Switch Styling --- */
+/********************************/
+
+/* Wrapper für die Positionierung im Header */
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+  float: right;
+  margin-top: 12px;
+  margin-left: 15px;
+}
+
+/* Der Schalter-Container */
+.theme-switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;  /* Breite der Spur */
+  height: 26px; /* Höhe der Spur */
+}
+
+/* Verstecke die originale Checkbox */
+.theme-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Die Spur (der Hintergrund des Schalters) */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #87CEEB; /* Himmelblau für Tag */
+  transition: 0.4s;
+  border-radius: 34px; /* Runde Form */
+  overflow: hidden; /* Wichtig: Damit Icons nicht rausschauen */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px; /* Abstand für den Knopf */
+}
+
+/* Der bewegliche Knopf */
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 22px; /* Größe des Knopfes */
+  width: 22px;
+  left: 2px; /* Startposition links */
+  bottom: 2px;
+  background-color: #FFD700; /* Goldgelb für die Sonne */
+  transition: 0.4s;
+  border-radius: 50%;
+  z-index: 2; /* Liegt ÜBER den Icons */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* Styling der Icons */
+.icon-sun, .icon-moon {
+  width: 16px;
+  height: 16px;
+  z-index: 1; /* Liegen UNTER dem Knopf */
+  transition: 0.4s;
+}
+
+/* Sonne-Icon (links) */
+.icon-sun {
+  color: #fff;
+  margin-left: 4px;
+  opacity: 1; /* Sichtbar im Tag-Modus */
+}
+
+/* Mond-Icon (rechts) */
+.icon-moon {
+  color: #fff;
+  margin-right: 4px;
+  opacity: 0; /* Unsichtbar im Tag-Modus */
+}
+
+/* --- Zustand: Dark Mode (Checkbox ist aktiv) --- */
+
+/* Spur wird dunkel */
+input:checked + .slider {
+  background-color: #1a202c; /* Nachtblau/Grau */
+}
+
+/* Knopf bewegt sich nach rechts und wird zum Mond */
+input:checked + .slider:before {
+  transform: translateX(24px); /* Verschiebung nach rechts */
+  background-color: #f0f0f0; /* Helles Mondgrau */
+}
+
+/* Sonne ausblenden */
+input:checked + .slider .icon-sun {
+  opacity: 0;
+}
+
+/* Mond einblenden */
+input:checked + .slider .icon-moon {
+  opacity: 1;
+}
+
+/****************************************/
+@font-face {
+   font-family: "ti30xpro";
+   src: url("/assets/fonts/TI30XProEmuKeys.woff2") format("woff2"),
+      url("/assets/fonts/TI30XProEmuKeys.ttf") format("truetype");
+   font-weight: normal;
+   font-style: normal;
+}
+
+.ti30font {
+   font-family: "ti30xpro", sans-serif;
+}
+
+// Eigene Styles hier anhängen
+.author__bio a {
+   color: $link-color;
+   transition: color 0.2s;
+}
+
+.author__bio a:hover,
+.author__bio a:focus {
+   color: $link-color-hover;
+}
+
+/* Blocksatz und Silbentrennung für alle Layouts außer home */
+.blocksatz .page__content p,
+.blocksatz .page__content ul,
+.blocksatz .page__content ol,
+.blocksatz .page__content li {
+   text-align: justify;
+   hyphens: auto;
+   -webkit-hyphens: auto;
+   -ms-hyphens: auto;
+}
+
+/* Blocksatz und Silbentrennung speziell für home-Layout */
+.blocksatz .feature__wrapper p,
+.blocksatz .feature__wrapper ul,
+.blocksatz .feature__wrapper ol,
+.blocksatz .feature__wrapper li,
+.blocksatz .archive p,
+.blocksatz .archive ul,
+.blocksatz .archive ol,
+.blocksatz .archive li {
+   text-align: justify;
+   hyphens: auto;
+   -webkit-hyphens: auto;
+   -ms-hyphens: auto;
+}
+
+/* assets/css/main.scss */
+/* -------------------- */
+
+// Font Awesome erzwingen
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
+
+// Basis-Styling für alle Notices
+blockquote[class*="notice"] {
+   all: initial !important;
+   position: relative !important;
+   display: block !important;
+   padding: 1.5rem 2rem 1.5rem 6rem !important;
+   margin: 2rem 0 !important;
+   border-left: 4px solid !important;
+   border-radius: 4px !important;
+   font-style: normal !important;
+   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+   background: white !important;
+   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
+
+   // Icon
+   &::before {
+      font-family: "Font Awesome 6 Free" !important;
+      font-weight: 900 !important;
+      position: absolute !important;
+      left: 1.5rem !important;
+      top: 1.5rem !important;
+      font-size: 2rem !important;
+      z-index: 1 !important;
+   }
+
+   // Titel
+   >strong:first-child {
+      display: block !important;
+      margin-bottom: 0.8rem !important;
+      font-size: 1.1em !important;
+      font-weight: 700 !important;
+      text-transform: uppercase !important;
+      color: inherit !important;
+   }
+
+   // Inhalt
+   p,
+   pre,
+   code,
+   ul,
+   ol {
+      all: revert !important;
+      font-style: normal !important;
+      margin-left: 0 !important;
+      padding-left: 0 !important;
+   }
+
+   code {
+      background-color: rgba(0, 0, 0, 0.1) !important;
+      color: #333 !important;
+      padding: 0.2em 0.4em !important;
+      border-radius: 3px !important;
+      border: 1px solid rgba(0, 0, 0, 0.1) !important;
+      font-family: Menlo, Consolas, "Courier New", monospace !important;
+      font-size: 0.9em !important;
+   }
+
+   // Individuelle Anpassungen pro Notice-Typ
+   &.notice--info code {
+      background-color: rgba(33, 150, 243, 0.15) !important;
+      color: #1565c0 !important;
+   }
+
+   &.notice--warning code {
+      background-color: rgba(255, 152, 0, 0.15) !important;
+      color: #b36a00 !important;
+   }
+
+   &.notice--success code {
+      background-color: rgba(76, 175, 80, 0.15) !important;
+      color: #2e7d32 !important;
+   }
+
+   &.notice--danger code {
+      background-color: rgba(244, 67, 54, 0.15) !important;
+      color: #c62828 !important;
+   }
+}
+
+// Individuelle Typen
+// ------------------
+blockquote.notice--info {
+   border-color: #2196f3 !important;
+   background: #e3f2fd !important;
+
+   &::before {
+      content: "\f05a" !important; // fa-info-circle
+      color: #2196f3 !important;
+   }
+}
+
+blockquote.notice--warning {
+   border-color: #ff9800 !important;
+   background: #fff3e0 !important;
+
+   &::before {
+      content: "\f071" !important; // fa-triangle-exclamation
+      color: #ff9800 !important;
+   }
+}
+
+blockquote.notice--success {
+   border-color: #4caf50 !important;
+   background: #e8f5e9 !important;
+
+   &::before {
+      content: "\f058" !important; // fa-check-circle
+      color: #4caf50 !important;
+   }
+}
+
+blockquote.notice--danger {
+   border-color: #f44336 !important;
+   background: #ffebee !important;
+
+   &::before {
+      content: "\f06a" !important; // fa-exclamation-circle
+      color: #f44336 !important;
+   }
+}
+
+/* Schriftgrößenanpassungen für verschiedene Textarten */
+.page__content p.small-text {
+   font-size: 0.8em;
+   /* Oder einen anderen Wert, z.B. 0.7em, 14px */
+}
+
+/* Optional: Für Text, der noch kleiner sein soll */
+.page__content p.tiny-text {
+   font-size: 0.7em;
+}
+
+/* Nur Tabellen mit .my-table */
+table.my-table {
+   border-collapse: collapse;
+}
+
+table.my-table thead {
+   background-color: #fce8d5;
+   /* Heller Sandton für Kopfzeile */
+}
+
+table.my-table tbody tr:nth-child(even) {
+   background-color: #fff7ef;
+   /* Zarter Cremeton für jede 2. Zeile */
+}
+
+table.my-table tbody tr:nth-child(odd) {
+   background-color: #ffffff;
+   /* Weiß für die anderen Zeilen */
+}
+
+table.my-table th,
+table.my-table td {
+   padding: 0.5em 1em;
+   border: 1px solid #ddd;
+   vertical-align: top;
+   /* Vertikale Ausrichtung oben */
+}
+
+// Word wrap für Rouge Codeblöcke – wenn Zeilennummern deaktiviert sind
+pre.highlight code {
+   white-space: pre-wrap;
+   word-break: break-word;
+}
+
+// class für Keycaps
+.keycap {
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   min-width: 1.4em !important;
+   /* Breite kann je nach Geschmack/für Doppelzeichen angepasst werden */
+   height: 1.3em !important;
+   /* Höhe bestimmt die Einheitlichkeit */
+   border-radius: 0.2em !important;
+   /* Wert für abgerundete Ecken (z. B. 0.5em bis 0.8em) */
+   background: #f2b07b !important;
+   /* Hintergrundfarbe */
+   border: 2px solid #242424;
+   /* Rahmenfarbe */
+   font-size: 1.0em !important;
+   /* Schriftgröße */
+   font-family: inherit;
+   /* Schriftart */
+   font-style: normal !important;
+   font-weight: normal !important;
+   margin: 0.1em;
+   /* Abstand zu anderen Symbolen */
+   box-sizing: border-box;
+   padding: 0 0.15em !important;
+}
+
+// text-align: right für mein QED am Ende eines Artikels
+.qed {
+   text-align: right !important;
+}
+
+// CSS Klassen für HP-15C Tasten
+// Kopiert von https://hp-15c-simulator.de
+// Benutzung z.B. wie auf https://hp-15c-simulator.de/programs/Sudoku%20Solver.htm
+// 
+.HP15CKey,
+.HP15CBWKey,
+.HP15CfKeyLabel,
+.HP15CgKeyLabel {
+   font-family: Helvetica, Arial, sans-serif;
+   font-weight: bold;
+   font-size: 0.9em;
+   font-style: normal;
+   text-align: center;
+   padding-top: 0.1em;
+   margin-bottom: 1px;
+   padding-left: 3px;
+   padding-right: 3px;
+   border-radius: 4px;
+   display: inline-block;
+   min-width: 2.1em;
+}
+
+.HP15CKey {
+   color: white;
+   background-color: #454545;
+}
+
+.HP15CBWKey {
+   border-color: black;
+   border-width: 1px;
+   border-style: solid;
+}
+
+.HP15CfKeyLabel {
+   color: #E1A83E;
+   background-color: #454545;
+}
+
+.HP15CgKeyLabel {
+   color: #6CB7BD;
+   background-color: #454545;
+}
+
+.HP15CfKey,
+.HP15CgKey,
+.HP15CBWfgKey {
+   font-family: Helvetica, Arial, sans-serif;
+   font-weight: bold;
+   font-size: 0.9em;
+   color: black;
+   text-align: center;
+   padding-top: 0.1em;
+   margin-bottom: 1px;
+   padding-left: 6px;
+   padding-right: 6px;
+   border-radius: 4px;
+   display: inline-block;
+   min-width: 0.6em;
+}
+
+.HP15CfKey {
+   background-color: #E1A83E;
+}
+
+.HP15CgKey {
+   background-color: #6CB7BD;
+}
+
+.HP15CBWfgKey {
+   border-color: black;
+   border-width: 1px;
+   border-style: solid;
+}
+/* --- Theme Switch Styling --- */
+/********************************/
+
+/* Wrapper für die Positionierung im Header */
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+  float: right;
+  margin-top: 12px;
+  margin-left: 15px;
+}
+
+/* Der Schalter-Container */
+.theme-switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;  /* Breite der Spur */
+  height: 26px; /* Höhe der Spur */
+}
+
+/* Verstecke die originale Checkbox */
+.theme-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Die Spur (der Hintergrund des Schalters) */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #87CEEB; /* Himmelblau für Tag */
+  transition: 0.4s;
+  border-radius: 34px; /* Runde Form */
+  overflow: hidden; /* Wichtig: Damit Icons nicht rausschauen */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px; /* Abstand für den Knopf */
+}
+
+/* Der bewegliche Knopf */
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 22px; /* Größe des Knopfes */
+  width: 22px;
+  left: 2px; /* Startposition links */
+  bottom: 2px;
+  background-color: #FFD700; /* Goldgelb für die Sonne */
+  transition: 0.4s;
+  border-radius: 50%;
+  z-index: 2; /* Liegt ÜBER den Icons */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* Styling der Icons */
+.icon-sun, .icon-moon {
+  width: 16px;
+  height: 16px;
+  z-index: 1; /* Liegen UNTER dem Knopf */
+  transition: 0.4s;
+}
+
+/* Sonne-Icon (links) */
+.icon-sun {
+  color: #fff;
+  margin-left: 4px;
+  opacity: 1; /* Sichtbar im Tag-Modus */
+}
+
+/* Mond-Icon (rechts) */
+.icon-moon {
+  color: #fff;
+  margin-right: 4px;
+  opacity: 0; /* Unsichtbar im Tag-Modus */
+}
+
+/* --- Zustand: Dark Mode (Checkbox ist aktiv) --- */
+
+/* Spur wird dunkel */
+input:checked + .slider {
+  background-color: #1a202c; /* Nachtblau/Grau */
+}
+
+/* Knopf bewegt sich nach rechts und wird zum Mond */
+input:checked + .slider:before {
+  transform: translateX(24px); /* Verschiebung nach rechts */
+  background-color: #f0f0f0; /* Helles Mondgrau */
+}
+
+/* Sonne ausblenden */
+input:checked + .slider .icon-sun {
+  opacity: 0;
+}
+
+/* Mond einblenden */
+input:checked + .slider .icon-moon {
+  opacity: 1;
+}
+
+/****************************************/
+@font-face {
+   font-family: "ti30xpro";
+   src: url("/assets/fonts/TI30XProEmuKeys.woff2") format("woff2"),
+      url("/assets/fonts/TI30XProEmuKeys.ttf") format("truetype");
+   font-weight: normal;
+   font-style: normal;
+}
+
+.ti30font {
+   font-family: "ti30xpro", sans-serif;
+}
+
+// Eigene Styles hier anhängen
+.author__bio a {
+   color: $link-color;
+   transition: color 0.2s;
+}
+
+.author__bio a:hover,
+.author__bio a:focus {
+   color: $link-color-hover;
+}
+
+/* Blocksatz und Silbentrennung für alle Layouts außer home */
+.blocksatz .page__content p,
+.blocksatz .page__content ul,
+.blocksatz .page__content ol,
+.blocksatz .page__content li {
+   text-align: justify;
+   hyphens: auto;
+   -webkit-hyphens: auto;
+   -ms-hyphens: auto;
+}
+
+/* Blocksatz und Silbentrennung speziell für home-Layout */
+.blocksatz .feature__wrapper p,
+.blocksatz .feature__wrapper ul,
+.blocksatz .feature__wrapper ol,
+.blocksatz .feature__wrapper li,
+.blocksatz .archive p,
+.blocksatz .archive ul,
+.blocksatz .archive ol,
+.blocksatz .archive li {
+   text-align: justify;
+   hyphens: auto;
+   -webkit-hyphens: auto;
+   -ms-hyphens: auto;
+}
+
+/* assets/css/main.scss */
+/* -------------------- */
+
+// Font Awesome erzwingen
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
+
+// Basis-Styling für alle Notices
+blockquote[class*="notice"] {
+   all: initial !important;
+   position: relative !important;
+   display: block !important;
+   padding: 1.5rem 2rem 1.5rem 6rem !important;
+   margin: 2rem 0 !important;
+   border-left: 4px solid !important;
+   border-radius: 4px !important;
+   font-style: normal !important;
+   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+   background: white !important;
+   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
+
+   // Icon
+   &::before {
+      font-family: "Font Awesome 6 Free" !important;
+      font-weight: 900 !important;
+      position: absolute !important;
+      left: 1.5rem !important;
+      top: 1.5rem !important;
+      font-size: 2rem !important;
+      z-index: 1 !important;
+   }
+
+   // Titel
+   >strong:first-child {
+      display: block !important;
+      margin-bottom: 0.8rem !important;
+      font-size: 1.1em !important;
+      font-weight: 700 !important;
+      text-transform: uppercase !important;
+      color: inherit !important;
+   }
+
+   // Inhalt
+   p,
+   pre,
+   code,
+   ul,
+   ol {
+      all: revert !important;
+      font-style: normal !important;
+      margin-left: 0 !important;
+      padding-left: 0 !important;
+   }
+
+   code {
+      background-color: rgba(0, 0, 0, 0.1) !important;
+      color: #333 !important;
+      padding: 0.2em 0.4em !important;
+      border-radius: 3px !important;
+      border: 1px solid rgba(0, 0, 0, 0.1) !important;
+      font-family: Menlo, Consolas, "Courier New", monospace !important;
+      font-size: 0.9em !important;
+   }
+
+   // Individuelle Anpassungen pro Notice-Typ
+   &.notice--info code {
+      background-color: rgba(33, 150, 243, 0.15) !important;
+      color: #1565c0 !important;
+   }
+
+   &.notice--warning code {
+      background-color: rgba(255, 152, 0, 0.15) !important;
+      color: #b36a00 !important;
+   }
+
+   &.notice--success code {
+      background-color: rgba(76, 175, 80, 0.15) !important;
+      color: #2e7d32 !important;
+   }
+
+   &.notice--danger code {
+      background-color: rgba(244, 67, 54, 0.15) !important;
+      color: #c62828 !important;
+   }
+}
+
+// Individuelle Typen
+// ------------------
+blockquote.notice--info {
+   border-color: #2196f3 !important;
+   background: #e3f2fd !important;
+
+   &::before {
+      content: "\f05a" !important; // fa-info-circle
+      color: #2196f3 !important;
+   }
+}
+
+blockquote.notice--warning {
+   border-color: #ff9800 !important;
+   background: #fff3e0 !important;
+
+   &::before {
+      content: "\f071" !important; // fa-triangle-exclamation
+      color: #ff9800 !important;
+   }
+}
+
+blockquote.notice--success {
+   border-color: #4caf50 !important;
+   background: #e8f5e9 !important;
+
+   &::before {
+      content: "\f058" !important; // fa-check-circle
+      color: #4caf50 !important;
+   }
+}
+
+blockquote.notice--danger {
+   border-color: #f44336 !important;
+   background: #ffebee !important;
+
+   &::before {
+      content: "\f06a" !important; // fa-exclamation-circle
+      color: #f44336 !important;
+   }
+}
+
+/* Schriftgrößenanpassungen für verschiedene Textarten */
+.page__content p.small-text {
+   font-size: 0.8em;
+   /* Oder einen anderen Wert, z.B. 0.7em, 14px */
+}
+
+/* Optional: Für Text, der noch kleiner sein soll */
+.page__content p.tiny-text {
+   font-size: 0.7em;
+}
+
+/* Nur Tabellen mit .my-table */
+table.my-table {
+   border-collapse: collapse;
+}
+
+table.my-table thead {
+   background-color: #fce8d5;
+   /* Heller Sandton für Kopfzeile */
+}
+
+table.my-table tbody tr:nth-child(even) {
+   background-color: #fff7ef;
+   /* Zarter Cremeton für jede 2. Zeile */
+}
+
+table.my-table tbody tr:nth-child(odd) {
+   background-color: #ffffff;
+   /* Weiß für die anderen Zeilen */
+}
+
+table.my-table th,
+table.my-table td {
+   padding: 0.5em 1em;
+   border: 1px solid #ddd;
+   vertical-align: top;
+   /* Vertikale Ausrichtung oben */
+}
+
+// Word wrap für Rouge Codeblöcke – wenn Zeilennummern deaktiviert sind
+pre.highlight code {
+   white-space: pre-wrap;
+   word-break: break-word;
+}
+
+// class für Keycaps
+.keycap {
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   min-width: 1.4em !important;
+   /* Breite kann je nach Geschmack/für Doppelzeichen angepasst werden */
+   height: 1.3em !important;
+   /* Höhe bestimmt die Einheitlichkeit */
+   border-radius: 0.2em !important;
+   /* Wert für abgerundete Ecken (z. B. 0.5em bis 0.8em) */
+   background: #f2b07b !important;
+   /* Hintergrundfarbe */
+   border: 2px solid #242424;
+   /* Rahmenfarbe */
+   font-size: 1.0em !important;
+   /* Schriftgröße */
+   font-family: inherit;
+   /* Schriftart */
+   font-style: normal !important;
+   font-weight: normal !important;
+   margin: 0.1em;
+   /* Abstand zu anderen Symbolen */
+   box-sizing: border-box;
+   padding: 0 0.15em !important;
+}
+
+// text-align: right für mein QED am Ende eines Artikels
+.qed {
+   text-align: right !important;
+}
+
+// CSS Klassen für HP-15C Tasten
+// Kopiert von https://hp-15c-simulator.de
+// Benutzung z.B. wie auf https://hp-15c-simulator.de/programs/Sudoku%20Solver.htm
+// 
+.HP15CKey,
+.HP15CBWKey,
+.HP15CfKeyLabel,
+.HP15CgKeyLabel {
+   font-family: Helvetica, Arial, sans-serif;
+   font-weight: bold;
+   font-size: 0.9em;
+   font-style: normal;
+   text-align: center;
+   padding-top: 0.1em;
+   margin-bottom: 1px;
+   padding-left: 3px;
+   padding-right: 3px;
+   border-radius: 4px;
+   display: inline-block;
+   min-width: 2.1em;
+}
+
+.HP15CKey {
+   color: white;
+   background-color: #454545;
+}
+
+.HP15CBWKey {
+   border-color: black;
+   border-width: 1px;
+   border-style: solid;
+}
+
+.HP15CfKeyLabel {
+   color: #E1A83E;
+   background-color: #454545;
+}
+
+.HP15CgKeyLabel {
+   color: #6CB7BD;
+   background-color: #454545;
+}
+
+.HP15CfKey,
+.HP15CgKey,
+.HP15CBWfgKey {
+   font-family: Helvetica, Arial, sans-serif;
+   font-weight: bold;
+   font-size: 0.9em;
+   color: black;
+   text-align: center;
+   padding-top: 0.1em;
+   margin-bottom: 1px;
+   padding-left: 6px;
+   padding-right: 6px;
+   border-radius: 4px;
+   display: inline-block;
+   min-width: 0.6em;
+}
+
+.HP15CfKey {
+   background-color: #E1A83E;
+}
+
+.HP15CgKey {
+   background-color: #6CB7BD;
+}
+
+.HP15CBWfgKey {
+   border-color: black;
+   border-width: 1px;
+   border-style: solid;
+}
 /* --- Theme Switch Styling --- */
 /********************************/
 

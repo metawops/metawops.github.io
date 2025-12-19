@@ -51,6 +51,108 @@
             </label>
          </div>
 
+         <style>
+            /* Wrapper erzwingt Layout */
+            .theme-switch-wrapper {
+               display: flex;
+               align-items: center;
+               /* Positionierung im Masthead */
+               float: right;
+               margin-left: 15px;
+               margin-top: 10px; /* Ggf. anpassen je nach Font-Größe */
+               z-index: 9999;
+            }
+
+            /* Container */
+            .theme-switch {
+               position: relative;
+               display: inline-block;
+               width: 52px;
+               height: 26px;
+               margin: 0;
+            }
+
+            /* Input verstecken */
+            .theme-switch input {
+               opacity: 0;
+               width: 0;
+               height: 0;
+               position: absolute;
+            }
+
+            /* Die Bahn (Track) */
+            .slider {
+               position: absolute;
+               cursor: pointer;
+               top: 0;
+               left: 0;
+               right: 0;
+               bottom: 0;
+               background-color: #87CEEB; /* Tag-Blau */
+               transition: .4s;
+               border-radius: 34px;
+               overflow: hidden;
+            }
+
+            /* Der Ball (Knopf) - separat div statt pseudo-element für stabilere Animation */
+            .ball {
+               position: absolute;
+               content: "";
+               height: 20px;
+               width: 20px;
+               left: 3px;
+               bottom: 3px;
+               background-color: #FFD700; /* Sonne-Gelb */
+               transition: .4s;
+               border-radius: 50%;
+               z-index: 10;
+            }
+
+            /* Icons Styling */
+            .theme-switch svg {
+               position: absolute;
+               top: 5px; /* Vertikal zentrieren: (26px height - 16px icon) / 2 */
+               width: 16px;
+               height: 16px;
+               transition: opacity 0.4s;
+               z-index: 5;
+            }
+
+            .icon-sun {
+               left: 4px;
+               color: #fff;
+               opacity: 1;
+            }
+
+            .icon-moon {
+               right: 4px;
+               color: #fff;
+               opacity: 0;
+            }
+
+            /* --- ZUSTÄNDE (Checked) --- */
+
+            /* Bahn wird dunkel */
+            input:checked + .slider {
+               background-color: #2d3748;
+            }
+
+            /* Ball wandert und ändert Farbe */
+            input:checked + .slider .ball {
+               transform: translateX(26px);
+               background-color: #edf2f7; /* Mond-Grau */
+            }
+
+            /* Icons tauschen Sichtbarkeit */
+            input:checked + .slider .icon-sun {
+               opacity: 0;
+            }
+
+            input:checked + .slider .icon-moon {
+               opacity: 1;
+            }
+         </style>
+
         <button class="greedy-nav__toggle hidden" type="button">
           <span class="visually-hidden">{{ site.data.ui-text[site.locale].menu_label | default: "Toggle menu" }}</span>
           <div class="navicon"></div>
