@@ -59,6 +59,107 @@ html[data-theme="dark"] {
   }
 }
 
+/* Wrapper für Positionierung im Masthead */
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+  float: right; /* Passt gut ins MM Masthead */
+  margin-top: 12px; /* Feinjustierung der Höhe */
+  margin-left: 15px;
+}
+
+/* Der eigentliche Schalter-Container */
+.theme-switch {
+  display: inline-block;
+  height: 30px; /* Etwas kompakter */
+  position: relative;
+  width: 56px;
+}
+
+/* Verstecke die Standard-Checkbox */
+.theme-switch input {
+  display: none;
+}
+
+/* Der Slider (Hintergrund/Track) */
+.slider {
+  background-color: #87CEEB; /* Himmelblau für den Tag */
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: 0.4s; /* Weicher Übergang */
+  border-radius: 34px;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.2); /* Leichter Schatten innen für Tiefe */
+  overflow: hidden; /* Damit Icons nicht herausschauen */
+}
+
+/* Der "Knopf" (Sonne/Mond-Indikator) */
+.slider:before {
+  background-color: #FFD700; /* Goldgelb für die Sonne */
+  bottom: 3px;
+  content: "";
+  height: 24px;
+  left: 3px;
+  position: absolute;
+  transition: 0.4s;
+  width: 24px;
+  border-radius: 50%;
+  z-index: 2; /* Liegt über den Icons */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3); /* Schatten für den Knopf */
+}
+
+/* Styling der SVG Icons */
+.icon-sun, .icon-moon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  transition: 0.4s;
+  z-index: 1; /* Liegen unter dem Knopf */
+}
+
+/* Sonne-Icon (links, standardmäßig sichtbar) */
+.icon-sun {
+  left: 6px;
+  color: #fff; /* Weiße Strahlen */
+  opacity: 0.8;
+}
+
+/* Mond-Icon (rechts, standardmäßig unsichtbar) */
+.icon-moon {
+  right: 6px;
+  color: #fff; /* Weißer Mond */
+  opacity: 0;
+}
+
+/* --- Zustand: Dark Mode (Checkbox aktiviert) --- */
+
+/* Hintergrund wird zum Nachthimmel */
+input:checked + .slider {
+  background-color: #1a202c; /* Dunkles Nachtblau/Grau */
+}
+
+/* Knopf bewegt sich nach rechts und wird zum Mond */
+input:checked + .slider:before {
+  transform: translateX(26px);
+  background-color: #f0f0f0; /* Helles Mondgrau */
+}
+
+/* Sonne ausblenden */
+input:checked + .slider .icon-sun {
+  opacity: 0;
+}
+
+/* Mond einblenden */
+input:checked + .slider .icon-moon {
+  opacity: 0.8;
+}
+
+/****************************************/
 @font-face {
    font-family: "ti30xpro";
    src: url("/assets/fonts/TI30XProEmuKeys.woff2") format("woff2"),
