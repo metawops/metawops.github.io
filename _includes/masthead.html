@@ -79,6 +79,22 @@
          border: 1px solid #4a5568;
          }
 
+         /* Große Code-Blöcke und Syntax-Container */
+         html[data-theme="dark"] .highlighter-rouge,
+         html[data-theme="dark"] figure.highlight,
+         html[data-theme="dark"] pre.highlight {
+         background-color: #1a202c !important; /* Etwas dunkler als der Body */
+         border: 1px solid #2d3748;
+         color: var(--dm-text-primary);
+         }
+
+         /* Der eigentliche Text im Block */
+         html[data-theme="dark"] .highlight pre,
+         html[data-theme="dark"] .highlight code {
+         background: transparent !important;
+         color: inherit !important;
+         }
+
          /* ==========================================================================
             HEADER OVERRIDES (Bilder erlaubt)
             ========================================================================== */
