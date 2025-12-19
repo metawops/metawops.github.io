@@ -167,6 +167,42 @@
             display: block !important;
             color: #1a202c; /* Fast schwarzer Mond auf weißem Ball */
          }
+
+         /* =========================================
+            FIX 5: CONTENT COLORS (Lesbarkeit im Dark Mode)
+            ========================================= */
+         
+         /* 1. Überschriften (z.B. "Neueste Beiträge") */
+         html[data-theme="dark"] h1,
+         html[data-theme="dark"] h2,
+         html[data-theme="dark"] h3,
+         html[data-theme="dark"] h4,
+         html[data-theme="dark"] h5,
+         html[data-theme="dark"] h6,
+         html[data-theme="dark"] .archive__subtitle {
+            color: #f7fafc !important; /* Fast Weiß */
+         }
+
+         /* 2. Metadaten (Datum, Lesezeit unter Bildern) */
+         html[data-theme="dark"] .page__meta {
+            color: #a0aec0 !important; /* Helles Grau für Metadaten */
+         }
+         
+         /* Auch die kleinen Icons (Uhr, Kalender) färben */
+         html[data-theme="dark"] .page__meta i {
+            color: #a0aec0 !important; 
+         }
+
+         /* 3. Link-Titel der Artikel (falls sie nicht hellblau sind) */
+         html[data-theme="dark"] .archive__item-title a {
+            color: #edf2f7 !important;
+            text-decoration-color: #4a5568 !important; /* Unterstreichung dezenter */
+         }
+
+         /* Hover-Effekt für Artikel-Titel */
+         html[data-theme="dark"] .archive__item-title a:hover {
+            color: #63b3ed !important; /* Helles Blau beim Drüberfahren */
+         }
          </style>
 
 
