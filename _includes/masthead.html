@@ -42,51 +42,97 @@
          </div>
 
          <style>
-         /* =========================================
-            1. GLOBAL COLORS (BEIGE KILLER) - Unverändert
-            ========================================= */
+         /* ==========================================================================
+            KONFIGURATION (HIER FARBEN ÄNDERN)
+            ========================================================================== */
+         :root {
+            /* Hintergrund im Dark Mode */
+            --dm-bg-color: #1a202c;
+            
+            /* 1. DIE HAUPTSCHRIFTFARBE (Hier anpassen!) 
+               Vorschläge:
+               #cbd5e0 (Slate 300 - Standardempfehlung, sanft)
+               #a0aec0 (Slate 400 - Noch dunkler/grauer)
+               #e2e8f0 (Slate 200 - Heller, aber nicht Weiß)
+            */
+            --dm-text-primary: #cbd5e0; 
+
+            /* 2. Metadaten (Datum, Lesezeit) - Sollte dunkler sein als Primary */
+            --dm-text-muted: #718096; 
+            
+            /* 3. Akzentfarbe für Links/Hover */
+            --dm-accent: #63b3ed;
+         }
+
+         /* ==========================================================================
+            GLOBAL OVERRIDES (The "Nuclear" Option)
+            ========================================================================== */
          html[data-theme="dark"] .masthead,
          html[data-theme="dark"] .masthead__inner-wrap,
          html[data-theme="dark"] .greedy-nav,
-         html[data-theme="dark"] .greedy-nav a { 
-            background: #1a202c !important;
-            background-color: #1a202c !important;
+         html[data-theme="dark"] .greedy-nav a,
+         html[data-theme="dark"] .page__footer { 
+            background: var(--dm-bg-color) !important;
+            background-color: var(--dm-bg-color) !important;
             background-image: none !important; 
             border-color: #2d3748 !important;
+            color: var(--dm-text-muted) !important; /* Standard Text im Footer */
          }
+
+         /* Alle wichtigen Textelemente auf die Primary Variable mappen */
          html[data-theme="dark"] .masthead a,
          html[data-theme="dark"] .site-title,
          html[data-theme="dark"] .site-subtitle,
          html[data-theme="dark"] .masthead__menu-item,
-         html[data-theme="dark"] .search-toggle {
-            color: #edf2f7 !important;
+         html[data-theme="dark"] .search-toggle,
+         html[data-theme="dark"] h1,
+         html[data-theme="dark"] h2,
+         html[data-theme="dark"] h3,
+         html[data-theme="dark"] h4,
+         html[data-theme="dark"] h5,
+         html[data-theme="dark"] h6,
+         html[data-theme="dark"] .archive__subtitle,
+         html[data-theme="dark"] .archive__item-title a,
+         html[data-theme="dark"] .page__footer strong,
+         html[data-theme="dark"] .page__footer a {
+            color: var(--dm-text-primary) !important;
          }
 
-         /* =========================================
-            2. ALIGNMENT (Der "Nudge" nach unten)
-            ========================================= */
+         /* Metadaten explizit dunkler */
+         html[data-theme="dark"] .page__meta,
+         html[data-theme="dark"] .page__meta i {
+            color: var(--dm-text-muted) !important;
+         }
+
+         /* Hover Effekte */
+         html[data-theme="dark"] .archive__item-title a:hover,
+         html[data-theme="dark"] .page__footer a:hover {
+            color: var(--dm-accent) !important;
+            text-decoration-color: var(--dm-accent) !important;
+         }
+
+         /* ==========================================================================
+            SWITCHER POSITIONIERUNG
+            ========================================================================== */
          .theme-switch-wrapper {
             display: inline-flex;
             align-items: center;
             float: right;
             margin-left: 20px;
-            height: 2rem; /* Standard Nav-Höhe Referenz */
-            
-            /* HIER IST DEIN REGLER: */
+            height: 2rem; 
             position: relative;
-            /* In deinen Screenshots hängt er zu hoch -> Wir schieben ihn runter */
-            top: 0 !important;
+            top: 0 !important;        
             margin-top: 0 !important; 
             z-index: 10;
          }
 
-         /* =========================================
-            3. MONOCHROME DESIGN (Schwarz/Weiß)
-            ========================================= */
+         /* ==========================================================================
+            SWITCHER DESIGN (Monochrom)
+            ========================================================================== */
          .theme-switch {
             position: relative;
             display: inline-block;
-            width: 50px;  /* Wieder etwas breiter für den Look */
+            width: 50px;
             height: 26px;
             margin: 0 !important;
             padding: 0 !important;
@@ -94,38 +140,32 @@
 
          .theme-switch input { opacity: 0; width: 0; height: 0; position: absolute; }
 
-         /* Die Bahn (Track) */
          .slider {
             position: absolute;
             cursor: pointer;
             top: 0; left: 0; right: 0; bottom: 0;
-            /* LIGHT MODE: Hellgrauer Track (statt Blau) */
-            background-color: #e2e8f0; 
+            background-color: #e2e8f0; /* Hellgrau Track */
             transition: .4s;
             border-radius: 34px;
-            /* Optional: Ein feiner Rand für mehr Kontrast zum Header */
             border: 1px solid #cbd5e0;
          }
 
-         /* Der Ball */
          .ball {
             position: absolute;
             height: 20px;
             width: 20px;
             left: 3px;
-            bottom: 2px; /* Wegen Border um 1px verschoben */
-            background-color: white; /* Immer Weiß */
+            bottom: 2px;
+            background-color: white;
             transition: transform .4s;
             border-radius: 50%;
             z-index: 10;
             display: flex;
             align-items: center;
             justify-content: center;
-            /* Kleiner Schatten für 3D Effekt wie im Screenshot */
             box-shadow: 0 2px 4px rgba(0,0,0,0.2);
          }
 
-         /* ICONS */
          .theme-switch svg {
             width: 14px;
             height: 14px;
@@ -135,105 +175,24 @@
             padding: 0 !important;
          }
 
-         /* =========================================
-            4. STATES (Licht an/aus)
-            ========================================= */
+         /* Light Mode State */
+         .icon-sun { display: block !important; color: #4a5568; }
 
-         /* --- LIGHT MODE (Standard) --- */
-         .icon-sun {
-            display: block !important;
-            color: #4a5568; /* Dunkelgraue Sonne (Monochrom!) */
-         }
-
-         /* --- DARK MODE (Checked) --- */
-         
-         /* Track wird fast schwarz */
+         /* Dark Mode State */
          input:checked + .slider {
             background-color: #2d3748; 
             border-color: #4a5568;
          }
 
-         /* Ball wandert */
-         input:checked + .slider .ball {
-            transform: translateX(22px);
-         }
+         input:checked + .slider .ball { transform: translateX(22px); }
 
-         /* Icons wechseln */
-         input:checked + .slider .ball .icon-sun {
-            display: none !important;
-         }
+         input:checked + .slider .ball .icon-sun { display: none !important; }
          
          input:checked + .slider .ball .icon-moon {
             display: block !important;
-            color: #1a202c; /* Fast schwarzer Mond auf weißem Ball */
-         }
-
-         /* =========================================
-            FIX 5: CONTENT COLORS (Lesbarkeit im Dark Mode)
-            ========================================= */
-         
-         /* 1. Überschriften (z.B. "Neueste Beiträge") */
-         html[data-theme="dark"] h1,
-         html[data-theme="dark"] h2,
-         html[data-theme="dark"] h3,
-         html[data-theme="dark"] h4,
-         html[data-theme="dark"] h5,
-         html[data-theme="dark"] h6,
-         html[data-theme="dark"] .archive__subtitle {
-            color: #f7fafc !important; /* Fast Weiß */
-         }
-
-         /* 2. Metadaten (Datum, Lesezeit unter Bildern) */
-         html[data-theme="dark"] .page__meta {
-            color: #a0aec0 !important; /* Helles Grau für Metadaten */
-         }
-         
-         /* Auch die kleinen Icons (Uhr, Kalender) färben */
-         html[data-theme="dark"] .page__meta i {
-            color: #a0aec0 !important; 
-         }
-
-         /* 3. Link-Titel der Artikel (falls sie nicht hellblau sind) */
-         html[data-theme="dark"] .archive__item-title a {
-            color: #edf2f7 !important;
-            text-decoration-color: #4a5568 !important; /* Unterstreichung dezenter */
-         }
-
-         /* Hover-Effekt für Artikel-Titel */
-         html[data-theme="dark"] .archive__item-title a:hover {
-            color: #63b3ed !important; /* Helles Blau beim Drüberfahren */
-         }
-
-         /* =========================================
-            FIX 6: FOOTER (Der Orange-Killer)
-            ========================================= */
-         
-         /* 1. Hintergrund des Footers */
-         html[data-theme="dark"] .page__footer {
-            background-color: #1a202c !important; /* Dunkelgrau statt Orange */
-            background-image: none !important;    /* Textur entfernen */
-            color: #a0aec0 !important;            /* Standard-Text Hellgrau */
-            border-top: 1px solid #2d3748;        /* Feine Trennlinie zum Inhalt */
-         }
-
-         /* 2. Links im Footer (Mastodon, GitHub, Impressum etc.) */
-         html[data-theme="dark"] .page__footer a {
-            color: #edf2f7 !important; /* Weiß für gute Lesbarkeit */
-            text-decoration: none;
-         }
-         
-         /* Hover Effekt für Links */
-         html[data-theme="dark"] .page__footer a:hover {
-            color: #63b3ed !important; /* Hellblau beim Drüberfahren */
-            text-decoration: underline;
-         }
-
-         /* 3. Der "Folgen:" Text (ist oft <strong>) */
-         html[data-theme="dark"] .page__footer strong {
-            color: #fff !important;
+            color: #1a202c; 
          }
          </style>
-
 
         <button class="greedy-nav__toggle hidden" type="button">
           <span class="visually-hidden">{{ site.data.ui-text[site.locale].menu_label | default: "Toggle menu" }}</span>
