@@ -203,6 +203,35 @@
          html[data-theme="dark"] .archive__item-title a:hover {
             color: #63b3ed !important; /* Helles Blau beim Drüberfahren */
          }
+
+         /* =========================================
+            FIX 6: FOOTER (Der Orange-Killer)
+            ========================================= */
+         
+         /* 1. Hintergrund des Footers */
+         html[data-theme="dark"] .page__footer {
+            background-color: #1a202c !important; /* Dunkelgrau statt Orange */
+            background-image: none !important;    /* Textur entfernen */
+            color: #a0aec0 !important;            /* Standard-Text Hellgrau */
+            border-top: 1px solid #2d3748;        /* Feine Trennlinie zum Inhalt */
+         }
+
+         /* 2. Links im Footer (Mastodon, GitHub, Impressum etc.) */
+         html[data-theme="dark"] .page__footer a {
+            color: #edf2f7 !important; /* Weiß für gute Lesbarkeit */
+            text-decoration: none;
+         }
+         
+         /* Hover Effekt für Links */
+         html[data-theme="dark"] .page__footer a:hover {
+            color: #63b3ed !important; /* Hellblau beim Drüberfahren */
+            text-decoration: underline;
+         }
+
+         /* 3. Der "Folgen:" Text (ist oft <strong>) */
+         html[data-theme="dark"] .page__footer strong {
+            color: #fff !important;
+         }
          </style>
 
 
