@@ -37,3 +37,17 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 <link rel="manifest" href="/site.webmanifest" />
 <!-- Ende FavIcon stuff -->
+
+<!-- Theme Switching Stuff -->
+<script>
+  // Sofort beim Laden prüfen, welches Theme aktiv sein soll
+  const storageTheme = localStorage.getItem('theme');
+  const systemColorScheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+  if (storageTheme === 'dark' || (!storageTheme && systemColorScheme)) {
+    document.documentElement.setAttribute('data-theme', 'dark');
+  } else {
+    document.documentElement.setAttribute('data-theme', 'light');
+  }
+</script>
+ <!-- Ende Theme Switching Stuff-->

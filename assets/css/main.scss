@@ -4,6 +4,61 @@
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // Skin
 @import "minimal-mistakes"; // Theme
 
+html[data-theme="dark"] {
+  /* Dark Mode Variables based on Minimal Mistakes Structure */
+  --global-bg-color: #1e1e1e;
+  --global-code-bg: #2d2d2d;
+  --global-text-color: #e0e0e0;
+  --global-primary-color: #ff9800; /* Sunrise Orange behalten wir als Akzent */
+  --global-link-color: #64b5f6;
+  --global-link-color-hover: #9be7ff;
+  --global-border-color: #333;
+  --background-color: #1e1e1e !important; /* Force override */
+
+  body {
+    background-color: var(--global-bg-color);
+    color: var(--global-text-color);
+  }
+
+  /* Header & Footer */
+  .masthead {
+    background-color: #121212;
+    border-bottom: 1px solid var(--global-border-color);
+  }
+
+  /* Content Cards / Teasers */
+  .archive__item-teaser {
+    background-color: var(--global-code-bg);
+  }
+
+  /* Tables */
+  table {
+    color: var(--global-text-color);
+  }
+  
+  /* Code Blocks */
+  .highlighter-rouge .highlight {
+     background: var(--global-code-bg);
+  }
+  
+  /* Links */
+  a {
+    color: var(--global-link-color);
+    &:hover {
+      color: var(--global-link-color-hover);
+    }
+  }
+
+  /* Specific MM Classes Overrides */
+  .page__content {
+    color: var(--global-text-color);
+  }
+  
+  .page__title {
+    color: #fff;
+  }
+}
+
 @font-face {
    font-family: "ti30xpro";
    src: url("/assets/fonts/TI30XProEmuKeys.woff2") format("woff2"),

@@ -142,6 +142,8 @@ footer:
     - label: "Datenschutz"
       icon: "fa-solid fa-section"
       url: /datenschutz/
+  scripts:
+    - /assets/js/theme-switcher.js
 
 category_archive:
   type: liquid
