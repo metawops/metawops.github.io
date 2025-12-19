@@ -54,27 +54,53 @@
          </div>
 
          <style>
-         /* 1. Wrapper für Ausrichtung im Masthead */
-         .theme-switch-wrapper {
-            display: flex;
-            align-items: center; /* Vertikale Zentrierung zur Lupe */
-            float: right;
-            margin-left: 20px;
-            height: 100%; /* Nimmt Höhe des Headers an */
-            /* Falls er immer noch zu hoch hängt, dekommentiere dies: */
-            /* margin-top: 5px; */ 
+         /* -----------------------------------------------------
+            1. GLOBAL OVERRIDES (Damit das Beige sofort verschwindet)
+            ----------------------------------------------------- */
+         
+         /* Wir nutzen :has() oder Attribut-Selektor für höchste Priorität */
+         html[data-theme="dark"] .masthead {
+            background-color: #1a202c !important; /* Dunkles Header-Grau statt Beige */
+            border-bottom: 1px solid #333 !important;
+         }
+         
+         /* Auch den Titel weiß machen */
+         html[data-theme="dark"] .masthead__menu-item,
+         html[data-theme="dark"] .site-title,
+         html[data-theme="dark"] .site-subtitle {
+            color: #edf2f7 !important;
          }
 
-         /* 2. Container Größe */
+         /* -----------------------------------------------------
+            2. SWITCHER POSITIONIERUNG (Alignment)
+            ----------------------------------------------------- */
+         .theme-switch-wrapper {
+            display: flex;
+            align-items: center;
+            float: right;
+            margin-left: 15px;
+            height: 100%;
+            
+            /* TWEAKING ZONE:
+               Hier schieben wir den Switch pixelgenau nach unten.
+               Ändere 'top' wenn er immer noch nicht exakt auf Linie ist.
+            */
+            position: relative;
+            top: 4px; 
+         }
+
+         /* -----------------------------------------------------
+            3. SWITCHER DESIGN
+            ----------------------------------------------------- */
          .theme-switch {
             position: relative;
             display: inline-block;
-            width: 52px;
+            width: 50px;
             height: 26px;
             margin: 0;
+            padding: 0; /* Reset für MM */
          }
 
-         /* Input verstecken */
          .theme-switch input {
             opacity: 0;
             width: 0;
@@ -82,7 +108,6 @@
             position: absolute;
          }
 
-         /* 3. Die Bahn (Track) */
          .slider {
             position: absolute;
             cursor: pointer;
@@ -95,67 +120,68 @@
             border-radius: 34px;
          }
 
-         /* 4. Der Ball (Knopf) - Jetzt Flex-Container für Icons! */
+         /* Der Ball Container */
          .ball {
             position: absolute;
             height: 20px;
             width: 20px;
             left: 3px;
             bottom: 3px;
-            background-color: #FFD700; /* Sonne-Gelb */
+            background-color: #FFD700; /* Sonne */
             transition: transform .4s, background-color .4s;
             border-radius: 50%;
             z-index: 10;
             
-            /* ZENTRIERUNG DER ICONS */
+            /* ZENTRIERUNG DER ICONS IM BALL */
             display: flex;
             align-items: center;
             justify-content: center;
          }
 
-         /* 5. Icons Styling */
+         /* SVG Reset - wichtig damit sie nicht "tanzen" */
          .theme-switch svg {
-            width: 14px; /* Icons etwas kleiner damit sie in den Ball passen */
-            height: 14px;
+            width: 12px;  /* Kleinere Icons wirken zentrierter */
+            height: 12px;
+            display: block; /* Verhindert line-height Probleme */
+            margin: 0;
+            padding: 0;
             transition: opacity 0.4s;
-            position: absolute; /* Übereinander lagern */
+            position: absolute; /* Übereinander legen */
          }
 
-         /* Sonne Styling */
          .icon-sun {
             opacity: 1;
-            color: #fff; /* Weiße Sonne auf Gelb */
+            color: #fff;
          }
 
-         /* Mond Styling */
          .icon-moon {
             opacity: 0;
-            color: #4a5568; /* Dunkelgrau für Kontrast auf dem Mond */
+            color: #4a5568; /* Dunkelgrau */
          }
 
-         /* --- ZUSTÄNDE (Checked / Dark Mode) --- */
-
+         /* -----------------------------------------------------
+            4. STATE CHANGE (Dark Mode)
+            ----------------------------------------------------- */
+         
          /* Bahn wird dunkel */
          input:checked + .slider {
-            background-color: #2d3748; /* Nacht-Hintergrund */
+            background-color: #4a5568; 
          }
 
-         /* Ball wandert und wird hellgrau */
+         /* Ball wandert nach rechts */
          input:checked + .slider .ball {
-            transform: translateX(26px);
-            background-color: #edf2f7; /* Mond-Farbe */
+            transform: translateX(24px);
+            background-color: #edf2f7; /* Mond-Weiß */
          }
 
-         /* Sonne weg */
+         /* Icons tauschen */
          input:checked + .slider .icon-sun {
             opacity: 0;
          }
-
-         /* Mond da */
          input:checked + .slider .icon-moon {
             opacity: 1;
          }
-         </style>
+         </style>        
 
         <button class="greedy-nav__toggle hidden" type="button">
           <span class="visually-hidden">{{ site.data.ui-text[site.locale].menu_label | default: "Toggle menu" }}</span>
