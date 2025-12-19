@@ -42,14 +42,21 @@
          </div>
 
          <style>
-         /* 1. BEIGE KILLER (Fix für Sunrise Skin) */
+         /* =========================================
+            FIX 1: DAS BEIGE MUSS STERBEN
+            Wir targeten jetzt auch .greedy-nav und direkte Kinder
+            ========================================= */
          html[data-theme="dark"] .masthead,
-         html[data-theme="dark"] .masthead__inner-wrap { 
-            background-color: #1a202c !important; /* Dunkles Grau */
-            color: #edf2f7 !important;
+         html[data-theme="dark"] .masthead__inner-wrap,
+         html[data-theme="dark"] .greedy-nav,
+         html[data-theme="dark"] .greedy-nav a { 
+            background: #1a202c !important;
+            background-color: #1a202c !important;
+            background-image: none !important; /* Falls Sunrise Texturen nutzt */
+            border-color: #2d3748 !important;
          }
 
-         /* Schriftfarben im Header erzwingen */
+         /* Schriftfarben reparieren */
          html[data-theme="dark"] .masthead a,
          html[data-theme="dark"] .site-title,
          html[data-theme="dark"] .site-subtitle,
@@ -58,28 +65,28 @@
             color: #edf2f7 !important;
          }
 
-         /* 2. POSITIONIERUNG DES GANZEN SCHALTERS */
+         /* =========================================
+            FIX 2: POSITIONIERUNG & RESET
+            ========================================= */
          .theme-switch-wrapper {
             display: inline-flex;
             align-items: center;
             float: right;
             margin-left: 20px;
-            height: 100%;
-            /* Feinjustierung der Höhe:
-               Wenn er zu hoch hängt: positiver Wert (z.B. 4px)
-               Wenn er zu tief hängt: negativer Wert (z.B. -4px)
-            */
+            height: 100%; /* Orientiert sich an Nav-Höhe */
             position: relative;
-            top: 0px; 
+            top: 0px; /* Falls immer noch verschoben: Hier ändern */
+            z-index: 10;
          }
 
-         /* 3. SCHALTER GRUNDGERÜST */
          .theme-switch {
             position: relative;
             display: inline-block;
-            width: 44px; /* Kompakt */
+            width: 44px;
             height: 24px;
-            margin: 0;
+            margin: 0 !important; /* Reset Margin */
+            padding: 0 !important;
+            line-height: 1 !important;
          }
 
          .theme-switch input { opacity: 0; width: 0; height: 0; position: absolute; }
@@ -88,15 +95,16 @@
             position: absolute;
             cursor: pointer;
             top: 0; left: 0; right: 0; bottom: 0;
-            background-color: #63b3ed; /* Blau */
+            background-color: #63b3ed;
             transition: .4s;
             border-radius: 34px;
          }
 
-         /* 4. DER BALL (FIX FÜR ZENTRIERUNG) */
+         /* =========================================
+            FIX 3: ICON ZENTRIERUNG (Der Übeltäter)
+            ========================================= */
          .ball {
             position: absolute;
-            content: "";
             height: 18px;
             width: 18px;
             left: 3px;
@@ -106,44 +114,53 @@
             border-radius: 50%;
             z-index: 10;
             
-            /* Die Magie: Pure Flexbox Zentrierung */
+            /* Flexbox Zentrierung */
             display: flex;
             align-items: center;
             justify-content: center;
          }
 
-         /* 5. ICONS (Kein Position Absolute mehr!) */
+         /* Hier liegt der Hund begraben: */
          .theme-switch svg {
             width: 12px;
             height: 12px;
-            /* Wichtig: Überlagern sich im DOM, wir blenden nur aus */
             display: none; 
-            stroke: currentColor; 
+            stroke: currentColor;
+            
+            /* NUCLEAR RESET FÜR MINIMAL MISTAKES STYLES */
+            margin: 0 !important; 
+            padding: 0 !important;
+            border: none !important;
+            background: none !important;
+            box-shadow: none !important;
+            min-width: 0 !important;
+            max-width: none !important;
+            position: static !important; /* Flexbox soll regeln */
          }
 
-         /* Standard Zustand (Hell): Sonne zeigen */
+         /* =========================================
+            LOGIK
+            ========================================= */
          .icon-sun {
             display: block !important;
-            color: #F6E05E; /* Gelb */
+            color: #F6E05E;
          }
 
-         /* 6. DARK MODE AKTIV */
          input:checked + .slider {
-            background-color: #4a5568; /* Dunkler Slider */
+            background-color: #4a5568; 
          }
 
          input:checked + .slider .ball {
             transform: translateX(20px);
          }
 
-         /* Icon Logik umkehren */
          input:checked + .slider .ball .icon-sun {
             display: none !important;
          }
          
          input:checked + .slider .ball .icon-moon {
-            display: block !important;
-            color: #4a5568; /* Dunkles Mond-Icon auf weißem Ball */
+            display: block !important; /* Wird durch Flexbox zentriert */
+            color: #4a5568; 
          }
          </style>
 
