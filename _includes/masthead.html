@@ -34,77 +34,51 @@
             <input type="checkbox" id="checkbox" />
             <div class="slider">
                <div class="ball">
-               <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <circle cx="12" cy="12" r="5"></circle>
-                  <line x1="12" y1="1" x2="12" y2="3"></line>
-                  <line x1="12" y1="21" x2="12" y2="23"></line>
-                  <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                  <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                  <line x1="1" y1="12" x2="3" y2="12"></line>
-                  <line x1="21" y1="12" x2="23" y2="12"></line>
-                  <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                  <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-               </svg>
-               <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-               </svg>
+               <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+               <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
                </div>
             </div>
          </label>
          </div>
 
          <style>
-         /* =========================================
-            1. FARBEN-OVERRIDE (DIE "NUKLEARE OPTION")
-            ========================================= */
-         /* Wir überschreiben ALLES, was Beige sein könnte */
-         html[data-theme="dark"],
-         html[data-theme="dark"] body,
-         html[data-theme="dark"] .initial-content,
-         html[data-theme="dark"] .page__content,
+         /* 1. BEIGE KILLER (Fix für Sunrise Skin) */
          html[data-theme="dark"] .masthead,
-         html[data-theme="dark"] .page__footer {
+         html[data-theme="dark"] .masthead__inner-wrap { 
             background-color: #1a202c !important; /* Dunkles Grau */
-            background-image: none !important;    /* Falls Sunrise Texturen nutzt */
-            color: #e2e8f0 !important;            /* Helle Schrift */
+            color: #edf2f7 !important;
          }
 
-         /* Speziell für die Links im Header (damit sie nicht blau auf dunkelgrau sind) */
+         /* Schriftfarben im Header erzwingen */
          html[data-theme="dark"] .masthead a,
          html[data-theme="dark"] .site-title,
          html[data-theme="dark"] .site-subtitle,
-         html[data-theme="dark"] .masthead__menu-item {
-            color: #edf2f7 !important;
-         }
-         
-         /* Such-Icon Farbe im Dark Mode */
+         html[data-theme="dark"] .masthead__menu-item,
          html[data-theme="dark"] .search-toggle {
             color: #edf2f7 !important;
          }
 
-         /* =========================================
-            2. POSITIONIERUNG (Das Skalpell)
-            ========================================= */
+         /* 2. POSITIONIERUNG DES GANZEN SCHALTERS */
          .theme-switch-wrapper {
-            display: inline-flex; /* Besser als flex in diesem Kontext */
+            display: inline-flex;
             align-items: center;
             float: right;
-            margin-left: 15px;
-            height: 2em; /* Orientiert sich an der Schriftgröße */
-            
-            /* HIER IST DER HEBEL FÜR DIE HÖHE: */
+            margin-left: 20px;
+            height: 100%;
+            /* Feinjustierung der Höhe:
+               Wenn er zu hoch hängt: positiver Wert (z.B. 4px)
+               Wenn er zu tief hängt: negativer Wert (z.B. -4px)
+            */
             position: relative;
-            top: -2px; /* Zieht den Schalter pixelweise hoch. Wenn zu hoch, mach 0 oder 2px draus. */
+            top: 0px; 
          }
 
-         /* =========================================
-            3. SCHALTER DESIGN (Kompakter)
-            ========================================= */
+         /* 3. SCHALTER GRUNDGERÜST */
          .theme-switch {
             position: relative;
             display: inline-block;
-            width: 46px;  /* Etwas schmaler (vorher 52px) */
-            height: 24px; /* Etwas flacher (vorher 26px) */
+            width: 44px; /* Kompakt */
+            height: 24px;
             margin: 0;
          }
 
@@ -114,56 +88,62 @@
             position: absolute;
             cursor: pointer;
             top: 0; left: 0; right: 0; bottom: 0;
-            background-color: #63b3ed; /* Etwas kräftigeres Himmelblau */
+            background-color: #63b3ed; /* Blau */
             transition: .4s;
             border-radius: 34px;
          }
 
-         /* Der Ball */
+         /* 4. DER BALL (FIX FÜR ZENTRIERUNG) */
          .ball {
             position: absolute;
-            height: 18px; /* Kleinerer Ball */
+            content: "";
+            height: 18px;
             width: 18px;
             left: 3px;
             bottom: 3px;
-            background-color: #fff; /* Startet Weiß (Sonne) */
-            transition: transform .4s, background-color .4s;
+            background-color: white;
+            transition: transform .4s;
             border-radius: 50%;
             z-index: 10;
+            
+            /* Die Magie: Pure Flexbox Zentrierung */
             display: flex;
             align-items: center;
             justify-content: center;
-            box-shadow: 0 1px 2px rgba(0,0,0,0.2);
          }
 
-         /* Icons */
+         /* 5. ICONS (Kein Position Absolute mehr!) */
          .theme-switch svg {
             width: 12px;
             height: 12px;
-            display: block;
-            transition: opacity 0.4s;
-            position: absolute;
+            /* Wichtig: Überlagern sich im DOM, wir blenden nur aus */
+            display: none; 
+            stroke: currentColor; 
          }
 
-         .icon-sun { opacity: 1; color: #F6E05E; /* Gelbe Sonne im weißen Ball */ }
-         .icon-moon { opacity: 0; color: #4a5568; }
+         /* Standard Zustand (Hell): Sonne zeigen */
+         .icon-sun {
+            display: block !important;
+            color: #F6E05E; /* Gelb */
+         }
 
-         /* =========================================
-            4. ACTIVE STATE (DARK)
-            ========================================= */
+         /* 6. DARK MODE AKTIV */
          input:checked + .slider {
-            background-color: #4a5568; /* Slider Hintergrund Dunkel */
+            background-color: #4a5568; /* Dunkler Slider */
          }
 
          input:checked + .slider .ball {
-            transform: translateX(22px); /* Verschiebung angepasst an neue Breite */
-            background-color: #2d3748; /* Ball wird dunkel */
+            transform: translateX(20px);
          }
 
-         input:checked + .slider .icon-sun { opacity: 0; }
-         input:checked + .slider .icon-moon { 
-            opacity: 1; 
-            color: #F6E05E; /* Mond wird gelblich/hell für Kontrast */
+         /* Icon Logik umkehren */
+         input:checked + .slider .ball .icon-sun {
+            display: none !important;
+         }
+         
+         input:checked + .slider .ball .icon-moon {
+            display: block !important;
+            color: #4a5568; /* Dunkles Mond-Icon auf weißem Ball */
          }
          </style>
 
