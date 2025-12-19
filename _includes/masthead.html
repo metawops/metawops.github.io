@@ -43,8 +43,7 @@
 
          <style>
          /* =========================================
-            FIX 1: DAS BEIGE MUSS STERBEN
-            Wir targeten jetzt auch .greedy-nav und direkte Kinder
+            1. GLOBAL COLORS (BEIGE KILLER) - Unverändert
             ========================================= */
          html[data-theme="dark"] .masthead,
          html[data-theme="dark"] .masthead__inner-wrap,
@@ -52,11 +51,9 @@
          html[data-theme="dark"] .greedy-nav a { 
             background: #1a202c !important;
             background-color: #1a202c !important;
-            background-image: none !important; /* Falls Sunrise Texturen nutzt */
+            background-image: none !important; 
             border-color: #2d3748 !important;
          }
-
-         /* Schriftfarben reparieren */
          html[data-theme="dark"] .masthead a,
          html[data-theme="dark"] .site-title,
          html[data-theme="dark"] .site-subtitle,
@@ -66,103 +63,111 @@
          }
 
          /* =========================================
-            FIX 2: POSITIONIERUNG & RESET
+            2. ALIGNMENT (Der "Nudge" nach unten)
             ========================================= */
          .theme-switch-wrapper {
             display: inline-flex;
             align-items: center;
             float: right;
             margin-left: 20px;
-            height: 100%; /* Orientiert sich an Nav-Höhe */
+            height: 2rem; /* Standard Nav-Höhe Referenz */
+            
+            /* HIER IST DEIN REGLER: */
             position: relative;
-            top: 0px; /* Falls immer noch verschoben: Hier ändern */
+            /* In deinen Screenshots hängt er zu hoch -> Wir schieben ihn runter */
+            top: 5px; 
             z-index: 10;
          }
 
+         /* =========================================
+            3. MONOCHROME DESIGN (Schwarz/Weiß)
+            ========================================= */
          .theme-switch {
             position: relative;
             display: inline-block;
-            width: 44px;
-            height: 24px;
-            margin: 0 !important; /* Reset Margin */
+            width: 50px;  /* Wieder etwas breiter für den Look */
+            height: 26px;
+            margin: 0 !important;
             padding: 0 !important;
-            line-height: 1 !important;
          }
 
          .theme-switch input { opacity: 0; width: 0; height: 0; position: absolute; }
 
+         /* Die Bahn (Track) */
          .slider {
             position: absolute;
             cursor: pointer;
             top: 0; left: 0; right: 0; bottom: 0;
-            background-color: #63b3ed;
+            /* LIGHT MODE: Hellgrauer Track (statt Blau) */
+            background-color: #e2e8f0; 
             transition: .4s;
             border-radius: 34px;
+            /* Optional: Ein feiner Rand für mehr Kontrast zum Header */
+            border: 1px solid #cbd5e0;
          }
 
-         /* =========================================
-            FIX 3: ICON ZENTRIERUNG (Der Übeltäter)
-            ========================================= */
+         /* Der Ball */
          .ball {
             position: absolute;
-            height: 18px;
-            width: 18px;
+            height: 20px;
+            width: 20px;
             left: 3px;
-            bottom: 3px;
-            background-color: white;
+            bottom: 2px; /* Wegen Border um 1px verschoben */
+            background-color: white; /* Immer Weiß */
             transition: transform .4s;
             border-radius: 50%;
             z-index: 10;
-            
-            /* Flexbox Zentrierung */
             display: flex;
             align-items: center;
             justify-content: center;
+            /* Kleiner Schatten für 3D Effekt wie im Screenshot */
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
          }
 
-         /* Hier liegt der Hund begraben: */
+         /* ICONS */
          .theme-switch svg {
-            width: 12px;
-            height: 12px;
+            width: 14px;
+            height: 14px;
             display: none; 
             stroke: currentColor;
-            
-            /* NUCLEAR RESET FÜR MINIMAL MISTAKES STYLES */
-            margin: 0 !important; 
+            margin: 0 !important;
             padding: 0 !important;
-            border: none !important;
-            background: none !important;
-            box-shadow: none !important;
-            min-width: 0 !important;
-            max-width: none !important;
-            position: static !important; /* Flexbox soll regeln */
          }
 
          /* =========================================
-            LOGIK
+            4. STATES (Licht an/aus)
             ========================================= */
+
+         /* --- LIGHT MODE (Standard) --- */
          .icon-sun {
             display: block !important;
-            color: #F6E05E;
+            color: #4a5568; /* Dunkelgraue Sonne (Monochrom!) */
          }
 
+         /* --- DARK MODE (Checked) --- */
+         
+         /* Track wird fast schwarz */
          input:checked + .slider {
-            background-color: #4a5568; 
+            background-color: #2d3748; 
+            border-color: #4a5568;
          }
 
+         /* Ball wandert */
          input:checked + .slider .ball {
-            transform: translateX(20px);
+            transform: translateX(22px);
          }
 
+         /* Icons wechseln */
          input:checked + .slider .ball .icon-sun {
             display: none !important;
          }
          
          input:checked + .slider .ball .icon-moon {
-            display: block !important; /* Wird durch Flexbox zentriert */
-            color: #4a5568; 
+            display: block !important;
+            color: #1a202c; /* Fast schwarzer Mond auf weißem Ball */
          }
          </style>
+
 
         <button class="greedy-nav__toggle hidden" type="button">
           <span class="visually-hidden">{{ site.data.ui-text[site.locale].menu_label | default: "Toggle menu" }}</span>
