@@ -43,29 +43,41 @@
 
          <style>
          /* ==========================================================================
-            KONFIGURATION (HIER FARBEN ÄNDERN)
+            KONFIGURATION
             ========================================================================== */
          :root {
-            /* Hintergrund im Dark Mode */
             --dm-bg-color: #1a202c;
             
-            /* 1. DIE HAUPTSCHRIFTFARBE (Hier anpassen!) 
-               Vorschläge:
-               #cbd5e0 (Slate 300 - Standardempfehlung, sanft)
-               #a0aec0 (Slate 400 - Noch dunkler/grauer)
-               #e2e8f0 (Slate 200 - Heller, aber nicht Weiß)
-            */
-            --dm-text-primary: #a0aec0; 
+            /* Hier deine Farbe einstellen (z.B. Slate 400: #a0aec0) */
+            --dm-text-primary: #a0aec0;
 
-            /* 2. Metadaten (Datum, Lesezeit) - Sollte dunkler sein als Primary */
             --dm-text-muted: #718096; 
-            
-            /* 3. Akzentfarbe für Links/Hover */
             --dm-accent: #63b3ed;
          }
 
          /* ==========================================================================
-            GLOBAL OVERRIDES (The "Nuclear" Option)
+            FIX 8: GLOBAL BODY & CONTENT (Das fehlte!)
+            ========================================================================== */
+         
+         /* 1. Hintergrund für ALLES setzen (Body + Content Wrapper) */
+         html[data-theme="dark"] body,
+         html[data-theme="dark"] .initial-content,
+         html[data-theme="dark"] .page__content,
+         html[data-theme="dark"] #main {
+            background-color: var(--dm-bg-color) !important;
+            background-image: none !important;
+         }
+
+         /* 2. Haupttext-Farbe auf die Variable zwingen */
+         html[data-theme="dark"] body,
+         html[data-theme="dark"] p,
+         html[data-theme="dark"] li,
+         html[data-theme="dark"] .page__content {
+            color: var(--dm-text-primary) !important;
+         }
+
+         /* ==========================================================================
+            HEADER & FOOTER OVERRIDES
             ========================================================================== */
          html[data-theme="dark"] .masthead,
          html[data-theme="dark"] .masthead__inner-wrap,
@@ -76,10 +88,10 @@
             background-color: var(--dm-bg-color) !important;
             background-image: none !important; 
             border-color: #2d3748 !important;
-            color: var(--dm-text-muted) !important; /* Standard Text im Footer */
+            color: var(--dm-text-muted) !important; 
          }
 
-         /* Alle wichtigen Textelemente auf die Primary Variable mappen */
+         /* Textelemente im Header/Footer auf Primary mappen */
          html[data-theme="dark"] .masthead a,
          html[data-theme="dark"] .site-title,
          html[data-theme="dark"] .site-subtitle,
@@ -98,13 +110,13 @@
             color: var(--dm-text-primary) !important;
          }
 
-         /* Metadaten explizit dunkler */
+         /* Metadaten */
          html[data-theme="dark"] .page__meta,
          html[data-theme="dark"] .page__meta i {
             color: var(--dm-text-muted) !important;
          }
 
-         /* Hover Effekte */
+         /* Hover */
          html[data-theme="dark"] .archive__item-title a:hover,
          html[data-theme="dark"] .page__footer a:hover {
             color: var(--dm-accent) !important;
@@ -112,7 +124,14 @@
          }
 
          /* ==========================================================================
-            SWITCHER POSITIONIERUNG
+            LOGO FIX (Invertierung)
+            ========================================================================== */
+         html[data-theme="dark"] .site-logo img {
+            filter: invert(1) brightness(1.2);
+         }
+
+         /* ==========================================================================
+            SWITCHER POSITIONIERUNG & DESIGN
             ========================================================================== */
          .theme-switch-wrapper {
             display: inline-flex;
@@ -126,9 +145,6 @@
             z-index: 10;
          }
 
-         /* ==========================================================================
-            SWITCHER DESIGN (Monochrom)
-            ========================================================================== */
          .theme-switch {
             position: relative;
             display: inline-block;
@@ -144,7 +160,7 @@
             position: absolute;
             cursor: pointer;
             top: 0; left: 0; right: 0; bottom: 0;
-            background-color: #e2e8f0; /* Hellgrau Track */
+            background-color: #e2e8f0; 
             transition: .4s;
             border-radius: 34px;
             border: 1px solid #cbd5e0;
@@ -175,39 +191,16 @@
             padding: 0 !important;
          }
 
-         /* Light Mode State */
          .icon-sun { display: block !important; color: #4a5568; }
 
-         /* Dark Mode State */
          input:checked + .slider {
             background-color: #2d3748; 
             border-color: #4a5568;
          }
-
          input:checked + .slider .ball { transform: translateX(22px); }
-
          input:checked + .slider .ball .icon-sun { display: none !important; }
-         
-         input:checked + .slider .ball .icon-moon {
-            display: block !important;
-            color: #1a202c; 
-         }
-
-         /* =========================================
-            FIX 7: LOGO (Der Invertierungs-Trick)
-            ========================================= */
-         
-         /* Wir wählen gezielt nur das Bild innerhalb der Logo-Klasse */
-         html[data-theme="dark"] .site-logo img {
-            /* invert(1): Macht aus Schwarz Weiß (und umgekehrt).
-               hue-rotate(180deg): Falls Farben drin wären, würde Invert sie komplementär machen.
-                                    Hue-rotate dreht sie zurück (hier egal, da schwarz-weiß).
-               brightness(1.2): Macht das Weiß noch etwas strahlender.
-            */
-            filter: invert(1) brightness(1.2);
-         }
+         input:checked + .slider .ball .icon-moon { display: block !important; color: #1a202c; }
          </style>
-
         <button class="greedy-nav__toggle hidden" type="button">
           <span class="visually-hidden">{{ site.data.ui-text[site.locale].menu_label | default: "Toggle menu" }}</span>
           <div class="navicon"></div>
