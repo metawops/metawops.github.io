@@ -47,19 +47,15 @@
             ========================================================================== */
          :root {
             --dm-bg-color: #1a202c;
-            
-            /* Hier deine Farbe einstellen (z.B. Slate 400: #a0aec0) */
-            --dm-text-primary: #a0aec0;
-
+            /* Deine Wunschfarbe für den Text (z.B. #a0aec0) */
+            --dm-text-primary: #a0aec0; 
             --dm-text-muted: #718096; 
             --dm-accent: #63b3ed;
          }
 
          /* ==========================================================================
-            FIX 8: GLOBAL BODY & CONTENT (Das fehlte!)
+            GLOBAL BODY & CONTENT
             ========================================================================== */
-         
-         /* 1. Hintergrund für ALLES setzen (Body + Content Wrapper) */
          html[data-theme="dark"] body,
          html[data-theme="dark"] .initial-content,
          html[data-theme="dark"] .page__content,
@@ -68,7 +64,6 @@
             background-image: none !important;
          }
 
-         /* 2. Haupttext-Farbe auf die Variable zwingen */
          html[data-theme="dark"] body,
          html[data-theme="dark"] p,
          html[data-theme="dark"] li,
@@ -77,21 +72,35 @@
          }
 
          /* ==========================================================================
-            HEADER & FOOTER OVERRIDES
+            HEADER OVERRIDES
             ========================================================================== */
          html[data-theme="dark"] .masthead,
          html[data-theme="dark"] .masthead__inner-wrap,
          html[data-theme="dark"] .greedy-nav,
-         html[data-theme="dark"] .greedy-nav a,
-         html[data-theme="dark"] .page__footer { 
+         html[data-theme="dark"] .greedy-nav a { 
             background: var(--dm-bg-color) !important;
             background-color: var(--dm-bg-color) !important;
             background-image: none !important; 
             border-color: #2d3748 !important;
-            color: var(--dm-text-muted) !important; 
          }
 
-         /* Textelemente im Header/Footer auf Primary mappen */
+         /* ==========================================================================
+            FIX 9: FOOTER (ISOLATED) - Der Orange-Killer
+            ========================================================================== */
+         /* Wir isolieren den Footer wieder, damit die Regel garantiert greift */
+         html[data-theme="dark"] .page__footer,
+         html[data-theme="dark"] .page__footer footer,
+         html[data-theme="dark"] .page__footer .inner-wrap {
+            background: var(--dm-bg-color) !important;
+            background-color: var(--dm-bg-color) !important;
+            background-image: none !important;
+            color: var(--dm-text-muted) !important;
+            border-top: 1px solid #2d3748 !important;
+         }
+
+         /* ==========================================================================
+            TEXT ELEMENTE MAPPING
+            ========================================================================== */
          html[data-theme="dark"] .masthead a,
          html[data-theme="dark"] .site-title,
          html[data-theme="dark"] .site-subtitle,
@@ -110,13 +119,11 @@
             color: var(--dm-text-primary) !important;
          }
 
-         /* Metadaten */
          html[data-theme="dark"] .page__meta,
          html[data-theme="dark"] .page__meta i {
             color: var(--dm-text-muted) !important;
          }
 
-         /* Hover */
          html[data-theme="dark"] .archive__item-title a:hover,
          html[data-theme="dark"] .page__footer a:hover {
             color: var(--dm-accent) !important;
@@ -124,14 +131,14 @@
          }
 
          /* ==========================================================================
-            LOGO FIX (Invertierung)
+            LOGO FIX
             ========================================================================== */
          html[data-theme="dark"] .site-logo img {
             filter: invert(1) brightness(1.2);
          }
 
          /* ==========================================================================
-            SWITCHER POSITIONIERUNG & DESIGN
+            SWITCHER CSS
             ========================================================================== */
          .theme-switch-wrapper {
             display: inline-flex;
@@ -201,7 +208,8 @@
          input:checked + .slider .ball .icon-sun { display: none !important; }
          input:checked + .slider .ball .icon-moon { display: block !important; color: #1a202c; }
          </style>
-        <button class="greedy-nav__toggle hidden" type="button">
+
+         <button class="greedy-nav__toggle hidden" type="button">
           <span class="visually-hidden">{{ site.data.ui-text[site.locale].menu_label | default: "Toggle menu" }}</span>
           <div class="navicon"></div>
         </button>
