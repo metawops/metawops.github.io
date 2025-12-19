@@ -30,10 +30,11 @@
         {% endif %}
 
          <div class="theme-switch-wrapper">
-            <label class="theme-switch" for="checkbox" title="Zwischen Hell- und Dunkelmodus wechseln">
-               <input type="checkbox" id="checkbox" />
-               <div class="slider round">
-                  <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+         <label class="theme-switch" for="checkbox" title="Dunkelmodus umschalten">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider">
+               <div class="ball">
+               <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                   <circle cx="12" cy="12" r="5"></circle>
                   <line x1="12" y1="1" x2="12" y2="3"></line>
                   <line x1="12" y1="21" x2="12" y2="23"></line>
@@ -43,114 +44,117 @@
                   <line x1="21" y1="12" x2="23" y2="12"></line>
                   <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
                   <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                  </svg>
-                  <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+               </svg>
+               <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                   <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                  </svg>
+               </svg>
                </div>
-            </label>
+            </div>
+         </label>
          </div>
 
          <style>
-            /* Wrapper erzwingt Layout */
-            .theme-switch-wrapper {
-               display: flex;
-               align-items: center;
-               /* Positionierung im Masthead */
-               float: right;
-               margin-left: 15px;
-               margin-top: 10px; /* Ggf. anpassen je nach Font-Größe */
-               z-index: 9999;
-            }
+         /* 1. Wrapper für Ausrichtung im Masthead */
+         .theme-switch-wrapper {
+            display: flex;
+            align-items: center; /* Vertikale Zentrierung zur Lupe */
+            float: right;
+            margin-left: 20px;
+            height: 100%; /* Nimmt Höhe des Headers an */
+            /* Falls er immer noch zu hoch hängt, dekommentiere dies: */
+            /* margin-top: 5px; */ 
+         }
 
-            /* Container */
-            .theme-switch {
-               position: relative;
-               display: inline-block;
-               width: 52px;
-               height: 26px;
-               margin: 0;
-            }
+         /* 2. Container Größe */
+         .theme-switch {
+            position: relative;
+            display: inline-block;
+            width: 52px;
+            height: 26px;
+            margin: 0;
+         }
 
-            /* Input verstecken */
-            .theme-switch input {
-               opacity: 0;
-               width: 0;
-               height: 0;
-               position: absolute;
-            }
+         /* Input verstecken */
+         .theme-switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+            position: absolute;
+         }
 
-            /* Die Bahn (Track) */
-            .slider {
-               position: absolute;
-               cursor: pointer;
-               top: 0;
-               left: 0;
-               right: 0;
-               bottom: 0;
-               background-color: #87CEEB; /* Tag-Blau */
-               transition: .4s;
-               border-radius: 34px;
-               overflow: hidden;
-            }
+         /* 3. Die Bahn (Track) */
+         .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #87CEEB; /* Tag-Blau */
+            transition: .4s;
+            border-radius: 34px;
+         }
 
-            /* Der Ball (Knopf) - separat div statt pseudo-element für stabilere Animation */
-            .ball {
-               position: absolute;
-               content: "";
-               height: 20px;
-               width: 20px;
-               left: 3px;
-               bottom: 3px;
-               background-color: #FFD700; /* Sonne-Gelb */
-               transition: .4s;
-               border-radius: 50%;
-               z-index: 10;
-            }
+         /* 4. Der Ball (Knopf) - Jetzt Flex-Container für Icons! */
+         .ball {
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            left: 3px;
+            bottom: 3px;
+            background-color: #FFD700; /* Sonne-Gelb */
+            transition: transform .4s, background-color .4s;
+            border-radius: 50%;
+            z-index: 10;
+            
+            /* ZENTRIERUNG DER ICONS */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+         }
 
-            /* Icons Styling */
-            .theme-switch svg {
-               position: absolute;
-               top: 5px; /* Vertikal zentrieren: (26px height - 16px icon) / 2 */
-               width: 16px;
-               height: 16px;
-               transition: opacity 0.4s;
-               z-index: 5;
-            }
+         /* 5. Icons Styling */
+         .theme-switch svg {
+            width: 14px; /* Icons etwas kleiner damit sie in den Ball passen */
+            height: 14px;
+            transition: opacity 0.4s;
+            position: absolute; /* Übereinander lagern */
+         }
 
-            .icon-sun {
-               left: 4px;
-               color: #fff;
-               opacity: 1;
-            }
+         /* Sonne Styling */
+         .icon-sun {
+            opacity: 1;
+            color: #fff; /* Weiße Sonne auf Gelb */
+         }
 
-            .icon-moon {
-               right: 4px;
-               color: #fff;
-               opacity: 0;
-            }
+         /* Mond Styling */
+         .icon-moon {
+            opacity: 0;
+            color: #4a5568; /* Dunkelgrau für Kontrast auf dem Mond */
+         }
 
-            /* --- ZUSTÄNDE (Checked) --- */
+         /* --- ZUSTÄNDE (Checked / Dark Mode) --- */
 
-            /* Bahn wird dunkel */
-            input:checked + .slider {
-               background-color: #2d3748;
-            }
+         /* Bahn wird dunkel */
+         input:checked + .slider {
+            background-color: #2d3748; /* Nacht-Hintergrund */
+         }
 
-            /* Ball wandert und ändert Farbe */
-            input:checked + .slider .ball {
-               transform: translateX(26px);
-               background-color: #edf2f7; /* Mond-Grau */
-            }
+         /* Ball wandert und wird hellgrau */
+         input:checked + .slider .ball {
+            transform: translateX(26px);
+            background-color: #edf2f7; /* Mond-Farbe */
+         }
 
-            /* Icons tauschen Sichtbarkeit */
-            input:checked + .slider .icon-sun {
-               opacity: 0;
-            }
+         /* Sonne weg */
+         input:checked + .slider .icon-sun {
+            opacity: 0;
+         }
 
-            input:checked + .slider .icon-moon {
-               opacity: 1;
-            }
+         /* Mond da */
+         input:checked + .slider .icon-moon {
+            opacity: 1;
+         }
          </style>
 
         <button class="greedy-nav__toggle hidden" type="button">
