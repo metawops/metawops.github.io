@@ -192,6 +192,20 @@
             display: block !important;
             color: #1a202c; 
          }
+
+         /* =========================================
+            FIX 7: LOGO (Der Invertierungs-Trick)
+            ========================================= */
+         
+         /* Wir wählen gezielt nur das Bild innerhalb der Logo-Klasse */
+         html[data-theme="dark"] .site-logo img {
+            /* invert(1): Macht aus Schwarz Weiß (und umgekehrt).
+               hue-rotate(180deg): Falls Farben drin wären, würde Invert sie komplementär machen.
+                                    Hue-rotate dreht sie zurück (hier egal, da schwarz-weiß).
+               brightness(1.2): Macht das Weiß noch etwas strahlender.
+            */
+            filter: invert(1) brightness(1.2);
+         }
          </style>
 
         <button class="greedy-nav__toggle hidden" type="button">
