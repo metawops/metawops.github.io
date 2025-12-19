@@ -46,21 +46,27 @@
             KONFIGURATION
             ========================================================================== */
          :root {
-            --dm-bg-color: #1a202c;
-            /* Deine Wunschfarbe für den Text (z.B. #a0aec0) */
+            /* 1. FARBE FÜR DEN INHALT (Body) */
+            --dm-bg-body: #1a202c; 
+
+            /* 2. NEU: FARBE FÜR HEADER & FOOTER (Rahmen) */
+            /* Hier einen etwas dunkleren Ton (Deep Dark) gewählt */
+            --dm-bg-chrome: #11141c; 
+            
+            /* Textfarben */
             --dm-text-primary: #a0aec0; 
             --dm-text-muted: #718096; 
             --dm-accent: #63b3ed;
          }
 
          /* ==========================================================================
-            GLOBAL BODY & CONTENT
+            GLOBAL BODY & CONTENT (Nutzt --dm-bg-body)
             ========================================================================== */
          html[data-theme="dark"] body,
          html[data-theme="dark"] .initial-content,
          html[data-theme="dark"] .page__content,
          html[data-theme="dark"] #main {
-            background-color: var(--dm-bg-color) !important;
+            background-color: var(--dm-bg-body) !important;
             background-image: none !important;
          }
 
@@ -72,30 +78,29 @@
          }
 
          /* ==========================================================================
-            HEADER OVERRIDES
+            HEADER OVERRIDES (Nutzt --dm-bg-chrome)
             ========================================================================== */
          html[data-theme="dark"] .masthead,
          html[data-theme="dark"] .masthead__inner-wrap,
          html[data-theme="dark"] .greedy-nav,
          html[data-theme="dark"] .greedy-nav a { 
-            background: var(--dm-bg-color) !important;
-            background-color: var(--dm-bg-color) !important;
+            background: var(--dm-bg-chrome) !important;
+            background-color: var(--dm-bg-chrome) !important;
             background-image: none !important; 
-            border-color: #2d3748 !important;
+            border-color: #2d3748 !important; /* Trennlinie */
          }
 
          /* ==========================================================================
-            FIX 9: FOOTER (ISOLATED) - Der Orange-Killer
+            FOOTER OVERRIDES (Nutzt --dm-bg-chrome)
             ========================================================================== */
-         /* Wir isolieren den Footer wieder, damit die Regel garantiert greift */
          html[data-theme="dark"] .page__footer,
          html[data-theme="dark"] .page__footer footer,
          html[data-theme="dark"] .page__footer .inner-wrap {
-            background: var(--dm-bg-color) !important;
-            background-color: var(--dm-bg-color) !important;
+            background: var(--dm-bg-chrome) !important;
+            background-color: var(--dm-bg-chrome) !important;
             background-image: none !important;
             color: var(--dm-text-muted) !important;
-            border-top: 1px solid #2d3748 !important;
+            border-top: 1px solid #2d3748 !important; /* Trennlinie */
          }
 
          /* ==========================================================================
