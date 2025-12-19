@@ -53,6 +53,8 @@
             --dm-text-primary: #a0aec0; 
             --dm-text-muted: #718096; 
             --dm-accent: #63b3ed;
+
+            --dm-code-background: #2d3748;
          }
 
          /* ==========================================================================
@@ -74,7 +76,7 @@
 
          /* Hintergrund und Text für Inline-Code (Backticks) */
          html[data-theme="dark"] code {
-            background-color: #2d3748 !important; /* Dunkleres Grau */
+            background-color: var(--dm-code-background) !important; /* Dunkleres Grau */
             color: var(--dm-accent) !important;    /* Deine Akzentfarbe für den Text */
             border: 0;
          }
