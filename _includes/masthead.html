@@ -54,134 +54,118 @@
          </div>
 
          <style>
-         /* -----------------------------------------------------
-            1. GLOBAL OVERRIDES (Damit das Beige sofort verschwindet)
-            ----------------------------------------------------- */
-         
-         /* Wir nutzen :has() oder Attribut-Selektor für höchste Priorität */
-         html[data-theme="dark"] .masthead {
-            background-color: #1a202c !important; /* Dunkles Header-Grau statt Beige */
-            border-bottom: 1px solid #333 !important;
+         /* =========================================
+            1. FARBEN-OVERRIDE (DIE "NUKLEARE OPTION")
+            ========================================= */
+         /* Wir überschreiben ALLES, was Beige sein könnte */
+         html[data-theme="dark"],
+         html[data-theme="dark"] body,
+         html[data-theme="dark"] .initial-content,
+         html[data-theme="dark"] .page__content,
+         html[data-theme="dark"] .masthead,
+         html[data-theme="dark"] .page__footer {
+            background-color: #1a202c !important; /* Dunkles Grau */
+            background-image: none !important;    /* Falls Sunrise Texturen nutzt */
+            color: #e2e8f0 !important;            /* Helle Schrift */
+         }
+
+         /* Speziell für die Links im Header (damit sie nicht blau auf dunkelgrau sind) */
+         html[data-theme="dark"] .masthead a,
+         html[data-theme="dark"] .site-title,
+         html[data-theme="dark"] .site-subtitle,
+         html[data-theme="dark"] .masthead__menu-item {
+            color: #edf2f7 !important;
          }
          
-         /* Auch den Titel weiß machen */
-         html[data-theme="dark"] .masthead__menu-item,
-         html[data-theme="dark"] .site-title,
-         html[data-theme="dark"] .site-subtitle {
+         /* Such-Icon Farbe im Dark Mode */
+         html[data-theme="dark"] .search-toggle {
             color: #edf2f7 !important;
          }
 
-         /* -----------------------------------------------------
-            2. SWITCHER POSITIONIERUNG (Alignment)
-            ----------------------------------------------------- */
+         /* =========================================
+            2. POSITIONIERUNG (Das Skalpell)
+            ========================================= */
          .theme-switch-wrapper {
-            display: flex;
+            display: inline-flex; /* Besser als flex in diesem Kontext */
             align-items: center;
             float: right;
             margin-left: 15px;
-            height: 100%;
+            height: 2em; /* Orientiert sich an der Schriftgröße */
             
-            /* TWEAKING ZONE:
-               Hier schieben wir den Switch pixelgenau nach unten.
-               Ändere 'top' wenn er immer noch nicht exakt auf Linie ist.
-            */
+            /* HIER IST DER HEBEL FÜR DIE HÖHE: */
             position: relative;
-            top: 4px; 
+            top: -2px; /* Zieht den Schalter pixelweise hoch. Wenn zu hoch, mach 0 oder 2px draus. */
          }
 
-         /* -----------------------------------------------------
-            3. SWITCHER DESIGN
-            ----------------------------------------------------- */
+         /* =========================================
+            3. SCHALTER DESIGN (Kompakter)
+            ========================================= */
          .theme-switch {
             position: relative;
             display: inline-block;
-            width: 50px;
-            height: 26px;
+            width: 46px;  /* Etwas schmaler (vorher 52px) */
+            height: 24px; /* Etwas flacher (vorher 26px) */
             margin: 0;
-            padding: 0; /* Reset für MM */
          }
 
-         .theme-switch input {
-            opacity: 0;
-            width: 0;
-            height: 0;
-            position: absolute;
-         }
+         .theme-switch input { opacity: 0; width: 0; height: 0; position: absolute; }
 
          .slider {
             position: absolute;
             cursor: pointer;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: #87CEEB; /* Tag-Blau */
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-color: #63b3ed; /* Etwas kräftigeres Himmelblau */
             transition: .4s;
             border-radius: 34px;
          }
 
-         /* Der Ball Container */
+         /* Der Ball */
          .ball {
             position: absolute;
-            height: 20px;
-            width: 20px;
+            height: 18px; /* Kleinerer Ball */
+            width: 18px;
             left: 3px;
             bottom: 3px;
-            background-color: #FFD700; /* Sonne */
+            background-color: #fff; /* Startet Weiß (Sonne) */
             transition: transform .4s, background-color .4s;
             border-radius: 50%;
             z-index: 10;
-            
-            /* ZENTRIERUNG DER ICONS IM BALL */
             display: flex;
             align-items: center;
             justify-content: center;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.2);
          }
 
-         /* SVG Reset - wichtig damit sie nicht "tanzen" */
+         /* Icons */
          .theme-switch svg {
-            width: 12px;  /* Kleinere Icons wirken zentrierter */
+            width: 12px;
             height: 12px;
-            display: block; /* Verhindert line-height Probleme */
-            margin: 0;
-            padding: 0;
+            display: block;
             transition: opacity 0.4s;
-            position: absolute; /* Übereinander legen */
+            position: absolute;
          }
 
-         .icon-sun {
-            opacity: 1;
-            color: #fff;
-         }
+         .icon-sun { opacity: 1; color: #F6E05E; /* Gelbe Sonne im weißen Ball */ }
+         .icon-moon { opacity: 0; color: #4a5568; }
 
-         .icon-moon {
-            opacity: 0;
-            color: #4a5568; /* Dunkelgrau */
-         }
-
-         /* -----------------------------------------------------
-            4. STATE CHANGE (Dark Mode)
-            ----------------------------------------------------- */
-         
-         /* Bahn wird dunkel */
+         /* =========================================
+            4. ACTIVE STATE (DARK)
+            ========================================= */
          input:checked + .slider {
-            background-color: #4a5568; 
+            background-color: #4a5568; /* Slider Hintergrund Dunkel */
          }
 
-         /* Ball wandert nach rechts */
          input:checked + .slider .ball {
-            transform: translateX(24px);
-            background-color: #edf2f7; /* Mond-Weiß */
+            transform: translateX(22px); /* Verschiebung angepasst an neue Breite */
+            background-color: #2d3748; /* Ball wird dunkel */
          }
 
-         /* Icons tauschen */
-         input:checked + .slider .icon-sun {
-            opacity: 0;
+         input:checked + .slider .icon-sun { opacity: 0; }
+         input:checked + .slider .icon-moon { 
+            opacity: 1; 
+            color: #F6E05E; /* Mond wird gelblich/hell für Kontrast */
          }
-         input:checked + .slider .icon-moon {
-            opacity: 1;
-         }
-         </style>        
+         </style>
 
         <button class="greedy-nav__toggle hidden" type="button">
           <span class="visually-hidden">{{ site.data.ui-text[site.locale].menu_label | default: "Toggle menu" }}</span>
