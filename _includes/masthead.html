@@ -42,202 +42,224 @@
          </div>
 
          <style>
-         /* ==========================================================================
-            KONFIGURATION
-            ========================================================================== */
-         :root {
-            /* Farben Konfiguration */
-            --dm-bg-body: #1a202c; 
-            --dm-bg-chrome: #11141c; /* Header/Footer etwas dunkler */
+            /* ==========================================================================
+               KONFIGURATION
+               ========================================================================== */
+            :root {
+               /* Farben Konfiguration */
+               --dm-bg-body: #1a202c; 
+               --dm-bg-chrome: #11141c; /* Header/Footer etwas dunkler */
+               
+               --dm-text-primary: #a0aec0; 
+               --dm-text-muted: #718096; 
+               --dm-accent: #63b3ed;
+
+               --dm-code-background: #2d3748;
+            }
+
+            /* ==========================================================================
+               GLOBAL BODY & CONTENT
+               ========================================================================== */
+            html[data-theme="dark"] body,
+            html[data-theme="dark"] .initial-content,
+            html[data-theme="dark"] .page__content,
+            html[data-theme="dark"] #main {
+               background-color: var(--dm-bg-body) !important;
+            }
+
+            html[data-theme="dark"] body,
+            html[data-theme="dark"] p,
+            html[data-theme="dark"] li,
+            html[data-theme="dark"] .page__content {
+               color: var(--dm-text-primary) !important;
+            }
+
+            /* Hintergrund und Text für Inline-Code (Backticks) */
+            html[data-theme="dark"] code {
+               background-color: var(--dm-code-background) !important; /* Dunkleres Grau */
+               color: var(--dm-accent) !important;    /* Deine Akzentfarbe für den Text */
+               border: 0;
+            }
+
+            /* Große Code-Blöcke und Syntax-Container */
+            html[data-theme="dark"] .highlighter-rouge,
+            html[data-theme="dark"] figure.highlight,
+            html[data-theme="dark"] pre.highlight {
+            background-color: #1a202c !important; /* Etwas dunkler als der Body */
+            border: 1px solid #2d3748;
+            color: var(--dm-text-primary);
+            }
+
+            /* Der eigentliche Text im Block */
+            html[data-theme="dark"] .highlight pre,
+            html[data-theme="dark"] .highlight code {
+            background: transparent !important;
+            color: inherit !important;
+            }
+
+            /* ==========================================================================
+               HEADER OVERRIDES (Bilder erlaubt)
+               ========================================================================== */
+            html[data-theme="dark"] .masthead,
+            html[data-theme="dark"] .masthead__inner-wrap,
+            html[data-theme="dark"] .greedy-nav,
+            html[data-theme="dark"] .greedy-nav a { 
+               background-color: var(--dm-bg-chrome) !important;
+               border-color: #2d3748 !important;
+            }
+
+            /* ==========================================================================
+               FOOTER OVERRIDES (NO BORDER FIX)
+               ========================================================================== */
+            html[data-theme="dark"] .page__footer,
+            html[data-theme="dark"] .page__footer footer,
+            html[data-theme="dark"] .page__footer .inner-wrap {
+               background-color: var(--dm-bg-chrome) !important;
+               color: var(--dm-text-muted) !important;
+               
+               /* HIER IST DIE ÄNDERUNG: Keine Linie mehr! */
+               border: none !important; 
+               border-top: none !important;
+            }
+
+            /* ==========================================================================
+               TEXT ELEMENTE MAPPING
+               ========================================================================== */
+            html[data-theme="dark"] .masthead a,
+            html[data-theme="dark"] .site-title,
+            html[data-theme="dark"] .site-subtitle,
+            html[data-theme="dark"] .masthead__menu-item,
+            html[data-theme="dark"] .search-toggle,
+            html[data-theme="dark"] h1,
+            html[data-theme="dark"] h2,
+            html[data-theme="dark"] h3,
+            html[data-theme="dark"] h4,
+            html[data-theme="dark"] h5,
+            html[data-theme="dark"] h6,
+            html[data-theme="dark"] h1 a,
+            html[data-theme="dark"] h2 a,
+            html[data-theme="dark"] h3 a,
+            html[data-theme="dark"] h4 a,
+            html[data-theme="dark"] h5 a,
+            html[data-theme="dark"] h6 a,
+            html[data-theme="dark"] .page__title,
+            html[data-theme="dark"] .archive__subtitle,
+            html[data-theme="dark"] .archive__item-title a,
+            html[data-theme="dark"] .page__footer strong,
+            html[data-theme="dark"] .page__footer a {
+               color: var(--dm-text-primary) !important;
+            }
+
+            html[data-theme="dark"] .page__meta,
+            html[data-theme="dark"] .page__meta i {
+               color: var(--dm-text-muted) !important;
+            }
+
+            html[data-theme="dark"] .archive__item-title a:hover,
+            html[data-theme="dark"] .page__footer a:hover {
+               color: var(--dm-accent) !important;
+               text-decoration-color: var(--dm-accent) !important;
+            }
+
+            /* ==========================================================================
+               LOGO FIX
+               ========================================================================== */
+            html[data-theme="dark"] .site-logo img {
+               filter: invert(1) brightness(1.2);
+            }
+
+            /* ==========================================================================
+               SWITCHER CSS
+               ========================================================================== */
+            .theme-switch-wrapper {
+               display: inline-flex;
+               align-items: center;
+               float: right;
+               margin-left: 20px;
+               height: 2rem; 
+               position: relative;
+               top: 0 !important;        
+               margin-top: 0 !important; 
+               z-index: 10;
+            }
+
+            .theme-switch {
+               position: relative;
+               display: inline-block;
+               width: 50px;
+               height: 26px;
+               margin: 0 !important;
+               padding: 0 !important;
+            }
+
+            .theme-switch input { opacity: 0; width: 0; height: 0; position: absolute; }
+
+            .slider {
+               position: absolute;
+               cursor: pointer;
+               top: 0; left: 0; right: 0; bottom: 0;
+               background-color: #e2e8f0; 
+               transition: .4s;
+               border-radius: 34px;
+               border: 1px solid #cbd5e0;
+            }
+
+            .ball {
+               position: absolute;
+               height: 20px;
+               width: 20px;
+               left: 3px;
+               bottom: 2px;
+               background-color: white;
+               transition: transform .4s;
+               border-radius: 50%;
+               z-index: 10;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+            }
+
+            .theme-switch svg {
+               width: 14px;
+               height: 14px;
+               display: none; 
+               stroke: currentColor;
+               margin: 0 !important;
+               padding: 0 !important;
+            }
+
+            .icon-sun { display: block !important; color: #4a5568; }
+
+            input:checked + .slider {
+               background-color: #2d3748; 
+               border-color: #4a5568;
+            }
+            input:checked + .slider .ball { transform: translateX(22px); }
+            input:checked + .slider .ball .icon-sun { display: none !important; }
+            input:checked + .slider .ball .icon-moon { display: block !important; color: #1a202c; }
+
+            /* =========================================
+               ANIMATION (Der "Soft-Fade" Effekt)
+               ========================================= */
+            /* Wir sagen allen wichtigen Containern und Texten: 
+               "Wenn sich deine Farbe ändert, nimm dir 0.3 Sekunden Zeit dafür." */
+            body, .masthead, .page__footer, .greedy-nav, .page__content, #main,
+            h1, h2, h3, h4, h5, h6, p, li, a,
+            .site-title, .site-subtitle, .search-toggle,
+            .archive__item-teaser {
+               transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+            }
+
+            /* Speziell für das Logo, damit auch die Invertierung weich läuft */
+            .site-logo img {
+               transition: filter 0.3s ease;
+            }
             
-            --dm-text-primary: #a0aec0; 
-            --dm-text-muted: #718096; 
-            --dm-accent: #63b3ed;
-
-            --dm-code-background: #2d3748;
-         }
-
-         /* ==========================================================================
-            GLOBAL BODY & CONTENT
-            ========================================================================== */
-         html[data-theme="dark"] body,
-         html[data-theme="dark"] .initial-content,
-         html[data-theme="dark"] .page__content,
-         html[data-theme="dark"] #main {
-            background-color: var(--dm-bg-body) !important;
-         }
-
-         html[data-theme="dark"] body,
-         html[data-theme="dark"] p,
-         html[data-theme="dark"] li,
-         html[data-theme="dark"] .page__content {
-            color: var(--dm-text-primary) !important;
-         }
-
-         /* Hintergrund und Text für Inline-Code (Backticks) */
-         html[data-theme="dark"] code {
-            background-color: var(--dm-code-background) !important; /* Dunkleres Grau */
-            color: var(--dm-accent) !important;    /* Deine Akzentfarbe für den Text */
-            border: 0;
-         }
-
-         /* Große Code-Blöcke und Syntax-Container */
-         html[data-theme="dark"] .highlighter-rouge,
-         html[data-theme="dark"] figure.highlight,
-         html[data-theme="dark"] pre.highlight {
-         background-color: #1a202c !important; /* Etwas dunkler als der Body */
-         border: 1px solid #2d3748;
-         color: var(--dm-text-primary);
-         }
-
-         /* Der eigentliche Text im Block */
-         html[data-theme="dark"] .highlight pre,
-         html[data-theme="dark"] .highlight code {
-         background: transparent !important;
-         color: inherit !important;
-         }
-
-         /* ==========================================================================
-            HEADER OVERRIDES (Bilder erlaubt)
-            ========================================================================== */
-         html[data-theme="dark"] .masthead,
-         html[data-theme="dark"] .masthead__inner-wrap,
-         html[data-theme="dark"] .greedy-nav,
-         html[data-theme="dark"] .greedy-nav a { 
-            background-color: var(--dm-bg-chrome) !important;
-            border-color: #2d3748 !important;
-         }
-
-         /* ==========================================================================
-            FOOTER OVERRIDES (NO BORDER FIX)
-            ========================================================================== */
-         html[data-theme="dark"] .page__footer,
-         html[data-theme="dark"] .page__footer footer,
-         html[data-theme="dark"] .page__footer .inner-wrap {
-            background-color: var(--dm-bg-chrome) !important;
-            color: var(--dm-text-muted) !important;
-            
-            /* HIER IST DIE ÄNDERUNG: Keine Linie mehr! */
-            border: none !important; 
-            border-top: none !important;
-         }
-
-         /* ==========================================================================
-            TEXT ELEMENTE MAPPING
-            ========================================================================== */
-         html[data-theme="dark"] .masthead a,
-         html[data-theme="dark"] .site-title,
-         html[data-theme="dark"] .site-subtitle,
-         html[data-theme="dark"] .masthead__menu-item,
-         html[data-theme="dark"] .search-toggle,
-         html[data-theme="dark"] h1,
-         html[data-theme="dark"] h2,
-         html[data-theme="dark"] h3,
-         html[data-theme="dark"] h4,
-         html[data-theme="dark"] h5,
-         html[data-theme="dark"] h6,
-         html[data-theme="dark"] h1 a,
-         html[data-theme="dark"] h2 a,
-         html[data-theme="dark"] h3 a,
-         html[data-theme="dark"] h4 a,
-         html[data-theme="dark"] h5 a,
-         html[data-theme="dark"] h6 a,
-         html[data-theme="dark"] .page__title,
-         html[data-theme="dark"] .archive__subtitle,
-         html[data-theme="dark"] .archive__item-title a,
-         html[data-theme="dark"] .page__footer strong,
-         html[data-theme="dark"] .page__footer a {
-            color: var(--dm-text-primary) !important;
-         }
-
-         html[data-theme="dark"] .page__meta,
-         html[data-theme="dark"] .page__meta i {
-            color: var(--dm-text-muted) !important;
-         }
-
-         html[data-theme="dark"] .archive__item-title a:hover,
-         html[data-theme="dark"] .page__footer a:hover {
-            color: var(--dm-accent) !important;
-            text-decoration-color: var(--dm-accent) !important;
-         }
-
-         /* ==========================================================================
-            LOGO FIX
-            ========================================================================== */
-         html[data-theme="dark"] .site-logo img {
-            filter: invert(1) brightness(1.2);
-         }
-
-         /* ==========================================================================
-            SWITCHER CSS
-            ========================================================================== */
-         .theme-switch-wrapper {
-            display: inline-flex;
-            align-items: center;
-            float: right;
-            margin-left: 20px;
-            height: 2rem; 
-            position: relative;
-            top: 0 !important;        
-            margin-top: 0 !important; 
-            z-index: 10;
-         }
-
-         .theme-switch {
-            position: relative;
-            display: inline-block;
-            width: 50px;
-            height: 26px;
-            margin: 0 !important;
-            padding: 0 !important;
-         }
-
-         .theme-switch input { opacity: 0; width: 0; height: 0; position: absolute; }
-
-         .slider {
-            position: absolute;
-            cursor: pointer;
-            top: 0; left: 0; right: 0; bottom: 0;
-            background-color: #e2e8f0; 
-            transition: .4s;
-            border-radius: 34px;
-            border: 1px solid #cbd5e0;
-         }
-
-         .ball {
-            position: absolute;
-            height: 20px;
-            width: 20px;
-            left: 3px;
-            bottom: 2px;
-            background-color: white;
-            transition: transform .4s;
-            border-radius: 50%;
-            z-index: 10;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-         }
-
-         .theme-switch svg {
-            width: 14px;
-            height: 14px;
-            display: none; 
-            stroke: currentColor;
-            margin: 0 !important;
-            padding: 0 !important;
-         }
-
-         .icon-sun { display: block !important; color: #4a5568; }
-
-         input:checked + .slider {
-            background-color: #2d3748; 
-            border-color: #4a5568;
-         }
-         input:checked + .slider .ball { transform: translateX(22px); }
-         input:checked + .slider .ball .icon-sun { display: none !important; }
-         input:checked + .slider .ball .icon-moon { display: block !important; color: #1a202c; }
+            /* Auch der Ball im Schalter soll weich gleiten (falls nicht schon definiert) */
+            .ball {
+               transition: transform 0.3s cubic-bezier(0.4, 0.0, 0.2, 1), background-color 0.3s ease;
+            }
          </style>
 
          <button class="greedy-nav__toggle hidden" type="button">
