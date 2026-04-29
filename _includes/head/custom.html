@@ -1,30 +1,26 @@
 <!-- Mermaid Einbindung -->
 <script type="module">
-  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
-  mermaid.initialize({ 
-    startOnLoad: false,
-    theme: 'forest',
-    securityLevel: 'loose'
-  });
-  
-  document.addEventListener("DOMContentLoaded", async () => {
-    // Codeblöcke mit Mermaid-Klasse finden
-    document.querySelectorAll('code.language-mermaid').forEach((block) => {
-      const pre = block.parentElement;
-      const container = document.createElement('div');
-      container.className = 'mermaid';
-      container.textContent = block.textContent;
-      pre.parentNode.replaceChild(container, pre);
-    });
-    
-    await mermaid.run();
-  });
+   import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+   mermaid.initialize({
+      startOnLoad: false,
+      theme: "forest",
+      securityLevel: "loose",
+   });
+
+   document.addEventListener("DOMContentLoaded", async () => {
+      // Codeblöcke mit Mermaid-Klasse finden
+      document.querySelectorAll("code.language-mermaid").forEach((block) => {
+         const pre = block.parentElement;
+         const container = document.createElement("div");
+         container.className = "mermaid";
+         container.textContent = block.textContent;
+         pre.parentNode.replaceChild(container, pre);
+      });
+
+      await mermaid.run();
+   });
 </script>
 <!-- Ende Mermaid Einbindung -->
-
-<!-- Plausible Analytics Einbindung -->
-<script defer data-domain="blog.metawops.de" src="https://plausible.io/js/script.js"></script>
-<!-- Ende Plausible Analytics Einbindung -->
 
 <!-- Podlove Player Einbindung -->
 <script src="https://cdn.podlove.org/web-player/5.x/embed.js"></script>
@@ -40,14 +36,16 @@
 
 <!-- Theme Switching Stuff -->
 <script>
-  // Sofort beim Laden prüfen, welches Theme aktiv sein soll
-  const storageTheme = localStorage.getItem('theme');
-  const systemColorScheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
+   // Sofort beim Laden prüfen, welches Theme aktiv sein soll
+   const storageTheme = localStorage.getItem("theme");
+   const systemColorScheme = window.matchMedia(
+      "(prefers-color-scheme: dark)",
+   ).matches;
 
-  if (storageTheme === 'dark' || (!storageTheme && systemColorScheme)) {
-    document.documentElement.setAttribute('data-theme', 'dark');
-  } else {
-    document.documentElement.setAttribute('data-theme', 'light');
-  }
+   if (storageTheme === "dark" || (!storageTheme && systemColorScheme)) {
+      document.documentElement.setAttribute("data-theme", "dark");
+   } else {
+      document.documentElement.setAttribute("data-theme", "light");
+   }
 </script>
- <!-- Ende Theme Switching Stuff-->
+<!-- Ende Theme Switching Stuff-->

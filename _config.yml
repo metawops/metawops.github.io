@@ -22,20 +22,23 @@ minimal_mistakes_skin: sunrise
 font_awesome: true
 
 plugins:
-  - jekyll-feed
-  - jekyll-include-cache
-  - jekyll-sitemap
+   - jekyll-feed
+   - jekyll-include-cache
+   - jekyll-sitemap
 
 jekyll-sitemap:
-  sitemap_style: "/sitemap.xsl"
-  exclude:
-    - "robots.txt"
-    - "*.xml"
-    - "/private/"
+   sitemap_style: "/sitemap.xsl"
+   exclude:
+      - "robots.txt"
+      - "*.xml"
+      - "/private/"
 
 include:
-  - _pages
-  - _includes
+   - _pages
+   - _includes
+
+analytics:
+   provider: "custom"
 
 encoding: "utf-8"
 locale: de-DE
@@ -43,110 +46,109 @@ locale: de-DE
 enable_copy_code_button: true
 
 permalink: /:categories/:title/
-breadcrumbs: true  # disabled by default
+breadcrumbs: true # disabled by default
 
 date_format: "%Y-%m-%d"
 
 markdown: kramdown
 
 kramdown:
-  syntax_highlighter: rouge
-  syntax_highlighter_opts:
-    block:
-      line_numbers: false # Macht Probleme bei Umbruch!
+   syntax_highlighter: rouge
+   syntax_highlighter_opts:
+      block:
+         line_numbers: false # Macht Probleme bei Umbruch!
 
 defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
-      show_date: true
-      classes:
-        - blocksatz
-      #mathjax: true
-  # _pages
-  - scope:
-      path: ""
-      type: pages
-    values:
-      layout: single
-      author_profile: true
-      classes:
-        - blocksatz
-  - scope:
-      path: "_includes/**"
-    values:
-      sitemap: false
-  - scope:
-      path: "googled725990a31fa7895.html"
-    values:
-      sitemap: false
+   # _posts
+   - scope:
+        path: ""
+        type: posts
+     values:
+        layout: single
+        author_profile: true
+        read_time: true
+        comments: true
+        share: true
+        related: true
+        show_date: true
+        classes:
+           - blocksatz
+        #mathjax: true
+   # _pages
+   - scope:
+        path: ""
+        type: pages
+     values:
+        layout: single
+        author_profile: true
+        classes:
+           - blocksatz
+   - scope:
+        path: "_includes/**"
+     values:
+        sitemap: false
+   - scope:
+        path: "googled725990a31fa7895.html"
+     values:
+        sitemap: false
 
 comments:
-  giscus:
-    category_name: Blog posts 
-    category_id: DIC_kwDOO0ylY84CrEyU
-    discussion_term: "og:title" 
-    reactions_enabled: "1" 
-    repo_id: R_kgDOO0ylYw
-    theme: light 
-  provider: giscus
-
+   giscus:
+      category_name: Blog posts
+      category_id: DIC_kwDOO0ylY84CrEyU
+      discussion_term: "og:title"
+      reactions_enabled: "1"
+      repo_id: R_kgDOO0ylYw
+      theme: light
+   provider: giscus
 
 author:
-  name: "Stefan Wolfrum"
-  avatar: "/assets/images/bio-photo.jpg"
-  bio: "Co-Gründer [MakerSpace Bonn](https://makerspacebonn.de) und OK Lab Bonn. Geek at large."
-  location: "Bonn, Germany"
-  links:
-    - label: "Mastodon"
-      icon: "fa-brands fa-mastodon"
-      url: "https://mastodon.social/@metawops"
-    - label: "Bluesky"
-      icon: "fa-brands fa-bluesky"
-      url: "https://bsky.app/profile/metawops.bsky.social"
-    - label: "LinkedIn"
-      icon: "fa-brands fa-linkedin"
-      url: "https://www.linkedin.com/in/stefanwolfrum/"
-    - label: "GitHub"
-      icon: "fa-brands fa-github"
-      url: "https://github.com/metawops"
-    - label: "YouTube"
-      icon: "fa-brands fa-youtube"
-      url: "https://www.youtube.com/@stefanwolfrum"
+   name: "Stefan Wolfrum"
+   avatar: "/assets/images/bio-photo.jpg"
+   bio: "Co-Gründer [MakerSpace Bonn](https://makerspacebonn.de) und OK Lab Bonn. Geek at large."
+   location: "Bonn, Germany"
+   links:
+      - label: "Mastodon"
+        icon: "fa-brands fa-mastodon"
+        url: "https://mastodon.social/@metawops"
+      - label: "Bluesky"
+        icon: "fa-brands fa-bluesky"
+        url: "https://bsky.app/profile/metawops.bsky.social"
+      - label: "LinkedIn"
+        icon: "fa-brands fa-linkedin"
+        url: "https://www.linkedin.com/in/stefanwolfrum/"
+      - label: "GitHub"
+        icon: "fa-brands fa-github"
+        url: "https://github.com/metawops"
+      - label: "YouTube"
+        icon: "fa-brands fa-youtube"
+        url: "https://www.youtube.com/@stefanwolfrum"
 
 footer:
-  links:
-    - label: "Mastodon"
-      icon: "fa-brands fa-mastodon"
-      url: "https://mastodon.social/@metawops"
-    - label: "Bluesky"
-      icon: "fa-brands fa-bluesky"
-      url: "https://bsky.app/profile/metawops.bsky.social"
-    - label: "LinkedIn"
-      icon: "fa-brands fa-linkedin"
-      url: "https://www.linkedin.com/in/stefanwolfrum/"
-    - label: "GitHub"
-      icon: "fa-brands fa-github"
-      url: "https://github.com/metawops"
-    - label: "Impressum"
-      icon: "fa-regular fa-circle-user"
-      url: /impressum/
-    - label: "Datenschutz"
-      icon: "fa-solid fa-section"
-      url: /datenschutz/
+   links:
+      - label: "Mastodon"
+        icon: "fa-brands fa-mastodon"
+        url: "https://mastodon.social/@metawops"
+      - label: "Bluesky"
+        icon: "fa-brands fa-bluesky"
+        url: "https://bsky.app/profile/metawops.bsky.social"
+      - label: "LinkedIn"
+        icon: "fa-brands fa-linkedin"
+        url: "https://www.linkedin.com/in/stefanwolfrum/"
+      - label: "GitHub"
+        icon: "fa-brands fa-github"
+        url: "https://github.com/metawops"
+      - label: "Impressum"
+        icon: "fa-regular fa-circle-user"
+        url: /impressum/
+      - label: "Datenschutz"
+        icon: "fa-solid fa-section"
+        url: /datenschutz/
 
 category_archive:
-  type: liquid
-  path: /categories/
+   type: liquid
+   path: /categories/
 
 tag_archive:
-  type: liquid
-  path: /tags/
+   type: liquid
+   path: /tags/
