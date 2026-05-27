@@ -27,19 +27,18 @@ Stefan Wolfrum
 Camminer Str. 22  
 53119 Bonn  
 Telefon: 0228466072  
-E-Mail: metawops{at}gmail{punkt}com  
-
+E-Mail: metawops{at}gmail{punkt}com
 
 ## II. Rechte der Nutzer und Betroffenen
 
 Mit Blick auf die nachfolgend noch näher beschriebene Datenverarbeitung haben die Nutzer und Betroffenen das Recht
 
-* auf Bestätigung, ob sie betreffende Daten verarbeitet werden, auf Auskunft über die verarbeiteten Daten, auf weitere Informationen über die Datenverarbeitung sowie auf Kopien der Daten (vgl. auch Art. 15 DSGVO);
-* auf Berichtigung oder Vervollständigung unrichtiger bzw. unvollständiger Daten (vgl. auch Art. 16 DSGVO);
-* auf unverzügliche Löschung der sie betreffenden Daten (vgl. auch Art. 17 DSGVO), oder, alternativ, soweit eine weitere Verarbeitung gemäß Art. 17 Abs. 3 DSGVO erforderlich ist, auf Einschränkung der Verarbeitung nach Maßgabe von Art. 18 DSGVO;
-* auf Erhalt der sie betreffenden und von ihnen bereitgestellten Daten und auf Übermittlung dieser Daten an andere Anbieter/Verantwortliche (vgl. auch Art. 20 DSGVO);
-* auf Beschwerde gegenüber der Aufsichtsbehörde, sofern sie der Ansicht sind, dass die sie betreffenden Daten durch den Anbieter unter Verstoß gegen datenschutzrechtliche Bestimmungen verarbeitet werden (vgl. auch Art. 77 DSGVO).
-Darüber hinaus ist der Anbieter dazu verpflichtet, alle Empfänger, denen gegenüber Daten durch den Anbieter offengelegt worden sind, über jedwede Berichtigung oder Löschung von Daten oder die Einschränkung der Verarbeitung, die aufgrund der Artikel 16, 17 Abs. 1, 18 DSGVO erfolgt, zu unterrichten. Diese Verpflichtung besteht jedoch nicht, soweit diese Mitteilung unmöglich oder mit einem unverhältnismäßigen Aufwand verbunden ist. Unbeschadet dessen hat der Nutzer ein Recht auf Auskunft über diese Empfänger.
+- auf Bestätigung, ob sie betreffende Daten verarbeitet werden, auf Auskunft über die verarbeiteten Daten, auf weitere Informationen über die Datenverarbeitung sowie auf Kopien der Daten (vgl. auch Art. 15 DSGVO);
+- auf Berichtigung oder Vervollständigung unrichtiger bzw. unvollständiger Daten (vgl. auch Art. 16 DSGVO);
+- auf unverzügliche Löschung der sie betreffenden Daten (vgl. auch Art. 17 DSGVO), oder, alternativ, soweit eine weitere Verarbeitung gemäß Art. 17 Abs. 3 DSGVO erforderlich ist, auf Einschränkung der Verarbeitung nach Maßgabe von Art. 18 DSGVO;
+- auf Erhalt der sie betreffenden und von ihnen bereitgestellten Daten und auf Übermittlung dieser Daten an andere Anbieter/Verantwortliche (vgl. auch Art. 20 DSGVO);
+- auf Beschwerde gegenüber der Aufsichtsbehörde, sofern sie der Ansicht sind, dass die sie betreffenden Daten durch den Anbieter unter Verstoß gegen datenschutzrechtliche Bestimmungen verarbeitet werden (vgl. auch Art. 77 DSGVO).
+  Darüber hinaus ist der Anbieter dazu verpflichtet, alle Empfänger, denen gegenüber Daten durch den Anbieter offengelegt worden sind, über jedwede Berichtigung oder Löschung von Daten oder die Einschränkung der Verarbeitung, die aufgrund der Artikel 16, 17 Abs. 1, 18 DSGVO erfolgt, zu unterrichten. Diese Verpflichtung besteht jedoch nicht, soweit diese Mitteilung unmöglich oder mit einem unverhältnismäßigen Aufwand verbunden ist. Unbeschadet dessen hat der Nutzer ein Recht auf Auskunft über diese Empfänger.
 
 **Ebenfalls haben die Nutzer und Betroffenen nach Art. 21 DSGVO das Recht auf Widerspruch gegen die künftige Verarbeitung der sie betreffenden Daten, sofern die Daten durch den Anbieter nach Maßgabe von Art. 6 Abs. 1 lit. f) DSGVO verarbeitet werden. Insbesondere ist ein Widerspruch gegen die Datenverarbeitung zum Zwecke der Direktwerbung statthaft.**
 
@@ -129,26 +128,17 @@ https://policies.google.com/privacy
 
 abrufbaren Datenschutzhinweisen bereit.
 
-### Plausible Analytics
+### Umami Analytics
 
-Dieser Internetauftritt nutzt das Web Analytics Produkt [Plausible Analytics](https://plausible.io).
+Dieser Internetauftritt nutzt zur statistischen Auswertung der Besucherzugriffe das Open-Source Web-Analytics-Tool [Umami](https://umami.is).
 
-Plausible Analytics nutzt _keine_ Cookies, ist DSGVO-konform, privacy-focused, in der EU gehostet und [OpenSource](https://github.com/plausible/docs).
+Wir betreiben Umami selbst auf einem eigenen Server. Es findet **keine** Weitergabe von Daten an Dritte statt.
 
-Details können der [Data Policy von Plausible Analytics](https://plausible.io/data-policy) entnommen werden.
-
-Die Adresse von Plausible lautet:
-
-Plausible Insights OÜ  
-Västriku tn 2, 50403, Tartu, Estonia  
-Registration number 14709274  
-
-Represented by Uku Täht  
-Email: hello@plausible.io  
+Umami ist besonders datenschutzfreundlich konzipiert und vollständig DSGVO-konform. Es werden **keine Cookies** auf Ihrem Endgerät gespeichert und keine personenbezogenen Daten gesammelt. Ihre IP-Adresse wird sofort anonymisiert, sodass Rückschlüsse auf Ihre Person nicht möglich sind. Die anonymisierten Daten dienen uns lediglich dazu, die Nutzung unseres Internetauftritts zu analysieren und ihn weiter zu verbessern.
 
 ### Amazon-Partnerprogramm
 
-In unserem Internetauftritt setzen wir das AMAZON-Partnerprogramm ein. Es handelt sich hierbei um einen Dienst der Amazon Europe Core S.à r.l., 5 Rue Plaetis, L -2338 Luxemburg.  Über das AMAZON-Partnerprogramm werden in unserem Internetauftritt Werbeanzeigen von Amazon.de platziert. Klicken Sie auf eine dieser Werbeanzeigen, werden Sie zu dem damit korrespondierenden Angebot auf dem AMZON-Internetportal weitergeleitet. Sofern Sie sich dort anschließend für den Kauf des beworbenen Produkts entscheiden, erhalten wir hierfür eine „Vermittlungsprovision“ von Amazon.
+In unserem Internetauftritt setzen wir das AMAZON-Partnerprogramm ein. Es handelt sich hierbei um einen Dienst der Amazon Europe Core S.à r.l., 5 Rue Plaetis, L -2338 Luxemburg. Über das AMAZON-Partnerprogramm werden in unserem Internetauftritt Werbeanzeigen von Amazon.de platziert. Klicken Sie auf eine dieser Werbeanzeigen, werden Sie zu dem damit korrespondierenden Angebot auf dem AMZON-Internetportal weitergeleitet. Sofern Sie sich dort anschließend für den Kauf des beworbenen Produkts entscheiden, erhalten wir hierfür eine „Vermittlungsprovision“ von Amazon.
 
 Damit dieser Dienst ermöglicht werden kann, setzt Amazon Cookies ein. Mit Hilfe dieser Cookies kann Amazon nachvollziehen, dass Sie von unserem Internetauftritt auf das AMAZON- Internetportal weitergeleitet worden sind.
 
