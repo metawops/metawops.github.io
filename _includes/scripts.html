@@ -43,3 +43,41 @@ MathJax = {
 {% endif %}
 
 <script src="{{ '/assets/js/theme-switcher.js' | relative_url }}"></script>
+
+<!-- Auto-Popup für Markdown-Bilder -->
+<script>
+  $(document).ready(function() {
+    // Nur auf unserer Testseite ausführen!
+    if (window.location.pathname.includes('/bildtest/')) {
+      
+      // Suche alle normalen Bilder im Inhaltsbereich
+      $('.page__content p > img').each(function() {
+        var $img = $(this);
+        var src = $img.attr('src');
+        var alt = $img.attr('alt');
+        
+        // Link, Figure und Figcaption erstellen (genau wie Jekyll es machen würde)
+        var $link = $('<a href="' + src + '" class="image-popup" title="' + (alt ? alt : '') + '"></a>').append($img.clone());
+        var $figure = $('<figure></figure>').append($link);
+        
+        if (alt) { 
+          $figure.append('<figcaption>' + alt + '</figcaption>'); 
+        }
+        
+        // Altes img durch unser neues figure-Konstrukt ersetzen
+        $img.replaceWith($figure);
+      });
+
+      // Magnific Popup für die neu erstellten Links aktivieren
+      if ($.fn.magnificPopup) {
+        $('.page__content .image-popup').magnificPopup({
+          type: 'image',
+          tLoading: 'Lade Bild...',
+          image: {
+            tError: '<a href="%url%">Bild</a> konnte nicht geladen werden.'
+          }
+        });
+      }
+    }
+  });
+</script>
